@@ -1,0 +1,73 @@
+source_file:
+D:\10_HWA_Project\NOHV1\NoaApp\Build\Noa_Nofusion\BusRtCode\C1_24\S\DSPACE\CanIf\CanIf.c
+command_line:
+"D:\Program Files\dSPACE RCPHIL 2020-B\Compiler\Linux440_550\target\arm-linux-gnueabihf\bin\arm-linux-gnueabihf-gcc.exe"
+-c
+-fno-common
+-nostdinc
+-fno-strict-aliasing
+-pipe
+-ffast-math
+-fomit-frame-pointer
+-funwind-tables
+-mcpu=cortex-a15
+-mfpu=neon-vfpv4
+-mfloat-abi=hard
+"-isystemD:\Program Files\dSPACE RCPHIL 2020-B\Compiler\Linux440_550\target\arm-linux-gnueabihf\arm-linux-gnueabihf\include\c++\5.5.0"
+"-isystemD:\Program Files\dSPACE RCPHIL 2020-B\Compiler\Linux440_550\target\arm-linux-gnueabihf\arm-linux-gnueabihf\include\c++\5.5.0\arm-linux-gnueabihf"
+"-isystemD:\Program Files\dSPACE RCPHIL 2020-B\Compiler\Linux440_550\target\arm-linux-gnueabihf\include"
+"-isystemD:\Program Files\dSPACE RCPHIL 2020-B\Compiler\Linux440_550\target\arm-linux-gnueabihf\lib\gcc\arm-linux-gnueabihf\5.5.0\include"
+"-isystemD:\Program Files\dSPACE RCPHIL 2020-B\Compiler\Linux440_550\target\arm-linux-gnueabihf\lib\gcc\arm-linux-gnueabihf\5.5.0\include-fixed"
+-Werror-implicit-function-declaration
+-D_DS1403
+-D_DS1403CN
+-DDS_PLATFORM_ARM
+-DDS_PLATFORM_ARMV7
+-DDS_PLATFORM_KEYSTONE
+-DDS_PLATFORM_LE
+-DDS_PLATFORM_POSIX
+-DDS_PLATFORM_LINUX
+-DDS_PLATFORM_DSRTLINUX
+-DDS_PLATFORM_CN
+-DDS_PLATFORM_SMART
+-DDS_PLATFORM_SMARTBOX
+-DDS_PLATFORM_SMP
+-D__HOSTNAME__=\BDJS-CND110023G\
+-D__INTEGRATION__=\5.0.1\
+-DDS_RTLIB_VERSION_MAR=5
+-DDS_RTLIB_VERSION_MIR=0
+-DDS_LINUX_VERSION=440
+-DLINUX_VERSION=4.4.0
+-D_FILE_OFFSET_BITS=64
+-O0
+"-IC:\Program Files\Polyspace\R2020b\extern\include"
+"-ID:\Program Files\Polyspace\R2020b\simulink\include"
+"-ID:\Program Files\Polyspace\R2020b\toolbox\shared\can\src\scanutil"
+-ID:\10_HWA_Project\NOHV1\NoaApp\Build\Noa_Nofusion\BusRtCode\Utils
+-ID:\10_HWA_Project\NOHV1\NoaApp\Build\Noa_Nofusion\BusRtCode\Utils\DataStructures
+-ID:\10_HWA_Project\NOHV1\NoaApp\Build\Noa_Nofusion\BusRtCode\Utils\E2E
+-ID:\10_HWA_Project\NOHV1\NoaApp\Build\Noa_Nofusion\BusRtCode\Utils\StateManager
+-ID:\10_HWA_Project\NOHV1\NoaApp\Build\Noa_Nofusion\BusRtCode
+-ID:\10_HWA_Project\NOHV1\NoaApp\Build\Noa_Nofusion\BusRtCode\C1_24
+-ID:\10_HWA_Project\NOHV1\NoaApp\Build\Noa_Nofusion\BusRtCode\C1_24\S
+-ID:\10_HWA_Project\NOHV1\NoaApp\Build\Noa_Nofusion\BusCustomCode
+-ID:\10_HWA_Project\NOHV1\NoaApp\Build\Noa_Nofusion\BusRtCode\C1_24\S\DSPACE
+-ID:\10_HWA_Project\NOHV1\NoaApp\Build\Noa_Nofusion\BusRtCode\C1_24\S\DSPACE\Common
+-ID:\10_HWA_Project\NOHV1\NoaApp\Build\Noa_Nofusion\BusRtCode\C1_24\S\DSPACE\CanIf
+-ID:\10_HWA_Project\NOHV1\NoaApp\Build\Noa_Nofusion\BusRtCode\C1_24\S\DSPACE\Feature
+-ID:\10_HWA_Project\NOHV1\NoaApp\Build\Noa_Nofusion\BusRtCode\C1_24\S\DSPACE\Rte
+-ID:\10_HWA_Project\NOHV1\NoaApp\Build\Noa_Nofusion\BusRtCode\C1_24\S\DSPACE\Com
+-ID:\10_HWA_Project\NOHV1\NoaApp\Build\Noa_Nofusion\BusRtCode\C1_24\S\DSPACE\PduR
+-ID:\10_HWA_Project\NOHV1\NoaApp\Build\Noa_Nofusion\BusRtCode\C1_24\S\DSPACE\SchM
+"-ID:\Program Files\dSPACE RCPHIL 2020-B\DS1403\Include"
+-DDATA_PORT_ACCESS_POINT_API_VERSION=2
+-o
+D:\10_HWA_Project\NOHV1\NoaApp\Build\Noa_Nofusion\Compile\DSPACE_232418_24\CanIf.oarm
+CanIf.c
+file_info:
+2021/11/16
+15:51
+2021/11/16
+15:51
+124451
+CanIf.c 

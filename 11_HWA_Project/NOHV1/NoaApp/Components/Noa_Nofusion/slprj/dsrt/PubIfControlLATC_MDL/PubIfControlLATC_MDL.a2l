@@ -1,0 +1,3406 @@
+/*
+ ****************************************************************************
+ * ASAP2 file: PubIfControlLATC_MDL.a2l
+ *
+ * Copyright 2022, dSPACE GmbH. All rights reserved.
+ *
+ ****************************************************************************
+ */
+
+ASAP2_VERSION  1 61   /* Version 1.61 */
+
+/begin PROJECT PubIfControlLATC_MDL ""
+  
+  /begin HEADER ""
+    VERSION      "3.732"       
+    PROJECT_NO   PubIfControlLATC_MDL
+  /end HEADER
+  
+  
+  /begin MODULE PubIfControlLATC_MDL  ""
+    
+    
+    
+    /begin RECORD_LAYOUT Scalar_BOOLEAN
+      FNC_VALUES  1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_UBYTE
+      FNC_VALUES  1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_BYTE
+      FNC_VALUES  1 SBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_UWORD
+      FNC_VALUES  1 UWORD ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_SWORD
+      FNC_VALUES 1 SWORD ROW_DIR DIRECT
+    /end RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_ULONG
+      FNC_VALUES  1 ULONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_LONG
+      FNC_VALUES  1 SLONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_FLOAT32_IEEE
+      FNC_VALUES  1 FLOAT32_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_FLOAT64_IEEE
+      FNC_VALUES  1 FLOAT64_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    
+    /begin RECORD_LAYOUT Lookup1D_BOOLEAN
+      FNC_VALUES  1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_BYTE
+      FNC_VALUES  1 SBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_UBYTE
+      FNC_VALUES  1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_UWORD
+      FNC_VALUES  1 UWORD ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_WORD
+      FNC_VALUES  1 SWORD ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_ULONG
+      FNC_VALUES  1 ULONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_LONG
+      FNC_VALUES  1 SLONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_FLOAT32_IEEE
+      FNC_VALUES  1 FLOAT32_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_FLOAT64_IEEE
+      FNC_VALUES  1 FLOAT64_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_BOOLEAN
+      AXIS_PTS_X  1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT 
+    
+    /begin RECORD_LAYOUT Lookup1D_X_BYTE
+      AXIS_PTS_X  1 SBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_UBYTE
+      AXIS_PTS_X  1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_UWORD
+      AXIS_PTS_X  1 UWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_WORD
+      AXIS_PTS_X  1 SWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_ULONG
+      AXIS_PTS_X  1 ULONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_LONG
+      AXIS_PTS_X  1 SLONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT    
+    
+    /begin RECORD_LAYOUT Lookup1D_X_FLOAT32_IEEE
+      AXIS_PTS_X  1 FLOAT32_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_FLOAT64_IEEE
+      AXIS_PTS_X  1 FLOAT64_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT   
+    
+    
+    
+    /begin RECORD_LAYOUT Lookup2D_BOOLEAN
+      FNC_VALUES  1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT    
+    
+    /begin RECORD_LAYOUT Lookup2D_UBYTE
+      FNC_VALUES     1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_BYTE
+      FNC_VALUES     1 SBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_UWORD
+      FNC_VALUES     1 UWORD ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_WORD
+      FNC_VALUES     1 SWORD ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_ULONG
+      FNC_VALUES     1 ULONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_LONG
+      FNC_VALUES     1 SLONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_FLOAT32_IEEE
+      FNC_VALUES     1 FLOAT32_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_FLOAT64_IEEE
+      FNC_VALUES     1 FLOAT64_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_BOOLEAN
+      AXIS_PTS_X     1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT    
+    
+    /begin RECORD_LAYOUT Lookup2D_X_UBYTE
+      AXIS_PTS_X     1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_BYTE
+      AXIS_PTS_X     1 SBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_UWORD
+      AXIS_PTS_X     1 UWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_WORD
+      AXIS_PTS_X     1 SWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_ULONG
+      AXIS_PTS_X     1 ULONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_LONG
+      AXIS_PTS_X     1 SLONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_FLOAT32_IEEE
+      AXIS_PTS_X     1 FLOAT32_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_FLOAT64_IEEE
+      AXIS_PTS_X     1 FLOAT64_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_ESS_SteerAngleErr
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_ESS_SteerAngleErr@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      NO_INPUT_QUANTITY
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      12
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_LATC_VehicleSpd_TabX_Kph
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin AXIS_PTS
+      /* Name                   */      P_LCS_LATC_VehicleSpd_TabX_Kph
+      /* Long Identifier        */      ""
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_VehicleSpd_TabX_Kph@ */
+      /* Input Quantity         */      NO_INPUT_QUANTITY
+      /* Record Layout          */      Lookup1D_X_FLOAT32_IEEE
+      /* Maximum Difference     */      0
+      /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+      /* Number of Axis Pts     */      12
+      /* Lower Limit            */      -3.4E+38
+      /* Upper Limit            */      3.4E+38
+    /end AXIS_PTS
+    
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_LATC_MPCMatrixQ1_st
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_MPCMatrixQ1_st@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_IN_Spd_Kph
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      16
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_VehicleSpd_TabX_Kph
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin AXIS_PTS
+      /* Name                   */      P_LCS_VehicleSpd_TabX_Kph
+      /* Long Identifier        */      ""
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_VehicleSpd_TabX_Kph@ */
+      /* Input Quantity         */      LCS_IN_Spd_Kph
+      /* Record Layout          */      Lookup1D_X_FLOAT32_IEEE
+      /* Maximum Difference     */      0
+      /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+      /* Number of Axis Pts     */      16
+      /* Lower Limit            */      -3.4E+38
+      /* Upper Limit            */      3.4E+38
+    /end AXIS_PTS
+    
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_LATC_MPCMatrixQ2_st
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_MPCMatrixQ2_st@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_IN_Spd_Kph
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      16
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_VehicleSpd_TabX_Kph
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_LATC_MPCMatrixR_st
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_MPCMatrixR_st@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_IN_Spd_Kph
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      16
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_VehicleSpd_TabX_Kph
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_LATC_ELKAngleSlope_ratio
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_ELKAngleSlope_ratio@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_IN_Spd_Kph
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      16
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_VehicleSpd_TabX_Kph
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_LATC_ELKMaxLatAcc_ms2
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_ELKMaxLatAcc_ms2@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_IN_Spd_Kph
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      16
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_VehicleSpd_TabX_Kph
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_LATC_ESSAngleSlope_ratio
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_ESSAngleSlope_ratio@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_IN_Spd_Kph
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      16
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_VehicleSpd_TabX_Kph
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_LATC_ESSMaxLatAcc_ms2
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_ESSMaxLatAcc_ms2@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_IN_Spd_Kph
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      16
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_VehicleSpd_TabX_Kph
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_LATC_LCAngleSlope_ratio
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_LCAngleSlope_ratio@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_IN_Spd_Kph
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      16
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_VehicleSpd_TabX_Kph
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_LATC_LCEcoAngleSlope_ratio
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_LCEcoAngleSlope_ratio@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_IN_Spd_Kph
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      16
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_VehicleSpd_TabX_Kph
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_LATC_LCNormalAngleSlope_ratio
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_LCNormalAngleSlope_ratio@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_IN_Spd_Kph
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      16
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_VehicleSpd_TabX_Kph
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_LATC_LCSportAngleSlope_ratio
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_LCSportAngleSlope_ratio@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_IN_Spd_Kph
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      16
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_VehicleSpd_TabX_Kph
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_LATC_LCKIEMaxLatAcc_ms2
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_LCKIEMaxLatAcc_ms2@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_IN_Spd_Kph
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      16
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_VehicleSpd_TabX_Kph
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_LATC_LCKIEAngleSlope_ratio
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_LCKIEAngleSlope_ratio@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_IN_Spd_Kph
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      16
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_VehicleSpd_TabX_Kph
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_LATC_LCKMaxLatAcc_ms2
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_LCKMaxLatAcc_ms2@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_IN_Spd_Kph
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      16
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_VehicleSpd_TabX_Kph
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_LATC_LCNormalMaxLatAcc_ms2
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_LCNormalMaxLatAcc_ms2@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_IN_Spd_Kph
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      16
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_VehicleSpd_TabX_Kph
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_LATC_LCCancleMaxLatAcc_ms2
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_LCCancleMaxLatAcc_ms2@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_IN_Spd_Kph
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      16
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_VehicleSpd_TabX_Kph
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_LATC_LCEcoMaxLatAcc_ms2
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_LCEcoMaxLatAcc_ms2@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_IN_Spd_Kph
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      16
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_VehicleSpd_TabX_Kph
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_LATC_LCSportMaxLatAcc_ms2
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_LCSportMaxLatAcc_ms2@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_IN_Spd_Kph
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      16
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_VehicleSpd_TabX_Kph
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_LATC_LKAAngleSlope_ratio
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_LKAAngleSlope_ratio@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_IN_Spd_Kph
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      16
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_VehicleSpd_TabX_Kph
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_LATC_LKAMaxLatAcc_ms2
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_LKAMaxLatAcc_ms2@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_IN_Spd_Kph
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      16
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_VehicleSpd_TabX_Kph
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_LATC_LCKAngleSlope_ratio
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_LCKAngleSlope_ratio@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_IN_Spd_Kph
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      16
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_VehicleSpd_TabX_Kph
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_PLAN_LCPreDisFac_ratio
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      MAP
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_PLAN_LCPreDisFac_ratio@ */
+      /* Record Layout          */      Lookup2D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      NO_INPUT_QUANTITY
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      3
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_PLAN_TarDangerlLevel_Tabx_st
+      /end AXIS_DESCR
+      /begin AXIS_DESCR                 
+        /* Description of Y-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      NO_INPUT_QUANTITY
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      7
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_PLAN_DesLineA0_TabY_m
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    
+    /begin AXIS_PTS
+      /* Name                   */      P_LCS_PLAN_TarDangerlLevel_Tabx_st
+      /* Long Identifier        */      ""
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_PLAN_TarDangerlLevel_Tabx_st@ */
+      /* Input Quantity         */      NO_INPUT_QUANTITY
+      /* Record Layout          */      Lookup2D_X_FLOAT32_IEEE
+      /* Maximum Difference     */      0
+      /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+      /* Number of Axis Pts     */      3
+      /* Lower Limit            */      -3.4E+38
+      /* Upper Limit            */      3.4E+38
+    /end AXIS_PTS
+    
+    /begin AXIS_PTS
+      /* Name                   */      P_LCS_PLAN_DesLineA0_TabY_m
+      /* Long Identifier        */      ""
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_PLAN_DesLineA0_TabY_m@ */
+      /* Input Quantity         */      NO_INPUT_QUANTITY
+      /* Record Layout          */      Lookup2D_X_FLOAT32_IEEE
+      /* Maximum Difference     */      0
+      /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+      /* Number of Axis Pts     */      7
+      /* Lower Limit            */      -3.4E+38
+      /* Upper Limit            */      3.4E+38
+    /end AXIS_PTS
+    
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_Plan_LCNomalAyDtLimit_Tab_ms3
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      MAP
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_Plan_LCNomalAyDtLimit_Tab_ms3@ */
+      /* Record Layout          */      Lookup2D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_PreDisCurve_m
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      13
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_PLAN_PreDisCurve_TabX_m
+      /end AXIS_DESCR
+      /begin AXIS_DESCR                 
+        /* Description of Y-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_IN_Spd_Kph
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      16
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_PLAN_VehicleSpd_TabY_Kph
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    
+    /begin AXIS_PTS
+      /* Name                   */      P_LCS_PLAN_PreDisCurve_TabX_m
+      /* Long Identifier        */      ""
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_PLAN_PreDisCurve_TabX_m@ */
+      /* Input Quantity         */      LCS_PreDisCurve_m
+      /* Record Layout          */      Lookup2D_X_FLOAT32_IEEE
+      /* Maximum Difference     */      0
+      /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+      /* Number of Axis Pts     */      13
+      /* Lower Limit            */      -3.4E+38
+      /* Upper Limit            */      3.4E+38
+    /end AXIS_PTS
+    
+    /begin AXIS_PTS
+      /* Name                   */      P_LCS_PLAN_VehicleSpd_TabY_Kph
+      /* Long Identifier        */      ""
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_PLAN_VehicleSpd_TabY_Kph@ */
+      /* Input Quantity         */      LCS_IN_Spd_Kph
+      /* Record Layout          */      Lookup2D_X_FLOAT32_IEEE
+      /* Maximum Difference     */      0
+      /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+      /* Number of Axis Pts     */      16
+      /* Lower Limit            */      -3.4E+38
+      /* Upper Limit            */      3.4E+38
+    /end AXIS_PTS
+    
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_PLAN_LCKAyDtLimit_Tab_ms3
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      MAP
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_PLAN_LCKAyDtLimit_Tab_ms3@ */
+      /* Record Layout          */      Lookup2D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_PreDisCurve_m
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      13
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_PLAN_PreDisCurve_TabX_m
+      /end AXIS_DESCR
+      /begin AXIS_DESCR                 
+        /* Description of Y-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_IN_Spd_Kph
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      16
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_PLAN_VehicleSpd_TabY_Kph
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_Plan_LKAAyDtLimit_Tab_ms3
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      MAP
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_Plan_LKAAyDtLimit_Tab_ms3@ */
+      /* Record Layout          */      Lookup2D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_PreDisCurve_m
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      13
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_PLAN_PreDisCurve_TabX_m
+      /end AXIS_DESCR
+      /begin AXIS_DESCR                 
+        /* Description of Y-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_IN_Spd_Kph
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      16
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_PLAN_VehicleSpd_TabY_Kph
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_Plan_ELKAyDtLimit_Tab_ms3
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      MAP
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_Plan_ELKAyDtLimit_Tab_ms3@ */
+      /* Record Layout          */      Lookup2D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_PreDisCurve_m
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      13
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_PLAN_PreDisCurve_TabX_m
+      /end AXIS_DESCR
+      /begin AXIS_DESCR                 
+        /* Description of Y-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_IN_Spd_Kph
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      16
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_PLAN_VehicleSpd_TabY_Kph
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_Plan_LCSportAyDtLimit_Tab_ms3
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      MAP
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_Plan_LCSportAyDtLimit_Tab_ms3@ */
+      /* Record Layout          */      Lookup2D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_PreDisCurve_m
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      13
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_PLAN_PreDisCurve_TabX_m
+      /end AXIS_DESCR
+      /begin AXIS_DESCR                 
+        /* Description of Y-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_IN_Spd_Kph
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      16
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_PLAN_VehicleSpd_TabY_Kph
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_Plan_LCAyDtLimit_Tab_ms3
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      MAP
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_Plan_LCAyDtLimit_Tab_ms3@ */
+      /* Record Layout          */      Lookup2D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_PreDisCurve_m
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      13
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_PLAN_PreDisCurve_TabX_m
+      /end AXIS_DESCR
+      /begin AXIS_DESCR                 
+        /* Description of Y-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_IN_Spd_Kph
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      16
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_PLAN_VehicleSpd_TabY_Kph
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_Plan_LCKIEAyDtLimit_Tab_ms3
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      MAP
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_Plan_LCKIEAyDtLimit_Tab_ms3@ */
+      /* Record Layout          */      Lookup2D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_PreDisCurve_m
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      13
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_PLAN_PreDisCurve_TabX_m
+      /end AXIS_DESCR
+      /begin AXIS_DESCR                 
+        /* Description of Y-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_IN_Spd_Kph
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      16
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_PLAN_VehicleSpd_TabY_Kph
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_LATC_StateActivAngleSlopeLimit_ratio
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      MAP
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_StateActivAngleSlopeLimit_ratio@ */
+      /* Record Layout          */      Lookup2D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_LATC_AngleSlopeFlg_st
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_uint8
+        /* Number of Axis Pts     */      5
+        /* Lower Limit            */      0
+        /* Upper Limit            */      255
+        AXIS_PTS_REF                      P_LCS_LATC_StateActiveFlg_TabX_st
+      /end AXIS_DESCR
+      /begin AXIS_DESCR                 
+        /* Description of Y-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LCS_LATC_HoldTime_s
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_double
+        /* Number of Axis Pts     */      15
+        /* Lower Limit            */      -1.7E+308
+        /* Upper Limit            */      1.7E+308
+        AXIS_PTS_REF                      P_LCS_LATC_StateActiveHoldTime_TabY_st
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    
+    /begin AXIS_PTS
+      /* Name                   */      P_LCS_LATC_StateActiveFlg_TabX_st
+      /* Long Identifier        */      ""
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_StateActiveFlg_TabX_st@ */
+      /* Input Quantity         */      LCS_LATC_AngleSlopeFlg_st
+      /* Record Layout          */      Lookup2D_X_UBYTE
+      /* Maximum Difference     */      0
+      /* Conversion Method      */      PubIfControlLATC_MDL_CM_uint8
+      /* Number of Axis Pts     */      5
+      /* Lower Limit            */      0
+      /* Upper Limit            */      255
+    /end AXIS_PTS
+    
+    /begin AXIS_PTS
+      /* Name                   */      P_LCS_LATC_StateActiveHoldTime_TabY_st
+      /* Long Identifier        */      ""
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_StateActiveHoldTime_TabY_st@ */
+      /* Input Quantity         */      LCS_LATC_HoldTime_s
+      /* Record Layout          */      Lookup2D_X_FLOAT64_IEEE
+      /* Maximum Difference     */      0
+      /* Conversion Method      */      PubIfControlLATC_MDL_CM_double
+      /* Number of Axis Pts     */      15
+      /* Lower Limit            */      -1.7E+308
+      /* Upper Limit            */      1.7E+308
+    /end AXIS_PTS
+    
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_LATC_CurOffsetCurveFliterTime_Tab_s
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_CurOffsetCurveFliterTime_Tab_s@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      NO_INPUT_QUANTITY
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+        /* Number of Axis Pts     */      10
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LCS_LATC_CurOffsetCurve_TabX_m
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin AXIS_PTS
+      /* Name                   */      P_LCS_LATC_CurOffsetCurve_TabX_m
+      /* Long Identifier        */      ""
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_CurOffsetCurve_TabX_m@ */
+      /* Input Quantity         */      NO_INPUT_QUANTITY
+      /* Record Layout          */      Lookup1D_X_FLOAT32_IEEE
+      /* Maximum Difference     */      0
+      /* Conversion Method      */      PubIfControlLATC_MDL_CM_single
+      /* Number of Axis Pts     */      10
+      /* Lower Limit            */      -3.4E+38
+      /* Upper Limit            */      3.4E+38
+    /end AXIS_PTS
+    
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_PLAN_StateActivAngleSlope_Tab_ratio
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      MAP
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_PLAN_StateActivAngleSlope_Tab_ratio@ */
+      /* Record Layout          */      Lookup2D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      NO_INPUT_QUANTITY
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_uint8
+        /* Number of Axis Pts     */      5
+        /* Lower Limit            */      0
+        /* Upper Limit            */      255
+        AXIS_PTS_REF                      P_LCS_PLAN_StateActiveFlg_TabX_st
+      /end AXIS_DESCR
+      /begin AXIS_DESCR                 
+        /* Description of Y-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      NO_INPUT_QUANTITY
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_double
+        /* Number of Axis Pts     */      15
+        /* Lower Limit            */      -1.7E+308
+        /* Upper Limit            */      1.7E+308
+        AXIS_PTS_REF                      P_LCS_PLAN_StateActiveHoldTime_TabY_s
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    
+    /begin AXIS_PTS
+      /* Name                   */      P_LCS_PLAN_StateActiveFlg_TabX_st
+      /* Long Identifier        */      ""
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_PLAN_StateActiveFlg_TabX_st@ */
+      /* Input Quantity         */      NO_INPUT_QUANTITY
+      /* Record Layout          */      Lookup2D_X_UBYTE
+      /* Maximum Difference     */      0
+      /* Conversion Method      */      PubIfControlLATC_MDL_CM_uint8
+      /* Number of Axis Pts     */      5
+      /* Lower Limit            */      0
+      /* Upper Limit            */      255
+    /end AXIS_PTS
+    
+    /begin AXIS_PTS
+      /* Name                   */      P_LCS_PLAN_StateActiveHoldTime_TabY_s
+      /* Long Identifier        */      ""
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_PLAN_StateActiveHoldTime_TabY_s@ */
+      /* Input Quantity         */      NO_INPUT_QUANTITY
+      /* Record Layout          */      Lookup2D_X_FLOAT64_IEEE
+      /* Maximum Difference     */      0
+      /* Conversion Method      */      PubIfControlLATC_MDL_CM_double
+      /* Number of Axis Pts     */      15
+      /* Lower Limit            */      -1.7E+308
+      /* Upper Limit            */      1.7E+308
+    /end AXIS_PTS
+    
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_PLAN_StateCompleteAngleSlope_Tab_ratio
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      MAP
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_PLAN_StateCompleteAngleSlope_Tab_ratio@ */
+      /* Record Layout          */      Lookup2D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      NO_INPUT_QUANTITY
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_uint8
+        /* Number of Axis Pts     */      3
+        /* Lower Limit            */      0
+        /* Upper Limit            */      255
+        AXIS_PTS_REF                      P_LCS_PLAN_StateCompleteFlg_TabX_st
+      /end AXIS_DESCR
+      /begin AXIS_DESCR                 
+        /* Description of Y-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      NO_INPUT_QUANTITY
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_double
+        /* Number of Axis Pts     */      15
+        /* Lower Limit            */      -1.7E+308
+        /* Upper Limit            */      1.7E+308
+        AXIS_PTS_REF                      P_LCS_PLAN_StateActiveHoldTime_TabY_s
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    
+    /begin AXIS_PTS
+      /* Name                   */      P_LCS_PLAN_StateCompleteFlg_TabX_st
+      /* Long Identifier        */      ""
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_PLAN_StateCompleteFlg_TabX_st@ */
+      /* Input Quantity         */      NO_INPUT_QUANTITY
+      /* Record Layout          */      Lookup2D_X_UBYTE
+      /* Maximum Difference     */      0
+      /* Conversion Method      */      PubIfControlLATC_MDL_CM_uint8
+      /* Number of Axis Pts     */      3
+      /* Lower Limit            */      0
+      /* Upper Limit            */      255
+    /end AXIS_PTS
+    
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LCS_PLAN_LCCompletePreDisFac_Tab_ratio
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      MAP
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_PLAN_LCCompletePreDisFac_Tab_ratio@ */
+      /* Record Layout          */      Lookup2D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      NO_INPUT_QUANTITY
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_uint8
+        /* Number of Axis Pts     */      3
+        /* Lower Limit            */      0
+        /* Upper Limit            */      255
+        AXIS_PTS_REF                      P_LCS_PLAN_StateCompleteFlg_TabX_st
+      /end AXIS_DESCR
+      /begin AXIS_DESCR                 
+        /* Description of Y-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      NO_INPUT_QUANTITY
+        /* Conversion Method      */      PubIfControlLATC_MDL_CM_double
+        /* Number of Axis Pts     */      15
+        /* Lower Limit            */      -1.7E+308
+        /* Upper Limit            */      1.7E+308
+        AXIS_PTS_REF                      P_LCS_PLAN_StateActiveHoldTime_TabY_s
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_ESSOverrideTime1 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_ESSOverrideTime1@ */
+      /* Record Layout          */      Scalar_FLOAT64_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_double
+      /* Lower limit            */      -1.7E+308
+      /* Upper limit            */      1.7E+308
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_ESSOverrideTime2 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_ESSOverrideTime2@ */
+      /* Record Layout          */      Scalar_FLOAT64_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_double
+      /* Lower limit            */      -1.7E+308
+      /* Upper limit            */      1.7E+308
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_ESSOverrideTime3 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_ESSOverrideTime3@ */
+      /* Record Layout          */      Scalar_FLOAT64_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_double
+      /* Lower limit            */      -1.7E+308
+      /* Upper limit            */      1.7E+308
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_LATC_TarAngleFliterWindowSize 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_TarAngleFliterWindowSize@ */
+      /* Record Layout          */      Scalar_FLOAT64_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_double
+      /* Lower limit            */      -1.7E+308
+      /* Upper limit            */      1.7E+308
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_NoOverRideTime_TH_s 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_NoOverRideTime_TH_s@ */
+      /* Record Layout          */      Scalar_FLOAT64_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_double
+      /* Lower limit            */      -1.7E+308
+      /* Upper limit            */      1.7E+308
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_OverRideDetect_b 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_OverRideDetect_b@ */
+      /* Record Layout          */      Scalar_FLOAT64_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_double
+      /* Lower limit            */      -1.7E+308
+      /* Upper limit            */      1.7E+308
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_OverRideTime_TH_s 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_OverRideTime_TH_s@ */
+      /* Record Layout          */      Scalar_FLOAT64_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_double
+      /* Lower limit            */      -1.7E+308
+      /* Upper limit            */      1.7E+308
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_Global_CharSpd_ms 
+      /* Long Identifier        */      "车辆特征车速（过渡转向和转向不足的临界车速，ESP提供）"
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_Global_CharSpd_ms@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single_m_s
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_Global_SteeringAngleRatio 
+      /* Long Identifier        */      "方向盘与前轮转角传动比"
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_Global_SteeringAngleRatio@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_Global_WheelBase_m 
+      /* Long Identifier        */      "轴距"
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_Global_WheelBase_m@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single_m
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_DetNoOverRide_DrvTrq_TH 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_DetNoOverRide_DrvTrq_TH@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_DetOverRide_DrvTrq_TH 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_DetOverRide_DrvTrq_TH@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_ESSOverrideValue1 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_ESSOverrideValue1@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_ESSOverrideValue2 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_ESSOverrideValue2@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_ESS_NotActiveFlgDelayTime 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_ESS_NotActiveFlgDelayTime@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_ESS_NotActiveFlgDelayTimeSW 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_ESS_NotActiveFlgDelayTimeSW@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_ESS_SteerAngleFilterTime 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_ESS_SteerAngleFilterTime@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_ESS_TarAngleFilterTime 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_ESS_TarAngleFilterTime@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_IN_Offset_Test_Value 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_IN_Offset_Test_Value@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_LATC_CurOffsetA2FliterT_s 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_CurOffsetA2FliterT_s@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_LATC_CurOffsetVehicleSpdLimitValue_degs 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_CurOffsetVehicleSpdLimitValue_degs@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_LATC_MPCDeltaT_s 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_MPCDeltaT_s@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_LATC_MPCMaxSterAngleSpd_degs 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_MPCMaxSterAngleSpd_degs@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_LATC_MPCMaxSterAngle_deg 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_MPCMaxSterAngle_deg@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_LCC_HeadingErRrateTime_s 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LCC_HeadingErRrateTime_s@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_LCC_HeadingErrTime_s 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LCC_HeadingErrTime_s@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_LCC_LaterErrRateTime_s 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LCC_LaterErrRateTime_s@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_LCC_LaterErrTime_s 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LCC_LaterErrTime_s@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_LCC_RefThetaTime_s 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LCC_RefThetaTime_s@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_LCC_RefcurveTime_s 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LCC_RefcurveTime_s@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_PLAN_A2FliterTime_s 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_PLAN_A2FliterTime_s@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_PLAN_DisFac_Tab_ratio 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_PLAN_DisFac_Tab_ratio@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_PLAN_MinDis_m 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_PLAN_MinDis_m@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_PLAN_PreDis_Tab_m 
+      /* Long Identifier        */      ""
+      /* Type                   */      VAL_BLK
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_PLAN_PreDis_Tab_m@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Array Size             */      MATRIX_DIM 1 16 1
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_PlLAN_PreDisFac_Tab_ratio 
+      /* Long Identifier        */      ""
+      /* Type                   */      VAL_BLK
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_PlLAN_PreDisFac_Tab_ratio@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Array Size             */      MATRIX_DIM 7 13 1
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_Plan_A2Pretime_s 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_Plan_A2Pretime_s@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_LATC_StateHoldTime_st 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_LATC_StateHoldTime_st@ */
+      /* Record Layout          */      Scalar_UWORD 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_uint16
+      /* Lower limit            */      0
+      /* Upper limit            */      65535
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_PLAN_StateHoldTime_st 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_PLAN_StateHoldTime_st@ */
+      /* Record Layout          */      Scalar_UWORD 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_uint16
+      /* Lower limit            */      0
+      /* Upper limit            */      65535
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_ESS_LogicTest_Enable 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_ESS_LogicTest_Enable@ */
+      /* Record Layout          */      Scalar_BOOLEAN 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_boolean
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_IN_Offset_Test_SW 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_IN_Offset_Test_SW@ */
+      /* Record Layout          */      Scalar_UBYTE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_uint8
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LCS_Trq_Switch 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LCS_Trq_Switch@ */
+      /* Record Layout          */      Scalar_UBYTE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_uint8
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+    /end CHARACTERISTIC
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_LATC_HoldTime_s
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT64_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_double
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -1.7E+308
+      /* Upper limit            */      1.7E+308
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_LATC_HoldTime_s@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_PLAN_Trajectory_NumTraj
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT64_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_double
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -1.7E+308
+      /* Upper limit            */      1.7E+308
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_PLAN_Trajectory_NumTraj@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_SubModel_Number
+      /* Long identifier        */      ""
+      /* Data type              */      ULONG
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_uint32
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      4294967295
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_SubModel_Number@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_SubModel_VERSION
+      /* Long identifier        */      ""
+      /* Data type              */      ULONG
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_uint32
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      4294967295
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_SubModel_VERSION@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_IN_EPS_DrvInpTrqVal
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_IN_EPS_DrvInpTrqVal@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_IN_SteerWheelSpd
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_IN_SteerWheelSpd@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_ESS_SteerWheelAngleSpd
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_ESS_SteerWheelAngleSpd@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_ESS_SteerWheelAngleSpdFilter
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_ESS_SteerWheelAngleSpdFilter@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_ESS_TarAngleSpd
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_ESS_TarAngleSpd@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_ESS_TarAngleSpdFilter
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_ESS_TarAngleSpdFilter@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_IN_vxvRefMs
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_IN_vxvRefMs@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_IN_SteerWheelSpdSign
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_IN_SteerWheelSpdSign@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_IN_SteerWheelAngleSign
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_IN_SteerWheelAngleSign@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_IN_SteerWheelAng
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_IN_SteerWheelAng@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_IN_CurrentLaneWidth
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_IN_CurrentLaneWidth@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_IN_EPS_LKATorqOvrlDlvd
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_IN_EPS_LKATorqOvrlDlvd@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_IN_EPS_LKATorqOvrlDlvdVld
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_IN_EPS_LKATorqOvrlDlvdVld@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_IN_CurSteerAngle_deg
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_IN_CurSteerAngle_deg@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_IN_SteerAngOffset_deg
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_IN_SteerAngOffset_deg@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_LATC_CorrectSteerAngle_deg
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_LATC_CorrectSteerAngle_deg@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_IN_Spd_Kph
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_IN_Spd_Kph@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_LATC_MaxAy_ms2
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_LATC_MaxAy_ms2@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_LATC_StateActAngleSlope_degs
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_LATC_StateActAngleSlope_degs@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_LATC_StateAngleSlope_degs
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_LATC_StateAngleSlope_degs@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_IN_psiDtOpt
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_IN_psiDtOpt@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_IN_desLaneA2
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_IN_desLaneA2@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_LATC_TarAngleFilter_deg
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_LATC_TarAngleFilter_deg@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_LATC_OutTrgSteerAngle
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_LATC_OutTrgSteerAngle@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_IN_kapTraj
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_IN_kapTraj@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_IN_axvRefMs2
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_IN_axvRefMs2@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_IN_desLaneA3
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_IN_desLaneA3@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_IN_desLaneA1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_IN_desLaneA1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_IN_desLaneA0
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_IN_desLaneA0@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_PreDisCurve_m
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_PreDisCurve_m@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_Plan_AyDtlimit
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_Plan_AyDtlimit@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_Plan_FinalpreDis
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_Plan_FinalpreDis@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_CurSteerAngle_deg
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_CurSteerAngle_deg@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_IN_SteerAngleSpd_degs
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_IN_SteerAngleSpd_degs@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_EqA0
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_EqA0@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_IN_ayvRefMs2
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_IN_ayvRefMs2@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_IN_alpSideSlipAngle
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_IN_alpSideSlipAngle@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_PLAN_TrajectoryX
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Layout                 */      LAYOUT  ROW_DIR
+      /* Array size             */      MATRIX_DIM 11 1 1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_PLAN_TrajectoryX@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_PLAN_Trajectory_PlanY
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Layout                 */      LAYOUT  ROW_DIR
+      /* Array size             */      MATRIX_DIM 11 1 1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_PLAN_Trajectory_PlanY@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_LATC_PlanT
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_LATC_PlanT@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_LATC_PlanLength
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_LATC_PlanLength@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_LATC_PlanAyDt
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Layout                 */      LAYOUT  ROW_DIR
+      /* Array size             */      MATRIX_DIM 11 1 1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_LATC_PlanAyDt@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_LATC_CurrentSteerAngleOffset_deg
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_LATC_CurrentSteerAngleOffset_deg@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_LATC_SteerAngleCmd_deg
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_LATC_SteerAngleCmd_deg@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_LATC_Feedforward_deg
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_LATC_Feedforward_deg@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_LATC_Feedback_deg
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_LATC_Feedback_deg@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_LATC_SteerAngleLimit_deg
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_LATC_SteerAngleLimit_deg@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_LATC_MatrixResult_deg
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Layout                 */      LAYOUT  ROW_DIR
+      /* Array size             */      MATRIX_DIM 6 1 1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_LATC_MatrixResult_deg@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_LATC_TarAngle_deg
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_LATC_TarAngle_deg@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_LATC_MPCDeltaT_s
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_LATC_MPCDeltaT_s@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_Trq_Switch
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_Trq_Switch@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_IN_EPS_FailSts
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_IN_EPS_FailSts@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_IN_EPS_LKATrqOvlDlvdSts
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_IN_EPS_LKATrqOvlDlvdSts@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_IN_TarDangerlLevel_Delay2Frame
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_IN_TarDangerlLevel_Delay2Frame@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_IN_TarDangerlLevel
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_IN_TarDangerlLevel@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_OUT_AngCmdReqValVld
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_OUT_AngCmdReqValVld@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_Counter
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_Counter@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_IN_EPS_LKAAngDlvdSts
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_IN_EPS_LKAAngDlvdSts@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_LATC_AngleSlopeFlg_st
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_LATC_AngleSlopeFlg_st@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_EPSFault
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_EPSFault@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_ESS_NotActiveFlg1
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_ESS_NotActiveFlg1@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_ESS_NotActiveFlg2
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_ESS_NotActiveFlg2@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_ESS_NotActiveFlg3
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_ESS_NotActiveFlg3@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_ESS_NotActiveFlgOriginal
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_ESS_NotActiveFlgOriginal@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_ESS_NotActiveFlg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_ESS_NotActiveFlg@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_IN_desLaneValid
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_IN_desLaneValid@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_OffSetUpdate_Flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_OffSetUpdate_Flg@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_OverRideDetect_b
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_OverRideDetect_b@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCS_ESS_NotActiveDelayFlg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLATC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCS_ESS_NotActiveDelayFlg@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfControlLATC_MDL_CM_single
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      ""
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfControlLATC_MDL_CM_uint8
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%3.0"
+      /* Units                  */      ""
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfControlLATC_MDL_CM_double
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%15.10"
+      /* Units                  */      ""
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfControlLATC_MDL_CM_single_m_s
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      "m/s"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfControlLATC_MDL_CM_single_m
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      "m"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfControlLATC_MDL_CM_uint16
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%5.0"
+      /* Units                  */      ""
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfControlLATC_MDL_CM_boolean
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%1.0"
+      /* Units                  */      ""
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfControlLATC_MDL_CM_uint32
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%10.0"
+      /* Units                  */      ""
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    
+    
+    /begin GROUP 
+      /* Name                   */       PubIfControlLATC_MDL
+      /* Long identifier        */       "PubIfControlLATC_MDL"
+      /* Root                    */       ROOT
+      /begin SUB_GROUP
+        Root_Subsystem_Reference
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       Root_Subsystem_Reference
+      /* Long identifier        */       "PubIfControlLATC_MDL/Subsystem Reference"
+      /begin SUB_GROUP
+        S1_LATC
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S1_LATC
+      /* Long identifier        */       "PubIfControlLATC_MDL/Subsystem Reference/LATC"
+      /begin SUB_GROUP
+        S2_LateralControl
+      /end SUB_GROUP
+      /begin REF_CHARACTERISTIC
+        P_LCS_Trq_Switch
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        LCS_Counter
+        LCS_SubModel_Number
+        LCS_SubModel_VERSION
+        LCS_Trq_Switch
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S2_LateralControl
+      /* Long identifier        */       "PubIfControlLATC_MDL/Subsystem Reference/LATC/LateralControl"
+      /begin SUB_GROUP
+        S4_EPSFaultCheck
+        S4_ESS_SteerSpd_Test
+        S4_LCS_Angle
+      /end SUB_GROUP
+      /begin REF_CHARACTERISTIC
+        P_LCS_IN_Offset_Test_SW
+        P_LCS_IN_Offset_Test_Value
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        LCS_IN_CurrentLaneWidth
+        LCS_IN_EPS_DrvInpTrqVal
+        LCS_IN_EPS_FailSts
+        LCS_IN_EPS_LKAAngDlvdSts
+        LCS_IN_EPS_LKATorqOvrlDlvd
+        LCS_IN_EPS_LKATorqOvrlDlvdVld
+        LCS_IN_EPS_LKATrqOvlDlvdSts
+        LCS_IN_SteerAngOffset_deg
+        LCS_IN_SteerWheelAng
+        LCS_IN_SteerWheelAngleSign
+        LCS_IN_SteerWheelSpd
+        LCS_IN_SteerWheelSpdSign
+        LCS_IN_alpSideSlipAngle
+        LCS_IN_axvRefMs2
+        LCS_IN_ayvRefMs2
+        LCS_IN_desLaneA0
+        LCS_IN_desLaneA1
+        LCS_IN_desLaneA2
+        LCS_IN_desLaneA3
+        LCS_IN_kapTraj
+        LCS_IN_psiDtOpt
+        LCS_IN_vxvRefMs
+        LCS_OUT_AngCmdReqValVld
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S4_EPSFaultCheck
+      /* Long identifier        */       "PubIfControlLATC_MDL/Subsystem Reference/LATC/LateralControl/EPSFaultCheck"
+      /begin REF_MEASUREMENT
+        LCS_EPSFault
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S4_ESS_SteerSpd_Test
+      /* Long identifier        */       "PubIfControlLATC_MDL/Subsystem Reference/LATC/LateralControl/ESS_SteerSpd_Test"
+      /begin SUB_GROUP
+        S16_LP_filter
+        S16_LP_filter1
+        S16_NotActiveFlgDelayTime
+      /end SUB_GROUP
+      /begin REF_CHARACTERISTIC
+        P_LCS_ESSOverrideTime1
+        P_LCS_ESSOverrideTime2
+        P_LCS_ESSOverrideTime3
+        P_LCS_ESSOverrideValue1
+        P_LCS_ESSOverrideValue2
+        P_LCS_ESS_LogicTest_Enable
+        P_LCS_ESS_NotActiveFlgDelayTime
+        P_LCS_ESS_NotActiveFlgDelayTimeSW
+        P_LCS_ESS_SteerAngleErr
+        P_LCS_ESS_SteerAngleFilterTime
+        P_LCS_ESS_TarAngleFilterTime
+        P_LCS_LATC_VehicleSpd_TabX_Kph
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        LCS_ESS_NotActiveFlg
+        LCS_ESS_NotActiveFlg1
+        LCS_ESS_NotActiveFlg2
+        LCS_ESS_NotActiveFlg3
+        LCS_ESS_NotActiveFlgOriginal
+        LCS_ESS_SteerWheelAngleSpd
+        LCS_ESS_TarAngleSpd
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S4_LCS_Angle
+      /* Long identifier        */       "PubIfControlLATC_MDL/Subsystem Reference/LATC/LateralControl/LCS_Angle"
+      /begin SUB_GROUP
+        S17_Lateral_Control
+        S17_Motion_Planning
+        S17_OverRideDetect
+        S17_SteerAngleCorrect
+        S17_Subsystem
+        S17_Vehicle_Speed
+      /end SUB_GROUP
+      /begin REF_MEASUREMENT
+        LCS_IN_TarDangerlLevel
+        LCS_IN_TarDangerlLevel_Delay2Frame
+        LCS_IN_desLaneValid
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S16_LP_filter
+      /* Long identifier        */       "PubIfControlLATC_MDL/Subsystem Reference/LATC/LateralControl/ESS_SteerSpd_Test/LP filter"
+      /begin REF_MEASUREMENT
+        LCS_ESS_TarAngleSpdFilter
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S16_LP_filter1
+      /* Long identifier        */       "PubIfControlLATC_MDL/Subsystem Reference/LATC/LateralControl/ESS_SteerSpd_Test/LP filter1"
+      /begin REF_MEASUREMENT
+        LCS_ESS_SteerWheelAngleSpdFilter
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S16_NotActiveFlgDelayTime
+      /* Long identifier        */       "PubIfControlLATC_MDL/Subsystem Reference/LATC/LateralControl/ESS_SteerSpd_Test/NotActiveFlgDelayTime"
+      /begin REF_MEASUREMENT
+        LCS_ESS_NotActiveDelayFlg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S17_Lateral_Control
+      /* Long identifier        */       "PubIfControlLATC_MDL/Subsystem Reference/LATC/LateralControl/LCS_Angle/Lateral_Control"
+      /begin SUB_GROUP
+        S36_kinematics_MPC
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S17_Motion_Planning
+      /* Long identifier        */       "PubIfControlLATC_MDL/Subsystem Reference/LATC/LateralControl/LCS_Angle/Motion_Planning"
+      /begin SUB_GROUP
+        S37_CartesianTrajectory_MPC
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S17_OverRideDetect
+      /* Long identifier        */       "PubIfControlLATC_MDL/Subsystem Reference/LATC/LateralControl/LCS_Angle/OverRideDetect"
+      /begin REF_CHARACTERISTIC
+        P_LCS_DetNoOverRide_DrvTrq_TH
+        P_LCS_DetOverRide_DrvTrq_TH
+        P_LCS_NoOverRideTime_TH_s
+        P_LCS_OverRideDetect_b
+        P_LCS_OverRideTime_TH_s
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        LCS_OverRideDetect_b
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S17_SteerAngleCorrect
+      /* Long identifier        */       "PubIfControlLATC_MDL/Subsystem Reference/LATC/LateralControl/LCS_Angle/SteerAngleCorrect"
+      /begin REF_MEASUREMENT
+        LCS_CurSteerAngle_deg
+        LCS_IN_CurSteerAngle_deg
+        LCS_IN_SteerAngleSpd_degs
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S17_Subsystem
+      /* Long identifier        */       "PubIfControlLATC_MDL/Subsystem Reference/LATC/LateralControl/LCS_Angle/Subsystem"
+      /begin REF_MEASUREMENT
+        LCS_EqA0
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S17_Vehicle_Speed
+      /* Long identifier        */       "PubIfControlLATC_MDL/Subsystem Reference/LATC/LateralControl/LCS_Angle/Vehicle_Speed"
+      /begin REF_MEASUREMENT
+        LCS_IN_Spd_Kph
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S36_kinematics_MPC
+      /* Long identifier        */       "PubIfControlLATC_MDL/Subsystem Reference/LATC/LateralControl/LCS_Angle/Lateral_Control/kinematics_MPC"
+      /begin SUB_GROUP
+        S42_Median_Filter
+        S42_SteerAngSlopeCalc
+        S42_Understeer_Offset_Calc
+      /end SUB_GROUP
+      /begin REF_CHARACTERISTIC
+        P_Global_SteeringAngleRatio
+        P_LCS_LATC_MPCDeltaT_s
+        P_LCS_LATC_MPCMatrixQ1_st
+        P_LCS_LATC_MPCMatrixQ2_st
+        P_LCS_LATC_MPCMatrixR_st
+        P_LCS_LATC_MPCMaxSterAngleSpd_degs
+        P_LCS_LATC_MPCMaxSterAngle_deg
+        P_LCS_LCC_HeadingErRrateTime_s
+        P_LCS_LCC_HeadingErrTime_s
+        P_LCS_LCC_LaterErrRateTime_s
+        P_LCS_LCC_LaterErrTime_s
+        P_LCS_LCC_RefThetaTime_s
+        P_LCS_LCC_RefcurveTime_s
+        P_LCS_VehicleSpd_TabX_Kph
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        LCS_LATC_CorrectSteerAngle_deg
+        LCS_LATC_Feedback_deg
+        LCS_LATC_Feedforward_deg
+        LCS_LATC_MPCDeltaT_s
+        LCS_LATC_MatrixResult_deg
+        LCS_LATC_OutTrgSteerAngle
+        LCS_LATC_SteerAngleCmd_deg
+        LCS_LATC_SteerAngleLimit_deg
+        LCS_LATC_TarAngle_deg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S37_CartesianTrajectory_MPC
+      /* Long identifier        */       "PubIfControlLATC_MDL/Subsystem Reference/LATC/LateralControl/LCS_Angle/Motion_Planning/CartesianTrajectory_MPC"
+      /begin SUB_GROUP
+        S62_Subsystem
+      /end SUB_GROUP
+      /begin REF_CHARACTERISTIC
+        P_LCS_PLAN_DisFac_Tab_ratio
+        P_LCS_PLAN_MinDis_m
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        LCS_LATC_PlanAyDt
+        LCS_LATC_PlanLength
+        LCS_LATC_PlanT
+        LCS_PLAN_TrajectoryX
+        LCS_PLAN_Trajectory_NumTraj
+        LCS_PLAN_Trajectory_PlanY
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S42_Median_Filter
+      /* Long identifier        */       "PubIfControlLATC_MDL/Subsystem Reference/LATC/LateralControl/LCS_Angle/Lateral_Control/kinematics_MPC/Median_Filter"
+      /begin REF_CHARACTERISTIC
+        P_LCS_LATC_TarAngleFliterWindowSize
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        LCS_LATC_TarAngleFilter_deg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S42_SteerAngSlopeCalc
+      /* Long identifier        */       "PubIfControlLATC_MDL/Subsystem Reference/LATC/LateralControl/LCS_Angle/Lateral_Control/kinematics_MPC/SteerAngSlopeCalc"
+      /begin SUB_GROUP
+        S51_Switch_Case_Action_Subsystem
+      /end SUB_GROUP
+      /begin REF_CHARACTERISTIC
+        P_LCS_LATC_ELKAngleSlope_ratio
+        P_LCS_LATC_ELKMaxLatAcc_ms2
+        P_LCS_LATC_ESSAngleSlope_ratio
+        P_LCS_LATC_ESSMaxLatAcc_ms2
+        P_LCS_LATC_LCAngleSlope_ratio
+        P_LCS_LATC_LCCancleMaxLatAcc_ms2
+        P_LCS_LATC_LCEcoAngleSlope_ratio
+        P_LCS_LATC_LCEcoMaxLatAcc_ms2
+        P_LCS_LATC_LCKAngleSlope_ratio
+        P_LCS_LATC_LCKIEAngleSlope_ratio
+        P_LCS_LATC_LCKIEMaxLatAcc_ms2
+        P_LCS_LATC_LCKMaxLatAcc_ms2
+        P_LCS_LATC_LCNormalAngleSlope_ratio
+        P_LCS_LATC_LCNormalMaxLatAcc_ms2
+        P_LCS_LATC_LCSportAngleSlope_ratio
+        P_LCS_LATC_LCSportMaxLatAcc_ms2
+        P_LCS_LATC_LKAAngleSlope_ratio
+        P_LCS_LATC_LKAMaxLatAcc_ms2
+        P_LCS_LATC_StateHoldTime_st
+        P_LCS_VehicleSpd_TabX_Kph
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        LCS_LATC_AngleSlopeFlg_st
+        LCS_LATC_HoldTime_s
+        LCS_LATC_MaxAy_ms2
+        LCS_LATC_StateActAngleSlope_degs
+        LCS_LATC_StateAngleSlope_degs
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S42_Understeer_Offset_Calc
+      /* Long identifier        */       "PubIfControlLATC_MDL/Subsystem Reference/LATC/LateralControl/LCS_Angle/Lateral_Control/kinematics_MPC/Understeer&Offset_Calc"
+      /begin SUB_GROUP
+        S53_Enabled_Subsystem
+      /end SUB_GROUP
+      /begin REF_CHARACTERISTIC
+        P_Global_CharSpd_ms
+        P_Global_SteeringAngleRatio
+        P_Global_WheelBase_m
+        P_LCS_LATC_CurOffsetA2FliterT_s
+        P_LCS_LATC_CurOffsetVehicleSpdLimitValue_degs
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        LCS_OffSetUpdate_Flg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S62_Subsystem
+      /* Long identifier        */       "PubIfControlLATC_MDL/Subsystem Reference/LATC/LateralControl/LCS_Angle/Motion_Planning/CartesianTrajectory_MPC/Subsystem"
+      /begin SUB_GROUP
+        S64_LP_filter
+        S64_Subsystem
+      /end SUB_GROUP
+      /begin REF_CHARACTERISTIC
+        P_LCS_PLAN_A2FliterTime_s
+        P_LCS_PLAN_DesLineA0_TabY_m
+        P_LCS_PLAN_LCKAyDtLimit_Tab_ms3
+        P_LCS_PLAN_LCPreDisFac_ratio
+        P_LCS_PLAN_PreDisCurve_TabX_m
+        P_LCS_PLAN_PreDis_Tab_m
+        P_LCS_PLAN_StateHoldTime_st
+        P_LCS_PLAN_TarDangerlLevel_Tabx_st
+        P_LCS_PLAN_VehicleSpd_TabY_Kph
+        P_LCS_PlLAN_PreDisFac_Tab_ratio
+        P_LCS_Plan_A2Pretime_s
+        P_LCS_Plan_ELKAyDtLimit_Tab_ms3
+        P_LCS_Plan_LCAyDtLimit_Tab_ms3
+        P_LCS_Plan_LCKIEAyDtLimit_Tab_ms3
+        P_LCS_Plan_LCNomalAyDtLimit_Tab_ms3
+        P_LCS_Plan_LCSportAyDtLimit_Tab_ms3
+        P_LCS_Plan_LKAAyDtLimit_Tab_ms3
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        LCS_Plan_AyDtlimit
+        LCS_Plan_FinalpreDis
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S51_Switch_Case_Action_Subsystem
+      /* Long identifier        */       "PubIfControlLATC_MDL/Subsystem Reference/LATC/LateralControl/LCS_Angle/Lateral_Control/kinematics_MPC/SteerAngSlopeCalc/Switch Case Action Subsystem"
+      /begin REF_CHARACTERISTIC
+        P_LCS_LATC_StateActivAngleSlopeLimit_ratio
+        P_LCS_LATC_StateActiveFlg_TabX_st
+        P_LCS_LATC_StateActiveHoldTime_TabY_st
+      /end REF_CHARACTERISTIC
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S53_Enabled_Subsystem
+      /* Long identifier        */       "PubIfControlLATC_MDL/Subsystem Reference/LATC/LateralControl/LCS_Angle/Lateral_Control/kinematics_MPC/Understeer&Offset_Calc/Enabled Subsystem"
+      /begin REF_CHARACTERISTIC
+        P_Global_SteeringAngleRatio
+        P_LCS_LATC_CurOffsetCurveFliterTime_Tab_s
+        P_LCS_LATC_CurOffsetCurve_TabX_m
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        LCS_LATC_CurrentSteerAngleOffset_deg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S64_LP_filter
+      /* Long identifier        */       "PubIfControlLATC_MDL/Subsystem Reference/LATC/LateralControl/LCS_Angle/Motion_Planning/CartesianTrajectory_MPC/Subsystem/LP filter"
+      /begin REF_MEASUREMENT
+        LCS_PreDisCurve_m
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S64_Subsystem
+      /* Long identifier        */       "PubIfControlLATC_MDL/Subsystem Reference/LATC/LateralControl/LCS_Angle/Motion_Planning/CartesianTrajectory_MPC/Subsystem/Subsystem"
+      /begin SUB_GROUP
+        S68_Switch_Case_Action_Subsystem
+        S68_Switch_Case_Action_Subsystem2
+        S68_Switch_Case_Action_Subsystem5
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S68_Switch_Case_Action_Subsystem
+      /* Long identifier        */       "PubIfControlLATC_MDL/Subsystem Reference/LATC/LateralControl/LCS_Angle/Motion_Planning/CartesianTrajectory_MPC/Subsystem/Subsystem/Switch Case Action Subsystem"
+      /begin REF_CHARACTERISTIC
+        P_LCS_PLAN_StateActivAngleSlope_Tab_ratio
+        P_LCS_PLAN_StateActiveFlg_TabX_st
+        P_LCS_PLAN_StateActiveHoldTime_TabY_s
+      /end REF_CHARACTERISTIC
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S68_Switch_Case_Action_Subsystem2
+      /* Long identifier        */       "PubIfControlLATC_MDL/Subsystem Reference/LATC/LateralControl/LCS_Angle/Motion_Planning/CartesianTrajectory_MPC/Subsystem/Subsystem/Switch Case Action Subsystem2"
+      /begin REF_CHARACTERISTIC
+        P_LCS_PLAN_StateActiveHoldTime_TabY_s
+        P_LCS_PLAN_StateCompleteAngleSlope_Tab_ratio
+        P_LCS_PLAN_StateCompleteFlg_TabX_st
+      /end REF_CHARACTERISTIC
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S68_Switch_Case_Action_Subsystem5
+      /* Long identifier        */       "PubIfControlLATC_MDL/Subsystem Reference/LATC/LateralControl/LCS_Angle/Motion_Planning/CartesianTrajectory_MPC/Subsystem/Subsystem/Switch Case Action Subsystem5"
+      /begin REF_CHARACTERISTIC
+        P_LCS_PLAN_LCCompletePreDisFac_Tab_ratio
+        P_LCS_PLAN_StateActiveHoldTime_TabY_s
+        P_LCS_PLAN_StateCompleteFlg_TabX_st
+      /end REF_CHARACTERISTIC
+    /end GROUP
+    
+    
+  /end MODULE
+  
+  
+/end PROJECT
+/* EOF PubIfControlLATC_MDL.a2l*/

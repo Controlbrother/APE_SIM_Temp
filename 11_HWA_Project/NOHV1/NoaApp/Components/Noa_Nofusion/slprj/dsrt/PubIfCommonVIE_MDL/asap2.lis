@@ -1,0 +1,17 @@
+P_Global_CharSpd_ms 
+
+P_Global_FrontAxleToCenter_m 
+
+P_Global_RearAxleToCenter_m 
+
+P_Global_SideSlipAnglefactor 
+
+P_Global_SteeringAngleRatio 
+
+P_Global_WheelBase_m 
+
+P_Global_WheelTrack_m 
+
+  VIE_SW_VERSION
+  VSM_SteerAngOffsetInit
+  VSM_SteerAngleOffset_deg

@@ -1,0 +1,15 @@
+Simulink.data.dictionary.closeAll
+addpath(genpath('../../Adas'));
+addpath(genpath('../../projcct'));
+%addpath(genpath('../../ids-l2-v71-ice-models-aeb/sldds/private_interface'));
+addpath(genpath('McuEQ4Parse'));
+addpath(genpath('RoadFusion_L3'));
+addpath(genpath('Com'));
+addpath(genpath('LM_TOS'));
+%addpath(genpath('Public'));
+addpath('Fusion/fusObject');
+addpath(genpath('Fusion/fusObject/src'));
+addpath('Fusion/fusRoad');
+addpath(genpath('Fusion/fusRoad/src'));
+addpath(genpath('ABXMAT'));
+load('V71angle.mat');

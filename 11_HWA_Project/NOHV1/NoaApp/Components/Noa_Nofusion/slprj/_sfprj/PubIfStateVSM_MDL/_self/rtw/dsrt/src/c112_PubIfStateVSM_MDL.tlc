@@ -1,0 +1,138 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  1 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   17 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "is_Main"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Main"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_Time"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Time"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_Time2"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Time2"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_Handson_State"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "LKA_ELK_HandsOfwarning.Handson_State"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_LKAELK_State"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "LKA_ELK_HandsOfwarning.LKAELK_State"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Cnt"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Cnt"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Cnt2"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Cnt2"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "HandOn_condition"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "HandOn_condition"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Cnt_Inter"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Cnt_Inter"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Cnt_Time"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Cnt_Time"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Handsoff_cnt"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Handsoff_cnt"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Handsoff_cntK1"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Handsoff_cntK1"\
+      SrcLocation  ""\
+      Dimensions   [100,1]\
+    }\
+    ChartData {\
+      Name         "Cnt_LCK"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Cnt_LCK"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Warn_State"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Warn_State"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Hands0ff_Cnt"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Hands0ff_Cnt"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Cnt_Inter_Time"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Cnt_Inter_Time"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Inter_Flag"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Inter_Flag"\
+      SrcLocation  ""\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

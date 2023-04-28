@@ -1,0 +1,400 @@
+/*
+ ****************************************************************************
+ * ASAP2 file: PubIfDecisionPLAN_MDL.a2l
+ *
+ * Copyright 2022, dSPACE GmbH. All rights reserved.
+ *
+ ****************************************************************************
+ */
+
+ASAP2_VERSION  1 61   /* Version 1.61 */
+
+/begin PROJECT PubIfDecisionPLAN_MDL ""
+  
+  /begin HEADER ""
+    VERSION      "1.99"       
+    PROJECT_NO   PubIfDecisionPLAN_MDL
+  /end HEADER
+  
+  
+  /begin MODULE PubIfDecisionPLAN_MDL  ""
+    
+    
+    
+    /begin RECORD_LAYOUT Scalar_BOOLEAN
+      FNC_VALUES  1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_UBYTE
+      FNC_VALUES  1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_BYTE
+      FNC_VALUES  1 SBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_UWORD
+      FNC_VALUES  1 UWORD ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_SWORD
+      FNC_VALUES 1 SWORD ROW_DIR DIRECT
+    /end RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_ULONG
+      FNC_VALUES  1 ULONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_LONG
+      FNC_VALUES  1 SLONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_FLOAT32_IEEE
+      FNC_VALUES  1 FLOAT32_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_FLOAT64_IEEE
+      FNC_VALUES  1 FLOAT64_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    
+    /begin RECORD_LAYOUT Lookup1D_BOOLEAN
+      FNC_VALUES  1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_BYTE
+      FNC_VALUES  1 SBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_UBYTE
+      FNC_VALUES  1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_UWORD
+      FNC_VALUES  1 UWORD ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_WORD
+      FNC_VALUES  1 SWORD ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_ULONG
+      FNC_VALUES  1 ULONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_LONG
+      FNC_VALUES  1 SLONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_FLOAT32_IEEE
+      FNC_VALUES  1 FLOAT32_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_FLOAT64_IEEE
+      FNC_VALUES  1 FLOAT64_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_BOOLEAN
+      AXIS_PTS_X  1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT 
+    
+    /begin RECORD_LAYOUT Lookup1D_X_BYTE
+      AXIS_PTS_X  1 SBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_UBYTE
+      AXIS_PTS_X  1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_UWORD
+      AXIS_PTS_X  1 UWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_WORD
+      AXIS_PTS_X  1 SWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_ULONG
+      AXIS_PTS_X  1 ULONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_LONG
+      AXIS_PTS_X  1 SLONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT    
+    
+    /begin RECORD_LAYOUT Lookup1D_X_FLOAT32_IEEE
+      AXIS_PTS_X  1 FLOAT32_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_FLOAT64_IEEE
+      AXIS_PTS_X  1 FLOAT64_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT   
+    
+    
+    
+    /begin RECORD_LAYOUT Lookup2D_BOOLEAN
+      FNC_VALUES  1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT    
+    
+    /begin RECORD_LAYOUT Lookup2D_UBYTE
+      FNC_VALUES     1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_BYTE
+      FNC_VALUES     1 SBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_UWORD
+      FNC_VALUES     1 UWORD ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_WORD
+      FNC_VALUES     1 SWORD ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_ULONG
+      FNC_VALUES     1 ULONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_LONG
+      FNC_VALUES     1 SLONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_FLOAT32_IEEE
+      FNC_VALUES     1 FLOAT32_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_FLOAT64_IEEE
+      FNC_VALUES     1 FLOAT64_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_BOOLEAN
+      AXIS_PTS_X     1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT    
+    
+    /begin RECORD_LAYOUT Lookup2D_X_UBYTE
+      AXIS_PTS_X     1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_BYTE
+      AXIS_PTS_X     1 SBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_UWORD
+      AXIS_PTS_X     1 UWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_WORD
+      AXIS_PTS_X     1 SWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_ULONG
+      AXIS_PTS_X     1 ULONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_LONG
+      AXIS_PTS_X     1 SLONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_FLOAT32_IEEE
+      AXIS_PTS_X     1 FLOAT32_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_FLOAT64_IEEE
+      AXIS_PTS_X     1 FLOAT64_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_Global_DxvFrontBumper_m 
+      /* Long Identifier        */      "后轴到前杠前边缘的X向位置"
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_Global_DxvFrontBumper_m@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfDecisionPLAN_MDL_CM_single_m
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_Global_DxvRearBumper_m 
+      /* Long Identifier        */      "后轴中心到后杠后边缘中心的X向位置"
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_Global_DxvRearBumper_m@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfDecisionPLAN_MDL_CM_single_m
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_Global_WheelBase_m 
+      /* Long Identifier        */      "轴距"
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_Global_WheelBase_m@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfDecisionPLAN_MDL_CM_single_m
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_Global_WheelTrack_m 
+      /* Long Identifier        */      "轮距"
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_Global_WheelTrack_m@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfDecisionPLAN_MDL_CM_single_m
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      PLAN_ALC_LcOverTkLe_ALCSwtOn
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionPLAN_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@PLAN_ALC_LcOverTkLe_ALCSwtOn@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      PLAN_ALC_LcOverTkRi_ALCSwtOn
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionPLAN_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@PLAN_ALC_LcOverTkRi_ALCSwtOn@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfDecisionPLAN_MDL_CM_single_m
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      "m"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfDecisionPLAN_MDL_CM_boolean
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%1.0"
+      /* Units                  */      ""
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    
+    
+    /begin GROUP 
+      /* Name                   */       PubIfDecisionPLAN_MDL
+      /* Long identifier        */       "PubIfDecisionPLAN_MDL"
+      /* Root                    */       ROOT
+      /begin SUB_GROUP
+        Root_Subsystem_Reference
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       Root_Subsystem_Reference
+      /* Long identifier        */       "PubIfDecisionPLAN_MDL/Subsystem Reference"
+      /begin SUB_GROUP
+        S1_Subsystem_Reference1
+        S1_Subsystem_Reference2
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S1_Subsystem_Reference1
+      /* Long identifier        */       "PubIfDecisionPLAN_MDL/Subsystem Reference/Subsystem Reference1"
+      /begin SUB_GROUP
+        S4_LcCancelFinishCalc1
+        S4_LcOverTk
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S1_Subsystem_Reference2
+      /* Long identifier        */       "PubIfDecisionPLAN_MDL/Subsystem Reference/Subsystem Reference2"
+      /begin SUB_GROUP
+        S5_DPCLock
+        S5_DangerPlausCalc
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S4_LcCancelFinishCalc1
+      /* Long identifier        */       "PubIfDecisionPLAN_MDL/Subsystem Reference/Subsystem Reference1/LcCancelFinishCalc1"
+      /begin SUB_GROUP
+        S184_Subsystem3
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S4_LcOverTk
+      /* Long identifier        */       "PubIfDecisionPLAN_MDL/Subsystem Reference/Subsystem Reference1/LcOverTk"
+      /begin REF_MEASUREMENT
+        PLAN_ALC_LcOverTkLe_ALCSwtOn
+        PLAN_ALC_LcOverTkRi_ALCSwtOn
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S5_DPCLock
+      /* Long identifier        */       "PubIfDecisionPLAN_MDL/Subsystem Reference/Subsystem Reference2/DPCLock"
+      /begin REF_CHARACTERISTIC
+        P_Global_DxvFrontBumper_m
+        P_Global_DxvRearBumper_m
+      /end REF_CHARACTERISTIC
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S5_DangerPlausCalc
+      /* Long identifier        */       "PubIfDecisionPLAN_MDL/Subsystem Reference/Subsystem Reference2/DangerPlausCalc"
+      /begin REF_CHARACTERISTIC
+        P_Global_DxvFrontBumper_m
+        P_Global_DxvRearBumper_m
+      /end REF_CHARACTERISTIC
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S184_Subsystem3
+      /* Long identifier        */       "PubIfDecisionPLAN_MDL/Subsystem Reference/Subsystem Reference1/LcCancelFinishCalc1/Subsystem3"
+      /begin REF_CHARACTERISTIC
+        P_Global_WheelBase_m
+        P_Global_WheelTrack_m
+      /end REF_CHARACTERISTIC
+    /end GROUP
+    
+    
+  /end MODULE
+  
+  
+/end PROJECT
+/* EOF PubIfDecisionPLAN_MDL.a2l*/

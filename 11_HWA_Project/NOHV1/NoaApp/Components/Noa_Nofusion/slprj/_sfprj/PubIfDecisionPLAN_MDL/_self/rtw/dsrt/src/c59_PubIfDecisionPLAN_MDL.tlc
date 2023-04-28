@@ -1,0 +1,46 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   4 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "is_active_c59_PubIfDecisionPLAN_MDL"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_c59_PubIfDecisionPLAN_MDL"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "DesiredDistGap"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "DesiredDistGap"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "dxSensObj_modify"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "dxSensObj_modify"\
+      SrcLocation  ""\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

@@ -1,0 +1,128 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ New_Signal_56 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ New_Signal_55 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1913 LAline: 64 Vector__XXX
+ SG_ LSM_LACount : 109|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ LA_Update : 9|2@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LA_4_Side : 92|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ LA_4_Range : 311|15@0+ (0.01,0) [0|327.67] "" Vector__XXX
+ SG_ LA_4_A3 : 295|16@0+ (3.73E-009,-0.000122) [-0.000122|0.00012244555] "" Vector__XXX
+ SG_ LA_4_A2 : 279|16@0+ (9.77E-007,-0.032) [-0.032|0.032027695] "" Vector__XXX
+ SG_ LA_4_A1 : 263|10@0+ (0.000977,-0.357) [-0.357|0.642471] "" Vector__XXX
+ SG_ LA_4_A0 : 247|11@0+ (0.01,-10) [-10|10.47] "" Vector__XXX
+ SG_ LA_3_Side : 26|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ LA_3_Range : 231|15@0+ (0.01,0) [0|327.67] "" Vector__XXX
+ SG_ LA_3_A3 : 215|16@0+ (3.73E-009,-0.000122) [-0.000122|0.00012244555] "" Vector__XXX
+ SG_ LA_3_A2 : 199|16@0+ (9.77E-007,-0.032) [-0.032|0.032027695] "" Vector__XXX
+ SG_ LA_3_A1 : 183|10@0+ (0.000977,-0.357) [-0.357|0.642471] "" Vector__XXX
+ SG_ LA_3_A0 : 167|11@0+ (0.01,-10) [-10|10.47] "" Vector__XXX
+ SG_ LA_2_Side : 29|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ LA_2_Range : 151|15@0+ (0.01,0) [0|327.67] "" Vector__XXX
+ SG_ LA_2_A3 : 135|16@0+ (3.73E-009,-0.000122) [-0.000122|0.00012244555] "" Vector__XXX
+ SG_ LA_2_A2 : 119|16@0+ (9.77E-007,-0.032) [-0.032|0.032027695] "" Vector__XXX
+ SG_ LA_2_A1 : 103|10@0+ (0.000977,-0.357) [-0.357|0.642471] "" Vector__XXX
+ SG_ LA_2_A0 : 87|11@0+ (0.01,-10) [-10|10.47] "" Vector__XXX
+ SG_ LA_1_Side : 12|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ LA_1_Range : 71|15@0+ (0.01,0) [0|327.67] "" Vector__XXX
+ SG_ LA_1_A3 : 55|16@0+ (3.73E-009,-0.000122) [-0.000122|0.00012244555] "" Vector__XXX
+ SG_ LA_1_A2 : 39|16@0+ (9.77E-007,-0.032) [-0.032|0.032027695] "" Vector__XXX
+ SG_ LA_1_A1 : 23|10@0+ (0.000977,-0.357) [-0.357|0.642471] "" Vector__XXX
+ SG_ LA_1_A0 : 7|11@0+ (0.01,-10) [-10|10.47] "" Vector__XXX
+
+BO_ 1912 LHline: 64 Vector__XXX
+ SG_ LSM_LREUpdate : 105|2@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LSM_LRECount : 109|4@0+ (1,0) [0|4] "" Vector__XXX
+ SG_ LSM_LRE_2_side : 90|2@0+ (1,0) [0|2] "" Vector__XXX
+ SG_ LSM_LRE_2_Ran : 311|15@0+ (0.01,0) [0|327.67] "" Vector__XXX
+ SG_ LSM_LRE_2_A3 : 295|16@0+ (3.73E-009,-0.000122) [-0.000122|0.00012244555] "" Vector__XXX
+ SG_ LSM_LRE_2_A2 : 279|16@0+ (9.77E-007,-0.032) [-0.032|0.032027695] "" Vector__XXX
+ SG_ LSM_LRE_2_A1 : 263|10@0+ (0.000977,-0.357) [-0.357|0.642471] "" Vector__XXX
+ SG_ LSM_LRE_2_A0 : 247|11@0+ (0.01,-10) [-10|10.47] "" Vector__XXX
+ SG_ LSM_LRE_1_side : 92|2@0+ (1,0) [0|2] "" Vector__XXX
+ SG_ LSM_LRE_1_Ran : 231|15@0+ (0.01,0) [0|327.67] "" Vector__XXX
+ SG_ LSM_LRE_1_A3 : 215|16@0+ (3.73E-009,-0.000122) [-0.000122|0.00012244555] "" Vector__XXX
+ SG_ LSM_LRE_1_A2 : 199|16@0+ (9.77E-007,-0.032) [-0.032|0.032027695] "" Vector__XXX
+ SG_ LSM_LRE_1_A1 : 183|10@0+ (0.000977,-0.357) [-0.357|0.642471] "" Vector__XXX
+ SG_ LSM_LRE_1_A0 : 167|11@0+ (0.01,-10) [-10|10.47] "" Vector__XXX
+ SG_ LSM_LHUpdate : 25|2@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LSM_LHCount : 29|4@0+ (1,0) [0|4] "" Vector__XXX
+ SG_ LSM_LH_2_side : 10|2@0+ (1,0) [0|2] "" Vector__XXX
+ SG_ LSM_LH_2_Ran : 151|15@0+ (0.01,0) [0|327.67] "" Vector__XXX
+ SG_ LSM_LH_2_A3 : 135|16@0+ (3.73E-009,-0.000122) [-0.000122|0.00012244555] "" Vector__XXX
+ SG_ LSM_LH_2_A2 : 119|16@0+ (9.77E-007,-0.032) [-0.032|0.032027695] "" Vector__XXX
+ SG_ LSM_LH_2_A1 : 103|10@0+ (0.000977,-0.357) [-0.357|0.642471] "" Vector__XXX
+ SG_ LSM_LH_2_A0 : 87|11@0+ (0.01,-10) [-10|10.47] "" Vector__XXX
+ SG_ LSM_LH_1_side : 12|2@0+ (1,0) [0|2] "" Vector__XXX
+ SG_ LSM_LH_1_Ran : 71|15@0+ (0.01,0) [0|327.67] "" Vector__XXX
+ SG_ LSM_LH_1_A3 : 55|16@0+ (3.73E-009,-0.000122) [-0.000122|0.00012244555] "" Vector__XXX
+ SG_ LSM_LH_1_A2 : 39|16@0+ (9.77E-007,-0.032) [-0.032|0.032027695] "" Vector__XXX
+ SG_ LSM_LH_1_A1 : 23|10@0+ (0.000977,-0.357) [-0.357|0.642471] "" Vector__XXX
+ SG_ LSM_LH_1_A0 : 7|11@0+ (0.01,-10) [-10|10.47] "" Vector__XXX
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+BA_DEF_ BO_  "CANFD_BRS" ENUM  "0","1";
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD";
+BA_DEF_DEF_  "CANFD_BRS" "1";
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+BA_DEF_DEF_  "VFrameFormat" "StandardCAN";
+BA_ "BusType" "CAN FD";
+BA_ "DBName" "EQ4Lane";
+BA_ "VFrameFormat" BO_ 1913 14;
+BA_ "VFrameFormat" BO_ 1912 14;
+

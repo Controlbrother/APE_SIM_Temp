@@ -1,0 +1,81 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   9 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "is_active_c67_PubIfStateVSM_MDL"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_TJA_Main"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "TJA_Main"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_TJAOn"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "TJA_Main.TJAOn"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_W"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "TJA_Main.TJAOn.W"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_Active"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "TJA_Main.TJAOn.W.Active"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_P_SafeStopExit"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "P_SafeStopExit"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "SafeStopNum"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "SafeStopNum"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "cnt"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "cnt"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "TJASlowExistReason"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "TJASlowExistReason"\
+      SrcLocation  ""\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

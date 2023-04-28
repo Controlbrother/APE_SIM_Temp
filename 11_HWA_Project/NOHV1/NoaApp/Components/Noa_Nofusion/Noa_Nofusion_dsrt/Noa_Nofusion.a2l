@@ -1,0 +1,1002 @@
+/*
+ ****************************************************************************
+ * ASAP2 file: Noa_Nofusion.a2l
+ *
+ * Copyright 2022, dSPACE GmbH. All rights reserved.
+ *
+ ****************************************************************************
+ */
+
+ASAP2_VERSION  1 61   /* Version 1.61 */
+
+/begin PROJECT Noa_Nofusion ""
+  
+  /begin HEADER ""
+    VERSION      "1.579"       
+    PROJECT_NO   Noa_Nofusion
+  /end HEADER
+  
+  
+  /begin MODULE Noa_Nofusion  ""
+    
+    
+    
+    /begin RECORD_LAYOUT Scalar_BOOLEAN
+      FNC_VALUES  1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_UBYTE
+      FNC_VALUES  1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_BYTE
+      FNC_VALUES  1 SBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_UWORD
+      FNC_VALUES  1 UWORD ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_SWORD
+      FNC_VALUES 1 SWORD ROW_DIR DIRECT
+    /end RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_ULONG
+      FNC_VALUES  1 ULONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_LONG
+      FNC_VALUES  1 SLONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_FLOAT32_IEEE
+      FNC_VALUES  1 FLOAT32_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_FLOAT64_IEEE
+      FNC_VALUES  1 FLOAT64_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    
+    /begin RECORD_LAYOUT Lookup1D_BOOLEAN
+      FNC_VALUES  1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_BYTE
+      FNC_VALUES  1 SBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_UBYTE
+      FNC_VALUES  1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_UWORD
+      FNC_VALUES  1 UWORD ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_WORD
+      FNC_VALUES  1 SWORD ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_ULONG
+      FNC_VALUES  1 ULONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_LONG
+      FNC_VALUES  1 SLONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_FLOAT32_IEEE
+      FNC_VALUES  1 FLOAT32_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_FLOAT64_IEEE
+      FNC_VALUES  1 FLOAT64_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_BOOLEAN
+      AXIS_PTS_X  1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT 
+    
+    /begin RECORD_LAYOUT Lookup1D_X_BYTE
+      AXIS_PTS_X  1 SBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_UBYTE
+      AXIS_PTS_X  1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_UWORD
+      AXIS_PTS_X  1 UWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_WORD
+      AXIS_PTS_X  1 SWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_ULONG
+      AXIS_PTS_X  1 ULONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_LONG
+      AXIS_PTS_X  1 SLONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT    
+    
+    /begin RECORD_LAYOUT Lookup1D_X_FLOAT32_IEEE
+      AXIS_PTS_X  1 FLOAT32_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_FLOAT64_IEEE
+      AXIS_PTS_X  1 FLOAT64_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT   
+    
+    
+    
+    /begin RECORD_LAYOUT Lookup2D_BOOLEAN
+      FNC_VALUES  1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT    
+    
+    /begin RECORD_LAYOUT Lookup2D_UBYTE
+      FNC_VALUES     1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_BYTE
+      FNC_VALUES     1 SBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_UWORD
+      FNC_VALUES     1 UWORD ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_WORD
+      FNC_VALUES     1 SWORD ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_ULONG
+      FNC_VALUES     1 ULONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_LONG
+      FNC_VALUES     1 SLONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_FLOAT32_IEEE
+      FNC_VALUES     1 FLOAT32_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_FLOAT64_IEEE
+      FNC_VALUES     1 FLOAT64_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_BOOLEAN
+      AXIS_PTS_X     1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT    
+    
+    /begin RECORD_LAYOUT Lookup2D_X_UBYTE
+      AXIS_PTS_X     1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_BYTE
+      AXIS_PTS_X     1 SBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_UWORD
+      AXIS_PTS_X     1 UWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_WORD
+      AXIS_PTS_X     1 SWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_ULONG
+      AXIS_PTS_X     1 ULONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_LONG
+      AXIS_PTS_X     1 SLONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_FLOAT32_IEEE
+      AXIS_PTS_X     1 FLOAT32_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_FLOAT64_IEEE
+      AXIS_PTS_X     1 FLOAT64_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_EQ4_BC0Gain 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_EQ4_BC0Gain@ */
+      /* Record Layout          */      Scalar_FLOAT64_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      Noa_Nofusion_CM_double
+      /* Lower limit            */      -1.7E+308
+      /* Upper limit            */      1.7E+308
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_HWA_TOS_P0HeadingAngle 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_HWA_TOS_P0HeadingAngle@ */
+      /* Record Layout          */      Scalar_FLOAT64_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      Noa_Nofusion_CM_double
+      /* Lower limit            */      -1.7E+308
+      /* Upper limit            */      1.7E+308
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_Global_DxvFrontBumper_m 
+      /* Long Identifier        */      "后轴到前杠前边缘的X向位置"
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_Global_DxvFrontBumper_m@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      Noa_Nofusion_CM_single_m
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_Global_EQ2RearAxisX_m 
+      /* Long Identifier        */      "后轴中心点到摄像头光心的X向位置"
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_Global_EQ2RearAxisX_m@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      Noa_Nofusion_CM_single_m
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_Global_EQ2RearAxisY_m 
+      /* Long Identifier        */      "摄像头光心到后轴中心点的Y向位置"
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_Global_EQ2RearAxisY_m@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      Noa_Nofusion_CM_single_m
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_Global_SteeringAngleRatio 
+      /* Long Identifier        */      "方向盘与前轮转角传动比"
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_Global_SteeringAngleRatio@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      Noa_Nofusion_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_TOSS_DxOffset 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_TOSS_DxOffset@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      Noa_Nofusion_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_RFM_RoadType 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_RFM_RoadType@ */
+      /* Record Layout          */      Scalar_UBYTE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      Noa_Nofusion_CM_uint8
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_RFM_mapvalid 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_RFM_mapvalid@ */
+      /* Record Layout          */      Scalar_UBYTE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      Noa_Nofusion_CM_uint8
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+    /end CHARACTERISTIC
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      RFM_R1_dDisFront
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      Noa_Nofusion_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      200.0
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@RFM_R1_dDisFront@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      RFM_R1_dDisStart
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      Noa_Nofusion_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      200.0
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@RFM_R1_dDisStart@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      RFM_R1_dC3V
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      Noa_Nofusion_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -0.004
+      /* Upper limit            */      0.004
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@RFM_R1_dC3V@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      RFM_R1_dC2V
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      Noa_Nofusion_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -0.125
+      /* Upper limit            */      0.125
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@RFM_R1_dC2V@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      RFM_R1_dC1V
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      Noa_Nofusion_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -2.0
+      /* Upper limit            */      2.0
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@RFM_R1_dC1V@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      RFM_R1_dC0V
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      Noa_Nofusion_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -30.0
+      /* Upper limit            */      30.0
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@RFM_R1_dC0V@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      RFM_L1_dDisFront
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      Noa_Nofusion_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      200.0
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@RFM_L1_dDisFront@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      RFM_L1_dDisStart
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      Noa_Nofusion_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      200.0
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@RFM_L1_dDisStart@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      RFM_L1_dC3V
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      Noa_Nofusion_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -0.004
+      /* Upper limit            */      0.004
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@RFM_L1_dC3V@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      RFM_L1_dC1V
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      Noa_Nofusion_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -2.0
+      /* Upper limit            */      2.0
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@RFM_L1_dC1V@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      RFM_L1_dC0V
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      Noa_Nofusion_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -30.0
+      /* Upper limit            */      30.0
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@RFM_L1_dC0V@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      EQ4_DX
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      Noa_Nofusion_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Layout                 */      LAYOUT  ROW_DIR
+      /* Array size             */      MATRIX_DIM 20 1 1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@EQ4_DX@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCKIE_DX
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      Noa_Nofusion_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Layout                 */      LAYOUT  ROW_DIR
+      /* Array size             */      MATRIX_DIM 9 1 1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCKIE_DX@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCKIE_DY
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      Noa_Nofusion_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Layout                 */      LAYOUT  ROW_DIR
+      /* Array size             */      MATRIX_DIM 9 1 1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCKIE_DY@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCKIE_VX
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      Noa_Nofusion_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Layout                 */      LAYOUT  ROW_DIR
+      /* Array size             */      MATRIX_DIM 9 1 1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCKIE_VX@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      dxP0
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      Noa_Nofusion_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@dxP0@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_VlcInternalAcc
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      Noa_Nofusion_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_VlcInternalAcc@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LCKIE_ID
+      /* Long identifier        */      ""
+      /* Data type              */      UWORD
+      /* Conversion method      */      Noa_Nofusion_CM_ufix16_En7
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      511.9921875
+      /* Layout                 */      LAYOUT  ROW_DIR
+      /* Array size             */      MATRIX_DIM 9 1 1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LCKIE_ID@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      RFM_R1_eLineType
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      Noa_Nofusion_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@RFM_R1_eLineType@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      RFM_R1_bIsLineExist
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      Noa_Nofusion_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@RFM_R1_bIsLineExist@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      RFM_L1_eLineType
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      Noa_Nofusion_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@RFM_L1_eLineType@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      RFM_L1_bIsLineExist
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      Noa_Nofusion_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@RFM_L1_bIsLineExist@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      EQ4_Type
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      Noa_Nofusion_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Layout                 */      LAYOUT  ROW_DIR
+      /* Array size             */      MATRIX_DIM 20 1 1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@EQ4_Type@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      Object_Type
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      Noa_Nofusion_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Layout                 */      LAYOUT  ROW_DIR
+      /* Array size             */      MATRIX_DIM 9 1 1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@Object_Type@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_Line_source
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      Noa_Nofusion_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_Line_source@ */
+    /end MEASUREMENT
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      Noa_Nofusion_CM_double
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%15.10"
+      /* Units                  */      ""
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      Noa_Nofusion_CM_single_m
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      "m"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      Noa_Nofusion_CM_single
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      ""
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      Noa_Nofusion_CM_uint8
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%3.0"
+      /* Units                  */      ""
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      Noa_Nofusion_CM_ufix16_En7
+      /* Long identifier        */      "Q = V*128.000000"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%10.7"
+      /* Units                  */      ""
+      /* Coefficients           */      COEFFS 0 128.000000   0.000000 0 0   1.000000
+    /end COMPU_METHOD
+    
+    
+    
+    
+    /begin GROUP 
+      /* Name                   */       Noa_Nofusion
+      /* Long identifier        */       "Noa_Nofusion"
+      /* Root                    */       ROOT
+      /begin SUB_GROUP
+        Root_Chassis1
+        Root_Common
+        Root_Control1
+        Root_LPV
+        Root_Subsystem1
+        Root_Subsystem4
+        Root_TOS
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       Root_Chassis1
+      /* Long identifier        */       "Noa_Nofusion/Chassis1"
+      /begin SUB_GROUP
+        S6_HMI
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       Root_Common
+      /* Long identifier        */       "Noa_Nofusion/Common"
+      /begin SUB_GROUP
+        mr_grp2link_PubIfCommonVIE_MDL
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       Root_Control1
+      /* Long identifier        */       "Noa_Nofusion/Control1"
+      /begin SUB_GROUP
+        mr_grp2link_PubIfControlLATC_MDL
+        mr_grp2link_PubIfControlLONC_MDL
+      /end SUB_GROUP
+      /begin REF_MEASUREMENT
+        LongCtrl_VlcInternalAcc
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       Root_LPV
+      /* Long identifier        */       "Noa_Nofusion/LPV"
+      /begin SUB_GROUP
+        S17_Subsystem5
+        S17_VSM
+        mr_grp2link_PubIfDecisionPLAN_MDL
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       Root_Subsystem1
+      /* Long identifier        */       "Noa_Nofusion/Subsystem1"
+      /begin REF_CHARACTERISTIC
+        P_RFM_RoadType
+        P_RFM_mapvalid
+      /end REF_CHARACTERISTIC
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       Root_Subsystem4
+      /* Long identifier        */       "Noa_Nofusion/Subsystem4"
+      /begin SUB_GROUP
+        S22_Simulink_Function
+      /end SUB_GROUP
+      /begin REF_CHARACTERISTIC
+        P_EQ4_BC0Gain
+        P_Global_EQ2RearAxisX_m
+        P_Global_EQ2RearAxisY_m
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        RFM_L1_bIsLineExist
+        RFM_L1_dC0V
+        RFM_L1_dC1V
+        RFM_L1_dC3V
+        RFM_L1_dDisFront
+        RFM_L1_dDisStart
+        RFM_L1_eLineType
+        RFM_R1_bIsLineExist
+        RFM_R1_dC0V
+        RFM_R1_dC1V
+        RFM_R1_dC2V
+        RFM_R1_dC3V
+        RFM_R1_dDisFront
+        RFM_R1_dDisStart
+        RFM_R1_eLineType
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       Root_TOS
+      /* Long identifier        */       "Noa_Nofusion/TOS"
+      /begin SUB_GROUP
+        S23_Subsystem2
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S6_HMI
+      /* Long identifier        */       "Noa_Nofusion/Chassis1/HMI"
+      /begin SUB_GROUP
+        mr_grp2link_PubIfChassisHMI_MDL
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S17_Subsystem5
+      /* Long identifier        */       "Noa_Nofusion/LPV/Subsystem5"
+      /begin SUB_GROUP
+        mr_grp2link_PubIfDecisionLSM_MDL
+      /end SUB_GROUP
+      /begin REF_MEASUREMENT
+        LSM_Line_source
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S17_VSM
+      /* Long identifier        */       "Noa_Nofusion/LPV/VSM"
+      /begin SUB_GROUP
+        mr_grp2link_PubIfStateVSM_MDL
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S22_Simulink_Function
+      /* Long identifier        */       "Noa_Nofusion/Subsystem4/Simulink Function"
+      /begin REF_CHARACTERISTIC
+        P_Global_EQ2RearAxisX_m
+        P_Global_EQ2RearAxisY_m
+      /end REF_CHARACTERISTIC
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S23_Subsystem2
+      /* Long identifier        */       "Noa_Nofusion/TOS/Subsystem2"
+      /begin SUB_GROUP
+        S170_ACCOSM
+        S170_DOP
+        S170_Subsystem
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S170_ACCOSM
+      /* Long identifier        */       "Noa_Nofusion/TOS/Subsystem2/ACCOSM"
+      /begin SUB_GROUP
+        S172_HWA_Task100ms1
+      /end SUB_GROUP
+      /begin REF_CHARACTERISTIC
+        P_Global_SteeringAngleRatio
+        P_HWA_TOS_P0HeadingAngle
+        P_TOSS_DxOffset
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        dxP0
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S170_DOP
+      /* Long identifier        */       "Noa_Nofusion/TOS/Subsystem2/DOP"
+      /begin SUB_GROUP
+        S174_HWA_Task100ms1
+      /end SUB_GROUP
+      /begin REF_CHARACTERISTIC
+        P_Global_SteeringAngleRatio
+      /end REF_CHARACTERISTIC
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S170_Subsystem
+      /* Long identifier        */       "Noa_Nofusion/TOS/Subsystem2/Subsystem"
+      /begin REF_MEASUREMENT
+        EQ4_DX
+        EQ4_Type
+        LCKIE_DX
+        LCKIE_DY
+        LCKIE_ID
+        LCKIE_VX
+        Object_Type
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S172_HWA_Task100ms1
+      /* Long identifier        */       "Noa_Nofusion/TOS/Subsystem2/ACCOSM/HWA_Task100ms1"
+      /begin SUB_GROUP
+        S179_VxVy
+      /end SUB_GROUP
+      /begin REF_CHARACTERISTIC
+        P_Global_DxvFrontBumper_m
+      /end REF_CHARACTERISTIC
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S174_HWA_Task100ms1
+      /* Long identifier        */       "Noa_Nofusion/TOS/Subsystem2/DOP/HWA_Task100ms1"
+      /begin SUB_GROUP
+        S220_VxVy
+      /end SUB_GROUP
+      /begin REF_CHARACTERISTIC
+        P_Global_DxvFrontBumper_m
+      /end REF_CHARACTERISTIC
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S179_VxVy
+      /* Long identifier        */       "Noa_Nofusion/TOS/Subsystem2/ACCOSM/HWA_Task100ms1/VxVy"
+      /begin REF_CHARACTERISTIC
+        P_Global_EQ2RearAxisX_m
+      /end REF_CHARACTERISTIC
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S220_VxVy
+      /* Long identifier        */       "Noa_Nofusion/TOS/Subsystem2/DOP/HWA_Task100ms1/VxVy"
+      /begin REF_CHARACTERISTIC
+        P_Global_EQ2RearAxisX_m
+      /end REF_CHARACTERISTIC
+    /end GROUP
+    
+    
+  /end MODULE
+  
+  
+/end PROJECT
+/* EOF Noa_Nofusion.a2l*/

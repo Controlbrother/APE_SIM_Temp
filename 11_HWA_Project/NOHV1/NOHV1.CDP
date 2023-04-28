@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Root>
+	<creator type="key">ConfigurationDesk 6.6</creator>
+	<project>
+		<Creator type="key">ConfigurationDesk</Creator>
+		<MigrationHistory type="key"/>
+		<Name type="key">NOHV1.CDP</Name>
+		<DisplayName type="key">NOHV1</DisplayName>
+		<Flags type="key">4096</Flags>
+		<Type type="key">1</Type>
+		<UniqueID type="key">154244887</UniqueID>
+		<EntityID type="key">{82EBDEFD-362C-4FD0-8B64-1FDB608DCBFC}</EntityID>
+		<ItemInfoDate type="key">2021/6/8 11:22:20</ItemInfoDate>
+		<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+		<ItemInfoDescr type="key"/>
+		<ItemInfoAddInfoDb type="key"/>
+		<ItemInfoAuthor type="key">Cheng</ItemInfoAuthor>
+		<item>
+			<Targets type="key">project</Targets>
+			<Name type="key">NOHV1</Name>
+			<DisplayName type="key">NOHV1</DisplayName>
+			<Path type="key">..</Path>
+			<Flags type="key">4100</Flags>
+			<Type type="key">3</Type>
+			<UniqueID type="key">59272170</UniqueID>
+			<EntityID type="key">{9E4E728C-FECE-4705-986B-5D229E820BE2}</EntityID>
+			<ItemInfoDate type="key">2021/6/8 11:22:20</ItemInfoDate>
+			<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+			<ItemInfoDescr type="key"/>
+			<ItemInfoAddInfoDb type="key"/>
+			<ItemInfoAuthor type="key">Cheng</ItemInfoAuthor>
+			<item>
+				<Docs type="key">.doc,.docx,.txt,.pdf,.xls,.xlsx,.csv,.rtf</Docs>
+				<Name type="key">Specifications</Name>
+				<DisplayName type="key">Specifications</DisplayName>
+				<Path type="key">.</Path>
+				<Type type="key">3</Type>
+				<UniqueID type="key">372191394</UniqueID>
+				<EntityID type="key">{CC9AF495-D897-4AFB-B27C-438C889180EA}</EntityID>
+				<ItemInfoDate type="key">2021/6/8 11:22:20</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDocs type="key">.doc,.docx,.txt,.pdf,.xls,.xlsx,.csv,.rtf</ItemInfoDocs>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">Cheng</ItemInfoAuthor>
+			</item>
+			<item>
+				<Docs type="key">.mpp,.mppx</Docs>
+				<Name type="key">Project Plans</Name>
+				<DisplayName type="key">Project Plans</DisplayName>
+				<Path type="key">.</Path>
+				<Type type="key">3</Type>
+				<UniqueID type="key">768681590</UniqueID>
+				<EntityID type="key">{2E79601B-B50E-4669-A426-DFD08E61A33A}</EntityID>
+				<ItemInfoDate type="key">2021/6/8 11:22:20</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDocs type="key">.mpp,.mppx</ItemInfoDocs>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">Cheng</ItemInfoAuthor>
+			</item>
+			<item>
+				<Docs type="key">.slx,.mdl,.sic,.fmu,.ctlgz,.bsc,.mcd,.mtfx</Docs>
+				<Name type="key">Models</Name>
+				<DisplayName type="key">Models</DisplayName>
+				<Path type="key">.</Path>
+				<Type type="key">3</Type>
+				<UniqueID type="key">193225068</UniqueID>
+				<EntityID type="key">{CF34D92C-BB73-4CF6-BF61-07FEC52882B5}</EntityID>
+				<ItemInfoDate type="key">2021/6/8 11:22:20</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDocs type="key">.slx,.mdl,.sic,.fmu,.ctlgz,.bsc,.mcd,.mtfx</ItemInfoDocs>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">Cheng</ItemInfoAuthor>
+			</item>
+			<item>
+				<Docs type="key">.arxml,.ldf,.dbc,.xml</Docs>
+				<Name type="key">Communication Matrices</Name>
+				<DisplayName type="key">Communication Matrices</DisplayName>
+				<Path type="key">.</Path>
+				<Type type="key">3</Type>
+				<UniqueID type="key">553867241</UniqueID>
+				<EntityID type="key">{3374651B-3129-4ED2-8EB9-C76D091CD56F}</EntityID>
+				<ItemInfoDate type="key">2021/6/8 11:22:20</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDocs type="key">.arxml,.ldf,.dbc,.xml</ItemInfoDocs>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">Cheng</ItemInfoAuthor>
+			</item>
+			<item>
+				<Docs type="key">.xml,.cpp,.c,.h,.o,.so,.py,.pyc</Docs>
+				<Name type="key">CustomFunctions</Name>
+				<DisplayName type="key">CustomFunctions</DisplayName>
+				<Path type="key">.</Path>
+				<Type type="key">3</Type>
+				<UniqueID type="key">343865376</UniqueID>
+				<EntityID type="key">{0067155C-8909-4CA9-B392-6305BA18FA82}</EntityID>
+				<ItemInfoDate type="key">2021/6/8 11:22:20</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDocs type="key">.xml,.cpp,.c,.h,.o,.so,.py,.pyc</ItemInfoDocs>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">Cheng</ItemInfoAuthor>
+			</item>
+		</item>
+		<item>
+			<MigrationHistory type="key"/>
+			<Component type="key">ProjectApplication</Component>
+			<Name type="key">NoaApp.CDL</Name>
+			<DisplayName type="key">NoaApp</DisplayName>
+			<Path type="key">.\NoaApp</Path>
+			<Flags type="key">41216</Flags>
+			<Type type="key">14</Type>
+			<UniqueID type="key">783239169</UniqueID>
+			<EntityID type="key">{25B58803-3EFF-4AAD-96D5-DEF59FA3602A}</EntityID>
+			<ItemInfoDate type="key">2021/6/8 11:23:30</ItemInfoDate>
+			<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+			<ItemInfoDocs type="key"/>
+			<ItemInfoDescr type="key"/>
+			<ItemInfoLog type="key"/>
+			<ItemInfoAddInfoDb type="key"/>
+			<ItemInfoAuthor type="key">Cheng</ItemInfoAuthor>
+		</item>
+	</project>
+	<experiments/>
+	<UserManager/>
+	<Interpreter>
+		<PythonVersion type="key">3.6</PythonVersion>
+	</Interpreter>
+	<ProjectExperiment/>
+	<ProjectApplication>
+		<applications>
+			<application>
+				<Name type="key">NoaApp.CDL</Name>
+				<DisplayName type="key">NoaApp</DisplayName>
+				<Path type="key">.\NoaApp</Path>
+				<Component type="key">ProjectApplication</Component>
+				<Type type="key">14</Type>
+				<ApplicationType type="key">3</ApplicationType>
+				<Flags type="key">41216</Flags>
+				<ItemInfoDate type="key">2021/6/8 11:23:30</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDocs type="key"/>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAuthor type="key">Cheng</ItemInfoAuthor>
+				<Log type="key"/>
+				<AddInfoDb type="key"/>
+				<DatabaseID type="key">-1</DatabaseID>
+				<EntityID type="key">{25B58803-3EFF-4AAD-96D5-DEF59FA3602A}</EntityID>
+			</application>
+		</applications>
+		<LastActiveApplication type="key">NoaApp</LastActiveApplication>
+	</ProjectApplication>
+	<PlatformManagement/>
+</Root>

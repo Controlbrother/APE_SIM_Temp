@@ -1,0 +1,88 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  1 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   10 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "is_SlowExit"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "SlowExit"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_Main"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Main"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_P"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Main.P"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_Warning1"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Main.P.Warning1"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_Warning2"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Main.P.Warning2"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_Warning3"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Main.P.Warning3"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Cnt"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Cnt"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Cnt1"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Cnt1"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Cnt2"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Cnt2"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Cnt3"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Cnt3"\
+      SrcLocation  ""\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

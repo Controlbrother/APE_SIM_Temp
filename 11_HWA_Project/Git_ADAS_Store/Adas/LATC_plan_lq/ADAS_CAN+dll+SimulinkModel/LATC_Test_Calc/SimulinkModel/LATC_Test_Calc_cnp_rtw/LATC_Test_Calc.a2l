@@ -1,0 +1,2961 @@
+/* @@@@ File written by CANAPE_VERSION 18 0 70 @@@@ */
+
+ASAP2_VERSION 1 51
+/begin PROJECT ProjectName "Project Comment Goes Here"
+
+  /begin HEADER "Header Comments go here"
+  /end HEADER
+
+  /begin MODULE ModuleName "Module Comment Goes Here"
+
+    /begin A2ML
+
+
+      struct Protocol_Layer {
+        uint;  /* XCP protocol layer version, current 0x100 */
+        uint;  /* T1 [ms] */
+        uint;  /* T2 [ms] */
+        uint;  /* T3 [ms] */
+        uint;  /* T4 [ms] */
+        uint;  /* T5 [ms] */
+        uint;  /* T6 [ms] */
+        uint;  /* T7 [ms] */
+        uchar;  /* MAX_CTO */
+        uint;  /* MAX_DTO */
+        enum {
+          "BYTE_ORDER_MSB_LAST" = 0,
+          "BYTE_ORDER_MSB_FIRST" = 1
+        };
+        enum {
+          "ADDRESS_GRANULARITY_BYTE" = 1,
+          "ADDRESS_GRANULARITY_WORD" = 2,
+          "ADDRESS_GRANULARITY_DWORD" = 4
+        };
+        taggedstruct {
+          ("OPTIONAL_CMD" enum {
+            "GET_COMM_MODE_INFO" = 251,
+            "GET_ID" = 250,
+            "SET_REQUEST" = 249,
+            "GET_SEED" = 248,
+            "UNLOCK" = 247,
+            "SET_MTA" = 246,
+            "UPLOAD" = 245,
+            "SHORT_UPLOAD" = 244,
+            "BUILD_CHECKSUM" = 243,
+            "TRANSPORT_LAYER_CMD" = 242,
+            "USER_CMD" = 241,
+            "DOWNLOAD" = 240,
+            "DOWNLOAD_NEXT" = 239,
+            "DOWNLOAD_MAX" = 238,
+            "SHORT_DOWNLOAD" = 237,
+            "MODIFY_BITS" = 236,
+            "SET_CAL_PAGE" = 235,
+            "GET_CAL_PAGE" = 234,
+            "GET_PAG_PROCESSOR_INFO" = 233,
+            "GET_SEGMENT_INFO" = 232,
+            "GET_PAGE_INFO" = 231,
+            "SET_SEGMENT_MODE" = 230,
+            "GET_SEGMENT_MODE" = 229,
+            "COPY_CAL_PAGE" = 228,
+            "CLEAR_DAQ_LIST" = 227,
+            "SET_DAQ_PTR" = 226,
+            "WRITE_DAQ" = 225,
+            "SET_DAQ_LIST_MODE" = 224,
+            "GET_DAQ_LIST_MODE" = 223,
+            "START_STOP_DAQ_LIST" = 222,
+            "START_STOP_SYNCH" = 221,
+            "GET_DAQ_CLOCK" = 220,
+            "READ_DAQ" = 219,
+            "GET_DAQ_PROCESSOR_INFO" = 218,
+            "GET_DAQ_RESOLUTION_INFO" = 217,
+            "GET_DAQ_LIST_INFO" = 216,
+            "GET_DAQ_EVENT_INFO" = 215,
+            "FREE_DAQ" = 214,
+            "ALLOC_DAQ" = 213,
+            "ALLOC_ODT" = 212,
+            "ALLOC_ODT_ENTRY" = 211,
+            "PROGRAM_START" = 210,
+            "PROGRAM_CLEAR" = 209,
+            "PROGRAM" = 208,
+            "PROGRAM_RESET" = 207,
+            "GET_PGM_PROCESSOR_INFO" = 206,
+            "GET_SECTOR_INFO" = 205,
+            "PROGRAM_PREPARE" = 204,
+            "PROGRAM_FORMAT" = 203,
+            "PROGRAM_NEXT" = 202,
+            "PROGRAM_MAX" = 201,
+            "PROGRAM_VERIFY" = 200
+          })*;
+          "COMMUNICATION_MODE_SUPPORTED" taggedunion {
+            "BLOCK" taggedstruct {
+              "SLAVE" ;
+              "MASTER" struct {
+                uchar;  /* MAX_BS */
+                uchar;  /* MIN_ST */
+              };
+            };
+            "INTERLEAVED" uchar;  /* QUEUE_SIZE */
+          };
+          "SEED_AND_KEY_EXTERNAL_FUNCTION" char[256];  /* Name of the Seed&Key function */
+        };
+      };
+
+      struct Daq {
+        enum {
+          "STATIC" = 0,
+          "DYNAMIC" = 1
+        };
+        uint;  /* MAX_DAQ */
+        uint;  /* MAX_EVENT_CHANNEL */
+        uchar;  /* MIN_DAQ */
+        enum {
+          "OPTIMISATION_TYPE_DEFAULT" = 0,
+          "OPTIMISATION_TYPE_ODT_TYPE_16" = 1,
+          "OPTIMISATION_TYPE_ODT_TYPE_32" = 2,
+          "OPTIMISATION_TYPE_ODT_TYPE_64" = 3,
+          "OPTIMISATION_TYPE_ODT_TYPE_ALIGNMENT" = 4,
+          "OPTIMISATION_TYPE_MAX_ENTRY_SIZE" = 5
+        };
+        enum {
+          "ADDRESS_EXTENSION_FREE" = 0,
+          "ADDRESS_EXTENSION_ODT" = 1,
+          "ADDRESS_EXTENSION_DAQ" = 3
+        };
+        enum {
+          "IDENTIFICATION_FIELD_TYPE_ABSOLUTE" = 0,
+          "IDENTIFICATION_FIELD_TYPE_RELATIVE_BYTE" = 1,
+          "IDENTIFICATION_FIELD_TYPE_RELATIVE_WORD" = 2,
+          "IDENTIFICATION_FIELD_TYPE_RELATIVE_WORD_ALIGNED" = 3
+        };
+        enum {
+          "GRANULARITY_ODT_ENTRY_SIZE_DAQ_BYTE" = 1,
+          "GRANULARITY_ODT_ENTRY_SIZE_DAQ_WORD" = 2,
+          "GRANULARITY_ODT_ENTRY_SIZE_DAQ_DWORD" = 4,
+          "GRANULARITY_ODT_ENTRY_SIZE_DAQ_DLONG" = 8
+        };
+        uchar;  /* MAX_ODT_ENTRY_SIZE_DAQ */
+        enum {
+          "NO_OVERLOAD_INDICATION" = 0,
+          "OVERLOAD_INDICATION_PID" = 1,
+          "OVERLOAD_INDICATION_EVENT" = 2
+        };
+        taggedstruct {
+          "PRESCALER_SUPPORTED" ;
+          "RESUME_SUPPORTED" ;
+          block "STIM" struct {
+            enum {
+              "GRANULARITY_ODT_ENTRY_SIZE_STIM_BYTE" = 1,
+              "GRANULARITY_ODT_ENTRY_SIZE_STIM_WORD" = 2,
+              "GRANULARITY_ODT_ENTRY_SIZE_STIM_DWORD" = 4,
+              "GRANULARITY_ODT_ENTRY_SIZE_STIM_DLONG" = 8
+            };
+            uchar;  /* MAX_ODT_ENTRY_SIZE_STIM */
+            taggedstruct {
+              "BIT_STIM_SUPPORTED" ;
+            };
+          };
+          block "TIMESTAMP_SUPPORTED" struct {
+            uint;  /* TIMESTAMP_TICKS */
+            enum {
+              "NO_TIME_STAMP" = 0,
+              "SIZE_BYTE" = 1,
+              "SIZE_WORD" = 2,
+              "SIZE_DWORD" = 4
+            };
+            enum {
+              "UNIT_1NS" = 0,
+              "UNIT_10NS" = 1,
+              "UNIT_100NS" = 2,
+              "UNIT_1US" = 3,
+              "UNIT_10US" = 4,
+              "UNIT_100US" = 5,
+              "UNIT_1MS" = 6,
+              "UNIT_10MS" = 7,
+              "UNIT_100MS" = 8,
+              "UNIT_1S" = 9
+            };
+            taggedstruct {
+              "TIMESTAMP_FIXED" ;
+            };
+          };
+          "PID_OFF_SUPPORTED" ;
+          (block "DAQ_LIST" struct {
+            uint;  /* DAQ_LIST_NUMBER */
+            taggedstruct {
+              "DAQ_LIST_TYPE" enum {
+                "DAQ" = 1,
+                "STIM" = 2,
+                "DAQ_STIM" = 3
+              };
+              "MAX_ODT" uchar;
+              "MAX_ODT_ENTRIES" uchar;
+              "FIRST_PID" uchar;
+              "EVENT_FIXED" uint;
+              block "PREDEFINED" taggedstruct {
+                (block "ODT" struct {
+                  uchar;  /* ODT number */
+                  taggedstruct {
+                    ("ODT_ENTRY" struct {
+                      uchar;  /* ODT_ENTRY number */
+                      ulong;  /* address of element */
+                      uchar;  /* address extension of element */
+                      uchar;  /* size of element [AG] */
+                      uchar;  /* BIT_OFFSET */
+                    })*;
+                  };
+                })*;
+              };
+            };
+          })*;
+          (block "EVENT" struct {
+            char[101];  /* EVENT_CHANNEL_NAME       */
+            char[9];  /* EVENT_CHANNEL_SHORT_NAME */
+            uint;  /* EVENT_CHANNEL_NUMBER     */
+            enum {
+              "DAQ" = 1,
+              "STIM" = 2,
+              "DAQ_STIM" = 3
+            };
+            uchar;  /* MAX_DAQ_LIST */
+            uchar;  /* TIME_CYCLE   */
+            uchar;  /* TIME_UNIT    */
+            uchar;  /* PRIORITY     */
+          })*;
+        };
+      };
+
+      taggedunion Daq_Event {
+        "FIXED_EVENT_LIST" taggedstruct {
+          ("EVENT" uint)*;
+        };
+        "VARIABLE" taggedstruct {
+          block "AVAILABLE_EVENT_LIST" taggedstruct {
+            ("EVENT" uint)*;
+          };
+          block "DEFAULT_EVENT_LIST" taggedstruct {
+            ("EVENT" uint)*;
+          };
+        };
+      };
+
+      struct Pag {
+        uchar;  /* MAX_SEGMENTS */
+        taggedstruct {
+          "FREEZE_SUPPORTED" ;
+        };
+      };
+
+      struct Pgm {
+        enum {
+          "PGM_MODE_ABSOLUTE" = 1,
+          "PGM_MODE_FUNCTIONAL" = 2,
+          "PGM_MODE_ABSOLUTE_AND_FUNCTIONAL" = 3
+        };
+        uchar;  /* MAX_SECTORS */
+        uchar;  /* MAX_CTO_PGM */
+        taggedstruct {
+          (block "SECTOR" struct {
+            char[101];  /* SECTOR_NAME */
+            uchar;  /* SECTOR_NUMBER */
+            ulong;  /* Address */
+            ulong;  /* Length  */
+            uchar;  /* CLEAR_SEQUENCE_NUMBER */
+            uchar;  /* PROGRAM_SEQUENCE_NUMBER */
+            uchar;  /* PROGRAM_METHOD */
+          })*;
+          "COMMUNICATION_MODE_SUPPORTED" taggedunion {
+            "BLOCK" taggedstruct {
+              "SLAVE" ;
+              "MASTER" struct {
+                uchar;  /* MAX_BS_PGM */
+                uchar;  /* MIN_ST_PGM */
+              };
+            };
+            "INTERLEAVED" uchar;  /* QUEUE_SIZE_PGM */
+          };
+        };
+      };
+
+      struct Segment {
+        uchar;  /* SEGMENT_NUMBER */
+        uchar;  /* number of pages */
+        uchar;  /* ADDRESS_EXTENSION */
+        uchar;  /* COMPRESSION_METHOD */
+        uchar;  /* ENCRYPTION_METHOD */
+        taggedstruct {
+          block "CHECKSUM" struct {
+            enum {
+              "XCP_ADD_11" = 1,
+              "XCP_ADD_12" = 2,
+              "XCP_ADD_14" = 3,
+              "XCP_ADD_22" = 4,
+              "XCP_ADD_24" = 5,
+              "XCP_ADD_44" = 6,
+              "XCP_CRC_16" = 7,
+              "XCP_CRC_16_CITT" = 8,
+              "XCP_CRC_32" = 9,
+              "XCP_USER_DEFINED" = 255
+            };
+            taggedstruct {
+              "MAX_BLOCK_SIZE" ulong;
+              "EXTERNAL_FUNCTION" char[256];  /* Name of the Checksum.DLL */
+            };
+          };
+          (block "PAGE" struct {
+            uchar;  /* PAGE_NUMBER */
+            enum {
+              "ECU_ACCESS_NOT_ALLOWED" = 0,
+              "ECU_ACCESS_ALLOWED_WITHOUT_XCP_ONLY" = 1,
+              "ECU_ACCESS_ALLOWED_WITH_XCP_ONLY" = 2,
+              "ECU_ACCESS_ALLOWED_DONT_CARE" = 3
+            };
+            enum {
+              "XCP_READ_ACCESS_NOT_ALLOWED" = 0,
+              "XCP_READ_ACCESS_ALLOWED_WITHOUT_ECU_ONLY" = 1,
+              "XCP_READ_ACCESS_ALLOWED_WITH_ECU_ONLY" = 2,
+              "XCP_READ_ACCESS_ALLOWED_DONT_CARE" = 3
+            };
+            enum {
+              "XCP_WRITE_ACCESS_NOT_ALLOWED" = 0,
+              "XCP_WRITE_ACCESS_ALLOWED_WITHOUT_ECU_ONLY" = 1,
+              "XCP_WRITE_ACCESS_ALLOWED_WITH_ECU_ONLY" = 2,
+              "XCP_WRITE_ACCESS_ALLOWED_DONT_CARE" = 3
+            };
+            taggedstruct {
+              "INIT_SEGMENT" uchar;  /* references segment that initialises this page */
+            };
+          })*;
+          (block "ADDRESS_MAPPING" struct {
+            ulong;  /* source address */
+            ulong;  /* destination address */
+            ulong;  /* length */
+          })*;
+          "PGM_VERIFY" ulong;  /* verification value for PGM */
+        };
+      };
+
+      taggedstruct Common_Parameters {
+        block "PROTOCOL_LAYER" struct Protocol_Layer;
+        block "SEGMENT" struct Segment;
+        block "DAQ" struct Daq;
+        block "PAG" struct Pag;
+        block "PGM" struct Pgm;
+        block "DAQ_EVENT" taggedunion Daq_Event;
+      };
+
+      struct CAN_Parameters {
+        uint;  /* XCP on CAN version, currentl 0x0100 */
+        taggedstruct {
+          "CAN_ID_BROADCAST" ulong;  /* Auto-detection CAN-ID */
+          "CAN_ID_MASTER" ulong;  /* CMD/STIM CAN-ID */
+          "CAN_ID_SLAVE" ulong;  /* RES/ERR/EV/SERV/DAQ CAN-ID */
+          "BAUDRATE" ulong;  /* Baudrate in Hz */
+          "SAMPLE_POINT" uchar;  /* Sample point in % of bit time */
+          "SAMPLE_RATE" enum {
+            "SINGLE" = 1,
+            "TRIPLE" = 3
+          };
+          "BTL_CYCLES" uchar;  /* slots per bit time */
+          "SJW" uchar;
+          "SYNC_EDGE" enum {
+            "SINGLE" = 1,
+            "DUAL" = 2
+          };
+          "MAX_DLC_REQUIRED" ;  /* master to slave frames */
+          (block "DAQ_LIST_CAN_ID" struct {
+            uint;  /* reference to DAQ_LIST_NUMBER */
+            taggedstruct {
+              "VARIABLE" ;
+              "FIXED" ulong;  /* this DAQ_LIST always on this CAN_ID */
+            };
+          })*;
+        };
+      };
+
+      struct SxI_Parameters {
+        uint;  /* XCP on SxI version, currently 0x0100 */
+        ulong;  /* BAUDRATE [Hz] */
+        taggedstruct {
+          "ASYNCH_FULL_DUPLEX_MODE" struct {
+            enum {
+              "PARITY_NONE" = 0,
+              "PARITY_ODD" = 1,
+              "PARITY_EVEN" = 2
+            };
+            enum {
+              "ONE_STOP_BIT" = 1,
+              "TWO_STOP_BITS" = 2
+            };
+          };
+          "SYNCH_FULL_DUPLEX_MODE_BYTE" ;
+          "SYNCH_FULL_DUPLEX_MODE_WORD" ;
+          "SYNCH_FULL_DUPLEX_MODE_DWORD" ;
+          "SYNCH_MASTER_SLAVE_MODE_BYTE" ;
+          "SYNCH_MASTER_SLAVE_MODE_WORD" ;
+          "SYNCH_MASTER_SLAVE_MODE_DWORD" ;
+        };
+        enum {
+          "HEADER_LEN_BYTE" = 0,
+          "HEADER_LEN_CTR_BYTE" = 1,
+          "HEADER_LEN_WORD" = 2,
+          "HEADER_LEN_CTR_WORD" = 3
+        };
+        enum {
+          "NO_CHECKSUM" = 0,
+          "CHECKSUM_BYTE" = 1,
+          "CHECKSUM_WORD" = 2
+        };
+      };
+
+      struct TCP_IP_Parameters {
+        uint;  /* XCP on TCP_IP version, currently 0x0100 */
+        uint;  /* PORT */
+        taggedunion {
+          "HOST_NAME" char[256];
+          "ADDRESS" char[15];
+        };
+      };
+
+      struct UDP_Parameters {
+        uint;  /* XCP on UDP version, currently 0x0100 */
+        uint;  /* PORT */
+        taggedunion {
+          "HOST_NAME" char[256];
+          "ADDRESS" char[15];
+        };
+      };
+
+      struct ep_parameters {
+        uchar;  /* ENDPOINT_NUMBER, not endpoint address */
+        enum {
+          "BULK_TRANSFER" = 2,
+          "INTERRUPT_TRANSFER" = 3
+        };
+        uint;  /* wMaxPacketSize: Maximum packet  
+ size of endpoint in bytes       */
+        uchar;  /* bInterval: polling of endpoint  */
+        enum {
+          "MESSAGE_PACKING_SINGLE" = 0,
+          "MESSAGE_PACKING_MULTIPLE" = 1,
+          "MESSAGE_PACKING_STREAMING" = 2
+        };
+        enum {
+          "ALIGNMENT_8_BIT" = 0,
+          "ALIGNMENT_16_BIT" = 1,
+          "ALIGNMENT_32_BIT" = 2,
+          "ALIGNMENT_64_BIT" = 3
+        };
+        taggedstruct {
+          "RECOMMENDED_HOST_BUFSIZE" uint;  /* Recommended size for the host 
+ buffer size. The size is defined
+ as multiple of wMaxPacketSize.  */
+        };
+      };  /* end of ep_parameters */
+
+      struct USB_Parameters {
+        uint;  /* XCP on USB version  
+ e.g. "1.0" = 0x0100 */
+        uint;  /* Vendor ID                       */
+        uint;  /* Product ID                      */
+        uchar;  /* Number of interface             */
+        enum {
+          "HEADER_LEN_BYTE" = 0,
+          "HEADER_LEN_CTR_BYTE" = 1,
+          "HEADER_LEN_FILL_BYTE" = 2,
+          "HEADER_LEN_WORD" = 3,
+          "HEADER_LEN_CTR_WORD" = 4,
+          "HEADER_LEN_FILL_WORD" = 5
+        };
+        taggedunion {
+          block "OUT_EP_CMD_STIM" struct ep_parameters;
+        };
+        taggedunion {
+          block "IN_EP_RESERR_DAQ_EVSERV" struct ep_parameters;
+        };
+        taggedstruct {
+          "ALTERNATE_SETTING_NO" uchar;  /* Number of alternate setting   */
+          "INTERFACE_STRING_DESCRIPTOR" char[101];
+          (block "OUT_EP_ONLY_STIM" struct ep_parameters)*;
+          (block "IN_EP_ONLY_DAQ" struct ep_parameters)*;
+          block "IN_EP_ONLY_EVSERV" struct ep_parameters;
+          (block "DAQ_LIST_USB_ENDPOINT" struct {
+            uint;  /* reference to DAQ_LIST_NUMBER          */
+            taggedstruct {
+              "FIXED_IN" uchar;  /* this DAQ list always                
+ ENDPOINT_NUMBER, not endpoint address */
+              "FIXED_OUT" uchar;  /* this STIM list always               
+ ENDPOINT_NUMBER, not endpoint address */
+            };
+          })*;  /* end of DAQ_LIST_USB_ENDPOINT */
+        };  /* end of optional */
+      };
+
+      struct SIMULINK_Parameters {
+        taggedstruct {
+          "MODEL_NAME" char[64];
+        };
+      };
+
+      block "IF_DATA" taggedunion if_data {
+
+        "CANAPE_EXT" struct {
+          int;             /* version number */
+          taggedstruct {
+            "LINK_MAP" struct {
+              char[256];   /* segment name */
+              long;        /* base address of the segment */
+              uint;        /* address extension of the segment */
+              uint;        /* flag: address is relative to DS */
+              long;        /* offset of the segment address */
+              uint;        /* datatypValid */
+              uint;        /* enum datatyp */
+              uint;        /* bit offset of the segment */
+            };
+            "DISPLAY" struct {
+              long;        /* display color */
+              double;      /* minimal display value (phys)*/
+              double;      /* maximal display value (phys)*/
+            };
+            "VIRTUAL_CONVERSION" struct {
+              char[256];   /* name of the conversion formula */
+            };
+          };
+        };
+        "CANAPE_MODULE" struct {
+          taggedstruct {
+            ("RECORD_LAYOUT_STEPSIZE" struct {
+              char[256];   /* name of record layout*/
+              uint;        /* stepsize for FNC_VALUES */
+              uint;        /* stepsize for AXIS_PTS_X */
+              uint;        /* stepsize for AXIS_PTS_Y */
+              uint;        /* stepsize for AXIS_PTS_Z */
+              uint;        /* stepsize for AXIS_PTS_4 */
+              uint;        /* stepsize for AXIS_PTS_5 */
+            })*;
+          };
+        };
+        "CANAPE_ADDRESS_UPDATE" taggedstruct {
+          ("EPK_ADDRESS" struct {
+            char[1024];         /* name of the corresponding symbol in MAP file */
+            long;               /* optional address offset */
+          })*;
+          "ECU_CALIBRATION_OFFSET" struct {
+            char[1024];         /* name of the corresponding symbol in MAP file */
+            long;               /* optional address offset */
+          };
+          (block "CALIBRATION_METHOD" taggedunion {
+            "AUTOSAR_SINGLE_POINTERED" struct {
+              char[1024];         /* MAP symbol name for pointer table in RAM */
+              long;               /* optional address offset */
+              taggedstruct {
+                "ORIGINAL_POINTER_TABLE" struct {
+                  char[1024];    /* MAP symbol name for pointer table in FLASH */
+                  long;          /* optional address offset */
+                };
+              };
+            };
+            "InCircuit2" struct {
+              char[1024];         /* MAP symbol name for pointer table in RAM */
+              long;               /* optional address offset */
+              taggedstruct {
+                "ORIGINAL_POINTER_TABLE" struct {
+                  char[1024];    /* MAP symbol name for pointer table in FLASH */
+                  long;          /* optional address offset */
+                };
+                "FLASH_SECTION" struct {
+                  ulong;       /* start address of flash section */
+                  ulong;       /* length of flash section */
+                };
+              };
+            };
+          })*;
+          block "MAP_SYMBOL" taggedstruct {
+            "FIRST" struct {
+              char[1024];  /* symbol name of the corresponding segment in MAP file */
+              long;        /* offset */
+            };
+            "LAST" struct {
+              char[1024];  /* symbol name of the corresponding segment in MAP file */
+              long;        /* offset */
+            };
+            ("ADDRESS_MAPPING_XCP" struct {
+              char[1024];  /* symbol name of source range in MAP file */
+              char[1024];  /* symbol name of destination range in MAP file */
+            })*;
+          };
+          (block "MEMORY_SEGMENT" struct {
+            char[1024];         /* name of the memory segment */
+            taggedstruct {
+              "FIRST" struct {
+                char[1024];  /* symbol name of the corresponding segment in MAP file */
+                long;        /* offset */
+              };
+              "LAST" struct {
+                char[1024];  /* symbol name of the corresponding segment in MAP file */
+                long;        /* offset */
+              };
+              ("ADDRESS_MAPPING_XCP" struct {
+                char[1024];  /* symbol name of source range in MAP file */
+                char[1024];  /* symbol name of destination range in MAP file */
+              })*;
+            };
+          })*;
+        };
+        "CANAPE_GROUP" taggedstruct {
+          block "STRUCTURE_LIST" (char[1024])*;
+        };
+
+        "XCP" struct {
+          taggedstruct Common_Parameters;  /* default parameters */
+          taggedstruct {
+            block "XCP_ON_CAN" struct {
+              struct CAN_Parameters;  /* specific for CAN */
+              taggedstruct Common_Parameters;  /* overruling of default */
+            };
+            block "XCP_ON_SxI" struct {
+              struct SxI_Parameters;  /* specific for SxI */
+              taggedstruct Common_Parameters;  /* overruling of default */
+            };
+            block "XCP_ON_TCP_IP" struct {
+              struct TCP_IP_Parameters;  /* specific for TCP_IP */
+              taggedstruct Common_Parameters;  /* overruling of default */
+            };
+            block "XCP_ON_UDP_IP" struct {
+              struct UDP_Parameters;  /* specific for UDP */
+              taggedstruct Common_Parameters;  /* overruling of default */
+            };
+            block "XCP_ON_USB" struct {
+              struct USB_Parameters;  /* specific for USB      */
+              taggedstruct Common_Parameters;  /* overruling of default */
+            };
+            block "XCP_ON_SIMULINK" struct {
+              struct SIMULINK_Parameters;
+              taggedstruct Common_Parameters;  /* overruling of default */
+            };
+          };
+        };
+
+        "CNP_CREATE_INI" taggedstruct {
+          block "TP_BLOB" struct {
+            uint;  /* version */
+            taggedstruct {
+              ("PARAMETER" struct {
+                char[256];  /* file name */
+                char[50];  /* Section - $CNP_DVC_SCTN$ defines the Device-Section entry */
+                char[50];  /* parameter name */
+                char[256];  /* parameter value */
+              })*;
+            };
+          };
+        };
+      };
+
+    /end A2ML
+
+    /begin MOD_COMMON "Mod Common Comment Here"
+      BYTE_ORDER MSB_LAST
+      ALIGNMENT_BYTE 1
+      ALIGNMENT_WORD 2
+      ALIGNMENT_LONG 4
+      ALIGNMENT_FLOAT32_IEEE 4
+      ALIGNMENT_FLOAT64_IEEE 8
+    /end MOD_COMMON
+
+    /begin IF_DATA XCP
+      /begin PROTOCOL_LAYER
+        0x0100
+        0x03E8
+        0x2710
+        0x00
+        0x00
+        0x00
+        0x00
+        0x00
+        0xFF
+        0xFF
+        BYTE_ORDER_MSB_LAST
+        ADDRESS_GRANULARITY_BYTE
+        OPTIONAL_CMD GET_DAQ_RESOLUTION_INFO
+        OPTIONAL_CMD GET_DAQ_PROCESSOR_INFO
+        OPTIONAL_CMD UPLOAD
+        OPTIONAL_CMD SET_MTA
+        OPTIONAL_CMD GET_COMM_MODE_INFO
+      /end PROTOCOL_LAYER
+      /begin DAQ
+        DYNAMIC
+        0x00
+        0x01
+        0x00
+        OPTIMISATION_TYPE_DEFAULT
+        ADDRESS_EXTENSION_FREE
+        IDENTIFICATION_FIELD_TYPE_RELATIVE_BYTE
+        GRANULARITY_ODT_ENTRY_SIZE_DAQ_BYTE
+        0xFD
+        OVERLOAD_INDICATION_PID
+        PRESCALER_SUPPORTED
+        /begin TIMESTAMP_SUPPORTED
+          0x01
+          SIZE_DWORD
+          UNIT_100US
+        /end TIMESTAMP_SUPPORTED
+        /begin EVENT
+          "on LATC_Test_Calc calculated"
+          "on LATC_T"
+          0x00
+          DAQ
+          0xFF
+          0x00
+          0x06
+          0x00
+        /end EVENT
+      /end DAQ
+      /begin PAG
+        0x00
+      /end PAG
+      /begin PGM
+        PGM_MODE_ABSOLUTE
+        0x00
+        0x00
+      /end PGM
+      /begin XCP_ON_SIMULINK
+        MODEL_NAME "LATC_Test_Calc"
+      /end XCP_ON_SIMULINK
+    /end IF_DATA
+    /begin IF_DATA CANAPE_ADDRESS_UPDATE
+    /end IF_DATA
+
+    /begin MOD_PAR "MOD PAR Comment Goes Here"
+    /end MOD_PAR
+
+
+
+    /begin COMPU_METHOD LATC_Test_Calc_CM_double "Q = V"
+      RAT_FUNC "%15.10" ""
+      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+
+    /begin COMPU_METHOD LATC_Test_Calc_CM_single "Q = V"
+      RAT_FUNC "%8.6" ""
+      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+
+    /begin COMPU_METHOD LATC_Test_Calc_CM_uint16 "Q = V"
+      RAT_FUNC "%5.0" ""
+      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+
+    /begin COMPU_METHOD LATC_Test_Calc_CM_uint8 "Q = V"
+      RAT_FUNC "%3.0" ""
+      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+
+    /begin COMPU_METHOD RTTarget.ModelStepTime.CONVERSION.MICROSECOND_UNIT "Microsecond unit for model step execution time"
+      RAT_FUNC "%.1" "µs"
+      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+
+    /begin MEASUREMENT LCS_AngleSlope_Cnt ""
+      UWORD LATC_Test_Calc_CM_uint16 0 0 0 65535
+      ECU_ADDRESS 0xFB4DA
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%5.0"
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_AngleSlope_Cnt" 0xFB4DA 0x0 0 0x0 1 0x8F 0x0
+        DISPLAY 0 0 65535
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LCS_AngleSlope_Flg ""
+      UBYTE LATC_Test_Calc_CM_uint8 0 0 0 255
+      ECU_ADDRESS 0xFB4D8
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%3.0"
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_AngleSlope_Flg" 0xFB4D8 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 255
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LCS_HoldTime ""
+      FLOAT64_IEEE LATC_Test_Calc_CM_double 0 0 -1.79769e+308 1.79769e+308
+      ECU_ADDRESS 0xFB740
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%15.10"
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_HoldTime" 0xFB740 0x0 0 0x0 1 0x2 0x0
+        DISPLAY 0 -1.79769e+308 1.79769e+308
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LCS_IN_desLaneA1 ""
+      FLOAT32_IEEE LATC_Test_Calc_CM_single 0 0 -3.402823466e+38 3.402823466e+38
+      ECU_ADDRESS 0xFB72C
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%8.6"
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_IN_desLaneA1" 0xFB72C 0x0 0 0x0 1 0x1 0x0
+        DISPLAY 0 -3.402823466e+38 3.402823466e+38
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LCS_IN_desLaneA2 ""
+      FLOAT32_IEEE LATC_Test_Calc_CM_single 0 0 -3.402823466e+38 3.402823466e+38
+      ECU_ADDRESS 0xFB728
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%8.6"
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_IN_desLaneA2" 0xFB728 0x0 0 0x0 1 0x1 0x0
+        DISPLAY 0 -3.402823466e+38 3.402823466e+38
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LCS_IN_desLaneA3 ""
+      FLOAT32_IEEE LATC_Test_Calc_CM_single 0 0 -3.402823466e+38 3.402823466e+38
+      ECU_ADDRESS 0xFB724
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%8.6"
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_IN_desLaneA3" 0xFB724 0x0 0 0x0 1 0x1 0x0
+        DISPLAY 0 -3.402823466e+38 3.402823466e+38
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LCS_LCC_AyDtLimit ""
+      FLOAT32_IEEE LATC_Test_Calc_CM_single 0 0 -3.402823466e+38 3.402823466e+38
+      ECU_ADDRESS 0xFB710
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%8.6"
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_LCC_AyDtLimit" 0xFB710 0x0 0 0x0 1 0x1 0x0
+        DISPLAY 0 -3.402823466e+38 3.402823466e+38
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LCS_LCC_Feedback ""
+      FLOAT32_IEEE LATC_Test_Calc_CM_single 0 0 -3.402823466e+38 3.402823466e+38
+      ECU_ADDRESS 0xFB4E0
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%8.6"
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_LCC_Feedback" 0xFB4E0 0x0 0 0x0 1 0x1 0x0
+        DISPLAY 0 -3.402823466e+38 3.402823466e+38
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LCS_LCC_Feedforward ""
+      FLOAT32_IEEE LATC_Test_Calc_CM_single 0 0 -3.402823466e+38 3.402823466e+38
+      ECU_ADDRESS 0xFB4E4
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%8.6"
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_LCC_Feedforward" 0xFB4E4 0x0 0 0x0 1 0x1 0x0
+        DISPLAY 0 -3.402823466e+38 3.402823466e+38
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LCS_LCC_FinalPreviewT ""
+      FLOAT32_IEEE LATC_Test_Calc_CM_single 0 0 -3.402823466e+38 3.402823466e+38
+      ECU_ADDRESS 0xFB714
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%8.6"
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_LCC_FinalPreviewT" 0xFB714 0x0 0 0x0 1 0x1 0x0
+        DISPLAY 0 -3.402823466e+38 3.402823466e+38
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LCS_LCC_Later_error ""
+      FLOAT32_IEEE LATC_Test_Calc_CM_single 0 0 -3.402823466e+38 3.402823466e+38
+      ECU_ADDRESS 0xFB4F8
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%8.6"
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_LCC_Later_error" 0xFB4F8 0x0 0 0x0 1 0x1 0x0
+        DISPLAY 0 -3.402823466e+38 3.402823466e+38
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LCS_LCC_Later_error_rate ""
+      FLOAT32_IEEE LATC_Test_Calc_CM_single 0 0 -3.402823466e+38 3.402823466e+38
+      ECU_ADDRESS 0xFB4F4
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%8.6"
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_LCC_Later_error_rate" 0xFB4F4 0x0 0 0x0 1 0x1 0x0
+        DISPLAY 0 -3.402823466e+38 3.402823466e+38
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LCS_LCC_Max_Lateral_Acc ""
+      FLOAT32_IEEE LATC_Test_Calc_CM_single 0 0 -3.402823466e+38 3.402823466e+38
+      ECU_ADDRESS 0xFB70C
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%8.6"
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_LCC_Max_Lateral_Acc" 0xFB70C 0x0 0 0x0 1 0x1 0x0
+        DISPLAY 0 -3.402823466e+38 3.402823466e+38
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LCS_LCC_NumTraj ""
+      FLOAT64_IEEE LATC_Test_Calc_CM_double 0 0 -1.79769e+308 1.79769e+308
+      ECU_ADDRESS 0xFB730
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%15.10"
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_LCC_NumTraj" 0xFB730 0x0 0 0x0 1 0x2 0x0
+        DISPLAY 0 -1.79769e+308 1.79769e+308
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LCS_LCC_PlanIdex ""
+      FLOAT64_IEEE LATC_Test_Calc_CM_double 0 0 -1.79769e+308 1.79769e+308
+      ECU_ADDRESS 0xFB738
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%15.10"
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_LCC_PlanIdex" 0xFB738 0x0 0 0x0 1 0x2 0x0
+        DISPLAY 0 -1.79769e+308 1.79769e+308
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LCS_LCC_PlanTheta ""
+      FLOAT32_IEEE LATC_Test_Calc_CM_single 0 0 -3.402823466e+38 3.402823466e+38
+      ECU_ADDRESS 0xFB520
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%8.6"
+      MATRIX_DIM 1 40 1
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_LCC_PlanTheta" 0xFB520 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.402823466e+38 3.402823466e+38
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LCS_LCC_PlanX ""
+      FLOAT32_IEEE LATC_Test_Calc_CM_single 0 0 -3.402823466e+38 3.402823466e+38
+      ECU_ADDRESS 0xFB660
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%8.6"
+      MATRIX_DIM 1 40 1
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_LCC_PlanX" 0xFB660 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.402823466e+38 3.402823466e+38
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LCS_LCC_PlanY ""
+      FLOAT32_IEEE LATC_Test_Calc_CM_single 0 0 -3.402823466e+38 3.402823466e+38
+      ECU_ADDRESS 0xFB5C0
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%8.6"
+      MATRIX_DIM 1 40 1
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_LCC_PlanY" 0xFB5C0 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.402823466e+38 3.402823466e+38
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LCS_LCC_PreviewFac ""
+      FLOAT32_IEEE LATC_Test_Calc_CM_single 0 0 -3.402823466e+38 3.402823466e+38
+      ECU_ADDRESS 0xFB718
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%8.6"
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_LCC_PreviewFac" 0xFB718 0x0 0 0x0 1 0x1 0x0
+        DISPLAY 0 -3.402823466e+38 3.402823466e+38
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LCS_LCC_PreviewTheta ""
+      FLOAT32_IEEE LATC_Test_Calc_CM_single 0 0 -3.402823466e+38 3.402823466e+38
+      ECU_ADDRESS 0xFB500
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%8.6"
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_LCC_PreviewTheta" 0xFB500 0x0 0 0x0 1 0x1 0x0
+        DISPLAY 0 -3.402823466e+38 3.402823466e+38
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LCS_LCC_PreviewX ""
+      FLOAT32_IEEE LATC_Test_Calc_CM_single 0 0 -3.402823466e+38 3.402823466e+38
+      ECU_ADDRESS 0xFB508
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%8.6"
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_LCC_PreviewX" 0xFB508 0x0 0 0x0 1 0x1 0x0
+        DISPLAY 0 -3.402823466e+38 3.402823466e+38
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LCS_LCC_PreviewY ""
+      FLOAT32_IEEE LATC_Test_Calc_CM_single 0 0 -3.402823466e+38 3.402823466e+38
+      ECU_ADDRESS 0xFB504
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%8.6"
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_LCC_PreviewY" 0xFB504 0x0 0 0x0 1 0x1 0x0
+        DISPLAY 0 -3.402823466e+38 3.402823466e+38
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LCS_LCC_Preview_Curve ""
+      FLOAT32_IEEE LATC_Test_Calc_CM_single 0 0 -3.402823466e+38 3.402823466e+38
+      ECU_ADDRESS 0xFB720
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%8.6"
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_LCC_Preview_Curve" 0xFB720 0x0 0 0x0 1 0x1 0x0
+        DISPLAY 0 -3.402823466e+38 3.402823466e+38
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LCS_LCC_Preview_CurveFac ""
+      FLOAT32_IEEE LATC_Test_Calc_CM_single 0 0 -3.402823466e+38 3.402823466e+38
+      ECU_ADDRESS 0xFB71C
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%8.6"
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_LCC_Preview_CurveFac" 0xFB71C 0x0 0 0x0 1 0x1 0x0
+        DISPLAY 0 -3.402823466e+38 3.402823466e+38
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LCS_LCC_StateAngleSlope ""
+      FLOAT32_IEEE LATC_Test_Calc_CM_single 0 0 -3.402823466e+38 3.402823466e+38
+      ECU_ADDRESS 0xFB704
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%8.6"
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_LCC_StateAngleSlope" 0xFB704 0x0 0 0x0 1 0x1 0x0
+        DISPLAY 0 -3.402823466e+38 3.402823466e+38
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LCS_LCC_Steer_Limit ""
+      FLOAT32_IEEE LATC_Test_Calc_CM_single 0 0 -3.402823466e+38 3.402823466e+38
+      ECU_ADDRESS 0xFB4DC
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%8.6"
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_LCC_Steer_Limit" 0xFB4DC 0x0 0 0x0 1 0x1 0x0
+        DISPLAY 0 -3.402823466e+38 3.402823466e+38
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LCS_LCC_TarAngle_deg ""
+      FLOAT32_IEEE LATC_Test_Calc_CM_single 0 0 -3.402823466e+38 3.402823466e+38
+      ECU_ADDRESS 0xFB4E8
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%8.6"
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_LCC_TarAngle_deg" 0xFB4E8 0x0 0 0x0 1 0x1 0x0
+        DISPLAY 0 -3.402823466e+38 3.402823466e+38
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LCS_LCC_heading_error ""
+      FLOAT32_IEEE LATC_Test_Calc_CM_single 0 0 -3.402823466e+38 3.402823466e+38
+      ECU_ADDRESS 0xFB4F0
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%8.6"
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_LCC_heading_error" 0xFB4F0 0x0 0 0x0 1 0x1 0x0
+        DISPLAY 0 -3.402823466e+38 3.402823466e+38
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LCS_LCC_heading_error_rate ""
+      FLOAT32_IEEE LATC_Test_Calc_CM_single 0 0 -3.402823466e+38 3.402823466e+38
+      ECU_ADDRESS 0xFB4EC
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%8.6"
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_LCC_heading_error_rate" 0xFB4EC 0x0 0 0x0 1 0x1 0x0
+        DISPLAY 0 -3.402823466e+38 3.402823466e+38
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LCS_LCC_ref_curve ""
+      FLOAT32_IEEE LATC_Test_Calc_CM_single 0 0 -3.402823466e+38 3.402823466e+38
+      ECU_ADDRESS 0xFB4FC
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%8.6"
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_LCC_ref_curve" 0xFB4FC 0x0 0 0x0 1 0x1 0x0
+        DISPLAY 0 -3.402823466e+38 3.402823466e+38
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LCS_LCType ""
+      UBYTE LATC_Test_Calc_CM_uint8 0 0 0 255
+      ECU_ADDRESS 0xFB4D9
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%3.0"
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_LCType" 0xFB4D9 0x0 0 0x0 1 0x87 0x0
+        DISPLAY 0 0 255
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LCS_ReqEPSTrgAngle ""
+      FLOAT32_IEEE LATC_Test_Calc_CM_single 0 0 -3.402823466e+38 3.402823466e+38
+      ECU_ADDRESS 0xFB700
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%8.6"
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_ReqEPSTrgAngle" 0xFB700 0x0 0 0x0 1 0x1 0x0
+        DISPLAY 0 -3.402823466e+38 3.402823466e+38
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT LCS_StateActive_AngleSlope ""
+      FLOAT32_IEEE LATC_Test_Calc_CM_single 0 0 -3.402823466e+38 3.402823466e+38
+      ECU_ADDRESS 0xFB708
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%8.6"
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "LCS_StateActive_AngleSlope" 0xFB708 0x0 0 0x0 1 0x1 0x0
+        DISPLAY 0 -3.402823466e+38 3.402823466e+38
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin AXIS_PTS P_LCS_A0_Dis_BP ""
+      0x95080 NO_INPUT_QUANTITY Lookup2D_X_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single 19 -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      DEPOSIT ABSOLUTE
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_A0_Dis_BP" 0x95080 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end AXIS_PTS
+
+    /begin CHARACTERISTIC P_LCS_A2S_FliterTime ""
+      VALUE 0x95078 Scalar_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single -3.402823466e+38 3.402823466e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.402823466e+38 3.402823466e+38
+      FORMAT "%8.6"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_A2S_FliterTime" 0x95078 0x0 0 0x0 1 0x1 0x0
+        DISPLAY 0 -3.402823466e+38 3.402823466e+38
+      /end IF_DATA
+    /end CHARACTERISTIC
+
+    /begin AXIS_PTS P_LCS_A2_Curve_BP ""
+      0x950D0 LCS_LCC_Preview_Curve Lookup1D_X_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single 10 -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      DEPOSIT ABSOLUTE
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_A2_Curve_BP" 0x950D0 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end AXIS_PTS
+
+    /begin AXIS_PTS P_LCS_DeltaEps_SpdBp ""
+      0x95120 NO_INPUT_QUANTITY Lookup1D_X_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single 16 -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      DEPOSIT ABSOLUTE
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_DeltaEps_SpdBp" 0x95120 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end AXIS_PTS
+
+    /begin CHARACTERISTIC P_LCS_LCC_AngleSlope_ELK ""
+      CURVE 0x95160 Lookup1D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS NO_INPUT_QUANTITY LATC_Test_Calc_CM_single  16 -3.4e+38 3.4e+38
+        EXTENDED_LIMITS -3.4e+38 3.4e+38
+        DEPOSIT ABSOLUTE
+        FORMAT "%8.6"
+        AXIS_PTS_REF P_LCS_preDis_spd
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_AngleSlope_ELK" 0x95160 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_AngleSlope_ESS ""
+      CURVE 0x951A0 Lookup1D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS NO_INPUT_QUANTITY LATC_Test_Calc_CM_single  16 -3.4e+38 3.4e+38
+        EXTENDED_LIMITS -3.4e+38 3.4e+38
+        DEPOSIT ABSOLUTE
+        FORMAT "%8.6"
+        AXIS_PTS_REF P_LCS_preDis_spd
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_AngleSlope_ESS" 0x951A0 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_AngleSlope_LCCancle ""
+      CURVE 0x951E0 Lookup1D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS NO_INPUT_QUANTITY LATC_Test_Calc_CM_single  16 -3.4e+38 3.4e+38
+        EXTENDED_LIMITS -3.4e+38 3.4e+38
+        DEPOSIT ABSOLUTE
+        FORMAT "%8.6"
+        AXIS_PTS_REF P_LCS_preDis_spd
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_AngleSlope_LCCancle" 0x951E0 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_AngleSlope_LCEco ""
+      CURVE 0x95220 Lookup1D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS NO_INPUT_QUANTITY LATC_Test_Calc_CM_single  16 -3.4e+38 3.4e+38
+        EXTENDED_LIMITS -3.4e+38 3.4e+38
+        DEPOSIT ABSOLUTE
+        FORMAT "%8.6"
+        AXIS_PTS_REF P_LCS_preDis_spd
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_AngleSlope_LCEco" 0x95220 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_AngleSlope_LCK ""
+      CURVE 0x95260 Lookup1D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS NO_INPUT_QUANTITY LATC_Test_Calc_CM_single  16 -3.4e+38 3.4e+38
+        EXTENDED_LIMITS -3.4e+38 3.4e+38
+        DEPOSIT ABSOLUTE
+        FORMAT "%8.6"
+        AXIS_PTS_REF P_LCS_preDis_spd
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_AngleSlope_LCK" 0x95260 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_AngleSlope_LCKIE ""
+      CURVE 0x952A0 Lookup1D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS NO_INPUT_QUANTITY LATC_Test_Calc_CM_single  16 -3.4e+38 3.4e+38
+        EXTENDED_LIMITS -3.4e+38 3.4e+38
+        DEPOSIT ABSOLUTE
+        FORMAT "%8.6"
+        AXIS_PTS_REF P_LCS_preDis_spd
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_AngleSlope_LCKIE" 0x952A0 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_AngleSlope_LCNomal ""
+      CURVE 0x952E0 Lookup1D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS NO_INPUT_QUANTITY LATC_Test_Calc_CM_single  16 -3.4e+38 3.4e+38
+        EXTENDED_LIMITS -3.4e+38 3.4e+38
+        DEPOSIT ABSOLUTE
+        FORMAT "%8.6"
+        AXIS_PTS_REF P_LCS_preDis_spd
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_AngleSlope_LCNomal" 0x952E0 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_AngleSlope_LCSport ""
+      CURVE 0x95320 Lookup1D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS NO_INPUT_QUANTITY LATC_Test_Calc_CM_single  16 -3.4e+38 3.4e+38
+        EXTENDED_LIMITS -3.4e+38 3.4e+38
+        DEPOSIT ABSOLUTE
+        FORMAT "%8.6"
+        AXIS_PTS_REF P_LCS_preDis_spd
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_AngleSlope_LCSport" 0x95320 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_AngleSlope_LKA ""
+      CURVE 0x95360 Lookup1D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS NO_INPUT_QUANTITY LATC_Test_Calc_CM_single  16 -3.4e+38 3.4e+38
+        EXTENDED_LIMITS -3.4e+38 3.4e+38
+        DEPOSIT ABSOLUTE
+        FORMAT "%8.6"
+        AXIS_PTS_REF P_LCS_preDis_spd
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_AngleSlope_LKA" 0x95360 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_ELK_AyDtLimit_TBL ""
+      CURVE 0x953A0 Lookup1D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS NO_INPUT_QUANTITY LATC_Test_Calc_CM_single  16 -3.4e+38 3.4e+38
+        EXTENDED_LIMITS -3.4e+38 3.4e+38
+        DEPOSIT ABSOLUTE
+        FORMAT "%8.6"
+        AXIS_PTS_REF P_LCS_preDis_spd
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_ELK_AyDtLimit_TBL" 0x953A0 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_ESS_AyDtLimit_TBL ""
+      CURVE 0x953E0 Lookup1D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS NO_INPUT_QUANTITY LATC_Test_Calc_CM_single  16 -3.4e+38 3.4e+38
+        EXTENDED_LIMITS -3.4e+38 3.4e+38
+        DEPOSIT ABSOLUTE
+        FORMAT "%8.6"
+        AXIS_PTS_REF P_LCS_preDis_spd
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_ESS_AyDtLimit_TBL" 0x953E0 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_Eco_AyDtLimit_TBL ""
+      CURVE 0x95420 Lookup1D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS NO_INPUT_QUANTITY LATC_Test_Calc_CM_single  16 -3.4e+38 3.4e+38
+        EXTENDED_LIMITS -3.4e+38 3.4e+38
+        DEPOSIT ABSOLUTE
+        FORMAT "%8.6"
+        AXIS_PTS_REF P_LCS_preDis_spd
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_Eco_AyDtLimit_TBL" 0x95420 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_LCK_AyDtLimit_TBL ""
+      CURVE 0x95460 Lookup1D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS NO_INPUT_QUANTITY LATC_Test_Calc_CM_single  16 -3.4e+38 3.4e+38
+        EXTENDED_LIMITS -3.4e+38 3.4e+38
+        DEPOSIT ABSOLUTE
+        FORMAT "%8.6"
+        AXIS_PTS_REF P_LCS_preDis_spd
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_LCK_AyDtLimit_TBL" 0x95460 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_LC_AyDtLimit_TBL ""
+      CURVE 0x954A0 Lookup1D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS NO_INPUT_QUANTITY LATC_Test_Calc_CM_single  16 -3.4e+38 3.4e+38
+        EXTENDED_LIMITS -3.4e+38 3.4e+38
+        DEPOSIT ABSOLUTE
+        FORMAT "%8.6"
+        AXIS_PTS_REF P_LCS_preDis_spd
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_LC_AyDtLimit_TBL" 0x954A0 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_LC_Normal_AyDtLimit_TBL ""
+      CURVE 0x954E0 Lookup1D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS NO_INPUT_QUANTITY LATC_Test_Calc_CM_single  16 -3.4e+38 3.4e+38
+        EXTENDED_LIMITS -3.4e+38 3.4e+38
+        DEPOSIT ABSOLUTE
+        FORMAT "%8.6"
+        AXIS_PTS_REF P_LCS_preDis_spd
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_LC_Normal_AyDtLimit_TBL" 0x954E0 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_LKA_AyDtLimit_TBL ""
+      CURVE 0x95520 Lookup1D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS NO_INPUT_QUANTITY LATC_Test_Calc_CM_single  16 -3.4e+38 3.4e+38
+        EXTENDED_LIMITS -3.4e+38 3.4e+38
+        DEPOSIT ABSOLUTE
+        FORMAT "%8.6"
+        AXIS_PTS_REF P_LCS_preDis_spd
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_LKA_AyDtLimit_TBL" 0x95520 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_MaxLatAcc_ELK ""
+      CURVE 0x95560 Lookup1D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS NO_INPUT_QUANTITY LATC_Test_Calc_CM_single  16 -3.4e+38 3.4e+38
+        EXTENDED_LIMITS -3.4e+38 3.4e+38
+        DEPOSIT ABSOLUTE
+        FORMAT "%8.6"
+        AXIS_PTS_REF P_LCS_preDis_spd
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_MaxLatAcc_ELK" 0x95560 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_MaxLatAcc_ESS ""
+      CURVE 0x955A0 Lookup1D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS NO_INPUT_QUANTITY LATC_Test_Calc_CM_single  16 -3.4e+38 3.4e+38
+        EXTENDED_LIMITS -3.4e+38 3.4e+38
+        DEPOSIT ABSOLUTE
+        FORMAT "%8.6"
+        AXIS_PTS_REF P_LCS_preDis_spd
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_MaxLatAcc_ESS" 0x955A0 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_MaxLatAcc_LCCancel ""
+      CURVE 0x955E0 Lookup1D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS NO_INPUT_QUANTITY LATC_Test_Calc_CM_single  16 -3.4e+38 3.4e+38
+        EXTENDED_LIMITS -3.4e+38 3.4e+38
+        DEPOSIT ABSOLUTE
+        FORMAT "%8.6"
+        AXIS_PTS_REF P_LCS_preDis_spd
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_MaxLatAcc_LCCancel" 0x955E0 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_MaxLatAcc_LCEco ""
+      CURVE 0x95620 Lookup1D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS NO_INPUT_QUANTITY LATC_Test_Calc_CM_single  16 -3.4e+38 3.4e+38
+        EXTENDED_LIMITS -3.4e+38 3.4e+38
+        DEPOSIT ABSOLUTE
+        FORMAT "%8.6"
+        AXIS_PTS_REF P_LCS_preDis_spd
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_MaxLatAcc_LCEco" 0x95620 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_MaxLatAcc_LCK ""
+      CURVE 0x95660 Lookup1D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS NO_INPUT_QUANTITY LATC_Test_Calc_CM_single  16 -3.4e+38 3.4e+38
+        EXTENDED_LIMITS -3.4e+38 3.4e+38
+        DEPOSIT ABSOLUTE
+        FORMAT "%8.6"
+        AXIS_PTS_REF P_LCS_preDis_spd
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_MaxLatAcc_LCK" 0x95660 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_MaxLatAcc_LCKIE ""
+      CURVE 0x956A0 Lookup1D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS NO_INPUT_QUANTITY LATC_Test_Calc_CM_single  16 -3.4e+38 3.4e+38
+        EXTENDED_LIMITS -3.4e+38 3.4e+38
+        DEPOSIT ABSOLUTE
+        FORMAT "%8.6"
+        AXIS_PTS_REF P_LCS_preDis_spd
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_MaxLatAcc_LCKIE" 0x956A0 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_MaxLatAcc_LCNomal ""
+      CURVE 0x956E0 Lookup1D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS NO_INPUT_QUANTITY LATC_Test_Calc_CM_single  16 -3.4e+38 3.4e+38
+        EXTENDED_LIMITS -3.4e+38 3.4e+38
+        DEPOSIT ABSOLUTE
+        FORMAT "%8.6"
+        AXIS_PTS_REF P_LCS_preDis_spd
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_MaxLatAcc_LCNomal" 0x956E0 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_MaxLatAcc_LCSport ""
+      CURVE 0x95720 Lookup1D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS NO_INPUT_QUANTITY LATC_Test_Calc_CM_single  16 -3.4e+38 3.4e+38
+        EXTENDED_LIMITS -3.4e+38 3.4e+38
+        DEPOSIT ABSOLUTE
+        FORMAT "%8.6"
+        AXIS_PTS_REF P_LCS_preDis_spd
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_MaxLatAcc_LCSport" 0x95720 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_MaxLatAcc_LKA ""
+      CURVE 0x95760 Lookup1D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS NO_INPUT_QUANTITY LATC_Test_Calc_CM_single  16 -3.4e+38 3.4e+38
+        EXTENDED_LIMITS -3.4e+38 3.4e+38
+        DEPOSIT ABSOLUTE
+        FORMAT "%8.6"
+        AXIS_PTS_REF P_LCS_preDis_spd
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_MaxLatAcc_LKA" 0x95760 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_Min_Plan_Dis ""
+      CURVE 0x957A0 Lookup1D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS NO_INPUT_QUANTITY LATC_Test_Calc_CM_single  16 -3.4e+38 3.4e+38
+        EXTENDED_LIMITS -3.4e+38 3.4e+38
+        DEPOSIT ABSOLUTE
+        FORMAT "%8.6"
+        AXIS_PTS_REF P_LCS_DeltaEps_SpdBp
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_Min_Plan_Dis" 0x957A0 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_PreCur_Min_Plan_Dis_Fac ""
+      CURVE 0x950F8 Lookup1D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS LCS_LCC_Preview_Curve LATC_Test_Calc_CM_single  10 -3.4e+38 3.4e+38
+        EXTENDED_LIMITS -3.4e+38 3.4e+38
+        DEPOSIT ABSOLUTE
+        FORMAT "%8.6"
+        AXIS_PTS_REF P_LCS_A2_Curve_BP
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_PreCur_Min_Plan_Dis_Fac" 0x950F8 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_PreViewCurve_Fac ""
+      CURVE 0x957E0 Lookup1D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS LCS_LCC_Preview_Curve LATC_Test_Calc_CM_single  10 -3.4e+38 3.4e+38
+        EXTENDED_LIMITS -3.4e+38 3.4e+38
+        DEPOSIT ABSOLUTE
+        FORMAT "%8.6"
+        AXIS_PTS_REF P_LCS_A2_Curve_BP
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_PreViewCurve_Fac" 0x957E0 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_PreViewT ""
+      CURVE 0x95810 Lookup1D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS NO_INPUT_QUANTITY LATC_Test_Calc_CM_single  16 -3.4e+38 3.4e+38
+        EXTENDED_LIMITS -3.4e+38 3.4e+38
+        DEPOSIT ABSOLUTE
+        FORMAT "%8.6"
+        AXIS_PTS_REF P_LCS_preDis_spd
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_PreViewT" 0x95810 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_PreView_Fac ""
+      MAP 0x96B80 Lookup2D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS NO_INPUT_QUANTITY LATC_Test_Calc_CM_single  16 -3.4e+38 3.4e+38
+        EXTENDED_LIMITS -3.4e+38 3.4e+38
+        DEPOSIT ABSOLUTE
+        FORMAT "%8.6"
+        AXIS_PTS_REF P_LCS_preDis_spd
+      /end AXIS_DESCR
+      /begin AXIS_DESCR
+        COM_AXIS NO_INPUT_QUANTITY LATC_Test_Calc_CM_single  19 -3.4e+38 3.4e+38
+        EXTENDED_LIMITS -3.4e+38 3.4e+38
+        DEPOSIT ABSOLUTE
+        FORMAT "%8.6"
+        AXIS_PTS_REF P_LCS_A0_Dis_BP
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_PreView_Fac" 0x96B80 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_PreView_s ""
+      VALUE 0x9507C Scalar_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single -3.402823466e+38 3.402823466e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.402823466e+38 3.402823466e+38
+      FORMAT "%8.6"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_PreView_s" 0x9507C 0x0 0 0x0 1 0x1 0x0
+        DISPLAY 0 -3.402823466e+38 3.402823466e+38
+      /end IF_DATA
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_Sport_AyDtLimit_TBL ""
+      CURVE 0x95850 Lookup1D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS NO_INPUT_QUANTITY LATC_Test_Calc_CM_single  16 -3.4e+38 3.4e+38
+        EXTENDED_LIMITS -3.4e+38 3.4e+38
+        DEPOSIT ABSOLUTE
+        FORMAT "%8.6"
+        AXIS_PTS_REF P_LCS_preDis_spd
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_Sport_AyDtLimit_TBL" 0x95850 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_StateActiv_AyDtLimit ""
+      MAP 0x95890 Lookup2D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS LCS_HoldTime LATC_Test_Calc_CM_double  15 -1.7e+308 1.7e+308
+        EXTENDED_LIMITS -1.7e+308 1.7e+308
+        DEPOSIT ABSOLUTE
+        FORMAT "%15.10"
+        AXIS_PTS_REF P_LCS_StateActive_HoldTime_BP
+      /end AXIS_DESCR
+      /begin AXIS_DESCR
+        COM_AXIS LCS_AngleSlope_Flg LATC_Test_Calc_CM_uint8  5 0 255
+        EXTENDED_LIMITS 0 255
+        DEPOSIT ABSOLUTE
+        FORMAT "%3.0"
+        AXIS_PTS_REF P_LCS_StateActiveFlg_BP
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_StateActiv_AyDtLimit" 0x95890 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_LCC_StateActiveDelaytime ""
+      VALUE 0x950CC Scalar_UWORD 0 LATC_Test_Calc_CM_uint16 0 65535
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS 0 65535
+      FORMAT "%5.0"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_LCC_StateActiveDelaytime" 0x950CC 0x0 0 0x0 1 0x8F 0x0
+        DISPLAY 0 0 65535
+      /end IF_DATA
+    /end CHARACTERISTIC
+
+    /begin CHARACTERISTIC P_LCS_StateActiv_AngleSlope ""
+      MAP 0x959C0 Lookup2D_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single  -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      /begin AXIS_DESCR
+        COM_AXIS LCS_HoldTime LATC_Test_Calc_CM_double  15 -1.7e+308 1.7e+308
+        EXTENDED_LIMITS -1.7e+308 1.7e+308
+        DEPOSIT ABSOLUTE
+        FORMAT "%15.10"
+        AXIS_PTS_REF P_LCS_StateActive_HoldTime_BP
+      /end AXIS_DESCR
+      /begin AXIS_DESCR
+        COM_AXIS LCS_AngleSlope_Flg LATC_Test_Calc_CM_uint8  5 0 255
+        EXTENDED_LIMITS 0 255
+        DEPOSIT ABSOLUTE
+        FORMAT "%3.0"
+        AXIS_PTS_REF P_LCS_StateActiveFlg_BP
+      /end AXIS_DESCR
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_StateActiv_AngleSlope" 0x959C0 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end CHARACTERISTIC
+
+    /begin AXIS_PTS P_LCS_StateActiveFlg_BP ""
+      0x95B30 LCS_AngleSlope_Flg Lookup2D_X_UBYTE 0 LATC_Test_Calc_CM_uint8 5 0 255
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS 0 255
+      DEPOSIT ABSOLUTE
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_StateActiveFlg_BP" 0x95B30 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 0 255
+      /end IF_DATA
+      FORMAT "%3.0"
+    /end AXIS_PTS
+
+    /begin AXIS_PTS P_LCS_StateActive_HoldTime_BP ""
+      0x95000 LCS_HoldTime Lookup2D_X_FLOAT64_IEEE 0 LATC_Test_Calc_CM_double 15 -1.7e+308 1.7e+308
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -1.7e+308 1.7e+308
+      DEPOSIT ABSOLUTE
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_StateActive_HoldTime_BP" 0x95000 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -1.7e+308 1.7e+308
+      /end IF_DATA
+      FORMAT "%15.10"
+    /end AXIS_PTS
+
+    /begin CHARACTERISTIC P_LCS_StateHold_time ""
+      VALUE 0x95808 Scalar_UWORD 0 LATC_Test_Calc_CM_uint16 0 65535
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS 0 65535
+      FORMAT "%5.0"
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_StateHold_time" 0x95808 0x0 0 0x0 1 0x8F 0x0
+        DISPLAY 0 0 65535
+      /end IF_DATA
+    /end CHARACTERISTIC
+
+    /begin AXIS_PTS P_LCS_preDis_spd ""
+      0x95AF0 NO_INPUT_QUANTITY Lookup1D_X_FLOAT32_IEEE 0 LATC_Test_Calc_CM_single 16 -3.4e+38 3.4e+38
+      ECU_ADDRESS_EXTENSION 0x0
+      EXTENDED_LIMITS -3.4e+38 3.4e+38
+      DEPOSIT ABSOLUTE
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_LCS_preDis_spd" 0x95AF0 0x0 0 0x0 0 0x0 0x0
+        DISPLAY 0 -3.4e+38 3.4e+38
+      /end IF_DATA
+      FORMAT "%8.6"
+    /end AXIS_PTS
+
+    /begin MEASUREMENT RTTarget.ModelExecutionCounter "Internal CANape RT-Target DLL counter"
+      ULONG NO_COMPU_METHOD 0 0 0 4294967295
+      ECU_ADDRESS 0xFB4B0
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.1"
+      DISPLAY_IDENTIFIER RTTarget.ModelExecutionCounter
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "_gRTTarget_ModelExecutionCounter" 0xFB4B0 0x0 0 0x0 1 0x9F 0x0
+        DISPLAY 16435300 0 4294967295
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT RTTarget.ModelStepTime "Internal CANape RT-Target DLL model step execution time"
+      ULONG RTTarget.ModelStepTime.CONVERSION.MICROSECOND_UNIT 0 0 0 4294967295
+      ECU_ADDRESS 0xA8038
+      ECU_ADDRESS_EXTENSION 0x0
+      FORMAT "%.1"
+      DISPLAY_IDENTIFIER RTTarget.ModelStepTime
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x0
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "_gRTTarget_ModelStepExecutionTime" 0xA8038 0x0 0 0x0 1 0x9F 0x0
+        DISPLAY 9894450 0 4294967295
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin GROUP _[Parameters] "All Parameters"
+      ROOT
+      /begin REF_CHARACTERISTIC
+        P_LCS_A0_Dis_BP P_LCS_A2S_FliterTime P_LCS_A2_Curve_BP P_LCS_DeltaEps_SpdBp P_LCS_LCC_AngleSlope_ELK P_LCS_LCC_AngleSlope_ESS P_LCS_LCC_AngleSlope_LCCancle P_LCS_LCC_AngleSlope_LCEco 
+        P_LCS_LCC_AngleSlope_LCK P_LCS_LCC_AngleSlope_LCKIE P_LCS_LCC_AngleSlope_LCNomal P_LCS_LCC_AngleSlope_LCSport P_LCS_LCC_AngleSlope_LKA P_LCS_LCC_ELK_AyDtLimit_TBL P_LCS_LCC_ESS_AyDtLimit_TBL P_LCS_LCC_Eco_AyDtLimit_TBL 
+        P_LCS_LCC_LCK_AyDtLimit_TBL P_LCS_LCC_LC_AyDtLimit_TBL P_LCS_LCC_LC_Normal_AyDtLimit_TBL P_LCS_LCC_LKA_AyDtLimit_TBL P_LCS_LCC_MaxLatAcc_ELK P_LCS_LCC_MaxLatAcc_ESS P_LCS_LCC_MaxLatAcc_LCCancel P_LCS_LCC_MaxLatAcc_LCEco 
+        P_LCS_LCC_MaxLatAcc_LCK P_LCS_LCC_MaxLatAcc_LCKIE P_LCS_LCC_MaxLatAcc_LCNomal P_LCS_LCC_MaxLatAcc_LCSport P_LCS_LCC_MaxLatAcc_LKA P_LCS_LCC_Min_Plan_Dis P_LCS_LCC_PreCur_Min_Plan_Dis_Fac P_LCS_LCC_PreViewCurve_Fac 
+        P_LCS_LCC_PreViewT P_LCS_LCC_PreView_Fac P_LCS_LCC_PreView_s P_LCS_LCC_Sport_AyDtLimit_TBL P_LCS_LCC_StateActiv_AyDtLimit P_LCS_LCC_StateActiveDelaytime P_LCS_StateActiv_AngleSlope P_LCS_StateActiveFlg_BP 
+        P_LCS_StateActive_HoldTime_BP P_LCS_StateHold_time P_LCS_preDis_spd 
+      /end REF_CHARACTERISTIC
+    /end GROUP
+
+    /begin GROUP _RTTarget_internals "CANape RT-Target DLL internal diagnostic objects"
+      ROOT
+      /begin REF_MEASUREMENT
+        RTTarget.ModelExecutionCounter RTTarget.ModelStepTime 
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin FUNCTION Gain6 ""
+    /end FUNCTION
+
+    /begin FUNCTION Input1 ""
+    /end FUNCTION
+
+    /begin FUNCTION Input10 ""
+    /end FUNCTION
+
+    /begin FUNCTION Input11 ""
+    /end FUNCTION
+
+    /begin FUNCTION Input12 ""
+    /end FUNCTION
+
+    /begin FUNCTION Input13 ""
+    /end FUNCTION
+
+    /begin FUNCTION Input14 ""
+    /end FUNCTION
+
+    /begin FUNCTION Input15 ""
+    /end FUNCTION
+
+    /begin FUNCTION Input2 ""
+    /end FUNCTION
+
+    /begin FUNCTION Input3 ""
+    /end FUNCTION
+
+    /begin FUNCTION Input4 ""
+    /end FUNCTION
+
+    /begin FUNCTION Input5 ""
+    /end FUNCTION
+
+    /begin FUNCTION Input6 ""
+    /end FUNCTION
+
+    /begin FUNCTION Input7 ""
+    /end FUNCTION
+
+    /begin FUNCTION Input8 ""
+    /end FUNCTION
+
+    /begin FUNCTION Input9 ""
+    /end FUNCTION
+
+    /begin GROUP LATC_Test_Calc "LATC_Test_Calc"
+      ROOT
+      /begin SUB_GROUP
+        Root_Motion_Planning 
+        Root_SteerAngSlopeCalc 
+      /end SUB_GROUP
+    /end GROUP
+
+    /begin FUNCTION LP_filter ""
+    /end FUNCTION
+
+    /begin FUNCTION LP_filter1 ""
+    /end FUNCTION
+
+    /begin FUNCTION LP_filter2 ""
+    /end FUNCTION
+
+    /begin FUNCTION Motion_Planning ""
+      /begin SUB_FUNCTION
+        Motion_Planning.FrenetTrajectory 
+      /end SUB_FUNCTION
+    /end FUNCTION
+
+    /begin FUNCTION Motion_Planning.FrenetTrajectory ""
+      /begin SUB_FUNCTION
+        Motion_Planning.FrenetTrajectory.Subsystem1 
+      /end SUB_FUNCTION
+    /end FUNCTION
+
+    /begin FUNCTION Motion_Planning.FrenetTrajectory.Subsystem1 ""
+      /begin SUB_FUNCTION
+        Motion_Planning.FrenetTrajectory.Subsystem1.2_D_Lookup_Table2 
+        Motion_Planning.FrenetTrajectory.Subsystem1.AyDtLimit_TB 
+        Motion_Planning.FrenetTrajectory.Subsystem1.AyDtLimit_TB1 
+        Motion_Planning.FrenetTrajectory.Subsystem1.AyDtLimit_TB2 
+        Motion_Planning.FrenetTrajectory.Subsystem1.AyDtLimit_TB3 
+        Motion_Planning.FrenetTrajectory.Subsystem1.AyDtLimit_TB4 
+        Motion_Planning.FrenetTrajectory.Subsystem1.AyDtLimit_TB5 
+        Motion_Planning.FrenetTrajectory.Subsystem1.AyDtLimit_TB6 
+        Motion_Planning.FrenetTrajectory.Subsystem1.AyDtLimit_TB7 
+        Motion_Planning.FrenetTrajectory.Subsystem1.AyDtLimit_TB8 
+        Motion_Planning.FrenetTrajectory.Subsystem1.Constant1 
+        Motion_Planning.FrenetTrajectory.Subsystem1.Constant20 
+        Motion_Planning.FrenetTrajectory.Subsystem1.Constant28 
+        Motion_Planning.FrenetTrajectory.Subsystem1.Direct_Lookup_Table_[n_D]1 
+        Motion_Planning.FrenetTrajectory.Subsystem1.LP_filter 
+        Motion_Planning.FrenetTrajectory.Subsystem1.Min 
+        Motion_Planning.FrenetTrajectory.Subsystem1.Multiport_Switch1 
+        Motion_Planning.FrenetTrajectory.Subsystem1.Output4 
+        Motion_Planning.FrenetTrajectory.Subsystem1.Plan_Py_Fac 
+        Motion_Planning.FrenetTrajectory.Subsystem1.Preview_T_TB 
+        Motion_Planning.FrenetTrajectory.Subsystem1.Switch_Case_Action_Subsystem 
+        Motion_Planning.FrenetTrajectory.Subsystem1.Switch_Case_Action_Subsystem1 
+        Motion_Planning.FrenetTrajectory.Subsystem1.predis_ayFac1 
+        Motion_Planning.FrenetTrajectory.Subsystem1.predis_ayFac2 
+      /end SUB_FUNCTION
+    /end FUNCTION
+
+    /begin FUNCTION Motion_Planning.FrenetTrajectory.Subsystem1.2_D_Lookup_Table2 ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_A0_Dis_BP P_LCS_LCC_PreView_Fac P_LCS_preDis_spd 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION Motion_Planning.FrenetTrajectory.Subsystem1.AyDtLimit_TB ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_LCC_LCK_AyDtLimit_TBL P_LCS_preDis_spd 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION Motion_Planning.FrenetTrajectory.Subsystem1.AyDtLimit_TB1 ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_LCC_LCK_AyDtLimit_TBL P_LCS_preDis_spd 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION Motion_Planning.FrenetTrajectory.Subsystem1.AyDtLimit_TB2 ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_LCC_LC_Normal_AyDtLimit_TBL P_LCS_preDis_spd 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION Motion_Planning.FrenetTrajectory.Subsystem1.AyDtLimit_TB3 ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_LCC_LKA_AyDtLimit_TBL P_LCS_preDis_spd 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION Motion_Planning.FrenetTrajectory.Subsystem1.AyDtLimit_TB4 ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_LCC_ELK_AyDtLimit_TBL P_LCS_preDis_spd 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION Motion_Planning.FrenetTrajectory.Subsystem1.AyDtLimit_TB5 ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_LCC_ESS_AyDtLimit_TBL P_LCS_preDis_spd 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION Motion_Planning.FrenetTrajectory.Subsystem1.AyDtLimit_TB6 ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_LCC_Eco_AyDtLimit_TBL P_LCS_preDis_spd 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION Motion_Planning.FrenetTrajectory.Subsystem1.AyDtLimit_TB7 ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_LCC_Sport_AyDtLimit_TBL P_LCS_preDis_spd 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION Motion_Planning.FrenetTrajectory.Subsystem1.AyDtLimit_TB8 ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_LCC_LC_AyDtLimit_TBL P_LCS_preDis_spd 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION Motion_Planning.FrenetTrajectory.Subsystem1.Constant1 ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_LCC_StateActiveDelaytime 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION Motion_Planning.FrenetTrajectory.Subsystem1.Constant20 ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_A2S_FliterTime 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION Motion_Planning.FrenetTrajectory.Subsystem1.Constant28 ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_LCC_PreView_s 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION Motion_Planning.FrenetTrajectory.Subsystem1.Direct_Lookup_Table_[n_D]1 ""
+    /end FUNCTION
+
+    /begin FUNCTION Motion_Planning.FrenetTrajectory.Subsystem1.LP_filter ""
+    /end FUNCTION
+
+    /begin FUNCTION Motion_Planning.FrenetTrajectory.Subsystem1.Min ""
+    /end FUNCTION
+
+    /begin FUNCTION Motion_Planning.FrenetTrajectory.Subsystem1.Multiport_Switch1 ""
+    /end FUNCTION
+
+    /begin FUNCTION Motion_Planning.FrenetTrajectory.Subsystem1.Output4 ""
+    /end FUNCTION
+
+    /begin FUNCTION Motion_Planning.FrenetTrajectory.Subsystem1.Plan_Py_Fac ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_DeltaEps_SpdBp P_LCS_LCC_Min_Plan_Dis 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION Motion_Planning.FrenetTrajectory.Subsystem1.predis_ayFac1 ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_A2_Curve_BP P_LCS_LCC_PreViewCurve_Fac 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION Motion_Planning.FrenetTrajectory.Subsystem1.predis_ayFac2 ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_A2_Curve_BP P_LCS_LCC_PreCur_Min_Plan_Dis_Fac 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION Motion_Planning.FrenetTrajectory.Subsystem1.Preview_T_TB ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_LCC_PreViewT P_LCS_preDis_spd 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION Motion_Planning.FrenetTrajectory.Subsystem1.Switch_Case_Action_Subsystem ""
+      /begin SUB_FUNCTION
+        Motion_Planning.FrenetTrajectory.Subsystem1.Switch_Case_Action_Subsystem.ActiveAyDtLimit_TBL 
+        Motion_Planning.FrenetTrajectory.Subsystem1.Switch_Case_Action_Subsystem.ActivePreviewT_TBL 
+      /end SUB_FUNCTION
+    /end FUNCTION
+
+    /begin FUNCTION Motion_Planning.FrenetTrajectory.Subsystem1.Switch_Case_Action_Subsystem.ActiveAyDtLimit_TBL ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_LCC_StateActiv_AyDtLimit P_LCS_StateActiveFlg_BP P_LCS_StateActive_HoldTime_BP 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION Motion_Planning.FrenetTrajectory.Subsystem1.Switch_Case_Action_Subsystem.ActivePreviewT_TBL ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_StateActiveFlg_BP P_LCS_StateActive_HoldTime_BP 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION Motion_Planning.FrenetTrajectory.Subsystem1.Switch_Case_Action_Subsystem1 ""
+    /end FUNCTION
+
+    /begin FUNCTION Output1 ""
+    /end FUNCTION
+
+    /begin FUNCTION Output10 ""
+    /end FUNCTION
+
+    /begin FUNCTION Output11 ""
+    /end FUNCTION
+
+    /begin FUNCTION Output12 ""
+    /end FUNCTION
+
+    /begin FUNCTION Output13 ""
+    /end FUNCTION
+
+    /begin FUNCTION Output14 ""
+    /end FUNCTION
+
+    /begin FUNCTION Output15 ""
+    /end FUNCTION
+
+    /begin FUNCTION Output16 ""
+    /end FUNCTION
+
+    /begin FUNCTION Output17 ""
+    /end FUNCTION
+
+    /begin FUNCTION Output18 ""
+    /end FUNCTION
+
+    /begin FUNCTION Output19 ""
+    /end FUNCTION
+
+    /begin FUNCTION Output2 ""
+    /end FUNCTION
+
+    /begin FUNCTION Output3 ""
+    /end FUNCTION
+
+    /begin FUNCTION Output4 ""
+    /end FUNCTION
+
+    /begin FUNCTION Output5 ""
+    /end FUNCTION
+
+    /begin FUNCTION Output6 ""
+    /end FUNCTION
+
+    /begin FUNCTION Output7 ""
+    /end FUNCTION
+
+    /begin FUNCTION Output8 ""
+    /end FUNCTION
+
+    /begin FUNCTION Output9 ""
+    /end FUNCTION
+
+    /begin GROUP Root_Motion_Planning "LATC_Test_Calc/Motion_Planning"
+      /begin SUB_GROUP
+        S20_FrenetTrajectory 
+      /end SUB_GROUP
+    /end GROUP
+
+    /begin GROUP Root_SteerAngSlopeCalc "LATC_Test_Calc/SteerAngSlopeCalc"
+      /begin SUB_GROUP
+        S40_Switch_Case_Action_Subsystem 
+      /end SUB_GROUP
+      /begin REF_CHARACTERISTIC
+        P_LCS_LCC_AngleSlope_ELK P_LCS_LCC_AngleSlope_ESS P_LCS_LCC_AngleSlope_LCCancle P_LCS_LCC_AngleSlope_LCEco P_LCS_LCC_AngleSlope_LCK P_LCS_LCC_AngleSlope_LCKIE P_LCS_LCC_AngleSlope_LCNomal P_LCS_LCC_AngleSlope_LCSport 
+        P_LCS_LCC_AngleSlope_LKA P_LCS_LCC_MaxLatAcc_ELK P_LCS_LCC_MaxLatAcc_ESS P_LCS_LCC_MaxLatAcc_LCCancel P_LCS_LCC_MaxLatAcc_LCEco P_LCS_LCC_MaxLatAcc_LCK P_LCS_LCC_MaxLatAcc_LCKIE P_LCS_LCC_MaxLatAcc_LCNomal 
+        P_LCS_LCC_MaxLatAcc_LCSport P_LCS_LCC_MaxLatAcc_LKA P_LCS_StateHold_time 
+      /end REF_CHARACTERISTIC
+    /end GROUP
+
+    /begin GROUP S20_FrenetTrajectory "LATC_Test_Calc/Motion_Planning/FrenetTrajectory"
+      /begin SUB_GROUP
+        S42_Subsystem1 
+      /end SUB_GROUP
+    /end GROUP
+
+    /begin GROUP S40_Switch_Case_Action_Subsystem "LATC_Test_Calc/SteerAngSlopeCalc/Switch Case Action Subsystem"
+      /begin REF_CHARACTERISTIC
+        P_LCS_StateActiv_AngleSlope 
+      /end REF_CHARACTERISTIC
+    /end GROUP
+
+    /begin GROUP S42_Subsystem1 "LATC_Test_Calc/Motion_Planning/FrenetTrajectory/Subsystem1"
+      /begin SUB_GROUP
+        S44_Switch_Case_Action_Subsystem 
+      /end SUB_GROUP
+      /begin REF_CHARACTERISTIC
+        P_LCS_A2S_FliterTime P_LCS_LCC_ELK_AyDtLimit_TBL P_LCS_LCC_ESS_AyDtLimit_TBL P_LCS_LCC_Eco_AyDtLimit_TBL P_LCS_LCC_LCK_AyDtLimit_TBL P_LCS_LCC_LC_AyDtLimit_TBL P_LCS_LCC_LC_Normal_AyDtLimit_TBL P_LCS_LCC_LKA_AyDtLimit_TBL 
+        P_LCS_LCC_Min_Plan_Dis P_LCS_LCC_PreCur_Min_Plan_Dis_Fac P_LCS_LCC_PreViewCurve_Fac P_LCS_LCC_PreViewT P_LCS_LCC_PreView_Fac P_LCS_LCC_PreView_s P_LCS_LCC_Sport_AyDtLimit_TBL P_LCS_LCC_StateActiveDelaytime 
+      /end REF_CHARACTERISTIC
+    /end GROUP
+
+    /begin GROUP S44_Switch_Case_Action_Subsystem "LATC_Test_Calc/Motion_Planning/FrenetTrajectory/Subsystem1/Switch Case Action Subsystem"
+      /begin REF_CHARACTERISTIC
+        P_LCS_LCC_StateActiv_AyDtLimit 
+      /end REF_CHARACTERISTIC
+    /end GROUP
+
+    /begin FUNCTION SteerAngSlopeCalc ""
+      /begin SUB_FUNCTION
+        SteerAngSlopeCalc.Constant2 
+        SteerAngSlopeCalc.ELK_Active 
+        SteerAngSlopeCalc.ELK_Active1 
+        SteerAngSlopeCalc.ESS_AES_Active 
+        SteerAngSlopeCalc.ESS_AES_Active1 
+        SteerAngSlopeCalc.LCKIE_Active 
+        SteerAngSlopeCalc.LCKIE_Active1 
+        SteerAngSlopeCalc.LCKIE_TO_LC_Eco 
+        SteerAngSlopeCalc.LCKIE_TO_LC_Eco1 
+        SteerAngSlopeCalc.LCKIE_TO_LC_Nomal 
+        SteerAngSlopeCalc.LCKIE_TO_LC_Nomal1 
+        SteerAngSlopeCalc.LCKIE_TO_LC_Sport 
+        SteerAngSlopeCalc.LCKIE_TO_LC_Sport1 
+        SteerAngSlopeCalc.LC_Cancel 
+        SteerAngSlopeCalc.LC_Cancel1 
+        SteerAngSlopeCalc.LKA_Active 
+        SteerAngSlopeCalc.LKA_Active1 
+        SteerAngSlopeCalc.Merge 
+        SteerAngSlopeCalc.Multiport_Switch1 
+        SteerAngSlopeCalc.Multiport_Switch2 
+        SteerAngSlopeCalc.No_Function_2_LCK 
+        SteerAngSlopeCalc.No_Function_2_LCK1 
+        SteerAngSlopeCalc.Product 
+        SteerAngSlopeCalc.Switch_Case 
+        SteerAngSlopeCalc.Switch_Case_Action_Subsystem 
+        SteerAngSlopeCalc.Switch_Case_Action_Subsystem1 
+        SteerAngSlopeCalc.Unit_Delay3 
+        SteerAngSlopeCalc.Unit_Delay4 
+      /end SUB_FUNCTION
+    /end FUNCTION
+
+    /begin FUNCTION SteerAngSlopeCalc.Constant2 ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_StateHold_time 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION SteerAngSlopeCalc.ELK_Active ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_LCC_AngleSlope_ELK P_LCS_preDis_spd 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION SteerAngSlopeCalc.ELK_Active1 ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_LCC_MaxLatAcc_ELK P_LCS_preDis_spd 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION SteerAngSlopeCalc.ESS_AES_Active ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_LCC_AngleSlope_ESS P_LCS_preDis_spd 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION SteerAngSlopeCalc.ESS_AES_Active1 ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_LCC_MaxLatAcc_ESS P_LCS_preDis_spd 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION SteerAngSlopeCalc.LC_Cancel ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_LCC_AngleSlope_LCCancle P_LCS_preDis_spd 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION SteerAngSlopeCalc.LC_Cancel1 ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_LCC_MaxLatAcc_LCCancel P_LCS_preDis_spd 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION SteerAngSlopeCalc.LCKIE_Active ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_LCC_AngleSlope_LCKIE P_LCS_preDis_spd 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION SteerAngSlopeCalc.LCKIE_Active1 ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_LCC_MaxLatAcc_LCKIE P_LCS_preDis_spd 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION SteerAngSlopeCalc.LCKIE_TO_LC_Eco ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_LCC_AngleSlope_LCEco P_LCS_preDis_spd 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION SteerAngSlopeCalc.LCKIE_TO_LC_Eco1 ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_LCC_MaxLatAcc_LCEco P_LCS_preDis_spd 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION SteerAngSlopeCalc.LCKIE_TO_LC_Nomal ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_LCC_AngleSlope_LCNomal P_LCS_preDis_spd 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION SteerAngSlopeCalc.LCKIE_TO_LC_Nomal1 ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_LCC_MaxLatAcc_LCNomal P_LCS_preDis_spd 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION SteerAngSlopeCalc.LCKIE_TO_LC_Sport ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_LCC_AngleSlope_LCSport P_LCS_preDis_spd 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION SteerAngSlopeCalc.LCKIE_TO_LC_Sport1 ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_LCC_MaxLatAcc_LCSport P_LCS_preDis_spd 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION SteerAngSlopeCalc.LKA_Active ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_LCC_AngleSlope_LKA P_LCS_preDis_spd 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION SteerAngSlopeCalc.LKA_Active1 ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_LCC_MaxLatAcc_LKA P_LCS_preDis_spd 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION SteerAngSlopeCalc.Merge ""
+    /end FUNCTION
+
+    /begin FUNCTION SteerAngSlopeCalc.Multiport_Switch1 ""
+    /end FUNCTION
+
+    /begin FUNCTION SteerAngSlopeCalc.Multiport_Switch2 ""
+    /end FUNCTION
+
+    /begin FUNCTION SteerAngSlopeCalc.No_Function_2_LCK ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_LCC_AngleSlope_LCK P_LCS_preDis_spd 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION SteerAngSlopeCalc.No_Function_2_LCK1 ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_LCC_MaxLatAcc_LCK P_LCS_preDis_spd 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION SteerAngSlopeCalc.Product ""
+    /end FUNCTION
+
+    /begin FUNCTION SteerAngSlopeCalc.Switch_Case ""
+    /end FUNCTION
+
+    /begin FUNCTION SteerAngSlopeCalc.Switch_Case_Action_Subsystem ""
+      /begin SUB_FUNCTION
+        SteerAngSlopeCalc.Switch_Case_Action_Subsystem.LC_start_slope 
+      /end SUB_FUNCTION
+    /end FUNCTION
+
+    /begin FUNCTION SteerAngSlopeCalc.Switch_Case_Action_Subsystem.LC_start_slope ""
+      /begin DEF_CHARACTERISTIC
+        P_LCS_StateActiv_AngleSlope P_LCS_StateActiveFlg_BP P_LCS_StateActive_HoldTime_BP 
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION SteerAngSlopeCalc.Switch_Case_Action_Subsystem1 ""
+    /end FUNCTION
+
+    /begin FUNCTION SteerAngSlopeCalc.Unit_Delay3 ""
+    /end FUNCTION
+
+    /begin FUNCTION SteerAngSlopeCalc.Unit_Delay4 ""
+    /end FUNCTION
+
+    /begin FUNCTION Subsystem ""
+    /end FUNCTION
+
+
+
+    /begin RECORD_LAYOUT Lookup1D_BOOLEAN
+      FNC_VALUES 1 UBYTE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_BYTE
+      FNC_VALUES 1 SBYTE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_FLOAT32_IEEE
+      FNC_VALUES 1 FLOAT32_IEEE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_FLOAT64_IEEE
+      FNC_VALUES 1 FLOAT64_IEEE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_SLONG
+      FNC_VALUES 1 SLONG COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_UBYTE
+      FNC_VALUES 1 UBYTE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_ULONG
+      FNC_VALUES 1 ULONG COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_UWORD
+      FNC_VALUES 1 UWORD COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_WORD
+      FNC_VALUES 1 SWORD COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_X_BOOLEAN
+      AXIS_PTS_X 1 UBYTE INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_X_BYTE
+      AXIS_PTS_X 1 SBYTE INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_X_FLOAT32_IEEE
+      AXIS_PTS_X 1 FLOAT32_IEEE INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_X_FLOAT64_IEEE
+      AXIS_PTS_X 1 FLOAT64_IEEE INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_X_LONG
+      AXIS_PTS_X 1 SLONG INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_X_UBYTE
+      AXIS_PTS_X 1 UBYTE INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_X_ULONG
+      AXIS_PTS_X 1 ULONG INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_X_UWORD
+      AXIS_PTS_X 1 UWORD INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_X_WORD
+      AXIS_PTS_X 1 SWORD INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_BOOLEAN
+      FNC_VALUES 1 UBYTE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_BYTE
+      FNC_VALUES 1 SBYTE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_FLOAT32_IEEE
+      FNC_VALUES 1 FLOAT32_IEEE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_FLOAT64_IEEE
+      FNC_VALUES 1 FLOAT64_IEEE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_LONG
+      FNC_VALUES 1 SLONG COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_UBYTE
+      FNC_VALUES 1 UBYTE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_ULONG
+      FNC_VALUES 1 ULONG COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_UWORD
+      FNC_VALUES 1 UWORD COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_WORD
+      FNC_VALUES 1 SWORD COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_X_BOOLEAN
+      AXIS_PTS_X 1 UBYTE INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_X_BYTE
+      AXIS_PTS_X 1 SBYTE INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_X_FLOAT32_IEEE
+      AXIS_PTS_X 1 FLOAT32_IEEE INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_X_FLOAT64_IEEE
+      AXIS_PTS_X 1 FLOAT64_IEEE INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_X_LONG
+      AXIS_PTS_X 1 SLONG INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_X_UBYTE
+      AXIS_PTS_X 1 UBYTE INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_X_ULONG
+      AXIS_PTS_X 1 ULONG INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_X_UWORD
+      AXIS_PTS_X 1 UWORD INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_X_WORD
+      AXIS_PTS_X 1 SWORD INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Scalar_BOOLEAN
+      FNC_VALUES 1 UBYTE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Scalar_BYTE
+      FNC_VALUES 1 SBYTE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Scalar_FLOAT32_IEEE
+      FNC_VALUES 1 FLOAT32_IEEE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Scalar_FLOAT64_IEEE
+      FNC_VALUES 1 FLOAT64_IEEE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Scalar_LONG
+      FNC_VALUES 1 SLONG COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Scalar_SWORD
+      FNC_VALUES 1 SWORD COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Scalar_UBYTE
+      FNC_VALUES 1 UBYTE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Scalar_ULONG
+      FNC_VALUES 1 ULONG COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Scalar_UWORD
+      FNC_VALUES 1 UWORD COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+    /begin RECORD_LAYOUT __UBYTE_Z 
+      FNC_VALUES 1 UBYTE ROW_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT __UWORD_Z 
+      FNC_VALUES 1 UWORD ROW_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT __ULONG_Z 
+      FNC_VALUES 1 ULONG ROW_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT __SBYTE_Z 
+      FNC_VALUES 1 SBYTE ROW_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT __SWORD_Z 
+      FNC_VALUES 1 SWORD ROW_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT __SLONG_Z 
+      FNC_VALUES 1 SLONG ROW_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT __FLOAT32_IEEE_Z 
+      FNC_VALUES 1 FLOAT32_IEEE ROW_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT __FLOAT64_IEEE_Z 
+      FNC_VALUES 1 FLOAT64_IEEE ROW_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT __UBYTE_S 
+      FNC_VALUES 1 UBYTE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT __UWORD_S 
+      FNC_VALUES 1 UWORD COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT __ULONG_S 
+      FNC_VALUES 1 ULONG COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT __SBYTE_S 
+      FNC_VALUES 1 SBYTE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT __SWORD_S 
+      FNC_VALUES 1 SWORD COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT __SLONG_S 
+      FNC_VALUES 1 SLONG COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT __FLOAT32_IEEE_S 
+      FNC_VALUES 1 FLOAT32_IEEE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT __FLOAT64_IEEE_S 
+      FNC_VALUES 1 FLOAT64_IEEE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT SSV__UBYTE_S 
+      AXIS_PTS_X 1 UBYTE INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT SSV__UWORD_S 
+      AXIS_PTS_X 1 UWORD INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT SSV__ULONG_S 
+      AXIS_PTS_X 1 ULONG INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT SSV__SBYTE_S 
+      AXIS_PTS_X 1 SBYTE INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT SSV__SWORD_S 
+      AXIS_PTS_X 1 SWORD INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT SSV__SLONG_S 
+      AXIS_PTS_X 1 SLONG INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT SSV__FLOAT32_IEEE_S 
+      AXIS_PTS_X 1 FLOAT32_IEEE INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT SSV__FLOAT64_IEEE_S 
+      AXIS_PTS_X 1 FLOAT64_IEEE INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+  /end MODULE
+/end PROJECT

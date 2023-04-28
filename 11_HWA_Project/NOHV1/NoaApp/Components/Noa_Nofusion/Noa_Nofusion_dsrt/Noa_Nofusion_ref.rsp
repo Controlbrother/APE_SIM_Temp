@@ -1,0 +1,7 @@
+..\slprj\dsrt\PubIfChassisHMI_MDL\PubIfChassisHMI_MDL_rtwlib.lib
+..\slprj\dsrt\PubIfCommonVIE_MDL\PubIfCommonVIE_MDL_rtwlib.lib
+..\slprj\dsrt\PubIfControlLATC_MDL\PubIfControlLATC_MDL_rtwlib.lib
+..\slprj\dsrt\PubIfControlLONC_MDL\PubIfControlLONC_MDL_rtwlib.lib
+..\slprj\dsrt\PubIfDecisionLSM_MDL\PubIfDecisionLSM_MDL_rtwlib.lib
+..\slprj\dsrt\PubIfDecisionPLAN_MDL\PubIfDecisionPLAN_MDL_rtwlib.lib
+..\slprj\dsrt\PubIfStateVSM_MDL\PubIfStateVSM_MDL_rtwlib.lib

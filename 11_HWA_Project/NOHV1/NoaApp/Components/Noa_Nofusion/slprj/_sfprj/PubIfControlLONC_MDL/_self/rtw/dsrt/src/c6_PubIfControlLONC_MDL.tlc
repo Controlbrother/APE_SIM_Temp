@@ -1,0 +1,46 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   4 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "timer"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "timer"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "timerFailure"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "timerFailure"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "decelReqK1"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "decelReqK1"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "SlidTimer"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "SlidTimer"\
+      SrcLocation  ""\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

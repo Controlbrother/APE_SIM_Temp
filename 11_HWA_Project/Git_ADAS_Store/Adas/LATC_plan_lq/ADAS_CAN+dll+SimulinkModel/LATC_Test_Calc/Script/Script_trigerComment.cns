@@ -1,0 +1,63 @@
+char recFileName1[260] = "";
+
+char recFileName2[260] = "";
+
+char recFileName3[260] = "";
+
+ 
+
+function char CheckForNewName(var recorder[], var lastFilename[], var filename[])
+
+{
+
+double result;
+
+  result = GetLastMeasurementFileName(filename, recorder);
+
+if (result != 0) { // Error, wrong recorder name or no file written
+
+return 0;
+
+  }
+
+if (StrCmp(lastFilename, filename) == 0) { // Last file has not changed
+
+return 0;
+
+  }
+
+StrCpy(lastFilename, filename);
+
+return 1;
+
+}
+
+ 
+
+for (;;) {
+
+char filename[256];
+
+if (CheckForNewName("Recorder", recFileName1, filename)) {
+
+Write("New file recorded: %s\n", filename);
+
+Call("Script/CommentEdit.exe",filename);
+
+  }
+
+if (CheckForNewName("MyMdfRec", recFileName2, filename)) {
+
+    Write("New file recorded: %s\n", filename);
+
+  }
+
+if (CheckForNewName("MyBusLogging", recFileName3, filename)) {
+
+Write("New file recorded: %s\n", filename);
+
+  }
+
+  Sleep(1000); // Wait to save CPU resources
+
+}

@@ -1,0 +1,200 @@
+    P_LongCtrl_VLCMaRatioCharMaYAxis
+          P_LongCtrl_VLCTrRatioCharMaXAxis
+            P_LongCtrl_VLCaccelMinHoldYAxis
+          P_LongCtrl_VLCaccelMinHoldXAxis
+            P_LongCtrl_VLCjerkHoldYAxis
+          P_LongCtrl_VLCjerkHoldXAxis
+            P_LongCtrl_VLCaccelMinSlidHoldYAxis
+          P_LongCtrl_VLCaccelMinSlidHoldXAxis
+            P_LongCtrl_VLCjerkSlidHoldYAxis
+          P_LongCtrl_VLCjerkSlidHoldXAxis
+            P_LongCtrl_VLCcoefPIYAxis
+          P_LongCtrl_VLCvelCharCoefPIXAxis
+            P_LongCtrl_VLCengInverseEfficientYAxis
+          P_LongCtrl_VLCtorqCharEngInverseEfficientXAxis
+            P_LongCtrl_VLCcoefKiDiffDtEnlargeYAxis
+          P_LongCtrl_VLCdiffDtCharCoefKiEnlargeXAxis
+            P_LongCtrl_VLCcoefKiEnableYAxis
+          P_LongCtrl_VLCaDiffCharCoefKiEnableXAxis
+            P_LongCtrl_VLCAxvTracMinDC1FullFillYAxis
+          P_LongCtrl_VLCAxvTracMinDC1FullFillXAxis
+            P_LongCtrl_VLCengEfficientCharYAxis
+          P_LongCtrl_VLCtorqCharEngEfficientXAxis
+            P_LongCtrl_VLCcoefFYAxis
+          P_LongCtrl_VLCcoefFXAxis
+        P_Global_TireRadius_m 
+
+P_Global_Weight_N 
+
+P_LongCtrl_AxvRoadSlopeThrd 
+
+P_LongCtrl_TotWheelTrqRatio 
+
+P_LongCtrl_VLCAxTarDtThreEnableI 
+
+P_LongCtrl_VLCCounterAxvTracMinTimeout 
+
+P_LongCtrl_VLCCounterDC2ECTorqDelay 
+
+P_LongCtrl_VLCCounterDrvOff2EC 
+
+P_LongCtrl_VLCDtAxvRef2UpperBandDC5 
+
+P_LongCtrl_VLCIACompensionNeg 
+
+P_LongCtrl_VLCIACompensionPos 
+
+P_LongCtrl_VLCLowerJerkCounterDrvOff2EC 
+
+P_LongCtrl_VLCTorqDiffThreAxvTracMinTimeout 
+
+P_LongCtrl_VLCTrTatioMax 
+
+P_LongCtrl_VLCTrTatioMin 
+
+P_LongCtrl_VLCUpperJerkCounterDrvOff2EC 
+
+P_LongCtrl_VLCVlcAccThresAxvTracMinTimeout 
+
+P_LongCtrl_VLC_WindArea 
+
+P_LongCtrl_VLC_fRollCoef 
+
+P_LongCtrl_VLCaDiffCharCoefKiXAxis 
+
+P_LongCtrl_VLCaDtThresUpdateTorq 
+
+P_LongCtrl_VLCaXCDeadZoneProp_Y 
+
+P_LongCtrl_VLCaxCtrlDevDeadZoneChar_Y 
+
+P_LongCtrl_VLCaxCtrlDevEC2DCMax 
+
+P_LongCtrl_VLCaxCtrlDevFastQuitDCMode 
+
+P_LongCtrl_VLCaxCtrlDevThresAddEC2DCCharYAxis 
+
+P_LongCtrl_VLCaxCtrlDevTresAddDC2ECYAxis 
+
+P_LongCtrl_VLCaxDtCharAxCtrlDevTresAddDC2ECXAxis 
+
+P_LongCtrl_VLCaxDtCharAxCtrlDevTresAddEC2DCXAxis 
+
+P_LongCtrl_VLCaxvRoadSlopeDC4CharXAxis 
+
+P_LongCtrl_VLCaxvRoadSlopeDC4CharYAxis 
+
+P_LongCtrl_VLCcoefIFadeOut1Calc 
+
+P_LongCtrl_VLCcoefIFadeOut1Condition 
+
+P_LongCtrl_VLCcoefIFadeOut2Calc 
+
+P_LongCtrl_VLCcoefIFadeOut2Condition 
+
+P_LongCtrl_VLCcoefIFadeOut3Calc 
+
+P_LongCtrl_VLCcoefIFadeOut3Condition 
+
+P_LongCtrl_VLCcoefKiEnlargeADiffYAxis 
+
+P_LongCtrl_VLCdaxTarEC2DCMax 
+
+P_LongCtrl_VLCdriveOffAxUpLimXAxix 
+
+P_LongCtrl_VLCdriveOffAxUpLimYAxix 
+
+P_LongCtrl_VLCki 
+
+P_LongCtrl_VLCkp 
+
+P_LongCtrl_VLCks 
+
+P_LongCtrl_VLCvelCharAxCtrlDevDeadZoneXAxis 
+
+P_LongCtrl_VLCvelThresUpdateTorq 
+
+P_LongCtrl_VxvRefThrd 
+
+P_LongCtrl_SlideFlagEnable 
+
+  LongCtrl_ICEActWheelTrq
+  LongCtrl_VLCState
+  LongCtrl_tECDC
+  LongCtrl_SubModel_VERSION
+  LongCtrl_SubModel_Number
+  LongCtrl_vxvRefMs
+  LongCtrl_axvRoadSlopeMs2
+  LongCtrl_accelHoldMin
+  LongCtrl_jerkHold
+  LongCtrl_accelSlidHold
+  LongCtrl_jerkSlidHold
+  LongCtrl_OverrideToDC
+  Longctrl_NetEngTrq
+  Longctrl_NetEngTorqNorm
+  Longctrl_EngSpd
+  LongCtrl_Tr_Ratio
+  LongCtrl_Fz
+  LongCtrl_ICEFzNm
+  Longctrl_VIE_axRefMs2
+  Longctrl_ACC_axvCvAim
+  Longctrl_ACC_AccelerateJerk
+  Longctrl_ACC_DecelerateJerk
+  LongCtrl_axvDiff
+  LongCtrl_PI_NetEngTorqInc
+  LongCtrl_axvTracActMean
+  LongCtrl_axvModelDiff
+  Longctrl_VIE_AxRefDt
+  LongCtrl_axvModelResidual
+  LongCtrl_axvClosedLoopControl
+  LongCtrl_FF_NetEngTorqMax
+  LongCtrl_FF_NetEngTorqInc
+  LongCtrl_UpdateLowerValue
+  LongCtrl_UpdateUpperValue
+  LongCtrl_ACC_EngTrqReq
+  Longctrl_EngTqMinAct
+  Longctrl_ACC_axv_ComfortBandLowerValue
+  Longctrl_ACC_axv_ComfortBandUpperValue
+  LongCtrl_PI_NetEngTorq
+  LongCtrl_FF_NetEngTorq
+  LongCtrl_axvTracMin
+  LongCtrl_axvModelRef
+  Longctrl_VIE_alpSideSlipAngle
+  Longctrl_EngTqMaxActSpd
+  Longctrl_tCycleVLC
+  LongCtrl_tEC
+  LongCtrl_ACC_Decel_ReqValue
+  LongCtrl_Counter
+  Longctrl_ACCSts
+  LongCtrl_RRWheelDriveDirection
+  LongCtrl_RLWheelDriveDirection
+  LongCtrl_FRWheelDriveDirection
+  LongCtrl_FLWheelDriveDirection
+  Longctrl_CurrentGear
+  Longctrl_VehicleStandStill
+  LongCtrl_Sw2EC
+  LongCtrl_Sw2DC
+  LongCtrl_ForwardFlagVxv
+  LongCtrl_ForwardFlagTrq
+  LongCtrl_SlideFlag
+  LongCtrl_VLC_DriveOffConditonFulfilled
+  Longctrl_ACC_DrvOFF_Req
+  Longctrl_ShiftinProgress
+  Longctrl_NoBrakeForce
+  LongCtrl_UpdateEnable_axvModeldiff
+  Longctrl_ACC_BrakePrefer
+  Longctrl_ACC_DecelToStopReq
+  LongCtrl_Sw2DC6
+  LongCtrl_Sw2DC1
+  LongCtrl_Sw2DC3
+  LongCtrl_Sw2DC5
+  LongCtrl_Sw2DC7
+  LongCtrl_Sw2DC2
+  LongCtrl_Sw2DC4
+  LongCtrl_Sw2EC1
+  LongCtrl_Sw2EC3
+  LongCtrl_Sw2EC2
+  LongCtrl_Sw2EC5
+  LongCtrl_Sw2EC4
+  LongCtrl_ECEnable
+  LongCtrl_DCEnable

@@ -1,0 +1,5184 @@
+/*
+ ****************************************************************************
+ * ASAP2 file: PubIfDecisionLSM_MDL.a2l
+ *
+ * Copyright 2022, dSPACE GmbH. All rights reserved.
+ *
+ ****************************************************************************
+ */
+
+ASAP2_VERSION  1 61   /* Version 1.61 */
+
+/begin PROJECT PubIfDecisionLSM_MDL ""
+  
+  /begin HEADER ""
+    VERSION      "1.1192"       
+    PROJECT_NO   PubIfDecisionLSM_MDL
+  /end HEADER
+  
+  
+  /begin MODULE PubIfDecisionLSM_MDL  ""
+    
+    
+    
+    /begin RECORD_LAYOUT Scalar_BOOLEAN
+      FNC_VALUES  1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_UBYTE
+      FNC_VALUES  1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_BYTE
+      FNC_VALUES  1 SBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_UWORD
+      FNC_VALUES  1 UWORD ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_SWORD
+      FNC_VALUES 1 SWORD ROW_DIR DIRECT
+    /end RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_ULONG
+      FNC_VALUES  1 ULONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_LONG
+      FNC_VALUES  1 SLONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_FLOAT32_IEEE
+      FNC_VALUES  1 FLOAT32_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_FLOAT64_IEEE
+      FNC_VALUES  1 FLOAT64_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    
+    /begin RECORD_LAYOUT Lookup1D_BOOLEAN
+      FNC_VALUES  1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_BYTE
+      FNC_VALUES  1 SBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_UBYTE
+      FNC_VALUES  1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_UWORD
+      FNC_VALUES  1 UWORD ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_WORD
+      FNC_VALUES  1 SWORD ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_ULONG
+      FNC_VALUES  1 ULONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_LONG
+      FNC_VALUES  1 SLONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_FLOAT32_IEEE
+      FNC_VALUES  1 FLOAT32_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_FLOAT64_IEEE
+      FNC_VALUES  1 FLOAT64_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_BOOLEAN
+      AXIS_PTS_X  1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT 
+    
+    /begin RECORD_LAYOUT Lookup1D_X_BYTE
+      AXIS_PTS_X  1 SBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_UBYTE
+      AXIS_PTS_X  1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_UWORD
+      AXIS_PTS_X  1 UWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_WORD
+      AXIS_PTS_X  1 SWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_ULONG
+      AXIS_PTS_X  1 ULONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_LONG
+      AXIS_PTS_X  1 SLONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT    
+    
+    /begin RECORD_LAYOUT Lookup1D_X_FLOAT32_IEEE
+      AXIS_PTS_X  1 FLOAT32_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_FLOAT64_IEEE
+      AXIS_PTS_X  1 FLOAT64_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT   
+    
+    
+    
+    /begin RECORD_LAYOUT Lookup2D_BOOLEAN
+      FNC_VALUES  1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT    
+    
+    /begin RECORD_LAYOUT Lookup2D_UBYTE
+      FNC_VALUES     1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_BYTE
+      FNC_VALUES     1 SBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_UWORD
+      FNC_VALUES     1 UWORD ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_WORD
+      FNC_VALUES     1 SWORD ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_ULONG
+      FNC_VALUES     1 ULONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_LONG
+      FNC_VALUES     1 SLONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_FLOAT32_IEEE
+      FNC_VALUES     1 FLOAT32_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_FLOAT64_IEEE
+      FNC_VALUES     1 FLOAT64_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_BOOLEAN
+      AXIS_PTS_X     1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT    
+    
+    /begin RECORD_LAYOUT Lookup2D_X_UBYTE
+      AXIS_PTS_X     1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_BYTE
+      AXIS_PTS_X     1 SBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_UWORD
+      AXIS_PTS_X     1 UWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_WORD
+      AXIS_PTS_X     1 SWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_ULONG
+      AXIS_PTS_X     1 ULONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_LONG
+      AXIS_PTS_X     1 SLONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_FLOAT32_IEEE
+      AXIS_PTS_X     1 FLOAT32_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_FLOAT64_IEEE
+      AXIS_PTS_X     1 FLOAT64_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LSM_DOP_PreDis_Y
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LSM_DOP_PreDis_Y@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      NO_INPUT_QUANTITY
+        /* Conversion Method      */      PubIfDecisionLSM_MDL_CM_single
+        /* Number of Axis Pts     */      16
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LSM_DOP_PreDis_X
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin AXIS_PTS
+      /* Name                   */      P_LSM_DOP_PreDis_X
+      /* Long Identifier        */      ""
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LSM_DOP_PreDis_X@ */
+      /* Input Quantity         */      NO_INPUT_QUANTITY
+      /* Record Layout          */      Lookup1D_X_FLOAT32_IEEE
+      /* Maximum Difference     */      0
+      /* Conversion Method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Number of Axis Pts     */      16
+      /* Lower Limit            */      -3.4E+38
+      /* Upper Limit            */      3.4E+38
+    /end AXIS_PTS
+    
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LSM_DOP_C1_EN_Limit
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LSM_DOP_C1_EN_Limit@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      NO_INPUT_QUANTITY
+        /* Conversion Method      */      PubIfDecisionLSM_MDL_CM_single
+        /* Number of Axis Pts     */      7
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LSM_DOP_C1AndC2_Lim_X
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin AXIS_PTS
+      /* Name                   */      P_LSM_DOP_C1AndC2_Lim_X
+      /* Long Identifier        */      ""
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LSM_DOP_C1AndC2_Lim_X@ */
+      /* Input Quantity         */      NO_INPUT_QUANTITY
+      /* Record Layout          */      Lookup1D_X_FLOAT32_IEEE
+      /* Maximum Difference     */      0
+      /* Conversion Method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Number of Axis Pts     */      7
+      /* Lower Limit            */      -3.4E+38
+      /* Upper Limit            */      3.4E+38
+    /end AXIS_PTS
+    
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LSM_DOP_C2_EN_Limit
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LSM_DOP_C2_EN_Limit@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      NO_INPUT_QUANTITY
+        /* Conversion Method      */      PubIfDecisionLSM_MDL_CM_single
+        /* Number of Axis Pts     */      7
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LSM_DOP_C1AndC2_Lim_X
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LSM_DOP_C1_out_Limit
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LSM_DOP_C1_out_Limit@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      NO_INPUT_QUANTITY
+        /* Conversion Method      */      PubIfDecisionLSM_MDL_CM_single
+        /* Number of Axis Pts     */      7
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LSM_DOP_C1AndC2_Lim_X
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LSM_DOP_C2_out_Limit
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LSM_DOP_C2_out_Limit@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      NO_INPUT_QUANTITY
+        /* Conversion Method      */      PubIfDecisionLSM_MDL_CM_single
+        /* Number of Axis Pts     */      7
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LSM_DOP_C1AndC2_Lim_X
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LSM_DoubleLine_DOPOut_C1
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LSM_DoubleLine_DOPOut_C1@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      NO_INPUT_QUANTITY
+        /* Conversion Method      */      PubIfDecisionLSM_MDL_CM_single
+        /* Number of Axis Pts     */      7
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LSM_DOP_C1AndC2_Lim_X
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LSM_SingleLine_DOPOut_C1
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LSM_SingleLine_DOPOut_C1@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      NO_INPUT_QUANTITY
+        /* Conversion Method      */      PubIfDecisionLSM_MDL_CM_single
+        /* Number of Axis Pts     */      7
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LSM_DOP_C1AndC2_Lim_X
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LSM_DOP_C0_EN_Limit 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LSM_DOP_C0_EN_Limit@ */
+      /* Record Layout          */      Scalar_FLOAT64_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_double
+      /* Lower limit            */      -1.7E+308
+      /* Upper limit            */      1.7E+308
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LSM_DOP_C0_out_Limit 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LSM_DOP_C0_out_Limit@ */
+      /* Record Layout          */      Scalar_FLOAT64_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_double
+      /* Lower limit            */      -1.7E+308
+      /* Upper limit            */      1.7E+308
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LSM_NOH_Switch 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LSM_NOH_Switch@ */
+      /* Record Layout          */      Scalar_FLOAT64_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_double
+      /* Lower limit            */      -1.7E+308
+      /* Upper limit            */      1.7E+308
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LSM_DOPValid_CheckTime 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LSM_DOPValid_CheckTime@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LSM_DOP_In_Pre2Dop_Dis 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LSM_DOP_In_Pre2Dop_Dis@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LSM_DOP_Out_Pre2Dop_Dis 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LSM_DOP_Out_Pre2Dop_Dis@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LSM_DoubleLine_Curr2Cent_Dislimit 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LSM_DoubleLine_Curr2Cent_Dislimit@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LSM_DoubleLine_Dop2Cent_Dislimit 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LSM_DoubleLine_Dop2Cent_Dislimit@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LSM_DoubleLine_Pre2Cent_Dislimit 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LSM_DoubleLine_Pre2Cent_Dislimit@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LSM_IFV2CenterAxis 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LSM_IFV2CenterAxis@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LSM_IFV2RearAxis 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LSM_IFV2RearAxis@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LSM_LineSTD_Limit 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LSM_LineSTD_Limit@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LSM_LineWijCal_C12 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LSM_LineWijCal_C12@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LSM_LineWijCal_C13 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LSM_LineWijCal_C13@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LSM_PosLineLcFac 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LSM_PosLineLcFac@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LSM_Pre_t 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LSM_Pre_t@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LSM_SingleLine_Cent2Edge_Dislimit 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LSM_SingleLine_Cent2Edge_Dislimit@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LSM_SingleLine_Curr2Cent_Dislimit 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LSM_SingleLine_Curr2Cent_Dislimit@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LSM_SingleLine_Dop2Cent_Dislimit 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LSM_SingleLine_Dop2Cent_Dislimit@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LSM_SingleLine_Pre2Cent_Dislimit 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LSM_SingleLine_Pre2Cent_Dislimit@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LSM_ALC_Enable 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LSM_ALC_Enable@ */
+      /* Record Layout          */      Scalar_UBYTE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+    /end CHARACTERISTIC
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_UpdateCnt
+      /* Long identifier        */      ""
+      /* Data type              */      ULONG
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint32
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      4294967295
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_UpdateCnt@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_QualityK1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_QualityK1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_A3K1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_A3K1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_A2K1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_A2K1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_A1K1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_A1K1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_A0K1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_A0K1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_RangeK1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_RangeK1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_tLostK1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_tLostK1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_HWALineC0K1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_HWALineC0K1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH21
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH21@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH22
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH22@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH23
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH23@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH1Wij
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH1Wij@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH31
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH31@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH32
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH32@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH33
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH33@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH2Wij
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH2Wij@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_TJALineC3
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_TJALineC3@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LCKLineC0
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LCKLineC0@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LCKRange
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LCKRange@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_HWALineC3
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_HWALineC3@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_HWALineC2
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_HWALineC2@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_HWALineC1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_HWALineC1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_HWALeLineC3
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_HWALeLineC3@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_HWALeLineC2
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_HWALeLineC2@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_HWALeLineC1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_HWALeLineC1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_HWALeLineC0
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_HWALeLineC0@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_TJALineC2
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_TJALineC2@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_HWALeRange
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_HWALeRange@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_HWALineC0
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_HWALineC0@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_HWARange
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_HWARange@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_HWARiLineC1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_HWARiLineC1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_HWARiLineC0
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_HWARiLineC0@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_HWARiRange
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_HWARiRange@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_TJALineC1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_TJALineC1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_HeadAngDiff
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_HeadAngDiff@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_HWARiLineC3
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_HWARiLineC3@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_HWARiLineC2
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_HWARiLineC2@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_ESSLineC2
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_ESSLineC2@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_ESSLineC1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_ESSLineC1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_ESSLineC0
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_ESSLineC0@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_ESSRange
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_ESSRange@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_ESSLeLineC3
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_ESSLeLineC3@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_TJALineC0
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_TJALineC0@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_ESSLineC3
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_ESSLineC3@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_ESSLeLineC0
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_ESSLeLineC0@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_ESSLeRange
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_ESSLeRange@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_ESSRiLineC3
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_ESSRiLineC3@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_ESSRiLineC2
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_ESSRiLineC2@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_ESSRiLineC1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_ESSRiLineC1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_ESSLeLineC2
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_ESSLeLineC2@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_ESSLeLineC1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_ESSLeLineC1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_ESSRiLineC0
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_ESSRiLineC0@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_TJARange
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_TJARange@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_ESSRiRange
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_ESSRiRange@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_dyDiff
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_dyDiff@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_RoadWidth
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_RoadWidth@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LCKLineC3
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LCKLineC3@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LCKLineC2
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LCKLineC2@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LCKLineC1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LCKLineC1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_OTL_A3
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_OTL_A3@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_OTL_A2
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_OTL_A2@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_OTL_A1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_OTL_A1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_OTL_A0
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_OTL_A0@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_OTL_Range
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_OTL_Range@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_RFM_LineCenter_C0
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_RFM_LineCenter_C0@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_RFM_LineL1_C2
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_RFM_LineL1_C2@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_RFM_LineL1_C3
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_RFM_LineL1_C3@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_RFM_LineL1_Start
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_RFM_LineL1_Start@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_RFM_LineL1_Front
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_RFM_LineL1_Front@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_RFM_LineR1_C2
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_RFM_LineR1_C2@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_RFM_LineR1_C3
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_RFM_LineR1_C3@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_RFM_LineR1_Start
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_RFM_LineR1_Start@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_RFM_LineR1_Front
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_RFM_LineR1_Front@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_RFM_LineR1_C0
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_RFM_LineR1_C0@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_RFM_LineCenter_C1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_RFM_LineCenter_C1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_RFM_LineR1_C1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_RFM_LineR1_C1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_RFM_LineCenter_C2
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_RFM_LineCenter_C2@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_RFM_LineCenter_C3
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_RFM_LineCenter_C3@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_RFM_LineCenter_Start
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_RFM_LineCenter_Start@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_RFM_LineCenter_Front
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_RFM_LineCenter_Front@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_RFM_LineL1_C0
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_RFM_LineL1_C0@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_RFM_LineL1_C1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_RFM_LineL1_C1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_L1_Range
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_L1_Range@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_0_C1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_0_C1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LRE_ELEM_1_C0
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LRE_ELEM_1_C0@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LRE_ELEM_1_Range_Start
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LRE_ELEM_1_Range_Start@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_0_C2
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_0_C2@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_0_C3
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_0_C3@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_0_Range_Start
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_0_Range_Start@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_0_Range_End
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_0_Range_End@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_0_Marker_Width
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_0_Marker_Width@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_0_Confidence
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_0_Confidence@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_1_C0
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_1_C0@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_1_C1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_1_C1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_1_C2
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_1_C2@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_1_C3
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_1_C3@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_1_Range_Start
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_1_Range_Start@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_1_Range_End
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_1_Range_End@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_L2_Range
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_L2_Range@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_1_Confidence
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_1_Confidence@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_1_Marker_Width
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_1_Marker_Width@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_2_C0
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_2_C0@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_2_C1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_2_C1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_2_C2
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_2_C2@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_2_C3
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_2_C3@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_2_Range_Start
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_2_Range_Start@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_2_Range_End
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_2_Range_End@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_2_Confidence
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_2_Confidence@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_2_Marker_Width
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_2_Marker_Width@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_3_C0
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_3_C0@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_3_C1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_3_C1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_3_C2
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_3_C2@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_3_C3
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_3_C3@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_3_Range_Start
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_3_Range_Start@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_L3_Range
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_L3_Range@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_3_Range_End
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_3_Range_End@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_3_Confidence
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_3_Confidence@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_3_Marker_Width
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_3_Marker_Width@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH_ELEM_0_C0
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH_ELEM_0_C0@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH_ELEM_0_C1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH_ELEM_0_C1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH_ELEM_0_C2
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH_ELEM_0_C2@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH_ELEM_0_Confidence
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH_ELEM_0_Confidence@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH_ELEM_0_C3
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH_ELEM_0_C3@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH_ELEM_0_VR_End
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH_ELEM_0_VR_End@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH_ELEM_0_Marker_Width
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH_ELEM_0_Marker_Width@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_L4_Range
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_L4_Range@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH_ELEM_0_VR_Start
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH_ELEM_0_VR_Start@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH_ELEM_1_C0
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH_ELEM_1_C0@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH_ELEM_1_C1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH_ELEM_1_C1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH_ELEM_1_C2
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH_ELEM_1_C2@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH_ELEM_1_Confidence
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH_ELEM_1_Confidence@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH_ELEM_1_C3
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH_ELEM_1_C3@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH_ELEM_1_VR_Start
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH_ELEM_1_VR_Start@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH_ELEM_1_Marker_Width
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH_ELEM_1_Marker_Width@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH_ELEM_1_VR_End
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH_ELEM_1_VR_End@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LRE_ELEM_0_C1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LRE_ELEM_0_C1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LRE_ELEM_0_C2
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LRE_ELEM_0_C2@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LRE_ELEM_0_C3
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LRE_ELEM_0_C3@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LRE_ELEM_0_Range_End
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LRE_ELEM_0_Range_End@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_0_C0
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_0_C0@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LRE_ELEM_0_Range_Start
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LRE_ELEM_0_Range_Start@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LRE_ELEM_0_C0
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LRE_ELEM_0_C0@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LRE_ELEM_0_Confidence
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LRE_ELEM_0_Confidence@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LRE_ELEM_1_Confidence
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LRE_ELEM_1_Confidence@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LRE_ELEM_1_C1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LRE_ELEM_1_C1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LRE_ELEM_1_C2
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LRE_ELEM_1_C2@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LRE_ELEM_1_C3
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LRE_ELEM_1_C3@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LRE_ELEM_1_Range_End
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LRE_ELEM_1_Range_End@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_EN_C0
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_EN_C0@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_EN_C1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_EN_C1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_EN_C2
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_EN_C2@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_EN_C3
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_EN_C3@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_EN_Start
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_EN_Start@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_EN_Front
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_EN_Front@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_Exit_C0
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_Exit_C0@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_Exit_C1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_Exit_C1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_Exit_C2
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_Exit_C2@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_Exit_C3
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_Exit_C3@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_Exit_Start
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_Exit_Start@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_Exit_Front
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_Exit_Front@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_L3_AvaliTime
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_L3_AvaliTime@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_L2_AvaliTime
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_L2_AvaliTime@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_L1_AvaliDis
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_L1_AvaliDis@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_L2_AvaliDis
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_L2_AvaliDis@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_L1_AvaliTime
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_L1_AvaliTime@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_L4_AvaliTime
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_L4_AvaliTime@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_L3_AvaliDis
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_L3_AvaliDis@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_L4_AvaliDis
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_L4_AvaliDis@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_L1_A0
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_L1_A0@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_L2_A0
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_L2_A0@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_L3_A0
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_L3_A0@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_L4_A0
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_L4_A0@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_CurDis2
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_CurDis2@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_DeltaDis2
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_DeltaDis2@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_CurDis3
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_CurDis3@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_DeltaDis3
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_DeltaDis3@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_RoadWidth1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_RoadWidth1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_CentLineA3
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_CentLineA3@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_CentLineA2
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_CentLineA2@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_CentLineA1
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_CentLineA1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_CentLineA0
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_CentLineA0@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_CentLineRange
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_CentLineRange@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_CentQ
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_CentQ@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_dDeltaX
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_dDeltaX@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_dDeltaY
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_dDeltaY@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_CosOfPsi
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_CosOfPsi@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_SinOfsi
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_SinOfsi@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_TJA_Line_State1
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_TJA_Line_State1@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_HWASts
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_HWASts@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_OTL_Count
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_OTL_Count@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_RFM_LineCenter_Valid
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_RFM_LineCenter_Valid@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_RFM_LineR1_Valid
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_RFM_LineR1_Valid@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_RFM_LineL1_Valid
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_RFM_LineL1_Valid@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_L1_Conf
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_L1_Conf@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LRE_ELEM_1_Line_Side
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LRE_ELEM_1_Line_Side@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_0_Availability_State
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_0_Availability_State@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_0_Lanemark_Type
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_0_Lanemark_Type@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_0_DLM_Type
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_0_DLM_Type@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_0_Line_Side
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_0_Line_Side@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_L2_Conf
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_L2_Conf@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_1_Availability_State
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_1_Availability_State@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_1_Lanemark_Type
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_1_Lanemark_Type@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_1_DLM_Type
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_1_DLM_Type@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_1_Line_Side
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_1_Line_Side@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_2_Availability_State
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_2_Availability_State@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_L3_Conf
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_L3_Conf@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_2_Lanemark_Type
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_2_Lanemark_Type@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_2_DLM_Type
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_2_DLM_Type@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_2_Line_Side
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_2_Line_Side@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_3_Availability_State
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_3_Availability_State@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_3_Lanemark_Type
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_3_Lanemark_Type@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_3_DLM_Type
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_3_DLM_Type@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_ELEM_3_Line_Side
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_ELEM_3_Line_Side@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH_Count
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH_Count@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_L4_Conf
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_L4_Conf@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH_ELEM_0_Availability_State
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH_ELEM_0_Availability_State@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH_ELEM_0_Lanemark_Type
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH_ELEM_0_Lanemark_Type@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH_ELEM_0_DLM_Type
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH_ELEM_0_DLM_Type@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH_ELEM_0_Line_Side
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH_ELEM_0_Line_Side@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH_ELEM_0_Crossing
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH_ELEM_0_Crossing@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH_ELEM_1_Availability_State
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH_ELEM_1_Availability_State@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH_ELEM_1_Lanemark_Type
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH_ELEM_1_Lanemark_Type@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH_ELEM_1_DLM_Type
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH_ELEM_1_DLM_Type@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LA_Adjacent_Count
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LA_Adjacent_Count@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH_ELEM_1_Line_Side
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH_ELEM_1_Line_Side@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH_ELEM_1_Crossing
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH_ELEM_1_Crossing@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LRE_Count
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LRE_Count@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LRE_ELEM_0_Line_Side
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LRE_ELEM_0_Line_Side@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LRE_ELEM_0_Availability_State
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LRE_ELEM_0_Availability_State@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LRE_ELEM_1_Availability_State
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LRE_ELEM_1_Availability_State@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_EN_Valid
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_EN_Valid@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_Exit_Valid
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_Exit_Valid@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LeftLineConf
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LeftLineConf@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_RightLineConf
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_RightLineConf@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_TJA_Line_State
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_TJA_Line_State@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_Wij_State
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_Wij_State@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_Line_State
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_Line_State@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LockCounter
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LockCounter@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_MoveID
+      /* Long identifier        */      ""
+      /* Data type              */      SBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_int8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -128
+      /* Upper limit            */      127
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_MoveID@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LockID
+      /* Long identifier        */      ""
+      /* Data type              */      SBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_int8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -128
+      /* Upper limit            */      127
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LockID@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LineValidK1
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LineValidK1@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LeftMostLane
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LeftMostLane@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_TJALineValid
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_TJALineValid@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_HWALineValid
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_HWALineValid@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_HWARiLineValid
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_HWARiLineValid@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_HWALeLineValid
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_HWALeLineValid@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_DoubleLineLost_b
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_DoubleLineLost_b@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_ESSLeLineValid
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_ESSLeLineValid@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_ESSLineValid
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_ESSLineValid@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_ESSRiLineValid
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_ESSRiLineValid@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LCKLineValid
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LCKLineValid@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_MLeLane
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_MLeLane@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LeftLaneChange
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LeftLaneChange@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_RightLaneChange
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_RightLaneChange@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_OTLineValid
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_OTLineValid@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_SingleLineLost_b
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_SingleLineLost_b@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_PathLaneAvail
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Layout                 */      LAYOUT  ROW_DIR
+      /* Array size             */      MATRIX_DIM 3 1 1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_PathLaneAvail@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LeftOffset_b
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LeftOffset_b@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_RightOffset_b
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_RightOffset_b@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LeftLineTypeEN
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LeftLineTypeEN@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_RightLineTypeEN
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_RightLineTypeEN@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_DOP_EN
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_DOP_EN@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_DOP_Out
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_DOP_Out@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH1Valid
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH1Valid@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_LH2Valid
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_LH2Valid@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_CentLineValid
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_CentLineValid@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LSM_VisLineUpdate
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfDecisionLSM_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LSM_VisLineUpdate@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfDecisionLSM_MDL_CM_single
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      ""
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfDecisionLSM_MDL_CM_double
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%15.10"
+      /* Units                  */      ""
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfDecisionLSM_MDL_CM_uint8
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%3.0"
+      /* Units                  */      ""
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfDecisionLSM_MDL_CM_uint32
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%10.0"
+      /* Units                  */      ""
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfDecisionLSM_MDL_CM_int8
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%3.0"
+      /* Units                  */      ""
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfDecisionLSM_MDL_CM_boolean
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%1.0"
+      /* Units                  */      ""
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    
+    
+    /begin GROUP 
+      /* Name                   */       PubIfDecisionLSM_MDL
+      /* Long identifier        */       "PubIfDecisionLSM_MDL"
+      /* Root                    */       ROOT
+      /begin SUB_GROUP
+        Root_Subsystem1
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       Root_Subsystem1
+      /* Long identifier        */       "PubIfDecisionLSM_MDL/Subsystem1"
+      /begin SUB_GROUP
+        S1_LSM_Signal
+        S1_TargetLineCalc_20ms
+      /end SUB_GROUP
+      /begin REF_MEASUREMENT
+        LSM_RFM_LineCenter_C0
+        LSM_RFM_LineCenter_C1
+        LSM_RFM_LineCenter_C2
+        LSM_RFM_LineCenter_C3
+        LSM_RFM_LineCenter_Front
+        LSM_RFM_LineCenter_Start
+        LSM_RFM_LineCenter_Valid
+        LSM_RFM_LineL1_C0
+        LSM_RFM_LineL1_C1
+        LSM_RFM_LineL1_C2
+        LSM_RFM_LineL1_C3
+        LSM_RFM_LineL1_Front
+        LSM_RFM_LineL1_Start
+        LSM_RFM_LineL1_Valid
+        LSM_RFM_LineR1_C0
+        LSM_RFM_LineR1_C1
+        LSM_RFM_LineR1_C2
+        LSM_RFM_LineR1_C3
+        LSM_RFM_LineR1_Front
+        LSM_RFM_LineR1_Start
+        LSM_RFM_LineR1_Valid
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S1_LSM_Signal
+      /* Long identifier        */       "PubIfDecisionLSM_MDL/Subsystem1/LSM_Signal"
+      /begin REF_MEASUREMENT
+        LSM_DoubleLineLost_b
+        LSM_ESSLeLineC0
+        LSM_ESSLeLineC1
+        LSM_ESSLeLineC2
+        LSM_ESSLeLineC3
+        LSM_ESSLeLineValid
+        LSM_ESSLeRange
+        LSM_ESSLineC0
+        LSM_ESSLineC1
+        LSM_ESSLineC2
+        LSM_ESSLineC3
+        LSM_ESSLineValid
+        LSM_ESSRange
+        LSM_ESSRiLineC0
+        LSM_ESSRiLineC1
+        LSM_ESSRiLineC2
+        LSM_ESSRiLineC3
+        LSM_ESSRiLineValid
+        LSM_ESSRiRange
+        LSM_HWALeLineC0
+        LSM_HWALeLineC1
+        LSM_HWALeLineC2
+        LSM_HWALeLineC3
+        LSM_HWALeLineValid
+        LSM_HWALeRange
+        LSM_HWALineC0
+        LSM_HWALineC1
+        LSM_HWALineC2
+        LSM_HWALineC3
+        LSM_HWALineValid
+        LSM_HWARange
+        LSM_HWARiLineC0
+        LSM_HWARiLineC1
+        LSM_HWARiLineC2
+        LSM_HWARiLineC3
+        LSM_HWARiLineValid
+        LSM_HWARiRange
+        LSM_HeadAngDiff
+        LSM_LCKLineC0
+        LSM_LCKLineC1
+        LSM_LCKLineC2
+        LSM_LCKLineC3
+        LSM_LCKLineValid
+        LSM_LCKRange
+        LSM_LeftLaneChange
+        LSM_MLeLane
+        LSM_OTL_A0
+        LSM_OTL_A1
+        LSM_OTL_A2
+        LSM_OTL_A3
+        LSM_OTL_Count
+        LSM_OTL_Range
+        LSM_OTLineValid
+        LSM_RightLaneChange
+        LSM_RoadWidth
+        LSM_SingleLineLost_b
+        LSM_TJALineC0
+        LSM_TJALineC1
+        LSM_TJALineC2
+        LSM_TJALineC3
+        LSM_TJALineValid
+        LSM_TJARange
+        LSM_UpdateCnt
+        LSM_dyDiff
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S1_TargetLineCalc_20ms
+      /* Long identifier        */       "PubIfDecisionLSM_MDL/Subsystem1/TargetLineCalc_20ms"
+      /begin SUB_GROUP
+        S4_Simulink_Function
+        S4_TargetLineCalc
+      /end SUB_GROUP
+      /begin REF_MEASUREMENT
+        LSM_L1_Conf
+        LSM_L1_Range
+        LSM_L2_Conf
+        LSM_L2_Range
+        LSM_L3_Conf
+        LSM_L3_Range
+        LSM_L4_Conf
+        LSM_L4_Range
+        LSM_LA_Adjacent_Count
+        LSM_LA_ELEM_0_Availability_State
+        LSM_LA_ELEM_0_C0
+        LSM_LA_ELEM_0_C1
+        LSM_LA_ELEM_0_C2
+        LSM_LA_ELEM_0_C3
+        LSM_LA_ELEM_0_Confidence
+        LSM_LA_ELEM_0_DLM_Type
+        LSM_LA_ELEM_0_Lanemark_Type
+        LSM_LA_ELEM_0_Line_Side
+        LSM_LA_ELEM_0_Marker_Width
+        LSM_LA_ELEM_0_Range_End
+        LSM_LA_ELEM_0_Range_Start
+        LSM_LA_ELEM_1_Availability_State
+        LSM_LA_ELEM_1_C0
+        LSM_LA_ELEM_1_C1
+        LSM_LA_ELEM_1_C2
+        LSM_LA_ELEM_1_C3
+        LSM_LA_ELEM_1_Confidence
+        LSM_LA_ELEM_1_DLM_Type
+        LSM_LA_ELEM_1_Lanemark_Type
+        LSM_LA_ELEM_1_Line_Side
+        LSM_LA_ELEM_1_Marker_Width
+        LSM_LA_ELEM_1_Range_End
+        LSM_LA_ELEM_1_Range_Start
+        LSM_LA_ELEM_2_Availability_State
+        LSM_LA_ELEM_2_C0
+        LSM_LA_ELEM_2_C1
+        LSM_LA_ELEM_2_C2
+        LSM_LA_ELEM_2_C3
+        LSM_LA_ELEM_2_Confidence
+        LSM_LA_ELEM_2_DLM_Type
+        LSM_LA_ELEM_2_Lanemark_Type
+        LSM_LA_ELEM_2_Line_Side
+        LSM_LA_ELEM_2_Marker_Width
+        LSM_LA_ELEM_2_Range_End
+        LSM_LA_ELEM_2_Range_Start
+        LSM_LA_ELEM_3_Availability_State
+        LSM_LA_ELEM_3_C0
+        LSM_LA_ELEM_3_C1
+        LSM_LA_ELEM_3_C2
+        LSM_LA_ELEM_3_C3
+        LSM_LA_ELEM_3_Confidence
+        LSM_LA_ELEM_3_DLM_Type
+        LSM_LA_ELEM_3_Lanemark_Type
+        LSM_LA_ELEM_3_Line_Side
+        LSM_LA_ELEM_3_Marker_Width
+        LSM_LA_ELEM_3_Range_End
+        LSM_LA_ELEM_3_Range_Start
+        LSM_LH_Count
+        LSM_LH_ELEM_0_Availability_State
+        LSM_LH_ELEM_0_C0
+        LSM_LH_ELEM_0_C1
+        LSM_LH_ELEM_0_C2
+        LSM_LH_ELEM_0_C3
+        LSM_LH_ELEM_0_Confidence
+        LSM_LH_ELEM_0_Crossing
+        LSM_LH_ELEM_0_DLM_Type
+        LSM_LH_ELEM_0_Lanemark_Type
+        LSM_LH_ELEM_0_Line_Side
+        LSM_LH_ELEM_0_Marker_Width
+        LSM_LH_ELEM_0_VR_End
+        LSM_LH_ELEM_0_VR_Start
+        LSM_LH_ELEM_1_Availability_State
+        LSM_LH_ELEM_1_C0
+        LSM_LH_ELEM_1_C1
+        LSM_LH_ELEM_1_C2
+        LSM_LH_ELEM_1_C3
+        LSM_LH_ELEM_1_Confidence
+        LSM_LH_ELEM_1_Crossing
+        LSM_LH_ELEM_1_DLM_Type
+        LSM_LH_ELEM_1_Lanemark_Type
+        LSM_LH_ELEM_1_Line_Side
+        LSM_LH_ELEM_1_Marker_Width
+        LSM_LH_ELEM_1_VR_End
+        LSM_LH_ELEM_1_VR_Start
+        LSM_LRE_Count
+        LSM_LRE_ELEM_0_Availability_State
+        LSM_LRE_ELEM_0_C0
+        LSM_LRE_ELEM_0_C1
+        LSM_LRE_ELEM_0_C2
+        LSM_LRE_ELEM_0_C3
+        LSM_LRE_ELEM_0_Confidence
+        LSM_LRE_ELEM_0_Line_Side
+        LSM_LRE_ELEM_0_Range_End
+        LSM_LRE_ELEM_0_Range_Start
+        LSM_LRE_ELEM_1_Availability_State
+        LSM_LRE_ELEM_1_C0
+        LSM_LRE_ELEM_1_C1
+        LSM_LRE_ELEM_1_C2
+        LSM_LRE_ELEM_1_C3
+        LSM_LRE_ELEM_1_Confidence
+        LSM_LRE_ELEM_1_Line_Side
+        LSM_LRE_ELEM_1_Range_End
+        LSM_LRE_ELEM_1_Range_Start
+        LSM_VisLineUpdate
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S4_Simulink_Function
+      /* Long identifier        */       "PubIfDecisionLSM_MDL/Subsystem1/TargetLineCalc_20ms/Simulink Function"
+      /begin REF_CHARACTERISTIC
+        P_LSM_IFV2CenterAxis
+        P_LSM_IFV2RearAxis
+      /end REF_CHARACTERISTIC
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S4_TargetLineCalc
+      /* Long identifier        */       "PubIfDecisionLSM_MDL/Subsystem1/TargetLineCalc_20ms/TargetLineCalc"
+      /begin SUB_GROUP
+        S17_Subsystem2
+        S17_Subsystem4
+        S17_Subsystem5
+        S17_TypeConf
+      /end SUB_GROUP
+      /begin REF_CHARACTERISTIC
+        P_LSM_ALC_Enable
+        P_LSM_LineSTD_Limit
+        P_LSM_NOH_Switch
+        P_LSM_Pre_t
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        LSM_A0K1
+        LSM_A1K1
+        LSM_A2K1
+        LSM_A3K1
+        LSM_CentLineA0
+        LSM_CentLineA1
+        LSM_CentLineA2
+        LSM_CentLineA3
+        LSM_CentLineRange
+        LSM_CentLineValid
+        LSM_CentQ
+        LSM_CosOfPsi
+        LSM_EN_C0
+        LSM_EN_C1
+        LSM_EN_C2
+        LSM_EN_C3
+        LSM_EN_Front
+        LSM_EN_Start
+        LSM_EN_Valid
+        LSM_Exit_C0
+        LSM_Exit_C1
+        LSM_Exit_C2
+        LSM_Exit_C3
+        LSM_Exit_Front
+        LSM_Exit_Start
+        LSM_Exit_Valid
+        LSM_HWALineC0K1
+        LSM_HWASts
+        LSM_L1_A0
+        LSM_L1_AvaliDis
+        LSM_L1_AvaliTime
+        LSM_L2_A0
+        LSM_L2_AvaliDis
+        LSM_L2_AvaliTime
+        LSM_L3_A0
+        LSM_L3_AvaliDis
+        LSM_L3_AvaliTime
+        LSM_L4_A0
+        LSM_L4_AvaliDis
+        LSM_L4_AvaliTime
+        LSM_LH1Valid
+        LSM_LH2Valid
+        LSM_LeftMostLane
+        LSM_LeftOffset_b
+        LSM_LineValidK1
+        LSM_Line_State
+        LSM_LockCounter
+        LSM_LockID
+        LSM_MoveID
+        LSM_PathLaneAvail
+        LSM_QualityK1
+        LSM_RangeK1
+        LSM_RightOffset_b
+        LSM_RoadWidth1
+        LSM_SinOfsi
+        LSM_TJA_Line_State1
+        LSM_Wij_State
+        LSM_dDeltaX
+        LSM_dDeltaY
+        LSM_tLostK1
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S17_Subsystem2
+      /* Long identifier        */       "PubIfDecisionLSM_MDL/Subsystem1/TargetLineCalc_20ms/TargetLineCalc/Subsystem2"
+      /begin REF_CHARACTERISTIC
+        P_LSM_DOPValid_CheckTime
+        P_LSM_DOP_C0_EN_Limit
+        P_LSM_DOP_C0_out_Limit
+        P_LSM_DOP_C1AndC2_Lim_X
+        P_LSM_DOP_C1_EN_Limit
+        P_LSM_DOP_C1_out_Limit
+        P_LSM_DOP_C2_EN_Limit
+        P_LSM_DOP_C2_out_Limit
+        P_LSM_DOP_In_Pre2Dop_Dis
+        P_LSM_DOP_Out_Pre2Dop_Dis
+        P_LSM_DOP_PreDis_X
+        P_LSM_DOP_PreDis_Y
+        P_LSM_DoubleLine_Curr2Cent_Dislimit
+        P_LSM_DoubleLine_DOPOut_C1
+        P_LSM_DoubleLine_Dop2Cent_Dislimit
+        P_LSM_DoubleLine_Pre2Cent_Dislimit
+        P_LSM_SingleLine_Cent2Edge_Dislimit
+        P_LSM_SingleLine_Curr2Cent_Dislimit
+        P_LSM_SingleLine_DOPOut_C1
+        P_LSM_SingleLine_Dop2Cent_Dislimit
+        P_LSM_SingleLine_Pre2Cent_Dislimit
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        LSM_DOP_EN
+        LSM_DOP_Out
+        LSM_TJA_Line_State
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S17_Subsystem4
+      /* Long identifier        */       "PubIfDecisionLSM_MDL/Subsystem1/TargetLineCalc_20ms/TargetLineCalc/Subsystem4"
+      /begin SUB_GROUP
+        S49_If_Action_Subsystem5
+      /end SUB_GROUP
+      /begin REF_CHARACTERISTIC
+        P_LSM_LineWijCal_C12
+        P_LSM_LineWijCal_C13
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        LSM_CurDis2
+        LSM_CurDis3
+        LSM_DeltaDis2
+        LSM_DeltaDis3
+        LSM_LH1Wij
+        LSM_LH21
+        LSM_LH22
+        LSM_LH23
+        LSM_LH2Wij
+        LSM_LH31
+        LSM_LH32
+        LSM_LH33
+        LSM_LeftLineConf
+        LSM_RightLineConf
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S17_Subsystem5
+      /* Long identifier        */       "PubIfDecisionLSM_MDL/Subsystem1/TargetLineCalc_20ms/TargetLineCalc/Subsystem5"
+      /begin SUB_GROUP
+        S50_If_Action_Subsystem5
+      /end SUB_GROUP
+      /begin REF_CHARACTERISTIC
+        P_LSM_LineWijCal_C12
+        P_LSM_LineWijCal_C13
+      /end REF_CHARACTERISTIC
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S17_TypeConf
+      /* Long identifier        */       "PubIfDecisionLSM_MDL/Subsystem1/TargetLineCalc_20ms/TargetLineCalc/TypeConf"
+      /begin REF_MEASUREMENT
+        LSM_LeftLineTypeEN
+        LSM_RightLineTypeEN
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S49_If_Action_Subsystem5
+      /* Long identifier        */       "PubIfDecisionLSM_MDL/Subsystem1/TargetLineCalc_20ms/TargetLineCalc/Subsystem4/If Action Subsystem5"
+      /begin REF_CHARACTERISTIC
+        P_LSM_PosLineLcFac
+      /end REF_CHARACTERISTIC
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S50_If_Action_Subsystem5
+      /* Long identifier        */       "PubIfDecisionLSM_MDL/Subsystem1/TargetLineCalc_20ms/TargetLineCalc/Subsystem5/If Action Subsystem5"
+      /begin REF_CHARACTERISTIC
+        P_LSM_PosLineLcFac
+      /end REF_CHARACTERISTIC
+    /end GROUP
+    
+    
+  /end MODULE
+  
+  
+/end PROJECT
+/* EOF PubIfDecisionLSM_MDL.a2l*/

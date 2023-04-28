@@ -1,0 +1,84 @@
+source_file:
+D:\10_HWA_Project\NOHV1\NoaApp\Components\Noa_Nofusion\slprj\dsrt\_sharedutils\mod_gOdeMr4r.c
+command_line:
+"D:\Program Files\dSPACE RCPHIL 2020-B\Compiler\Linux440_550\target\arm-linux-gnueabihf\bin\arm-linux-gnueabihf-gcc.exe"
+-c
+-fno-common
+-nostdinc
+-fno-strict-aliasing
+-pipe
+-ffast-math
+-fomit-frame-pointer
+-funwind-tables
+-mcpu=cortex-a15
+-mfpu=neon-vfpv4
+-mfloat-abi=hard
+"-isystemD:\Program Files\dSPACE RCPHIL 2020-B\Compiler\Linux440_550\target\arm-linux-gnueabihf\arm-linux-gnueabihf\include\c++\5.5.0"
+"-isystemD:\Program Files\dSPACE RCPHIL 2020-B\Compiler\Linux440_550\target\arm-linux-gnueabihf\arm-linux-gnueabihf\include\c++\5.5.0\arm-linux-gnueabihf"
+"-isystemD:\Program Files\dSPACE RCPHIL 2020-B\Compiler\Linux440_550\target\arm-linux-gnueabihf\include"
+"-isystemD:\Program Files\dSPACE RCPHIL 2020-B\Compiler\Linux440_550\target\arm-linux-gnueabihf\lib\gcc\arm-linux-gnueabihf\5.5.0\include"
+"-isystemD:\Program Files\dSPACE RCPHIL 2020-B\Compiler\Linux440_550\target\arm-linux-gnueabihf\lib\gcc\arm-linux-gnueabihf\5.5.0\include-fixed"
+-Werror-implicit-function-declaration
+-D_DS1403
+-D_DS1403CN
+-DDS_PLATFORM_ARM
+-DDS_PLATFORM_ARMV7
+-DDS_PLATFORM_KEYSTONE
+-DDS_PLATFORM_LE
+-DDS_PLATFORM_POSIX
+-DDS_PLATFORM_LINUX
+-DDS_PLATFORM_DSRTLINUX
+-DDS_PLATFORM_CN
+-DDS_PLATFORM_SMART
+-DDS_PLATFORM_SMARTBOX
+-DDS_PLATFORM_SMP
+-D__HOSTNAME__=\BDJS-CND110023G\
+-D__INTEGRATION__=\5.0.1\
+-DDS_RTLIB_VERSION_MAR=5
+-DDS_RTLIB_VERSION_MIR=0
+-DDS_LINUX_VERSION=440
+-DLINUX_VERSION=4.4.0
+-D_FILE_OFFSET_BITS=64
+-O0
+"-IC:\Program Files\Polyspace\R2020b\extern\include"
+"-IC:\Program Files\Polyspace\R2020b\simulink\include"
+"-IC:\Program Files\Polyspace\R2020b\toolbox\shared\can\src\scanutil"
+-ID:\10_HWA_Project\NOHV1\NoaApp\Components\Noa_Nofusion\Noa_Nofusion_dsrt
+-ID:\10_HWA_Project\NOHV1\NoaApp\Components\Noa_Nofusion
+-IC:\PROGRA~1\POLYSP~1\R2020b\simulink\include
+-IC:\PROGRA~1\POLYSP~1\R2020b\extern\include
+-IC:\PROGRA~1\POLYSP~1\R2020b\rtw\c\src
+-IC:\PROGRA~1\POLYSP~1\R2020b\rtw\c\src\ext_mode\common
+-ID:\10_HWA_Project\NOHV1\NoaApp\Components\Noa_Nofusion\Noa_Nofusion_dsrt\referenced_model_includes
+-ID:\10_HWA_Project\NOHV1\NoaApp\Components\Noa_Nofusion
+-ID:\10_HWA_Project\NOHV1\NoaApp\Components\Noa_Nofusion\Noa_Nofusion_dsrt
+-ID:\10_HWA_Project\Git_ADAS_Store\projcct\adas_project\McuEQ4Parse\src
+-ID:\10_HWA_Project\Git_ADAS_Store\projcct\adas_project\RoadFusion_L3\src
+-IC:\PROGRA~1\POLYSP~1\R2020b\extern\include
+-IC:\PROGRA~1\POLYSP~1\R2020b\simulink\include
+-IC:\PROGRA~1\POLYSP~1\R2020b\rtw\c\src
+-IC:\PROGRA~1\POLYSP~1\R2020b\rtw\c\src\ext_mode\common
+-IC:\PROGRA~1\POLYSP~1\R2020b\toolbox\shared\can\src\scanutil
+-ID:\10_HWA_Project\NOHV1\NoaApp\Components\Noa_Nofusion\slprj\dsrt\_sharedutils
+-ID:\10_HWA_Project\NOHV1\NoaApp\Components\Noa_Nofusion\Noa_Nofusion_dsrt\referenced_model_includes
+-ID:\10_HWA_Project\NOHV1\NoaApp\Components\Noa_Nofusion\slprj\dsrt\_sharedutils
+"-ID:\Program Files\dSPACE RCPHIL 2020-B\DS1403\Include"
+-DDATA_PORT_ACCESS_POINT_API_VERSION=2
+-DUSE_RTMODEL
+-DMODEL=Noa_Nofusion
+-DMT=0
+-DRT
+-DNUMST=3
+-DNCSTATES=0
+-DNO_PRINTF
+-DTID01EQ=0
+-o
+D:\10_HWA_Project\NOHV1\NoaApp\Build\Noa_Nofusion\Compile\rtwshared\mod_gOdeMr4r.oarm
+mod_gOdeMr4r.c
+file_info:
+2021/12/01
+16:03
+2021/12/01
+16:03
+966
+mod_gOdeMr4r.c 

@@ -1,0 +1,15 @@
+dSPACE Real-Time Target project marker file.
+
+BuildDir:           no
+Model:              PubIfDecisionPLAN_MDL
+TMF:                D:\Program Files\dSPACE RCPHIL 2020-B\MATLAB\MIPS\DSRT\dsrt_default_tmf.p
+MATLAB:             9.9.0.1467703 (R2020b)
+Simulink:           Simulink 10.2 (R2020b) 29-Jul-2020
+SimStruct:          29-7月-2020 14:26:22
+RTW:                Simulink Coder 9.4 (R2020b) 29-Jul-2020
+DSRT:               4.4 (02-Nov-2020)
+DSRTSU:             4.0 (02-Nov-2020)
+RTICANMM:           5.5 (02-Nov-2020)
+RTILINMM:           3.5 (02-Nov-2020)
+TALIB:              n.a.
+IdCheckSum:         61-0C-0A-01-7E-07-0A-03-91-03-00-0F-A5-0F-0D-07

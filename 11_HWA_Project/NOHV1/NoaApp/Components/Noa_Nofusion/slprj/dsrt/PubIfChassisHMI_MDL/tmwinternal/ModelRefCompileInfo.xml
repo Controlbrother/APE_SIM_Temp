@@ -1,0 +1,2825 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/ci/19700101 http://schema.mathworks.com/mf0/sl_modelref_info/R2020b http://schema.mathworks.com/mf0/slexec_mm_sto/R2019b_201902271317">
+  <ModelRefInfoRepo.ModelRefInfoRoot type="ModelRefInfoRepo.ModelRefInfoRoot" uuid="397fa2c4-fdbc-406e-85e6-0b99b08bdb31">
+    <autoSolverStatusFlags>335</autoSolverStatusFlags>
+    <childModelRefInfo type="ModelRefInfoRepo.ChildModelRefInfo" uuid="9b0576dd-5613-448b-843d-748b853d4f6b">
+      <isSingleInstance>true</isSingleInstance>
+      <modelName>PubIfChassisHMI_MDL</modelName>
+      <modelPath>PubIfChassisHMI_MDL</modelPath>
+    </childModelRefInfo>
+    <compDerivCacheNeedsReset>false</compDerivCacheNeedsReset>
+    <compToGrInputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="b8ea9f6f-33fd-45a2-a725-e632eabcc486">
+      <grAndCompPorts>8</grAndCompPorts>
+      <grAndCompPorts>8</grAndCompPorts>
+    </compToGrInputPortMaps>
+    <compToGrInputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="03663581-6c77-49b1-bc9a-65c7cda22cd1">
+      <grAndCompPorts>0</grAndCompPorts>
+      <grAndCompPorts>0</grAndCompPorts>
+    </compToGrInputPortMaps>
+    <compToGrInputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="ba572ec4-5255-4f0d-86ce-e7f9b34fb983">
+      <grAndCompPorts>1</grAndCompPorts>
+      <grAndCompPorts>1</grAndCompPorts>
+    </compToGrInputPortMaps>
+    <compToGrInputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="540ff92e-f3e4-490a-9c61-2da457616f83">
+      <grAndCompPorts>2</grAndCompPorts>
+      <grAndCompPorts>2</grAndCompPorts>
+    </compToGrInputPortMaps>
+    <compToGrInputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="5d3c938b-3a92-4b60-ab51-98af2476b55b">
+      <grAndCompPorts>3</grAndCompPorts>
+      <grAndCompPorts>3</grAndCompPorts>
+    </compToGrInputPortMaps>
+    <compToGrInputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="98bb7801-d6e9-4edd-b8ae-9e6324c90efa">
+      <grAndCompPorts>4</grAndCompPorts>
+      <grAndCompPorts>4</grAndCompPorts>
+    </compToGrInputPortMaps>
+    <compToGrInputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="ac750efd-aab9-4cff-9940-8b6a4df70dcd">
+      <grAndCompPorts>5</grAndCompPorts>
+      <grAndCompPorts>5</grAndCompPorts>
+    </compToGrInputPortMaps>
+    <compToGrInputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="a359dfff-30e7-4468-b8ec-e0ea8d1917d3">
+      <grAndCompPorts>6</grAndCompPorts>
+      <grAndCompPorts>6</grAndCompPorts>
+    </compToGrInputPortMaps>
+    <compToGrInputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="5b2d1372-a35b-432c-8e58-844a04eb2968">
+      <grAndCompPorts>7</grAndCompPorts>
+      <grAndCompPorts>7</grAndCompPorts>
+    </compToGrInputPortMaps>
+    <compToGrInputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="19cd5fa1-c193-436d-a712-3f9d692d09da">
+      <grAndCompPorts>9</grAndCompPorts>
+      <grAndCompPorts>9</grAndCompPorts>
+    </compToGrInputPortMaps>
+    <compToGrInputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="249cad01-2a89-4c67-9808-f55487b64746">
+      <grAndCompPorts>10</grAndCompPorts>
+      <grAndCompPorts>10</grAndCompPorts>
+    </compToGrInputPortMaps>
+    <compToGrInputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="c3ace4fd-4a02-465c-b8eb-e68f7a18f6c7">
+      <grAndCompPorts>11</grAndCompPorts>
+      <grAndCompPorts>11</grAndCompPorts>
+    </compToGrInputPortMaps>
+    <compToGrInputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="c9e1f10f-de00-47d4-86e1-91ee507ee3d4">
+      <grAndCompPorts>12</grAndCompPorts>
+      <grAndCompPorts>12</grAndCompPorts>
+    </compToGrInputPortMaps>
+    <compToGrInputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="70172e03-d2db-4d90-a315-b5bb2db5a664">
+      <grAndCompPorts>13</grAndCompPorts>
+      <grAndCompPorts>13</grAndCompPorts>
+    </compToGrInputPortMaps>
+    <compToGrInputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="dcef28a8-60c4-4b1d-9813-a76185157dcb">
+      <grAndCompPorts>14</grAndCompPorts>
+      <grAndCompPorts>14</grAndCompPorts>
+    </compToGrInputPortMaps>
+    <compToGrInputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="4dd1aacd-d577-4879-9b6d-fb8c8b370caa">
+      <grAndCompPorts>15</grAndCompPorts>
+      <grAndCompPorts>15</grAndCompPorts>
+    </compToGrInputPortMaps>
+    <compToGrInputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="0c04fe41-8c4d-47a3-81e3-a8b17f3b0a9c">
+      <grAndCompPorts>16</grAndCompPorts>
+      <grAndCompPorts>16</grAndCompPorts>
+    </compToGrInputPortMaps>
+    <compToGrInputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="116c4267-72ad-49dd-9854-32180376286a">
+      <grAndCompPorts>17</grAndCompPorts>
+      <grAndCompPorts>17</grAndCompPorts>
+    </compToGrInputPortMaps>
+    <compToGrInputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="1f4d384d-00ec-4bbe-9576-880065ed5666">
+      <grAndCompPorts>18</grAndCompPorts>
+      <grAndCompPorts>18</grAndCompPorts>
+    </compToGrInputPortMaps>
+    <compToGrInputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="b71ce9f5-6eaf-402b-9703-0a0c86be9d17">
+      <grAndCompPorts>19</grAndCompPorts>
+      <grAndCompPorts>19</grAndCompPorts>
+    </compToGrInputPortMaps>
+    <compToGrInputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="34c4b5a8-b828-421c-bb7c-d4b77f0b00c3">
+      <grAndCompPorts>20</grAndCompPorts>
+      <grAndCompPorts>20</grAndCompPorts>
+    </compToGrInputPortMaps>
+    <compToGrInputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="1fd1e698-2712-43f3-be34-f1beab74c36a">
+      <grAndCompPorts>21</grAndCompPorts>
+      <grAndCompPorts>21</grAndCompPorts>
+    </compToGrInputPortMaps>
+    <compToGrInputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="e4b62a27-cab1-4651-a2ea-6c4bf4783530">
+      <grAndCompPorts>22</grAndCompPorts>
+      <grAndCompPorts>22</grAndCompPorts>
+    </compToGrInputPortMaps>
+    <compToGrInputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="00c14b80-4712-4618-8dd0-5173872758c0">
+      <grAndCompPorts>23</grAndCompPorts>
+      <grAndCompPorts>23</grAndCompPorts>
+    </compToGrInputPortMaps>
+    <compToGrInputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="cda0a4e7-b539-46b9-a3f3-864a9eb8991c">
+      <grAndCompPorts>24</grAndCompPorts>
+      <grAndCompPorts>24</grAndCompPorts>
+    </compToGrInputPortMaps>
+    <compToGrInputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="d1ae09f0-de23-4d73-90c6-5578ab1ab030">
+      <grAndCompPorts>25</grAndCompPorts>
+      <grAndCompPorts>25</grAndCompPorts>
+    </compToGrInputPortMaps>
+    <compToGrInputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="513e8052-ce97-4117-91c2-29bbc21061aa">
+      <grAndCompPorts>26</grAndCompPorts>
+      <grAndCompPorts>26</grAndCompPorts>
+    </compToGrInputPortMaps>
+    <compToGrInputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="fa03d0b3-3269-4709-817d-9ddc93a78699">
+      <grAndCompPorts>27</grAndCompPorts>
+      <grAndCompPorts>27</grAndCompPorts>
+    </compToGrInputPortMaps>
+    <compToGrOutputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="26ec95d2-678b-44e5-8c24-6885d8be49bc">
+      <grAndCompPorts>8</grAndCompPorts>
+      <grAndCompPorts>8</grAndCompPorts>
+    </compToGrOutputPortMaps>
+    <compToGrOutputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="24fe1664-e0ef-4704-8784-e130dae1f7a5">
+      <grAndCompPorts>0</grAndCompPorts>
+      <grAndCompPorts>0</grAndCompPorts>
+    </compToGrOutputPortMaps>
+    <compToGrOutputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="1243c54a-7f9b-443b-a8a3-50661723fbec">
+      <grAndCompPorts>1</grAndCompPorts>
+      <grAndCompPorts>1</grAndCompPorts>
+    </compToGrOutputPortMaps>
+    <compToGrOutputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="8d62bdb3-bffb-4c5b-be41-a9dc9ea9d19c">
+      <grAndCompPorts>2</grAndCompPorts>
+      <grAndCompPorts>2</grAndCompPorts>
+    </compToGrOutputPortMaps>
+    <compToGrOutputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="24221c66-ae2b-471a-9aef-26b86a28ef15">
+      <grAndCompPorts>3</grAndCompPorts>
+      <grAndCompPorts>3</grAndCompPorts>
+    </compToGrOutputPortMaps>
+    <compToGrOutputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="c15ade93-42b3-4434-bd38-3a609f8969c2">
+      <grAndCompPorts>4</grAndCompPorts>
+      <grAndCompPorts>4</grAndCompPorts>
+    </compToGrOutputPortMaps>
+    <compToGrOutputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="c5f034b4-25d1-448a-a6f2-11400fd5e05c">
+      <grAndCompPorts>5</grAndCompPorts>
+      <grAndCompPorts>5</grAndCompPorts>
+    </compToGrOutputPortMaps>
+    <compToGrOutputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="33296689-455a-42e3-bd71-b6691cb5f892">
+      <grAndCompPorts>6</grAndCompPorts>
+      <grAndCompPorts>6</grAndCompPorts>
+    </compToGrOutputPortMaps>
+    <compToGrOutputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="a40e076f-3ef7-4675-adff-e66dce4bfad9">
+      <grAndCompPorts>7</grAndCompPorts>
+      <grAndCompPorts>7</grAndCompPorts>
+    </compToGrOutputPortMaps>
+    <compToGrOutputPortMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="63fb28f4-f543-434e-b2a6-318f2de2a2b5">
+      <grAndCompPorts>9</grAndCompPorts>
+      <grAndCompPorts>9</grAndCompPorts>
+    </compToGrOutputPortMaps>
+    <compZcCacheNeedsReset>false</compZcCacheNeedsReset>
+    <dataDictionary>HWA_DDs.sldd</dataDictionary>
+    <dataDictionarySet>HWA_DDs.sldd</dataDictionarySet>
+    <dataDictionarySetForDataTypeCheck>HWA_DDs.sldd</dataDictionarySetForDataTypeCheck>
+    <dataTransferInfos>AAFJTQAAAAAOAAAAOAAAAAYAAAAIAAAAAgAAAAAAAAAFAAAACAAAAAAAAAABAAAAAQAAAAAAAAAFAAQAAQAAAAEAAAAAAAAA</dataTransferInfos>
+    <defaultsCMapping>{&quot;Inports&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;,&quot;Outports&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;,&quot;ParameterArguments&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;,&quot;LocalParameters&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;,&quot;GlobalParameters&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;,&quot;InternalData&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;,&quot;SharedLocalDataStores&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;,&quot;GlobalDataStores&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;,&quot;Constants&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;,&quot;DataTransfers&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;,&quot;ModelData&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;,&quot;InitializeTerminate&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;,&quot;Execution&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;,&quot;SharedUtility&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;}</defaultsCMapping>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="ef8e17fe-cf70-4729-b573-e0e366de94c4">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Unit Delay1</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="0be5b06d-309c-43da-b971-7d6afd42cc26">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Unit Delay2</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="2e847892-7de9-4da2-b2a7-cc9c3adb69fc">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="49f54af9-48ee-40f4-b810-4d1f711c9503">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Unit Delay7</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="42ee456c-c68a-47c6-9ef5-5a0b4bb2a989">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem53/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="0c890265-612d-478e-9595-25de6b79be07">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem54/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="578cee42-055d-4433-ac35-9192e2fb15c5">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem55/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="ff303643-8061-4571-bfec-b22c7ceb6056">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem15/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="5dd5c8a6-468a-41c1-9bbe-7adbe2af07c9">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem16/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="271002df-bbf4-4655-9951-d3f9be90ed11">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem17/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="8edfbe19-a533-4c02-8f75-affef863eabc">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem11/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="07981f66-0828-4509-bfa7-4b8b3c857353">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem21/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="0bcc0cbb-197d-4e33-9d57-8f91396f06b1">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem18/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="200274ac-7d8b-4ddf-8315-0f4ccb921381">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem12/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="ea83f6c0-168f-4a31-b867-0af046102a69">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem23/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="7a54ff76-2dae-48bc-a503-d02d5630a85b">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem19/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="02439287-b25b-4fd6-a5a4-1771fbcb83b3">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem25/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="23e43f49-d81c-418d-a398-b55230e43428">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem26/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="b167fa8a-e2e3-4f57-9f8f-44188116c3f2">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem20/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="028475bb-4859-4290-8a7d-2e640e623b5b">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem29/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="236edfda-7d2d-4c5d-9faf-2ac6da7908e9">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem28/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="aa5f287b-2fce-43b5-a0cd-ea689b8e78d0">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem31/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="86e8c010-53fb-4181-8076-e8656e7377a7">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem32/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="4238e0ee-fe2a-447b-acae-fe6035229950">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem34/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="7af7a664-704e-4e0e-8cf3-253d02d251d9">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem36/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="07fd4d45-f32b-4051-b677-dd4bfd4de5f4">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem37/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="bf3547f8-3cde-499e-bddb-a00d3634fb9c">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem39/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="0c334ba1-e75e-4ede-a6e2-c8668384a26c">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem22/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="5608f01d-e1c4-41ec-a3b2-7de28c52b6f9">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem24/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="209eee30-10e2-4e29-81ea-70d2a2a0d54d">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem27/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="d66498f4-f73a-412e-82e8-a328e9554992">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem30/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="9413f224-5125-4c77-8f8b-88ac3eb75c51">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem33/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="8d0973da-7ee2-4eeb-a6a9-812be2ca3356">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem38/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="4981d3b8-5815-4ad7-82b9-75f939d68a5e">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem41/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="8876945f-6e97-41ad-9e2e-3acad31c8e7f">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem42/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="5d2b3edf-2e1b-450d-9dcf-53b3d0cfd67b">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem43/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="a655c56a-6903-43e4-ad28-8f3a5024de04">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem44/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="6eaf5c36-3384-4a29-b374-5886eca311ff">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem45/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="c43fc155-8713-4e6e-b310-58acebb979fd">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem46/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="927aca01-c196-46b0-9fd1-ee5d8c7f0028">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem47/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="8e8df49c-650c-450f-86ba-7b9a8e46e6df">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem48/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="b6685343-62fd-4098-86ad-2c56ce90c671">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem49/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="b1d88692-d1a9-4b95-8059-17ef274853a6">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem50/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="6ae36e97-c986-47e0-86f1-5ce4239bd21f">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem51/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="47746337-b9cd-4109-99c5-33c05b12452b">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem52/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="c87e9d31-8de8-4dce-9a65-9a8d327bdb12">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem59/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>1</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="a75b0826-1b44-4f7a-a32d-f99618423cf1">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Subsystem1/TrueDurationTime5/Unit Delay1</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>5</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="f3a1dc83-3308-4cee-94c0-ddd6683658d5">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Subsystem2/TrueDurationTime5/Unit Delay1</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>5</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="12ddae5b-816b-4a36-bb48-a1245b851660">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Subsystem3/TrueDurationTime5/Unit Delay1</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>5</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="389847a0-65b6-4c55-9376-f312ee309a55">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Subsystem/TrueDurationTime5/Unit Delay1</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>5</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="b2503471-3791-4d48-8e6f-f04d702398a5">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Enlong3s/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>5</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="929a6535-b089-4bdc-9956-dd3a0e2246de">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Subsystem4/TrueDurationTime5/Unit Delay1</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>5</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="6f0820b1-20e2-45fc-ae0e-5f9d8e334e11">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Subsystem5/TrueDurationTime5/Unit Delay1</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>5</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="6d48a6b4-2561-418d-be69-68eb486c2c1b">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Unit Delay5</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="2118cecf-7c0a-4748-a2bc-1b27d5a4b2d0">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Unit Delay4</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="5d45fda7-9bdf-4bcf-ae45-9b92b19d5052">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="04401946-397d-4c26-8e4a-ccb7f024495e">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Unit Delay2</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="514a1efe-e9a7-4b4f-bd3a-46afaffdf1f2">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Subsystem1/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="43ea59e9-00ac-4427-ad03-897eef9ff79b">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Subsystem1/Unit Delay2</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="e9bd8bc5-ee9d-4205-a84e-13e8c95719bd">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Subsystem1/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="18d0fe02-a732-45e4-a01f-b55a172070c5">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Unit Delay1</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="b9b172e5-9a4e-40c6-8fcc-3f4fbb84705c">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Subsystem2/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="99f01fce-e710-4a26-99b7-a3c5cad61b9b">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Subsystem2/Unit Delay2</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="6bb5940a-f67e-412c-87ae-3002c97d8156">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Subsystem2/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="fe5844b7-43c0-4657-b06d-b9b305bbc2bd">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="67b9679b-95c7-4a29-a8eb-7a72b5d4e4fa">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Subsystem3/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="b4439a6a-25c4-4d16-a7d3-d42fe85f3e39">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Subsystem3/Unit Delay2</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="968ecac9-a35b-41c6-9ced-392c50cddd6a">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Subsystem3/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="463451ba-032f-403e-99a5-2800b908a55a">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Unit Delay6</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="862c2291-ec38-4171-8eb3-effed156b692">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Subsystem/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="2aae07a5-025d-413d-859a-1b0d6be556ea">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Subsystem/Unit Delay2</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="a417f030-5e28-4b0d-87d9-e6c9be604753">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Subsystem/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="89d1d72d-0ab7-4158-8655-382b137a2c4d">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Enlong3s/Unit Delay2</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="8c9b5198-79f9-4433-9008-db8cd5a2e3d0">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Subsystem4/Unit Delay2</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="cef6171e-76a4-4349-ae17-39ad9b05a611">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Subsystem4/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="ab8e0660-7777-463a-abbc-f5b5a9c7db10">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Subsystem5/Unit Delay2</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="1db2673e-8ce4-4377-999d-e8dbf6c8019a">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Subsystem5/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="8f870aae-dbac-4411-a378-92a259948a04">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem4/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="2c2f24db-7947-4317-a781-2139caab31d6">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem6/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="f815b7ff-7266-4d5c-87f6-5729308de328">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem56/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="be11746a-bb34-47a1-b0e9-9c7a90fe5a4b">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem57/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="3035938a-188f-47cf-ab4a-4ee4f12f5fc6">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem8/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="1e6af613-5360-4d35-a097-e925c23b95c8">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem13/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="9c83581b-cc21-4234-b530-e66a880251ba">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem10/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="288f07db-f55f-4ff3-b215-c032ec60e7c0">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem14/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="2338c25b-860c-4a47-9a20-c9eec6cb0c50">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem3/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="23b4552a-b3a4-4f43-bd7c-876e2efb5664">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem5/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="c6784a07-865c-4623-8345-07b373f4e9ca">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem7/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="01bbb247-6452-416d-8a55-29ce70cbea15">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem9/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="e05d9213-c0af-4de2-9130-2c57904e5495">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem35/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="315f1834-064a-4209-8947-c1e3feef7c64">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem40/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="69be4b06-d2d9-4818-b2d4-bca9234121f7">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Enlong3s/Detect
+Increase3/Delay Input1</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="5217ede3-4d03-4527-a9cf-a206c4d4b62b">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem58/Unit Delay</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="9fac51a3-9a52-4c39-9b79-f29e208c6519">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/Counter
+Limited/Output</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>3</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="0753838b-af9b-45dc-afc9-a698ee0608e0">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/100ms4/Unit Delay1</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="b7b0bd46-6102-496a-aef9-03dc84cbb993">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/100ms4/Unit Delay2</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="b671bcc4-7257-4c7e-b17e-3aed76fa3567">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/100ms4/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="47580ef3-2466-459b-a316-93c354cd6a56">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/100ms4/Unit Delay4</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="9f8b4511-3886-44d3-b8f3-d8c02b1f4ccf">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/100ms3/Unit Delay1</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="eb4648e7-2556-46c4-bdab-e7c3f8d5c112">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/100ms3/Unit Delay2</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="5eb1745c-b876-4024-bb96-1bfad436df9a">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/100ms3/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="adef2436-c1bd-477c-be6a-5a76a69f9bda">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/100ms3/Unit Delay4</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="db2df69f-0f0f-40f4-9961-7b94390d37a1">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Subsystem1/TrueDurationTime5/Unit Delay2</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="b26128ec-7ce8-49c3-b0f9-bc7a3b25f373">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/100ms2/Unit Delay1</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="28e7ea62-d868-4301-8f2f-ad4f78b7d566">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/100ms2/Unit Delay2</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="18b16f5a-3fc4-4c18-ac58-4c8af5d180d6">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/100ms2/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="42799c31-f712-4bbd-a6cb-33761de2962b">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/100ms2/Unit Delay4</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="5a52bfc1-bd41-44d0-91c9-8b842d7aaee0">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Subsystem2/TrueDurationTime5/Unit Delay2</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="f28f8799-6e0e-4ecd-a3c3-682eb8851cae">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/100ms1/Unit Delay1</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="50c1d249-3210-4274-8e5d-5024c65d4a7b">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/100ms1/Unit Delay2</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="c10ed2ef-c507-406f-9908-8be68d5fb545">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/100ms1/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="e41a6d70-a167-4d4a-a008-4e79c6665c6b">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/100ms1/Unit Delay4</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="6a5e9837-d292-46a2-8a74-8e2c7ab20892">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Subsystem3/TrueDurationTime5/Unit Delay2</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="037ac4ec-7cc4-483f-9aad-20b68a79b068">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Detect
+Increase23/Delay Input1</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="a4514343-231a-474c-bfd0-004389133472">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Subsystem/TrueDurationTime5/Unit Delay2</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="721bc5cc-f5eb-4a94-9825-a12ec87b9b5c">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Enlong3s/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="c0ec3aad-2738-4825-97c2-402fa59ecf8c">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Subsystem4/TrueDurationTime5/Unit Delay2</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="69e4b768-345c-47c9-8cf5-34beaf034b21">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/HWA//ACC//TJA_Signal1/Subsystem5/TrueDurationTime5/Unit Delay2</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="78f23671-0b96-440d-b335-3eea60d33e20">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem4/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="94ab3d5c-9394-498b-a39e-3028a196d482">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem6/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="ec5e9af5-c059-4616-a8ad-e0b81ac301f7">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem56/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="4400af52-448f-4b3e-946d-6bd9d26ddf80">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem57/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="216378dc-2583-42d1-ac72-665afdf95575">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem8/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="0ec72149-7e13-47cc-8d1a-79fb2e2c5664">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem13/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="54d634db-e11b-4bca-9425-9094dbf3c187">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem10/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="6d5a91b6-1644-46bb-b7ba-fa703d10c1bf">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem14/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="79249c0a-d765-49f7-8a55-3c82892bc14c">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem53/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="0e4eb8b0-c5ce-4254-b3c8-ed5126178d4d">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem54/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="971b5614-1249-4a1d-9598-656452092f17">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem55/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="6ffc4d53-9e0b-464c-8239-ca34adf26386">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem15/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="07f51051-5b5e-45b1-8385-6c9d9ea46d16">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem16/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="7554f0bd-099d-451f-bb3b-51c43479639e">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem17/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="ffcc5b0e-20a3-45b4-a47d-4e92b990d9cc">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem11/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="26f48782-44d8-4a6a-a868-b6752ab7036b">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem21/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="3c0f707b-1661-4309-99dd-8bc746d8ba60">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem3/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="ce633a5e-b667-4590-9949-84ed85a232be">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem18/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="b697c8ba-9277-44d1-bcb6-cb07d02dc8d1">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem12/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="58637f12-1ac0-4f7f-9a87-3c81e66e76a6">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem23/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="372931b0-6464-49e9-a835-ebb66d47d4ec">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem5/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="d837df23-34c3-45ca-b36c-01c7368c1c9c">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem19/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="5dfdd65d-3ab0-40b7-b196-c1b908fd7a4a">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem25/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="9d9a673c-2ac1-4198-9cab-ea3a58ac4776">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem26/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="d35967b7-22f6-4de8-a964-7c5536f65430">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem7/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="6da5ad25-3f3e-415b-99a0-a89bb1c32a0c">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem20/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="8e4537db-ddfe-4fa4-9c86-2e82eaeb1adc">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem29/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="8aadea98-3c82-4f11-bf5e-afa188d298d9">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem28/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="440c3fa9-aff4-4e12-a1fd-7e7d8f15b322">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem9/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="bd9882c5-6958-422f-ad17-aa95e8af5b75">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem31/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="e00a8aca-5141-4d99-bb92-fd0227bfa527">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem32/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="ecb13c4c-9355-4729-be62-75078232c9e7">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem34/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="46a4322e-3230-4b21-bbca-13b5dab7721d">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem35/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="d9dfc271-8cda-4767-b0a6-946e53bf27b1">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem36/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="128940eb-7cfe-42be-a8e9-bc438dbe1189">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem37/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="76fb198c-01b9-4cd5-a778-65515cc963f7">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem39/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="5654afb7-3c43-4acb-b1f7-b3c3d07c6703">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem40/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="70c85ee9-7e7a-4f51-a3d6-b42836b9aff5">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem22/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="b9c1d60f-e979-4641-8708-4ed68cf49962">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem24/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="431c27ba-a055-4282-97a1-e0afc489feb7">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem27/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="8bbd0a8f-2073-4b7d-84d8-c4bef680a9ed">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem30/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="96ebd35e-f4f2-4b3d-ae47-975f8fd23687">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem33/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="695bae9e-9604-4d0a-b807-2ab29355623d">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem38/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="11ac34bd-2f99-45ad-bca7-ca9d10deb56a">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem41/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="d6e51654-46ab-4f3f-98e0-5ec53a98e265">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem42/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="7aea6fc7-d817-4a4d-9fe4-1445d37f3834">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem43/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="47bbb0cd-491e-411e-942f-ab47a9e1a083">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem44/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="33260b0e-53fa-4182-9261-6173fe34962a">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem45/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="1c3198d8-c86d-4487-babf-22d81fd7bc23">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem46/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="c781a8af-b6ce-4b1f-91e2-83e16f23bb82">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem47/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="90b2666d-e794-4905-ba8b-063e7229e55c">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem48/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="cfd3ca5c-e728-47d8-96fd-575fb6c03a6b">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem49/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="e759970b-3c7e-483d-a392-091f83cdfa14">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem50/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="62bed6d6-78f8-44aa-bb53-de7768017c2c">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem51/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="9636f742-7927-45f3-a488-77189c502410">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem52/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="2b94703b-dc27-4e6f-b9de-410cb4e0520f">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem58/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <discStateRecordInfo type="ModelRefInfoRepo.StateRecordInfo" uuid="4ba3c3a9-8e1a-4319-b544-931d187112ba">
+      <blockName>PubIfChassisHMI_MDL/Subsystem/HMI2.12/IFC_Signal1/Subsystem59/Unit Delay3</blockName>
+      <crossMdlRef>true</crossMdlRef>
+      <dataType>8</dataType>
+      <label>DSTATE</label>
+      <width>1</width>
+    </discStateRecordInfo>
+    <fundamentalSampleTimePeriod>.2</fundamentalSampleTimePeriod>
+    <globalVariables>#DspaceConfig#enumsss.sldd#</globalVariables>
+    <globalVariables>AEB_BRK_INFO_BUS</globalVariables>
+    <globalVariables>AEB_IPHUT_INFO_BUS</globalVariables>
+    <globalVariables>DMON_SENS_ERR_BUS</globalVariables>
+    <globalVariables>EHRV2_HDR_BUS</globalVariables>
+    <globalVariables>EHRV2_ROAD_INFO_BUS</globalVariables>
+    <globalVariables>HMI_ACC_FD1_BUS</globalVariables>
+    <globalVariables>HMI_ACC_FD2_BUS</globalVariables>
+    <globalVariables>HMI_ACC_FD4_BUS</globalVariables>
+    <globalVariables>HMI_Counter</globalVariables>
+    <globalVariables>HMI_IFC_FD2_BUS</globalVariables>
+    <globalVariables>HMI_IFC_FD3_BUS</globalVariables>
+    <globalVariables>HMI_IFC_FD5_BUS</globalVariables>
+    <globalVariables>HMI_IFC_FD6_BUS</globalVariables>
+    <globalVariables>HMI_SubModel_Number</globalVariables>
+    <globalVariables>HMI_SubModel_VERSION</globalVariables>
+    <globalVariables>LONC_CTRL_OUT_BUS</globalVariables>
+    <globalVariables>PLAN_HMI_BUS</globalVariables>
+    <globalVariables>P_HMI_LDW_LKAWarnTime</globalVariables>
+    <globalVariables>P_HMI_ObjectTypeFilter</globalVariables>
+    <globalVariables>P_HMI_WarnFormLDWReq</globalVariables>
+    <globalVariables>RFM_INTERSEC_ALERT_BUS</globalVariables>
+    <globalVariables>RFM_LINE_BUS</globalVariables>
+    <globalVariables>RFM_ROAD_BUS</globalVariables>
+    <globalVariables>RFM_TSR_BUS</globalVariables>
+    <globalVariables>TOS_ACCP0_BUS</globalVariables>
+    <globalVariables>TOS_ACCP1_BUS</globalVariables>
+    <globalVariables>TOS_ACCP2_BUS</globalVariables>
+    <globalVariables>TOS_ACCP3_BUS</globalVariables>
+    <globalVariables>TOS_ACCP4_BUS</globalVariables>
+    <globalVariables>TOS_ACCP5_BUS</globalVariables>
+    <globalVariables>VCAN_HUT_MSG_BUS</globalVariables>
+    <globalVariables>VSM_HMI_BUS</globalVariables>
+    <globalVariables>VSM_LON_CTRL_BUS</globalVariables>
+    <grToCompInputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="f618f818-d786-4293-81fb-c1c5228e2480">
+      <grAndCompPorts>8</grAndCompPorts>
+      <grAndCompPorts>8</grAndCompPorts>
+    </grToCompInputPortsMaps>
+    <grToCompInputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="41dfd1fd-58b0-4e3b-a8b6-6a6cafbd9512">
+      <grAndCompPorts>0</grAndCompPorts>
+      <grAndCompPorts>0</grAndCompPorts>
+    </grToCompInputPortsMaps>
+    <grToCompInputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="6c3d6833-1163-462c-b09e-d4a4bbc5b2d3">
+      <grAndCompPorts>1</grAndCompPorts>
+      <grAndCompPorts>1</grAndCompPorts>
+    </grToCompInputPortsMaps>
+    <grToCompInputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="609f39bd-2253-4774-a848-efc986cc2bdc">
+      <grAndCompPorts>2</grAndCompPorts>
+      <grAndCompPorts>2</grAndCompPorts>
+    </grToCompInputPortsMaps>
+    <grToCompInputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="10739b3a-ad16-4077-b1be-07e9bb99e881">
+      <grAndCompPorts>3</grAndCompPorts>
+      <grAndCompPorts>3</grAndCompPorts>
+    </grToCompInputPortsMaps>
+    <grToCompInputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="9268125a-f259-4563-8446-af20f4cecd85">
+      <grAndCompPorts>4</grAndCompPorts>
+      <grAndCompPorts>4</grAndCompPorts>
+    </grToCompInputPortsMaps>
+    <grToCompInputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="25b98c45-1fe4-4b89-9467-88afbd2b9fde">
+      <grAndCompPorts>5</grAndCompPorts>
+      <grAndCompPorts>5</grAndCompPorts>
+    </grToCompInputPortsMaps>
+    <grToCompInputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="c3809524-57c8-41fc-bbc0-0bd47ce8a64f">
+      <grAndCompPorts>6</grAndCompPorts>
+      <grAndCompPorts>6</grAndCompPorts>
+    </grToCompInputPortsMaps>
+    <grToCompInputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="6c2937f1-2b7f-42fa-84ac-ae31c5cf63e2">
+      <grAndCompPorts>7</grAndCompPorts>
+      <grAndCompPorts>7</grAndCompPorts>
+    </grToCompInputPortsMaps>
+    <grToCompInputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="77fda78e-b8a3-4baf-b1ec-46c84f42a8ac">
+      <grAndCompPorts>9</grAndCompPorts>
+      <grAndCompPorts>9</grAndCompPorts>
+    </grToCompInputPortsMaps>
+    <grToCompInputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="e7e64422-5a6f-4727-82ff-bdc23dc4d9f8">
+      <grAndCompPorts>10</grAndCompPorts>
+      <grAndCompPorts>10</grAndCompPorts>
+    </grToCompInputPortsMaps>
+    <grToCompInputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="79f05cca-ac5a-4f47-848a-a130cf44b55f">
+      <grAndCompPorts>11</grAndCompPorts>
+      <grAndCompPorts>11</grAndCompPorts>
+    </grToCompInputPortsMaps>
+    <grToCompInputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="f1d5ee82-b664-44a1-99d5-699113239079">
+      <grAndCompPorts>12</grAndCompPorts>
+      <grAndCompPorts>12</grAndCompPorts>
+    </grToCompInputPortsMaps>
+    <grToCompInputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="1428481b-5b3e-4d27-aaef-cbfadf898cc3">
+      <grAndCompPorts>13</grAndCompPorts>
+      <grAndCompPorts>13</grAndCompPorts>
+    </grToCompInputPortsMaps>
+    <grToCompInputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="770c824e-f1e5-46c5-964e-19d223b9f75f">
+      <grAndCompPorts>14</grAndCompPorts>
+      <grAndCompPorts>14</grAndCompPorts>
+    </grToCompInputPortsMaps>
+    <grToCompInputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="843dfca6-114e-4f30-86ad-0562a61ab1c2">
+      <grAndCompPorts>15</grAndCompPorts>
+      <grAndCompPorts>15</grAndCompPorts>
+    </grToCompInputPortsMaps>
+    <grToCompInputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="f7185536-4e7f-4310-8b9b-59b3bbb8ba13">
+      <grAndCompPorts>16</grAndCompPorts>
+      <grAndCompPorts>16</grAndCompPorts>
+    </grToCompInputPortsMaps>
+    <grToCompInputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="93c368d6-7564-4ad5-95cf-570278d64271">
+      <grAndCompPorts>17</grAndCompPorts>
+      <grAndCompPorts>17</grAndCompPorts>
+    </grToCompInputPortsMaps>
+    <grToCompInputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="3adba6cd-b483-4d32-ac00-84d5440341f2">
+      <grAndCompPorts>18</grAndCompPorts>
+      <grAndCompPorts>18</grAndCompPorts>
+    </grToCompInputPortsMaps>
+    <grToCompInputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="57d0d296-34e7-4a64-9450-ef3bd8ac505d">
+      <grAndCompPorts>19</grAndCompPorts>
+      <grAndCompPorts>19</grAndCompPorts>
+    </grToCompInputPortsMaps>
+    <grToCompInputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="10827846-e94f-496e-90eb-eff74b247501">
+      <grAndCompPorts>20</grAndCompPorts>
+      <grAndCompPorts>20</grAndCompPorts>
+    </grToCompInputPortsMaps>
+    <grToCompInputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="c9881acc-2f53-4e1a-9989-143f490334e7">
+      <grAndCompPorts>21</grAndCompPorts>
+      <grAndCompPorts>21</grAndCompPorts>
+    </grToCompInputPortsMaps>
+    <grToCompInputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="fa63c437-aea2-4c04-b43d-0e5cc78bbb0b">
+      <grAndCompPorts>22</grAndCompPorts>
+      <grAndCompPorts>22</grAndCompPorts>
+    </grToCompInputPortsMaps>
+    <grToCompInputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="2f830c88-d1d0-4087-95a5-daf820a46f63">
+      <grAndCompPorts>23</grAndCompPorts>
+      <grAndCompPorts>23</grAndCompPorts>
+    </grToCompInputPortsMaps>
+    <grToCompInputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="1b3f3931-abb3-40a8-b4ba-8a5c580795b6">
+      <grAndCompPorts>24</grAndCompPorts>
+      <grAndCompPorts>24</grAndCompPorts>
+    </grToCompInputPortsMaps>
+    <grToCompInputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="18448908-4af7-4c33-9a9a-c404bae3d705">
+      <grAndCompPorts>25</grAndCompPorts>
+      <grAndCompPorts>25</grAndCompPorts>
+    </grToCompInputPortsMaps>
+    <grToCompInputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="e0b45afe-5993-4de4-a2e9-26ab9751d0d2">
+      <grAndCompPorts>26</grAndCompPorts>
+      <grAndCompPorts>26</grAndCompPorts>
+    </grToCompInputPortsMaps>
+    <grToCompInputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="b7219fc7-8fad-416b-8571-b8663e4a450a">
+      <grAndCompPorts>27</grAndCompPorts>
+      <grAndCompPorts>27</grAndCompPorts>
+    </grToCompInputPortsMaps>
+    <grToCompOutputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="5c43b5fe-4f80-4f40-99cd-ed46834b0852">
+      <grAndCompPorts>8</grAndCompPorts>
+      <grAndCompPorts>8</grAndCompPorts>
+    </grToCompOutputPortsMaps>
+    <grToCompOutputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="bb4210d6-b194-443d-9b18-7beb059aa244">
+      <grAndCompPorts>0</grAndCompPorts>
+      <grAndCompPorts>0</grAndCompPorts>
+    </grToCompOutputPortsMaps>
+    <grToCompOutputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="77e4b3ec-ebce-47d1-ac13-9eb5bbf35afa">
+      <grAndCompPorts>1</grAndCompPorts>
+      <grAndCompPorts>1</grAndCompPorts>
+    </grToCompOutputPortsMaps>
+    <grToCompOutputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="a68b4d46-d983-41d3-87d3-0be2cc25d2b5">
+      <grAndCompPorts>2</grAndCompPorts>
+      <grAndCompPorts>2</grAndCompPorts>
+    </grToCompOutputPortsMaps>
+    <grToCompOutputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="c7a1041d-9968-47fb-a15e-2e92380bc793">
+      <grAndCompPorts>3</grAndCompPorts>
+      <grAndCompPorts>3</grAndCompPorts>
+    </grToCompOutputPortsMaps>
+    <grToCompOutputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="4a07634d-8942-4605-88f4-48a2a5d469ff">
+      <grAndCompPorts>4</grAndCompPorts>
+      <grAndCompPorts>4</grAndCompPorts>
+    </grToCompOutputPortsMaps>
+    <grToCompOutputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="05285ab3-6788-42bc-8824-684df3b4ae82">
+      <grAndCompPorts>5</grAndCompPorts>
+      <grAndCompPorts>5</grAndCompPorts>
+    </grToCompOutputPortsMaps>
+    <grToCompOutputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="74884a08-f464-4b67-9019-7b2cb35fb621">
+      <grAndCompPorts>6</grAndCompPorts>
+      <grAndCompPorts>6</grAndCompPorts>
+    </grToCompOutputPortsMaps>
+    <grToCompOutputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="3746c7e1-dd0e-411c-8eac-f4b98539820b">
+      <grAndCompPorts>7</grAndCompPorts>
+      <grAndCompPorts>7</grAndCompPorts>
+    </grToCompOutputPortsMaps>
+    <grToCompOutputPortsMaps type="ModelRefInfoRepo.GrCompIOPortMaps" uuid="94589f21-562c-4498-9a1b-8868e29be89b">
+      <grAndCompPorts>9</grAndCompPorts>
+      <grAndCompPorts>9</grAndCompPorts>
+    </grToCompOutputPortsMaps>
+    <hasBlockWithPeriodicDiscreteSampleTime>true</hasBlockWithPeriodicDiscreteSampleTime>
+    <hasBwsAccessed>true</hasBwsAccessed>
+    <hasBwsAccessedByAnyModel>true</hasBwsAccessedByAnyModel>
+    <hasConstantOutput>false</hasConstantOutput>
+    <hasModelWideEventTs>false</hasModelWideEventTs>
+    <hasNonVirtualConstantTs>true</hasNonVirtualConstantTs>
+    <inlinedVariables>P_HMI_WarnFormLDWReq</inlinedVariables>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="cb499ef4-bfec-4f54-999e-ce38aa4b45d4">
+      <isNotDerivPort>true</isNotDerivPort>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="3e26ac9f-9ba1-4615-a421-5697d870edd9"/>
+    </inports>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="201c1c6e-e991-4c3f-85dc-68b5f2e36fc9">
+      <isNotDerivPort>true</isNotDerivPort>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>1</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="de3bec8d-d50b-430c-9130-7d0727abe3cc"/>
+    </inports>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="f3b6dd6d-d448-4ef1-8269-4a7c849140af">
+      <isNotDerivPort>true</isNotDerivPort>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>2</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="4b1c7cb3-236f-42a0-a741-9c6d1ae18253"/>
+    </inports>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="aeb64efe-c0c5-46ba-bfaf-f0bbc00ebd98">
+      <isNotDerivPort>true</isNotDerivPort>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>3</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="0cef2c40-a4e7-4a30-ab9b-ca498beeb87d"/>
+    </inports>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="4b9a81b0-5d0b-4458-9c28-730f30aa8eba">
+      <isNotDerivPort>true</isNotDerivPort>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>4</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="ac45f829-81e5-44e1-8b7d-72225dff5c8f"/>
+    </inports>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="7bf2ea25-b123-4fbd-a2fd-9afe0aa9553b">
+      <isNotDerivPort>true</isNotDerivPort>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>5</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="58a5ce20-0211-4dea-ac6a-2ae818c779bc"/>
+    </inports>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="8f46a73a-5237-4791-a573-abbe5f4c5e97">
+      <isNotDerivPort>true</isNotDerivPort>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>6</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="6a3d56f3-e192-439b-9a22-582cb3636523"/>
+    </inports>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="15e895a8-1c8b-4846-915e-52009f598fd9">
+      <isNotDerivPort>true</isNotDerivPort>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>7</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="85ea46e6-4171-4a5b-8df9-fe21a6142a78"/>
+    </inports>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="91f0e25d-7d1d-4deb-9c4f-d249f8699779">
+      <isNotDerivPort>true</isNotDerivPort>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>8</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="e11cb032-0ce7-44cd-8bc2-3403c8c8659c"/>
+    </inports>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="60b525e4-00c4-415c-bbc5-3e7e059451a0">
+      <isNotDerivPort>true</isNotDerivPort>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>9</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="090d15d6-e706-406e-afa1-54a990bfa8d8"/>
+    </inports>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="f1439d50-841e-4516-818f-c906c7d43b71">
+      <isNotDerivPort>true</isNotDerivPort>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>10</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="21019667-f2d4-4ea7-97a9-a17171a7e334"/>
+    </inports>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="1cbf4835-8eff-42ff-8314-2cc82a02fddb">
+      <isNotDerivPort>true</isNotDerivPort>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>11</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="cb58543e-7a25-407d-861d-549a8a3c948b"/>
+    </inports>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="3c09098f-dccd-47e2-b91f-4bb3c65ad602">
+      <isNotDerivPort>true</isNotDerivPort>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>12</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="dd4d4d90-bef2-47ec-981f-9ff8adc199cb"/>
+    </inports>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="b7ca7327-5843-4c2f-8dbe-b43bc793c068">
+      <isNotDerivPort>true</isNotDerivPort>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>13</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="057b874a-1436-45fb-a745-159f61f27e99"/>
+    </inports>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="c6a62d11-7058-45b9-bb33-d3767515dd60">
+      <isNotDerivPort>true</isNotDerivPort>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>14</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="f1825b43-7837-4079-a920-0d280011733e"/>
+    </inports>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="77a723c3-297c-471b-adc9-f71a03b3fbca">
+      <isNotDerivPort>true</isNotDerivPort>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>15</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="5d943ee4-2318-4d57-91bb-5595fc8f28b9"/>
+    </inports>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="10ce9485-9c25-4ae7-b219-f9cb6b7a7130">
+      <isNotDerivPort>true</isNotDerivPort>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>16</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="cbbbddca-4d52-4cae-8409-f7b8ef110612"/>
+    </inports>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="131ae170-ec09-454b-9a9a-2fd7084e823c">
+      <isNotDerivPort>true</isNotDerivPort>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>17</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="c0afda19-195e-4639-a5e4-20820a610287"/>
+    </inports>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="e127f807-f775-4a09-a45b-cb50341b669d">
+      <isNotDerivPort>true</isNotDerivPort>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>18</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="ef5fefb7-e1de-40d6-8af6-cdd643c5dca5"/>
+    </inports>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="9f568c3d-1beb-48a7-bc0e-184dff25ef3d">
+      <isNotDerivPort>true</isNotDerivPort>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>19</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="a3b8bd59-5b37-4840-8891-237d52673437"/>
+    </inports>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="d22c3e00-ca6a-45bc-9fe6-a6bfe5acf0f3">
+      <isNotDerivPort>true</isNotDerivPort>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>20</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="54bfd0cb-a721-4d0a-af99-c4be31059c9a"/>
+    </inports>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="f2844652-9774-468d-8f9f-a4101c2d1361">
+      <isNotDerivPort>true</isNotDerivPort>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>21</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="0d9799f8-7745-4182-86be-9f3a2d154132"/>
+    </inports>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="9f53f3fe-b0ba-4141-bcff-f1c441c8bb24">
+      <isNotDerivPort>true</isNotDerivPort>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>22</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="e05c2ff2-b13e-443f-872d-9863a0d94fc6"/>
+    </inports>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="9764c10e-689e-47b7-92e5-b7645fe033ce">
+      <isNotDerivPort>true</isNotDerivPort>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>23</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="40a8f204-6a30-476f-b6a4-df916403e832"/>
+    </inports>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="61b9880c-66e9-4d37-861b-89cad100e078">
+      <isNotDerivPort>true</isNotDerivPort>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>24</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="e3472c49-9f55-43ca-9d1f-b1346c2e84bd"/>
+    </inports>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="f7f70d7d-b143-45f6-83e1-87b51d6dd82f">
+      <isNotDerivPort>true</isNotDerivPort>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>25</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="d55c6c35-b4bb-415d-bd7a-08a658b64134"/>
+    </inports>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="9c21b743-7c83-4784-a58f-5aa7f4d1edf9">
+      <isNotDerivPort>true</isNotDerivPort>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>26</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="fab2546d-0d5f-47ef-9620-9b7f1cb7c967"/>
+    </inports>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="363f17b7-7c0b-4e9d-b90e-baef4e9329e2">
+      <isNotDerivPort>true</isNotDerivPort>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>27</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="9a202a69-90b9-443f-b414-7f517c9abdad"/>
+    </inports>
+    <isAperiodicRootFcnCallSystem>false</isAperiodicRootFcnCallSystem>
+    <isBdInSimModeForSimCodegenVariants>false</isBdInSimModeForSimCodegenVariants>
+    <isInlineParamsOn>true</isInlineParamsOn>
+    <isNumAllowedInstancesOne>true</isNumAllowedInstancesOne>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigOutportVirtualBus>false</isOrigOutportVirtualBus>
+    <isOrigOutportVirtualBus>false</isOrigOutportVirtualBus>
+    <isOrigOutportVirtualBus>false</isOrigOutportVirtualBus>
+    <isOrigOutportVirtualBus>false</isOrigOutportVirtualBus>
+    <isOrigOutportVirtualBus>false</isOrigOutportVirtualBus>
+    <isOrigOutportVirtualBus>false</isOrigOutportVirtualBus>
+    <isOrigOutportVirtualBus>false</isOrigOutportVirtualBus>
+    <isOrigOutportVirtualBus>false</isOrigOutportVirtualBus>
+    <isOrigOutportVirtualBus>false</isOrigOutportVirtualBus>
+    <isOrigOutportVirtualBus>false</isOrigOutportVirtualBus>
+    <isPreCompSingleRate>false</isPreCompSingleRate>
+    <isRefModelConstant>false</isRefModelConstant>
+    <isRootFcnCallPortGroupsEmpty>true</isRootFcnCallPortGroupsEmpty>
+    <loggingSaveFormat>2</loggingSaveFormat>
+    <maxFreqHz>-1.0</maxFreqHz>
+    <numDStateRecs>175</numDStateRecs>
+    <numDataInputPorts>28</numDataInputPorts>
+    <numLoggableDStateRecs>175</numLoggableDStateRecs>
+    <numModelWideEventTs>0</numModelWideEventTs>
+    <numPortlessSimulinkFunctionPortGroups>0</numPortlessSimulinkFunctionPortGroups>
+    <numRuntimeExportedRates>1</numRuntimeExportedRates>
+    <numTs>1</numTs>
+    <origInportBusType>VSM_LON_CTRL_BUS</origInportBusType>
+    <origInportBusType>VSM_HMI_BUS</origInportBusType>
+    <origInportBusType>VCAN_HUT_MSG_BUS</origInportBusType>
+    <origInportBusType>DMON_SENS_ERR_BUS</origInportBusType>
+    <origInportBusType>PLAN_HMI_BUS</origInportBusType>
+    <origInportBusType>TOS_ACCP0_BUS</origInportBusType>
+    <origInportBusType>TOS_ACCP1_BUS</origInportBusType>
+    <origInportBusType>TOS_ACCP2_BUS</origInportBusType>
+    <origInportBusType>TOS_ACCP3_BUS</origInportBusType>
+    <origInportBusType>TOS_ACCP4_BUS</origInportBusType>
+    <origInportBusType>TOS_ACCP5_BUS</origInportBusType>
+    <origInportBusType>RFM_LINE_BUS</origInportBusType>
+    <origInportBusType>RFM_LINE_BUS</origInportBusType>
+    <origInportBusType>RFM_LINE_BUS</origInportBusType>
+    <origInportBusType>RFM_LINE_BUS</origInportBusType>
+    <origInportBusType>RFM_LINE_BUS</origInportBusType>
+    <origInportBusType>RFM_LINE_BUS</origInportBusType>
+    <origInportBusType>EHRV2_ROAD_INFO_BUS</origInportBusType>
+    <origInportBusType>RFM_ROAD_BUS</origInportBusType>
+    <origInportBusType>RFM_INTERSEC_ALERT_BUS</origInportBusType>
+    <origInportBusType></origInportBusType>
+    <origInportBusType>EHRV2_HDR_BUS</origInportBusType>
+    <origInportBusType></origInportBusType>
+    <origInportBusType>AEB_BRK_INFO_BUS</origInportBusType>
+    <origInportBusType>AEB_IPHUT_INFO_BUS</origInportBusType>
+    <origInportBusType>RFM_TSR_BUS</origInportBusType>
+    <origInportBusType>LONC_CTRL_OUT_BUS</origInportBusType>
+    <origInportBusType></origInportBusType>
+    <origOutportBusOutputAsStruct>true</origOutportBusOutputAsStruct>
+    <origOutportBusOutputAsStruct>false</origOutportBusOutputAsStruct>
+    <origOutportBusOutputAsStruct>false</origOutportBusOutputAsStruct>
+    <origOutportBusOutputAsStruct>false</origOutportBusOutputAsStruct>
+    <origOutportBusOutputAsStruct>true</origOutportBusOutputAsStruct>
+    <origOutportBusOutputAsStruct>true</origOutportBusOutputAsStruct>
+    <origOutportBusOutputAsStruct>true</origOutportBusOutputAsStruct>
+    <origOutportBusOutputAsStruct>true</origOutportBusOutputAsStruct>
+    <origOutportBusOutputAsStruct>true</origOutportBusOutputAsStruct>
+    <origOutportBusOutputAsStruct>true</origOutportBusOutputAsStruct>
+    <origOutportBusType>HMI_IFC_FD2_BUS</origOutportBusType>
+    <origOutportBusType></origOutportBusType>
+    <origOutportBusType></origOutportBusType>
+    <origOutportBusType></origOutportBusType>
+    <origOutportBusType>HMI_ACC_FD2_BUS</origOutportBusType>
+    <origOutportBusType>HMI_ACC_FD4_BUS</origOutportBusType>
+    <origOutportBusType>HMI_ACC_FD1_BUS</origOutportBusType>
+    <origOutportBusType>HMI_IFC_FD5_BUS</origOutportBusType>
+    <origOutportBusType>HMI_IFC_FD6_BUS</origOutportBusType>
+    <origOutportBusType>HMI_IFC_FD3_BUS</origOutportBusType>
+    <outports type="ModelRefInfoRepo.OutportInformation" uuid="34f593a3-423f-4b58-8a8c-53a309f270dd">
+      <okToMerge>3</okToMerge>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="54732fba-a71c-4473-adea-754d35a94aa5"/>
+    </outports>
+    <outports type="ModelRefInfoRepo.OutportInformation" uuid="d129d12d-c999-439c-8637-9e14d3a6d0f2">
+      <DrivenByNonCondExecStateflow>true</DrivenByNonCondExecStateflow>
+      <okToMerge>1</okToMerge>
+      <RTWSignalIdentifier>y</RTWSignalIdentifier>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>1</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="6873b38b-09d6-4d7f-a6ab-356ba50946f5"/>
+    </outports>
+    <outports type="ModelRefInfoRepo.OutportInformation" uuid="09624c5a-418c-486a-9860-1f166c213a36">
+      <DrivenByNonCondExecStateflow>true</DrivenByNonCondExecStateflow>
+      <okToMerge>1</okToMerge>
+      <RTWSignalIdentifier>Error</RTWSignalIdentifier>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>2</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="d56ce793-fb03-4f8b-8e8c-68891623a5ab"/>
+    </outports>
+    <outports type="ModelRefInfoRepo.OutportInformation" uuid="bf34daef-19f6-4bdb-9746-3133dbd70802">
+      <DrivenByNonCondExecStateflow>true</DrivenByNonCondExecStateflow>
+      <okToMerge>1</okToMerge>
+      <RTWSignalIdentifier>Error</RTWSignalIdentifier>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>3</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="d7af6a37-fe08-4248-9318-fcb1a000ac95"/>
+    </outports>
+    <outports type="ModelRefInfoRepo.OutportInformation" uuid="aed0b606-a56d-49ca-8b6a-d50c6a3bfc5e">
+      <okToMerge>3</okToMerge>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>4</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="7755ca62-bf54-4f22-9020-db7854e5f428"/>
+    </outports>
+    <outports type="ModelRefInfoRepo.OutportInformation" uuid="716c7d98-f270-42ac-82ea-88bdb52369b0">
+      <okToMerge>3</okToMerge>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>5</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="d570eadc-33ea-4d89-ac27-4e540a75fe38"/>
+    </outports>
+    <outports type="ModelRefInfoRepo.OutportInformation" uuid="bda98dd7-376b-4a3c-bde4-fa6de71a3dbe">
+      <okToMerge>3</okToMerge>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>6</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="d3e44173-da5b-4b0b-bee1-f49316bc6c73"/>
+    </outports>
+    <outports type="ModelRefInfoRepo.OutportInformation" uuid="7805d100-6307-4811-bb85-c847323359ce">
+      <okToMerge>3</okToMerge>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>7</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="99e2b5da-699d-4e8a-a9ef-efa3dcdb9160"/>
+    </outports>
+    <outports type="ModelRefInfoRepo.OutportInformation" uuid="e653152a-2525-4691-b586-5967d41388d0">
+      <okToMerge>3</okToMerge>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>8</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="01e8c51a-239b-4fa4-b4be-75961868b38e"/>
+    </outports>
+    <outports type="ModelRefInfoRepo.OutportInformation" uuid="e9f06cdc-b7f0-4619-8ec4-f9bd98f77937">
+      <okToMerge>3</okToMerge>
+      <designMax>Inf</designMax>
+      <designMin>-Inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>9</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+        <period>.2</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="40c8a297-b2ee-470e-98e6-e9558f6c7196"/>
+    </outports>
+    <preCompAllowConstTsOnPorts>false</preCompAllowConstTsOnPorts>
+    <preCompAllowPortBasedInTriggeredSS>true</preCompAllowPortBasedInTriggeredSS>
+    <runtimeNonFcnCallRateInfos type="ModelRefInfoRepo.RateInfo">
+      <compiled>true</compiled>
+      <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+      <period>.2</period>
+      <priority>40</priority>
+      <rateIdx>0</rateIdx>
+    </runtimeNonFcnCallRateInfos>
+    <sampleTimeInheritanceRule>1</sampleTimeInheritanceRule>
+    <timingAndTaskingRegistry>&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;slexec_sto version=&quot;1.1&quot; packageUris=&quot;http://schema.mathworks.com/mf0/slexec_mm_sto/R2019b_201902271317&quot;&gt;
+  &lt;sto.Registry type=&quot;sto.Registry&quot; uuid=&quot;4a5b77fc-b7c5-4060-b28f-777d1c313a8c&quot;&gt;
+    &lt;clocks type=&quot;sto.Timer&quot; uuid=&quot;a361217c-49d8-4f38-bb7d-36fc27505555&quot;&gt;
+      &lt;needsToProvideTimeDuringExecution&gt;true&lt;/needsToProvideTimeDuringExecution&gt;
+      &lt;clockTickConstraint&gt;PeriodicWithFixedResolution&lt;/clockTickConstraint&gt;
+      &lt;resolution&gt;.2&lt;/resolution&gt;
+      &lt;timeAdvanceMode&gt;FixedStep&lt;/timeAdvanceMode&gt;
+      &lt;clockDomain type=&quot;sto.ClockDomain&quot; uuid=&quot;1286252e-6a84-4ce4-84fe-5e6cd23ac6b0&quot;&gt;
+        &lt;baseTaskID&gt;_task0&lt;/baseTaskID&gt;
+        &lt;computedFundamentalStepSize&gt;.2&lt;/computedFundamentalStepSize&gt;
+        &lt;rates type=&quot;sto.Rate&quot; uuid=&quot;2009a91d-e39e-46b3-9be2-49e873447c0e&quot;/&gt;
+        &lt;rates type=&quot;sto.Rate&quot; uuid=&quot;3b5e9b59-61cd-4efc-bd71-4d85a461d470&quot;/&gt;
+        &lt;rootTaskHierarchyElements type=&quot;sto.Task&quot; uuid=&quot;8a1353f5-2b75-4676-8dae-ecbe52725d50&quot;&gt;
+          &lt;isExecutable&gt;true&lt;/isExecutable&gt;
+          &lt;orderIndex&gt;1&lt;/orderIndex&gt;
+          &lt;rates type=&quot;sto.Rate&quot; uuid=&quot;2009a91d-e39e-46b3-9be2-49e873447c0e&quot;&gt;
+            &lt;annotation&gt;FiM&lt;/annotation&gt;
+            &lt;colorIndex&gt;8&lt;/colorIndex&gt;
+            &lt;description&gt;Fixed in Minor Step&lt;/description&gt;
+            &lt;eventSourceType&gt;UNSPECIFIED_EVENT_SOURCE&lt;/eventSourceType&gt;
+            &lt;rateIDX&gt;-1&lt;/rateIDX&gt;
+            &lt;registry type=&quot;sto.Registry&quot; uuid=&quot;4a5b77fc-b7c5-4060-b28f-777d1c313a8c&quot;/&gt;
+            &lt;taskId&gt;_task0&lt;/taskId&gt;
+            &lt;useForExecution&gt;NotForExecution&lt;/useForExecution&gt;
+            &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;c9eefd47-73b0-490b-931b-ba719885c1bc&quot;&gt;
+              &lt;offset&gt;1.0&lt;/offset&gt;
+              &lt;rateType&gt;ZOHContinuous&lt;/rateType&gt;
+            &lt;/rateSpec&gt;
+          &lt;/rates&gt;
+          &lt;rates type=&quot;sto.Rate&quot; uuid=&quot;3b5e9b59-61cd-4efc-bd71-4d85a461d470&quot;&gt;
+            &lt;annotation&gt;D1&lt;/annotation&gt;
+            &lt;colorIndex&gt;2&lt;/colorIndex&gt;
+            &lt;description&gt;Discrete 1&lt;/description&gt;
+            &lt;eventSourceType&gt;UNSPECIFIED_EVENT_SOURCE&lt;/eventSourceType&gt;
+            &lt;registry type=&quot;sto.Registry&quot; uuid=&quot;4a5b77fc-b7c5-4060-b28f-777d1c313a8c&quot;/&gt;
+            &lt;taskId&gt;_task0&lt;/taskId&gt;
+            &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;b5e49a49-6545-408e-a7e0-97670d73f8c2&quot;&gt;
+              &lt;period&gt;.2&lt;/period&gt;
+              &lt;rateType&gt;ClassicPeriodicDiscrete&lt;/rateType&gt;
+            &lt;/rateSpec&gt;
+          &lt;/rates&gt;
+          &lt;elementType&gt;Task&lt;/elementType&gt;
+          &lt;identifier&gt;_task0&lt;/identifier&gt;
+          &lt;priority&gt;40&lt;/priority&gt;
+        &lt;/rootTaskHierarchyElements&gt;
+      &lt;/clockDomain&gt;
+    &lt;/clocks&gt;
+    &lt;clocks type=&quot;sto.Event&quot; uuid=&quot;99b0db22-5855-43da-acdb-e0bb080e3365&quot;&gt;
+      &lt;clientId&gt;NonTunableParameterChangeEvent&lt;/clientId&gt;
+      &lt;eventType&gt;UNSPECIFIED_EVENT_SOURCE&lt;/eventType&gt;
+      &lt;cNum&gt;2&lt;/cNum&gt;
+      &lt;clockType&gt;Event&lt;/clockType&gt;
+      &lt;identifier&gt;NonTunableParameterChangeEvent&lt;/identifier&gt;
+      &lt;resolution&gt;-1.0&lt;/resolution&gt;
+      &lt;specifiedTaskingMode&gt;ExplicitTasking&lt;/specifiedTaskingMode&gt;
+      &lt;timeAdvanceMode&gt;None&lt;/timeAdvanceMode&gt;
+      &lt;clockDomain type=&quot;sto.ClockDomain&quot; uuid=&quot;85a7225f-b42e-4737-95d6-274e2ef7cbf4&quot;&gt;
+        &lt;computedFundamentalStepSize&gt;-1.0&lt;/computedFundamentalStepSize&gt;
+      &lt;/clockDomain&gt;
+    &lt;/clocks&gt;
+    &lt;clocks type=&quot;sto.Event&quot; uuid=&quot;cf1b72aa-352e-40f8-a715-8425ece402fa&quot;&gt;
+      &lt;clientId&gt;ParameterChangeEvent&lt;/clientId&gt;
+      &lt;eventType&gt;PARAMETER_CHANGE_EVENT&lt;/eventType&gt;
+      &lt;cNum&gt;1&lt;/cNum&gt;
+      &lt;clockType&gt;Event&lt;/clockType&gt;
+      &lt;identifier&gt;ParameterChangeEvent&lt;/identifier&gt;
+      &lt;resolution&gt;-1.0&lt;/resolution&gt;
+      &lt;specifiedTaskingMode&gt;ExplicitTasking&lt;/specifiedTaskingMode&gt;
+      &lt;timeAdvanceMode&gt;None&lt;/timeAdvanceMode&gt;
+      &lt;clockDomain type=&quot;sto.ClockDomain&quot; uuid=&quot;21b11ce0-62cf-41ba-aa01-2f2ce1ec1689&quot;&gt;
+        &lt;computedFundamentalStepSize&gt;-1.0&lt;/computedFundamentalStepSize&gt;
+        &lt;rates type=&quot;sto.Rate&quot; uuid=&quot;57c8df49-8aeb-469f-8cfa-e91cb59a87de&quot;/&gt;
+        &lt;rootTaskHierarchyElements type=&quot;sto.Task&quot; uuid=&quot;25e63462-2ee3-4a29-8d3b-d3860cecd28d&quot;&gt;
+          &lt;isExplicit&gt;true&lt;/isExplicit&gt;
+          &lt;rates type=&quot;sto.Rate&quot; uuid=&quot;57c8df49-8aeb-469f-8cfa-e91cb59a87de&quot;&gt;
+            &lt;eventSourceType&gt;PARAMETER_CHANGE_EVENT&lt;/eventSourceType&gt;
+            &lt;rateIDX&gt;-1&lt;/rateIDX&gt;
+            &lt;registry type=&quot;sto.Registry&quot; uuid=&quot;4a5b77fc-b7c5-4060-b28f-777d1c313a8c&quot;/&gt;
+            &lt;stringID&gt;ParameterChangeEvent&lt;/stringID&gt;
+            &lt;taskId&gt;ModelWideParameterChangeEvent&lt;/taskId&gt;
+            &lt;useForExecution&gt;NotForExecution&lt;/useForExecution&gt;
+            &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;09099e8d-896b-4292-997a-5b39b1d73b6d&quot;&gt;
+              &lt;period&gt;Inf&lt;/period&gt;
+              &lt;rateType&gt;ModelWideParameterChangeEvent&lt;/rateType&gt;
+            &lt;/rateSpec&gt;
+          &lt;/rates&gt;
+          &lt;tNum&gt;1&lt;/tNum&gt;
+          &lt;elementType&gt;Task&lt;/elementType&gt;
+          &lt;identifier&gt;ModelWideParameterChangeEvent&lt;/identifier&gt;
+          &lt;priority&gt;-1&lt;/priority&gt;
+          &lt;schedulingClockID&gt;ParameterChangeEvent&lt;/schedulingClockID&gt;
+        &lt;/rootTaskHierarchyElements&gt;
+      &lt;/clockDomain&gt;
+    &lt;/clocks&gt;
+    &lt;executionSpec&gt;Undetermined&lt;/executionSpec&gt;
+    &lt;taskDependencyGraph type=&quot;sto.SerializedTaskConnectionList&quot; uuid=&quot;72849fbb-1f94-4d3e-9ffe-55168b1670ce&quot;&gt;
+      &lt;taskIdentifier&gt;_task0&lt;/taskIdentifier&gt;
+    &lt;/taskDependencyGraph&gt;
+    &lt;taskDependencyGraph type=&quot;sto.SerializedTaskConnectionList&quot; uuid=&quot;40a4216b-5d10-4196-88e8-d7ff07dcf8af&quot;&gt;
+      &lt;clockIdentifier&gt;ParameterChangeEvent&lt;/clockIdentifier&gt;
+      &lt;taskIdentifier&gt;ModelWideParameterChangeEvent&lt;/taskIdentifier&gt;
+    &lt;/taskDependencyGraph&gt;
+    &lt;taskPriorityDirection&gt;HighNumberLast&lt;/taskPriorityDirection&gt;
+    &lt;tasks type=&quot;sto.Task&quot; uuid=&quot;8a1353f5-2b75-4676-8dae-ecbe52725d50&quot;/&gt;
+    &lt;tasks type=&quot;sto.Task&quot; uuid=&quot;25e63462-2ee3-4a29-8d3b-d3860cecd28d&quot;/&gt;
+    &lt;timeAdvanceMode&gt;FixedStep&lt;/timeAdvanceMode&gt;
+  &lt;/sto.Registry&gt;
+&lt;/slexec_sto&gt;</timingAndTaskingRegistry>
+    <usePortBasedSampleTime>true</usePortBasedSampleTime>
+    <FMUBlockMap type="ModelRefInfoRepo.FMUBlockInfo" uuid="f3a42792-e963-4449-b4e3-c34e2c7d763e"/>
+    <codeGenInfo type="ModelRefInfoRepo.CodeGenInformation" uuid="0044758c-8a71-48be-a63f-9d1ca0ef07bc">
+      <DWorkTypeName>MdlrefDW_PubIfChassisHMI_MDL_T</DWorkTypeName>
+    </codeGenInfo>
+    <configSettingsForConsistencyChecks type="ModelRefInfoRepo.ConfigSettingsForConsistencyChecks" uuid="21fc480b-d931-465a-8657-d31687d2e8e6">
+      <consistentOutportInitialization>true</consistentOutportInitialization>
+      <fixedStepSize>.2</fixedStepSize>
+      <frameDiagnosticSetting>2</frameDiagnosticSetting>
+      <hasHybridSampleTime>true</hasHybridSampleTime>
+      <signalLoggingSaveFormat>2</signalLoggingSaveFormat>
+      <simSIMDOptimization>1</simSIMDOptimization>
+      <solverName>FixedStepDiscrete</solverName>
+      <solverType>SOLVER_TYPE_FIXEDSTEP</solverType>
+      <hardwareSettings type="ModelRefInfoRepo.HardwareSettings" uuid="5924e28a-353a-428e-9c5f-88921161be60">
+        <prodBitPerChar>8</prodBitPerChar>
+        <prodBitPerDouble>64</prodBitPerDouble>
+        <prodBitPerFloat>32</prodBitPerFloat>
+        <prodBitPerInt>32</prodBitPerInt>
+        <prodBitPerLong>32</prodBitPerLong>
+        <prodBitPerLongLong>64</prodBitPerLongLong>
+        <prodBitPerPointer>32</prodBitPerPointer>
+        <prodBitPerPtrDiffT>32</prodBitPerPtrDiffT>
+        <prodBitPerShort>16</prodBitPerShort>
+        <prodBitPerSizeT>32</prodBitPerSizeT>
+        <prodEndianess>1</prodEndianess>
+        <prodLargestAtomicInteger>2</prodLargestAtomicInteger>
+        <prodLongLongMode>true</prodLongLongMode>
+        <prodShiftRight>true</prodShiftRight>
+        <prodWordSize>32</prodWordSize>
+      </hardwareSettings>
+    </configSettingsForConsistencyChecks>
+    <controllableInputRatesMap type="ModelRefInfoRepo.VarTsUIDMap" uuid="9e5bc991-cdf1-410a-85ff-f5a0f49417e5"/>
+    <controllableOutputRatesMap type="ModelRefInfoRepo.VarTsUIDMap" uuid="436ff7a1-3fc8-40e6-aa15-ea2c096f9e4e"/>
+    <dataPortGroup type="ModelRefInfoRepo.DataPortGroup" uuid="d6a70487-b6f8-4f05-8f75-38e1778ea037">
+      <compDataInputPorts>0</compDataInputPorts>
+      <compDataInputPorts>1</compDataInputPorts>
+      <compDataInputPorts>2</compDataInputPorts>
+      <compDataInputPorts>3</compDataInputPorts>
+      <compDataInputPorts>4</compDataInputPorts>
+      <compDataInputPorts>5</compDataInputPorts>
+      <compDataInputPorts>6</compDataInputPorts>
+      <compDataInputPorts>7</compDataInputPorts>
+      <compDataInputPorts>8</compDataInputPorts>
+      <compDataInputPorts>9</compDataInputPorts>
+      <compDataInputPorts>10</compDataInputPorts>
+      <compDataInputPorts>11</compDataInputPorts>
+      <compDataInputPorts>12</compDataInputPorts>
+      <compDataInputPorts>13</compDataInputPorts>
+      <compDataInputPorts>14</compDataInputPorts>
+      <compDataInputPorts>15</compDataInputPorts>
+      <compDataInputPorts>16</compDataInputPorts>
+      <compDataInputPorts>17</compDataInputPorts>
+      <compDataInputPorts>18</compDataInputPorts>
+      <compDataInputPorts>19</compDataInputPorts>
+      <compDataInputPorts>20</compDataInputPorts>
+      <compDataInputPorts>21</compDataInputPorts>
+      <compDataInputPorts>22</compDataInputPorts>
+      <compDataInputPorts>23</compDataInputPorts>
+      <compDataInputPorts>24</compDataInputPorts>
+      <compDataInputPorts>25</compDataInputPorts>
+      <compDataInputPorts>26</compDataInputPorts>
+      <compDataInputPorts>27</compDataInputPorts>
+      <compDataOutputPorts>0</compDataOutputPorts>
+      <compDataOutputPorts>1</compDataOutputPorts>
+      <compDataOutputPorts>2</compDataOutputPorts>
+      <compDataOutputPorts>3</compDataOutputPorts>
+      <compDataOutputPorts>4</compDataOutputPorts>
+      <compDataOutputPorts>5</compDataOutputPorts>
+      <compDataOutputPorts>6</compDataOutputPorts>
+      <compDataOutputPorts>7</compDataOutputPorts>
+      <compDataOutputPorts>8</compDataOutputPorts>
+      <compDataOutputPorts>9</compDataOutputPorts>
+      <dataInputPorts>0</dataInputPorts>
+      <dataInputPorts>1</dataInputPorts>
+      <dataInputPorts>2</dataInputPorts>
+      <dataInputPorts>3</dataInputPorts>
+      <dataInputPorts>4</dataInputPorts>
+      <dataInputPorts>5</dataInputPorts>
+      <dataInputPorts>6</dataInputPorts>
+      <dataInputPorts>7</dataInputPorts>
+      <dataInputPorts>8</dataInputPorts>
+      <dataInputPorts>9</dataInputPorts>
+      <dataInputPorts>10</dataInputPorts>
+      <dataInputPorts>11</dataInputPorts>
+      <dataInputPorts>12</dataInputPorts>
+      <dataInputPorts>13</dataInputPorts>
+      <dataInputPorts>14</dataInputPorts>
+      <dataInputPorts>15</dataInputPorts>
+      <dataInputPorts>16</dataInputPorts>
+      <dataInputPorts>17</dataInputPorts>
+      <dataInputPorts>18</dataInputPorts>
+      <dataInputPorts>19</dataInputPorts>
+      <dataInputPorts>20</dataInputPorts>
+      <dataInputPorts>21</dataInputPorts>
+      <dataInputPorts>22</dataInputPorts>
+      <dataInputPorts>23</dataInputPorts>
+      <dataInputPorts>24</dataInputPorts>
+      <dataInputPorts>25</dataInputPorts>
+      <dataInputPorts>26</dataInputPorts>
+      <dataInputPorts>27</dataInputPorts>
+      <dataOutputPorts>0</dataOutputPorts>
+      <dataOutputPorts>1</dataOutputPorts>
+      <dataOutputPorts>2</dataOutputPorts>
+      <dataOutputPorts>3</dataOutputPorts>
+      <dataOutputPorts>4</dataOutputPorts>
+      <dataOutputPorts>5</dataOutputPorts>
+      <dataOutputPorts>6</dataOutputPorts>
+      <dataOutputPorts>7</dataOutputPorts>
+      <dataOutputPorts>8</dataOutputPorts>
+      <dataOutputPorts>9</dataOutputPorts>
+    </dataPortGroup>
+    <expFcnUnconnectedDataPortGroup type="ModelRefInfoRepo.DataPortGroup" uuid="48d14b32-f978-4df8-986f-7b2efc5da8e3"/>
+    <interfaceParameterInfo type="ModelRefInfoRepo.InterfaceParameterInfo" uuid="ce25a5f9-6a77-429f-a180-4a8ac07cd084">
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="30eca9dc-eeaf-41da-8bfa-3c4c1fed9fd8">
+        <datatypeID>1</datatypeID>
+        <dimensions>1</dimensions>
+        <dimensions>1</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_HMI_LDW_LKAWarnTime</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="e8a1f3b2-9828-4da9-aa7d-fa9448cdad38">
+        <datatypeID>1</datatypeID>
+        <dimensions>1</dimensions>
+        <dimensions>1</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_HMI_ObjectTypeFilter</parameterName>
+      </globalVariables>
+    </interfaceParameterInfo>
+    <messageInfo type="ModelRefInfoRepo.MessageInformation" uuid="71d08b4c-f447-4ce9-8f18-8482ded8e594"/>
+    <methodInfo type="ModelRefInfoRepo.MethodExistenceInfo" uuid="629c5800-6f1c-429c-8f94-02adb29c4841">
+      <hasSystemInitializeMethod>true</hasSystemInitializeMethod>
+      <hasSystemResetMethod>true</hasSystemResetMethod>
+      <hasTerminateMethod>true</hasTerminateMethod>
+      <hasUpdateMethod>true</hasUpdateMethod>
+    </methodInfo>
+    <periodicEventPortUnsupportedBlockInfo type="ModelRefInfoRepo.PeriodicEventPortUnsupportedBlockInfo" uuid="cc78c588-a5df-47c9-8940-781095736f6c"/>
+    <portGroupsRequireSameRate type="ModelRefInfoRepo.PortGroupsRequireSameRate" uuid="ccb66828-be74-4e9c-ad7c-be4376997005">
+      <DSMPortGroups type="ModelRefInfoRepo.NameToPortGroupIdxVectMap" uuid="e1f2c12b-3055-4e81-98a4-a0d45f2d3625"/>
+      <GlobalDSMPortGroups type="ModelRefInfoRepo.NameToPortGroupIdxVectMap" uuid="788f4d9a-89a1-4458-afd4-a242669d124f"/>
+      <mergedPortGroups type="ModelRefInfoRepo.NameToPortGroupIdxVectMap" uuid="15e0d75a-f5f1-4cb6-bd0c-cdd059ac80bd"/>
+    </portGroupsRequireSameRate>
+    <rateSpecOfGlobalDSMAccessedByDescExpFcnMdlMap type="ModelRefInfoRepo.GlobalDSMRateSpecMap" uuid="4814cd3b-40c6-4288-b845-68b35fe23cc6"/>
+    <rootBlockDiagramInterface type="ci.Model" uuid="de65328c-a6d9-42e5-b8d4-81283430b9c3">
+      <p_RootComponentInterface type="ci.ComponentInterface" uuid="4793d3b8-8817-44ee-ab09-91c97f0ecdbd">
+        <p_InputPorts type="ci.SignalInterface" uuid="aa5ffce4-d4e3-4292-8b93-cffb217e1348">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>VSM_LON_CTRL_BUS</p_ComputedType>
+        </p_InputPorts>
+        <p_InputPorts type="ci.SignalInterface" uuid="86f6048f-e3fe-4577-ac61-573af0885e5c">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>VSM_HMI_BUS</p_ComputedType>
+        </p_InputPorts>
+        <p_InputPorts type="ci.SignalInterface" uuid="22b37c6c-4040-48b7-9ecd-171ea840b080">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>VCAN_HUT_MSG_BUS</p_ComputedType>
+        </p_InputPorts>
+        <p_InputPorts type="ci.SignalInterface" uuid="b9a3011f-6122-41b2-8138-d4dc0fd7b8d1">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>DMON_SENS_ERR_BUS</p_ComputedType>
+        </p_InputPorts>
+        <p_InputPorts type="ci.SignalInterface" uuid="3091678a-be11-49fa-8be0-e86009f65282">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>PLAN_HMI_BUS</p_ComputedType>
+        </p_InputPorts>
+        <p_InputPorts type="ci.SignalInterface" uuid="03ced575-80b0-4abe-96c3-2279f6406a99">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>TOS_ACCP0_BUS</p_ComputedType>
+        </p_InputPorts>
+        <p_InputPorts type="ci.SignalInterface" uuid="f04eafda-6659-4805-96b2-0d156a12374b">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>TOS_ACCP1_BUS</p_ComputedType>
+        </p_InputPorts>
+        <p_InputPorts type="ci.SignalInterface" uuid="f669f0b1-fdec-4ee8-99bc-bc97a07c0535">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>TOS_ACCP2_BUS</p_ComputedType>
+        </p_InputPorts>
+        <p_InputPorts type="ci.SignalInterface" uuid="1d6cf797-107b-4bde-bed1-90d9a083ee1d">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>TOS_ACCP3_BUS</p_ComputedType>
+        </p_InputPorts>
+        <p_InputPorts type="ci.SignalInterface" uuid="7e91038d-b006-463e-a34c-22c42aea3e05">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>TOS_ACCP4_BUS</p_ComputedType>
+        </p_InputPorts>
+        <p_InputPorts type="ci.SignalInterface" uuid="6140e5ff-6c47-4b55-8a1b-61d344751058">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>TOS_ACCP5_BUS</p_ComputedType>
+        </p_InputPorts>
+        <p_InputPorts type="ci.SignalInterface" uuid="8f45ae3b-0b32-4bf3-9642-da434e5c8544">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>RFM_LINE_BUS</p_ComputedType>
+        </p_InputPorts>
+        <p_InputPorts type="ci.SignalInterface" uuid="50cec160-59fc-4cd7-8bf8-8f9b6b2ba70f">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>RFM_LINE_BUS</p_ComputedType>
+        </p_InputPorts>
+        <p_InputPorts type="ci.SignalInterface" uuid="c245831f-cac3-4630-a954-ec71965ad938">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>RFM_LINE_BUS</p_ComputedType>
+        </p_InputPorts>
+        <p_InputPorts type="ci.SignalInterface" uuid="be2e1e25-68a8-48f2-bc39-990696ff7aa5">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>RFM_LINE_BUS</p_ComputedType>
+        </p_InputPorts>
+        <p_InputPorts type="ci.SignalInterface" uuid="0aa6fb7e-4efb-459f-b21b-39d83edb9fac">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>RFM_LINE_BUS</p_ComputedType>
+        </p_InputPorts>
+        <p_InputPorts type="ci.SignalInterface" uuid="a808dbcb-9977-4dbd-aad2-9a4794d69814">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>RFM_LINE_BUS</p_ComputedType>
+        </p_InputPorts>
+        <p_InputPorts type="ci.SignalInterface" uuid="93c0bf2b-1ac4-42dc-96b7-7af4b3563834">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>EHRV2_ROAD_INFO_BUS</p_ComputedType>
+        </p_InputPorts>
+        <p_InputPorts type="ci.SignalInterface" uuid="370fd749-edf0-4e89-882b-ae8a58ba42ef">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>RFM_ROAD_BUS</p_ComputedType>
+        </p_InputPorts>
+        <p_InputPorts type="ci.SignalInterface" uuid="a602d505-6805-43d1-be0a-477d63ce0a46">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>RFM_INTERSEC_ALERT_BUS</p_ComputedType>
+        </p_InputPorts>
+        <p_InputPorts type="ci.SignalInterface" uuid="59f91ebc-9c23-41e4-a3ee-09955da38a79">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>uint8</p_ComputedType>
+        </p_InputPorts>
+        <p_InputPorts type="ci.SignalInterface" uuid="da48a62b-c6a9-4f0a-9377-9e35714e0399">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>EHRV2_HDR_BUS</p_ComputedType>
+        </p_InputPorts>
+        <p_InputPorts type="ci.SignalInterface" uuid="352ea971-f598-4fd3-a488-9e03a4d2abff">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>uint8</p_ComputedType>
+        </p_InputPorts>
+        <p_InputPorts type="ci.SignalInterface" uuid="59a43971-bc97-4f84-b71e-97ce18c29c1a">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>AEB_BRK_INFO_BUS</p_ComputedType>
+        </p_InputPorts>
+        <p_InputPorts type="ci.SignalInterface" uuid="c1b9b459-3038-46ba-9ca8-08b217c4758e">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>AEB_IPHUT_INFO_BUS</p_ComputedType>
+        </p_InputPorts>
+        <p_InputPorts type="ci.SignalInterface" uuid="f5081dd6-fb5c-4fe2-bfd4-bd71a0a52c27">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>RFM_TSR_BUS</p_ComputedType>
+        </p_InputPorts>
+        <p_InputPorts type="ci.SignalInterface" uuid="0f362401-9568-470e-97e7-03073681abe8">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>LONC_CTRL_OUT_BUS</p_ComputedType>
+        </p_InputPorts>
+        <p_InputPorts type="ci.SignalInterface" uuid="1173eb19-036c-42f4-8123-3cd34df86980">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>boolean</p_ComputedType>
+        </p_InputPorts>
+        <p_Name>PubIfChassisHMI_MDL</p_Name>
+        <p_OutputPorts type="ci.SignalInterface" uuid="36ffdfe6-c3c5-4e03-b185-4d7dad9d3111">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>HMI_IFC_FD2_BUS</p_ComputedType>
+        </p_OutputPorts>
+        <p_OutputPorts type="ci.SignalInterface" uuid="1f450f73-4ca4-441a-b86b-b9ba62b12e9e">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>uint8</p_ComputedType>
+        </p_OutputPorts>
+        <p_OutputPorts type="ci.SignalInterface" uuid="2a0eb9a2-ce1b-4e2d-90ef-1d2c0fd16cef">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>boolean</p_ComputedType>
+        </p_OutputPorts>
+        <p_OutputPorts type="ci.SignalInterface" uuid="83da965a-178b-4cd0-939a-c0548658eacf">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>boolean</p_ComputedType>
+        </p_OutputPorts>
+        <p_OutputPorts type="ci.SignalInterface" uuid="5bdd9600-c4b3-483a-b721-eb76d94df119">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>HMI_ACC_FD2_BUS</p_ComputedType>
+        </p_OutputPorts>
+        <p_OutputPorts type="ci.SignalInterface" uuid="c54882cd-1a74-403a-9771-9eb059b5bc84">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>HMI_ACC_FD4_BUS</p_ComputedType>
+        </p_OutputPorts>
+        <p_OutputPorts type="ci.SignalInterface" uuid="b84800c7-3d87-4e63-8f33-7fc4222945d2">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>HMI_ACC_FD1_BUS</p_ComputedType>
+        </p_OutputPorts>
+        <p_OutputPorts type="ci.SignalInterface" uuid="1f60620e-197d-44dd-af0b-385e26630e60">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>HMI_IFC_FD5_BUS</p_ComputedType>
+        </p_OutputPorts>
+        <p_OutputPorts type="ci.SignalInterface" uuid="32e927c0-b69d-4d70-87d4-cc734a987f8d">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>HMI_IFC_FD6_BUS</p_ComputedType>
+        </p_OutputPorts>
+        <p_OutputPorts type="ci.SignalInterface" uuid="06202e0a-56ed-46d4-b918-f85bd91bf766">
+          <p_ComputedNumericDimensions>1.0</p_ComputedNumericDimensions>
+          <p_ComputedSampleTime>-1.0</p_ComputedSampleTime>
+          <p_ComputedSampleTime>0.0</p_ComputedSampleTime>
+          <p_ComputedType>HMI_IFC_FD3_BUS</p_ComputedType>
+        </p_OutputPorts>
+        <p_Type>ROOT</p_Type>
+      </p_RootComponentInterface>
+    </rootBlockDiagramInterface>
+    <simulinkFunctions type="ModelRefInfoRepo.SimulinkFunctions" uuid="e5b279cf-8485-48fd-a9db-67af73f2d662">
+      <compSimulinkFunctionCatalog></compSimulinkFunctionCatalog>
+    </simulinkFunctions>
+    <stateWriterToOwnerMap type="ModelRefInfoRepo.StateWriterInfo" uuid="4337cd4b-0e7a-4039-aa27-2fd1f14741c0"/>
+    <stoClientDataRegistry type="sto.ClientDataRegistry" uuid="72c236f8-ec85-4a4c-86fa-3e51f81c9e7d">
+      <dataSets type="sto.ClientClockNamedDataSet" uuid="4d5d9da1-844a-4153-9059-26b1d6cd9ac5">
+        <tag>sltpEvents</tag>
+      </dataSets>
+      <dataSets type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="91f1dc3e-ecbe-42f0-9253-09379c5a12eb">
+        <tag>sltpTaskGroups</tag>
+      </dataSets>
+      <dataSets type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="818cc382-0790-40db-9903-f84818e08e39">
+        <dSet type="ModelRefInfoRepo.SltpTaskData" uuid="cfbc46a5-d2f4-4ebd-bb64-4635e058def3"/>
+        <tSet type="ModelRefInfoRepo.SltpTaskData" uuid="cfbc46a5-d2f4-4ebd-bb64-4635e058def3">
+          <dataName>D1</dataName>
+          <linkedSet type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="818cc382-0790-40db-9903-f84818e08e39"/>
+          <id type="sto.TaskHierarchyElementId">
+            <id>_task0</id>
+          </id>
+        </tSet>
+        <tag>sltpTasks</tag>
+      </dataSets>
+    </stoClientDataRegistry>
+    <varTsUIDMap type="ModelRefInfoRepo.VarTsUIDMap" uuid="2fcef5f6-2054-4be5-a3b9-8feb20a577d6"/>
+  </ModelRefInfoRepo.ModelRefInfoRoot>
+</MF0>

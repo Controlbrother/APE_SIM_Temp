@@ -1,0 +1,95 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   11 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "is_active_c20_PubIfDecisionLSM_MDL"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_c20_PubIfDecisionLSM_MDL"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_on"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "on"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_CruiseValid2"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "on.CruiseValid2"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_init"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "on.CruiseValid2.init"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_CruiseValid1"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "on.CruiseValid1"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_init"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "on.CruiseValid1.init"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_CruiseValid"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "on.CruiseValid"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_init"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "on.CruiseValid.init"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_EntryStub1"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "on.EntryStub1"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_StubValid"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "on.StubValid"\
+      SrcLocation  ""\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

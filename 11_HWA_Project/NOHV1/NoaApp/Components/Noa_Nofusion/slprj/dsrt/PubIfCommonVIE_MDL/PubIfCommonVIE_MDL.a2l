@@ -1,0 +1,488 @@
+/*
+ ****************************************************************************
+ * ASAP2 file: PubIfCommonVIE_MDL.a2l
+ *
+ * Copyright 2022, dSPACE GmbH. All rights reserved.
+ *
+ ****************************************************************************
+ */
+
+ASAP2_VERSION  1 61   /* Version 1.61 */
+
+/begin PROJECT PubIfCommonVIE_MDL ""
+  
+  /begin HEADER ""
+    VERSION      "3.34"       
+    PROJECT_NO   PubIfCommonVIE_MDL
+  /end HEADER
+  
+  
+  /begin MODULE PubIfCommonVIE_MDL  ""
+    
+    
+    
+    /begin RECORD_LAYOUT Scalar_BOOLEAN
+      FNC_VALUES  1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_UBYTE
+      FNC_VALUES  1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_BYTE
+      FNC_VALUES  1 SBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_UWORD
+      FNC_VALUES  1 UWORD ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_SWORD
+      FNC_VALUES 1 SWORD ROW_DIR DIRECT
+    /end RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_ULONG
+      FNC_VALUES  1 ULONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_LONG
+      FNC_VALUES  1 SLONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_FLOAT32_IEEE
+      FNC_VALUES  1 FLOAT32_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_FLOAT64_IEEE
+      FNC_VALUES  1 FLOAT64_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    
+    /begin RECORD_LAYOUT Lookup1D_BOOLEAN
+      FNC_VALUES  1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_BYTE
+      FNC_VALUES  1 SBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_UBYTE
+      FNC_VALUES  1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_UWORD
+      FNC_VALUES  1 UWORD ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_WORD
+      FNC_VALUES  1 SWORD ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_ULONG
+      FNC_VALUES  1 ULONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_LONG
+      FNC_VALUES  1 SLONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_FLOAT32_IEEE
+      FNC_VALUES  1 FLOAT32_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_FLOAT64_IEEE
+      FNC_VALUES  1 FLOAT64_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_BOOLEAN
+      AXIS_PTS_X  1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT 
+    
+    /begin RECORD_LAYOUT Lookup1D_X_BYTE
+      AXIS_PTS_X  1 SBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_UBYTE
+      AXIS_PTS_X  1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_UWORD
+      AXIS_PTS_X  1 UWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_WORD
+      AXIS_PTS_X  1 SWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_ULONG
+      AXIS_PTS_X  1 ULONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_LONG
+      AXIS_PTS_X  1 SLONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT    
+    
+    /begin RECORD_LAYOUT Lookup1D_X_FLOAT32_IEEE
+      AXIS_PTS_X  1 FLOAT32_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_FLOAT64_IEEE
+      AXIS_PTS_X  1 FLOAT64_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT   
+    
+    
+    
+    /begin RECORD_LAYOUT Lookup2D_BOOLEAN
+      FNC_VALUES  1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT    
+    
+    /begin RECORD_LAYOUT Lookup2D_UBYTE
+      FNC_VALUES     1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_BYTE
+      FNC_VALUES     1 SBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_UWORD
+      FNC_VALUES     1 UWORD ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_WORD
+      FNC_VALUES     1 SWORD ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_ULONG
+      FNC_VALUES     1 ULONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_LONG
+      FNC_VALUES     1 SLONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_FLOAT32_IEEE
+      FNC_VALUES     1 FLOAT32_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_FLOAT64_IEEE
+      FNC_VALUES     1 FLOAT64_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_BOOLEAN
+      AXIS_PTS_X     1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT    
+    
+    /begin RECORD_LAYOUT Lookup2D_X_UBYTE
+      AXIS_PTS_X     1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_BYTE
+      AXIS_PTS_X     1 SBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_UWORD
+      AXIS_PTS_X     1 UWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_WORD
+      AXIS_PTS_X     1 SWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_ULONG
+      AXIS_PTS_X     1 ULONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_LONG
+      AXIS_PTS_X     1 SLONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_FLOAT32_IEEE
+      AXIS_PTS_X     1 FLOAT32_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_FLOAT64_IEEE
+      AXIS_PTS_X     1 FLOAT64_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_Global_CharSpd_ms 
+      /* Long Identifier        */      "车辆特征车速（过渡转向和转向不足的临界车速，ESP提供）"
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_Global_CharSpd_ms@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfCommonVIE_MDL_CM_single_m_s
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_Global_FrontAxleToCenter_m 
+      /* Long Identifier        */      "前轴距到车辆质心距离"
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_Global_FrontAxleToCenter_m@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfCommonVIE_MDL_CM_single_m
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_Global_RearAxleToCenter_m 
+      /* Long Identifier        */      "后轴到车辆质心的X向位置"
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_Global_RearAxleToCenter_m@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfCommonVIE_MDL_CM_single_m
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_Global_SideSlipAnglefactor 
+      /* Long Identifier        */      "侧滑角系数"
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_Global_SideSlipAnglefactor@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfCommonVIE_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_Global_SteeringAngleRatio 
+      /* Long Identifier        */      "方向盘与前轮转角传动比"
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_Global_SteeringAngleRatio@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfCommonVIE_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_Global_WheelBase_m 
+      /* Long Identifier        */      "轴距"
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_Global_WheelBase_m@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfCommonVIE_MDL_CM_single_m
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_Global_WheelTrack_m 
+      /* Long Identifier        */      "轮距"
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_Global_WheelTrack_m@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfCommonVIE_MDL_CM_single_m
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VIE_SW_VERSION
+      /* Long identifier        */      ""
+      /* Data type              */      ULONG
+      /* Conversion method      */      PubIfCommonVIE_MDL_CM_uint32
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      4294967295
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@VIE_SW_VERSION@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VSM_SteerAngOffsetInit
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfCommonVIE_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@VSM_SteerAngOffsetInit@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VSM_SteerAngleOffset_deg
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfCommonVIE_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@VSM_SteerAngleOffset_deg@ */
+    /end MEASUREMENT
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfCommonVIE_MDL_CM_single_m_s
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      "m/s"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfCommonVIE_MDL_CM_single_m
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      "m"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfCommonVIE_MDL_CM_single
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      ""
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfCommonVIE_MDL_CM_uint32
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%10.0"
+      /* Units                  */      ""
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    
+    
+    /begin GROUP 
+      /* Name                   */       PubIfCommonVIE_MDL
+      /* Long identifier        */       "PubIfCommonVIE_MDL"
+      /* Root                    */       ROOT
+      /begin SUB_GROUP
+        Root_Subsystem_Reference
+      /end SUB_GROUP
+      /begin REF_MEASUREMENT
+        VIE_SW_VERSION
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       Root_Subsystem_Reference
+      /* Long identifier        */       "PubIfCommonVIE_MDL/Subsystem Reference"
+      /begin SUB_GROUP
+        S1_VIE
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S1_VIE
+      /* Long identifier        */       "PubIfCommonVIE_MDL/Subsystem Reference/VIE"
+      /begin SUB_GROUP
+        S2_VIE
+      /end SUB_GROUP
+      /begin REF_MEASUREMENT
+        VSM_SteerAngOffsetInit
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S2_VIE
+      /* Long identifier        */       "PubIfCommonVIE_MDL/Subsystem Reference/VIE/VIE"
+      /begin SUB_GROUP
+        S3_AxRef
+        S3_VxvRef_Calc
+      /end SUB_GROUP
+      /begin REF_CHARACTERISTIC
+        P_Global_WheelBase_m
+      /end REF_CHARACTERISTIC
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S3_AxRef
+      /* Long identifier        */       "PubIfCommonVIE_MDL/Subsystem Reference/VIE/VIE/AxRef"
+      /begin SUB_GROUP
+        S4_axvRoadSlope_calc
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S3_VxvRef_Calc
+      /* Long identifier        */       "PubIfCommonVIE_MDL/Subsystem Reference/VIE/VIE/VxvRef_Calc"
+      /begin SUB_GROUP
+        S8_VxvRef_Calc
+      /end SUB_GROUP
+      /begin REF_CHARACTERISTIC
+        P_Global_FrontAxleToCenter_m
+        P_Global_RearAxleToCenter_m
+        P_Global_WheelTrack_m
+      /end REF_CHARACTERISTIC
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S4_axvRoadSlope_calc
+      /* Long identifier        */       "PubIfCommonVIE_MDL/Subsystem Reference/VIE/VIE/AxRef/axvRoadSlope_calc"
+      /begin REF_CHARACTERISTIC
+        P_Global_SideSlipAnglefactor
+      /end REF_CHARACTERISTIC
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S8_VxvRef_Calc
+      /* Long identifier        */       "PubIfCommonVIE_MDL/Subsystem Reference/VIE/VIE/VxvRef_Calc/VxvRef_Calc"
+      /begin SUB_GROUP
+        S19_If_Action_Subsystem
+      /end SUB_GROUP
+      /begin REF_CHARACTERISTIC
+        P_Global_CharSpd_ms
+        P_Global_SteeringAngleRatio
+        P_Global_WheelBase_m
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        VSM_SteerAngleOffset_deg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S19_If_Action_Subsystem
+      /* Long identifier        */       "PubIfCommonVIE_MDL/Subsystem Reference/VIE/VIE/VxvRef_Calc/VxvRef_Calc/If Action Subsystem"
+      /begin REF_CHARACTERISTIC
+        P_Global_SteeringAngleRatio
+      /end REF_CHARACTERISTIC
+    /end GROUP
+    
+    
+  /end MODULE
+  
+  
+/end PROJECT
+/* EOF PubIfCommonVIE_MDL.a2l*/

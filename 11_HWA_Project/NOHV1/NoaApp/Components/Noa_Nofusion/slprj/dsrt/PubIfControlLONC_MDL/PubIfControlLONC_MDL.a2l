@@ -1,0 +1,2940 @@
+/*
+ ****************************************************************************
+ * ASAP2 file: PubIfControlLONC_MDL.a2l
+ *
+ * Copyright 2022, dSPACE GmbH. All rights reserved.
+ *
+ ****************************************************************************
+ */
+
+ASAP2_VERSION  1 61   /* Version 1.61 */
+
+/begin PROJECT PubIfControlLONC_MDL ""
+  
+  /begin HEADER ""
+    VERSION      "3.55"       
+    PROJECT_NO   PubIfControlLONC_MDL
+  /end HEADER
+  
+  
+  /begin MODULE PubIfControlLONC_MDL  ""
+    
+    
+    
+    /begin RECORD_LAYOUT Scalar_BOOLEAN
+      FNC_VALUES  1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_UBYTE
+      FNC_VALUES  1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_BYTE
+      FNC_VALUES  1 SBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_UWORD
+      FNC_VALUES  1 UWORD ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_SWORD
+      FNC_VALUES 1 SWORD ROW_DIR DIRECT
+    /end RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_ULONG
+      FNC_VALUES  1 ULONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_LONG
+      FNC_VALUES  1 SLONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_FLOAT32_IEEE
+      FNC_VALUES  1 FLOAT32_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_FLOAT64_IEEE
+      FNC_VALUES  1 FLOAT64_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    
+    /begin RECORD_LAYOUT Lookup1D_BOOLEAN
+      FNC_VALUES  1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_BYTE
+      FNC_VALUES  1 SBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_UBYTE
+      FNC_VALUES  1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_UWORD
+      FNC_VALUES  1 UWORD ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_WORD
+      FNC_VALUES  1 SWORD ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_ULONG
+      FNC_VALUES  1 ULONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_LONG
+      FNC_VALUES  1 SLONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_FLOAT32_IEEE
+      FNC_VALUES  1 FLOAT32_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_FLOAT64_IEEE
+      FNC_VALUES  1 FLOAT64_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_BOOLEAN
+      AXIS_PTS_X  1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT 
+    
+    /begin RECORD_LAYOUT Lookup1D_X_BYTE
+      AXIS_PTS_X  1 SBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_UBYTE
+      AXIS_PTS_X  1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_UWORD
+      AXIS_PTS_X  1 UWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_WORD
+      AXIS_PTS_X  1 SWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_ULONG
+      AXIS_PTS_X  1 ULONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_LONG
+      AXIS_PTS_X  1 SLONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT    
+    
+    /begin RECORD_LAYOUT Lookup1D_X_FLOAT32_IEEE
+      AXIS_PTS_X  1 FLOAT32_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_FLOAT64_IEEE
+      AXIS_PTS_X  1 FLOAT64_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT   
+    
+    
+    
+    /begin RECORD_LAYOUT Lookup2D_BOOLEAN
+      FNC_VALUES  1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT    
+    
+    /begin RECORD_LAYOUT Lookup2D_UBYTE
+      FNC_VALUES     1 UBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_BYTE
+      FNC_VALUES     1 SBYTE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_UWORD
+      FNC_VALUES     1 UWORD ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_WORD
+      FNC_VALUES     1 SWORD ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_ULONG
+      FNC_VALUES     1 ULONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_LONG
+      FNC_VALUES     1 SLONG ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_FLOAT32_IEEE
+      FNC_VALUES     1 FLOAT32_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_FLOAT64_IEEE
+      FNC_VALUES     1 FLOAT64_IEEE ROW_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_BOOLEAN
+      AXIS_PTS_X     1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT    
+    
+    /begin RECORD_LAYOUT Lookup2D_X_UBYTE
+      AXIS_PTS_X     1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_BYTE
+      AXIS_PTS_X     1 SBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_UWORD
+      AXIS_PTS_X     1 UWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_WORD
+      AXIS_PTS_X     1 SWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_ULONG
+      AXIS_PTS_X     1 ULONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_LONG
+      AXIS_PTS_X     1 SLONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_FLOAT32_IEEE
+      AXIS_PTS_X     1 FLOAT32_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_FLOAT64_IEEE
+      AXIS_PTS_X     1 FLOAT64_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LongCtrl_VLCMaRatioCharMaYAxis
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCMaRatioCharMaYAxis@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LongCtrl_Tr_Ratio
+        /* Conversion Method      */      PubIfControlLONC_MDL_CM_single
+        /* Number of Axis Pts     */      18
+        /* Lower Limit            */      1.0
+        /* Upper Limit            */      30.0
+        AXIS_PTS_REF                      P_LongCtrl_VLCTrRatioCharMaXAxis
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin AXIS_PTS
+      /* Name                   */      P_LongCtrl_VLCTrRatioCharMaXAxis
+      /* Long Identifier        */      ""
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCTrRatioCharMaXAxis@ */
+      /* Input Quantity         */      LongCtrl_Tr_Ratio
+      /* Record Layout          */      Lookup1D_X_FLOAT32_IEEE
+      /* Maximum Difference     */      0
+      /* Conversion Method      */      PubIfControlLONC_MDL_CM_single
+      /* Number of Axis Pts     */      18
+      /* Lower Limit            */      1.0
+      /* Upper Limit            */      30.0
+    /end AXIS_PTS
+    
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LongCtrl_VLCaccelMinHoldYAxis
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCaccelMinHoldYAxis@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single_m_s_2
+      /* Lower limit            */      -6.0
+      /* Upper limit            */      0.0
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LongCtrl_axvRoadSlopeMs2
+        /* Conversion Method      */      PubIfControlLONC_MDL_CM_single_m_s_2
+        /* Number of Axis Pts     */      2
+        /* Lower Limit            */      0.0
+        /* Upper Limit            */      5.0
+        AXIS_PTS_REF                      P_LongCtrl_VLCaccelMinHoldXAxis
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin AXIS_PTS
+      /* Name                   */      P_LongCtrl_VLCaccelMinHoldXAxis
+      /* Long Identifier        */      ""
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCaccelMinHoldXAxis@ */
+      /* Input Quantity         */      LongCtrl_axvRoadSlopeMs2
+      /* Record Layout          */      Lookup1D_X_FLOAT32_IEEE
+      /* Maximum Difference     */      0
+      /* Conversion Method      */      PubIfControlLONC_MDL_CM_single_m_s_2
+      /* Number of Axis Pts     */      2
+      /* Lower Limit            */      0.0
+      /* Upper Limit            */      5.0
+    /end AXIS_PTS
+    
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LongCtrl_VLCjerkHoldYAxis
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCjerkHoldYAxis@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single_m_s_3
+      /* Lower limit            */      -50.0
+      /* Upper limit            */      0.0
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LongCtrl_axvRoadSlopeMs2
+        /* Conversion Method      */      PubIfControlLONC_MDL_CM_single_m_s_2
+        /* Number of Axis Pts     */      2
+        /* Lower Limit            */      0.0
+        /* Upper Limit            */      4.0
+        AXIS_PTS_REF                      P_LongCtrl_VLCjerkHoldXAxis
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin AXIS_PTS
+      /* Name                   */      P_LongCtrl_VLCjerkHoldXAxis
+      /* Long Identifier        */      ""
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCjerkHoldXAxis@ */
+      /* Input Quantity         */      LongCtrl_axvRoadSlopeMs2
+      /* Record Layout          */      Lookup1D_X_FLOAT32_IEEE
+      /* Maximum Difference     */      0
+      /* Conversion Method      */      PubIfControlLONC_MDL_CM_single_m_s_2
+      /* Number of Axis Pts     */      2
+      /* Lower Limit            */      0.0
+      /* Upper Limit            */      4.0
+    /end AXIS_PTS
+    
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LongCtrl_VLCaccelMinSlidHoldYAxis
+      /* Long identifier        */      "m/s^2"
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCaccelMinSlidHoldYAxis@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LongCtrl_axvRoadSlopeMs2
+        /* Conversion Method      */      PubIfControlLONC_MDL_CM_single
+        /* Number of Axis Pts     */      7
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LongCtrl_VLCaccelMinSlidHoldXAxis
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin AXIS_PTS
+      /* Name                   */      P_LongCtrl_VLCaccelMinSlidHoldXAxis
+      /* Long Identifier        */      "m/s^2"
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCaccelMinSlidHoldXAxis@ */
+      /* Input Quantity         */      LongCtrl_axvRoadSlopeMs2
+      /* Record Layout          */      Lookup1D_X_FLOAT32_IEEE
+      /* Maximum Difference     */      0
+      /* Conversion Method      */      PubIfControlLONC_MDL_CM_single
+      /* Number of Axis Pts     */      7
+      /* Lower Limit            */      -3.4E+38
+      /* Upper Limit            */      3.4E+38
+    /end AXIS_PTS
+    
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LongCtrl_VLCjerkSlidHoldYAxis
+      /* Long identifier        */      "m/s^3"
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCjerkSlidHoldYAxis@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LongCtrl_axvRoadSlopeMs2
+        /* Conversion Method      */      PubIfControlLONC_MDL_CM_single
+        /* Number of Axis Pts     */      7
+        /* Lower Limit            */      -3.4E+38
+        /* Upper Limit            */      3.4E+38
+        AXIS_PTS_REF                      P_LongCtrl_VLCjerkSlidHoldXAxis
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin AXIS_PTS
+      /* Name                   */      P_LongCtrl_VLCjerkSlidHoldXAxis
+      /* Long Identifier        */      "m/s^2"
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCjerkSlidHoldXAxis@ */
+      /* Input Quantity         */      LongCtrl_axvRoadSlopeMs2
+      /* Record Layout          */      Lookup1D_X_FLOAT32_IEEE
+      /* Maximum Difference     */      0
+      /* Conversion Method      */      PubIfControlLONC_MDL_CM_single
+      /* Number of Axis Pts     */      7
+      /* Lower Limit            */      -3.4E+38
+      /* Upper Limit            */      3.4E+38
+    /end AXIS_PTS
+    
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LongCtrl_VLCcoefPIYAxis
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCcoefPIYAxis@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      0.0
+      /* Upper limit            */      2.0
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      NO_INPUT_QUANTITY
+        /* Conversion Method      */      PubIfControlLONC_MDL_CM_single_km_h
+        /* Number of Axis Pts     */      4
+        /* Lower Limit            */      0.0
+        /* Upper Limit            */      30.0
+        AXIS_PTS_REF                      P_LongCtrl_VLCvelCharCoefPIXAxis
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin AXIS_PTS
+      /* Name                   */      P_LongCtrl_VLCvelCharCoefPIXAxis
+      /* Long Identifier        */      ""
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCvelCharCoefPIXAxis@ */
+      /* Input Quantity         */      NO_INPUT_QUANTITY
+      /* Record Layout          */      Lookup1D_X_FLOAT32_IEEE
+      /* Maximum Difference     */      0
+      /* Conversion Method      */      PubIfControlLONC_MDL_CM_single_km_h
+      /* Number of Axis Pts     */      4
+      /* Lower Limit            */      0.0
+      /* Upper Limit            */      30.0
+    /end AXIS_PTS
+    
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LongCtrl_VLCengInverseEfficientYAxis
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCengInverseEfficientYAxis@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single__
+      /* Lower limit            */      -120.0
+      /* Upper limit            */      120.0
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      NO_INPUT_QUANTITY
+        /* Conversion Method      */      PubIfControlLONC_MDL_CM_single__
+        /* Number of Axis Pts     */      5
+        /* Lower Limit            */      -150.0
+        /* Upper Limit            */      110.0
+        AXIS_PTS_REF                      P_LongCtrl_VLCtorqCharEngInverseEfficientXAxis
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin AXIS_PTS
+      /* Name                   */      P_LongCtrl_VLCtorqCharEngInverseEfficientXAxis
+      /* Long Identifier        */      ""
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCtorqCharEngInverseEfficientXAxis@ */
+      /* Input Quantity         */      NO_INPUT_QUANTITY
+      /* Record Layout          */      Lookup1D_X_FLOAT32_IEEE
+      /* Maximum Difference     */      0
+      /* Conversion Method      */      PubIfControlLONC_MDL_CM_single__
+      /* Number of Axis Pts     */      5
+      /* Lower Limit            */      -150.0
+      /* Upper Limit            */      110.0
+    /end AXIS_PTS
+    
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LongCtrl_VLCcoefKiDiffDtEnlargeYAxis
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCcoefKiDiffDtEnlargeYAxis@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      NO_INPUT_QUANTITY
+        /* Conversion Method      */      PubIfControlLONC_MDL_CM_single_m_s_3
+        /* Number of Axis Pts     */      6
+        /* Lower Limit            */      -10.0
+        /* Upper Limit            */      20.0
+        AXIS_PTS_REF                      P_LongCtrl_VLCdiffDtCharCoefKiEnlargeXAxis
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin AXIS_PTS
+      /* Name                   */      P_LongCtrl_VLCdiffDtCharCoefKiEnlargeXAxis
+      /* Long Identifier        */      ""
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCdiffDtCharCoefKiEnlargeXAxis@ */
+      /* Input Quantity         */      NO_INPUT_QUANTITY
+      /* Record Layout          */      Lookup1D_X_FLOAT32_IEEE
+      /* Maximum Difference     */      0
+      /* Conversion Method      */      PubIfControlLONC_MDL_CM_single_m_s_3
+      /* Number of Axis Pts     */      6
+      /* Lower Limit            */      -10.0
+      /* Upper Limit            */      20.0
+    /end AXIS_PTS
+    
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LongCtrl_VLCcoefKiEnableYAxis
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCcoefKiEnableYAxis@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      0.0
+      /* Upper limit            */      2.0
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LongCtrl_axvDiff
+        /* Conversion Method      */      PubIfControlLONC_MDL_CM_single_m_s_2
+        /* Number of Axis Pts     */      6
+        /* Lower Limit            */      -10.0
+        /* Upper Limit            */      20.0
+        AXIS_PTS_REF                      P_LongCtrl_VLCaDiffCharCoefKiEnableXAxis
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin AXIS_PTS
+      /* Name                   */      P_LongCtrl_VLCaDiffCharCoefKiEnableXAxis
+      /* Long Identifier        */      ""
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCaDiffCharCoefKiEnableXAxis@ */
+      /* Input Quantity         */      LongCtrl_axvDiff
+      /* Record Layout          */      Lookup1D_X_FLOAT32_IEEE
+      /* Maximum Difference     */      0
+      /* Conversion Method      */      PubIfControlLONC_MDL_CM_single_m_s_2
+      /* Number of Axis Pts     */      6
+      /* Lower Limit            */      -10.0
+      /* Upper Limit            */      20.0
+    /end AXIS_PTS
+    
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LongCtrl_VLCAxvTracMinDC1FullFillYAxis
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCAxvTracMinDC1FullFillYAxis@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single_m_s_2
+      /* Lower limit            */      -1.0
+      /* Upper limit            */      1.0
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      LongCtrl_vxvRefMs
+        /* Conversion Method      */      PubIfControlLONC_MDL_CM_single_m_s
+        /* Number of Axis Pts     */      4
+        /* Lower Limit            */      0.0
+        /* Upper Limit            */      60.0
+        AXIS_PTS_REF                      P_LongCtrl_VLCAxvTracMinDC1FullFillXAxis
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin AXIS_PTS
+      /* Name                   */      P_LongCtrl_VLCAxvTracMinDC1FullFillXAxis
+      /* Long Identifier        */      ""
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCAxvTracMinDC1FullFillXAxis@ */
+      /* Input Quantity         */      LongCtrl_vxvRefMs
+      /* Record Layout          */      Lookup1D_X_FLOAT32_IEEE
+      /* Maximum Difference     */      0
+      /* Conversion Method      */      PubIfControlLONC_MDL_CM_single_m_s
+      /* Number of Axis Pts     */      4
+      /* Lower Limit            */      0.0
+      /* Upper Limit            */      60.0
+    /end AXIS_PTS
+    
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LongCtrl_VLCengEfficientCharYAxis
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCengEfficientCharYAxis@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      0.5
+      /* Upper limit            */      2.0
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      NO_INPUT_QUANTITY
+        /* Conversion Method      */      PubIfControlLONC_MDL_CM_single__
+        /* Number of Axis Pts     */      5
+        /* Lower Limit            */      -100.0
+        /* Upper Limit            */      100.0
+        AXIS_PTS_REF                      P_LongCtrl_VLCtorqCharEngEfficientXAxis
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin AXIS_PTS
+      /* Name                   */      P_LongCtrl_VLCtorqCharEngEfficientXAxis
+      /* Long Identifier        */      ""
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCtorqCharEngEfficientXAxis@ */
+      /* Input Quantity         */      NO_INPUT_QUANTITY
+      /* Record Layout          */      Lookup1D_X_FLOAT32_IEEE
+      /* Maximum Difference     */      0
+      /* Conversion Method      */      PubIfControlLONC_MDL_CM_single__
+      /* Number of Axis Pts     */      5
+      /* Lower Limit            */      -100.0
+      /* Upper Limit            */      100.0
+    /end AXIS_PTS
+    
+    /begin CHARACTERISTIC      
+      /* Name                   */      P_LongCtrl_VLCcoefFYAxis
+      /* Long identifier        */      ""
+      /* Characteristic Type    */      CURVE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCcoefFYAxis@ */
+      /* Record Layout          */      Lookup1D_FLOAT32_IEEE
+      /* Maxdiff                */      0
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      /begin AXIS_DESCR                 
+        /* Description of X-Axis Points */
+        /* Axis Type              */      COM_AXIS
+        /* Reference to Input     */      NO_INPUT_QUANTITY
+        /* Conversion Method      */      PubIfControlLONC_MDL_CM_single_km_h
+        /* Number of Axis Pts     */      10
+        /* Lower Limit            */      0.0
+        /* Upper Limit            */      250.0
+        AXIS_PTS_REF                      P_LongCtrl_VLCcoefFXAxis
+      /end AXIS_DESCR
+    /end CHARACTERISTIC
+    /begin AXIS_PTS
+      /* Name                   */      P_LongCtrl_VLCcoefFXAxis
+      /* Long Identifier        */      ""
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCcoefFXAxis@ */
+      /* Input Quantity         */      NO_INPUT_QUANTITY
+      /* Record Layout          */      Lookup1D_X_FLOAT32_IEEE
+      /* Maximum Difference     */      0
+      /* Conversion Method      */      PubIfControlLONC_MDL_CM_single_km_h
+      /* Number of Axis Pts     */      10
+      /* Lower Limit            */      0.0
+      /* Upper Limit            */      250.0
+    /end AXIS_PTS
+    
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_Global_TireRadius_m 
+      /* Long Identifier        */      "ÂÖÌ¥°ë¾¶"
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_Global_TireRadius_m@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single_m
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_Global_Weight_N 
+      /* Long Identifier        */      "³µÖØ"
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_Global_Weight_N@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single_N
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_AxvRoadSlopeThrd 
+      /* Long Identifier        */      "m/s^2"
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_AxvRoadSlopeThrd@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_TotWheelTrqRatio 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_TotWheelTrqRatio@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCAxTarDtThreEnableI 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCAxTarDtThreEnableI@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single_m_s_3
+      /* Lower limit            */      0.0
+      /* Upper limit            */      5.0
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCCounterAxvTracMinTimeout 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCCounterAxvTracMinTimeout@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      0.0
+      /* Upper limit            */      100.0
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCCounterDC2ECTorqDelay 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCCounterDC2ECTorqDelay@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      0.0
+      /* Upper limit            */      100.0
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCCounterDrvOff2EC 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCCounterDrvOff2EC@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      0.0
+      /* Upper limit            */      100.0
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCDtAxvRef2UpperBandDC5 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCDtAxvRef2UpperBandDC5@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      -1.0
+      /* Upper limit            */      1.0
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCIACompensionNeg 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCIACompensionNeg@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single_m_s_2
+      /* Lower limit            */      -3.0
+      /* Upper limit            */      0.0
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCIACompensionPos 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCIACompensionPos@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single_m_s_2
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCLowerJerkCounterDrvOff2EC 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCLowerJerkCounterDrvOff2EC@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single_m_s_3
+      /* Lower limit            */      -4.0
+      /* Upper limit            */      4.0
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCTorqDiffThreAxvTracMinTimeout 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCTorqDiffThreAxvTracMinTimeout@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      0.0
+      /* Upper limit            */      20.0
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCTrTatioMax 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCTrTatioMax@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      10.0
+      /* Upper limit            */      30.0
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCTrTatioMin 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCTrTatioMin@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      0.1
+      /* Upper limit            */      1.0
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCUpperJerkCounterDrvOff2EC 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCUpperJerkCounterDrvOff2EC@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single_m_s_3
+      /* Lower limit            */      -4.0
+      /* Upper limit            */      4.0
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCVlcAccThresAxvTracMinTimeout 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCVlcAccThresAxvTracMinTimeout@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single_m_s_2
+      /* Lower limit            */      -5.0
+      /* Upper limit            */      2.0
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLC_WindArea 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLC_WindArea@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single_m_2
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLC_fRollCoef 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLC_fRollCoef@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCaDiffCharCoefKiXAxis 
+      /* Long Identifier        */      ""
+      /* Type                   */      VAL_BLK
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCaDiffCharCoefKiXAxis@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single_m_s_2
+      /* Lower limit            */      -5.0
+      /* Upper limit            */      5.0
+      /* Array Size             */      MATRIX_DIM 1 11 1
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCaDtThresUpdateTorq 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCaDtThresUpdateTorq@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single_m_s_3
+      /* Lower limit            */      0.0
+      /* Upper limit            */      10.0
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCaXCDeadZoneProp_Y 
+      /* Long Identifier        */      ""
+      /* Type                   */      VAL_BLK
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCaXCDeadZoneProp_Y@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Array Size             */      MATRIX_DIM 1 7 1
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCaxCtrlDevDeadZoneChar_Y 
+      /* Long Identifier        */      ""
+      /* Type                   */      VAL_BLK
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCaxCtrlDevDeadZoneChar_Y@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Array Size             */      MATRIX_DIM 1 5 1
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCaxCtrlDevEC2DCMax 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCaxCtrlDevEC2DCMax@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCaxCtrlDevFastQuitDCMode 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCaxCtrlDevFastQuitDCMode@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCaxCtrlDevThresAddEC2DCCharYAxis 
+      /* Long Identifier        */      ""
+      /* Type                   */      VAL_BLK
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCaxCtrlDevThresAddEC2DCCharYAxis@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Array Size             */      MATRIX_DIM 1 5 1
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCaxCtrlDevTresAddDC2ECYAxis 
+      /* Long Identifier        */      ""
+      /* Type                   */      VAL_BLK
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCaxCtrlDevTresAddDC2ECYAxis@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Array Size             */      MATRIX_DIM 1 5 1
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCaxDtCharAxCtrlDevTresAddDC2ECXAxis 
+      /* Long Identifier        */      ""
+      /* Type                   */      VAL_BLK
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCaxDtCharAxCtrlDevTresAddDC2ECXAxis@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single_m_s_3
+      /* Lower limit            */      0.0
+      /* Upper limit            */      2.0
+      /* Array Size             */      MATRIX_DIM 1 5 1
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCaxDtCharAxCtrlDevTresAddEC2DCXAxis 
+      /* Long Identifier        */      ""
+      /* Type                   */      VAL_BLK
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCaxDtCharAxCtrlDevTresAddEC2DCXAxis@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single_m_s_2
+      /* Lower limit            */      -2.0
+      /* Upper limit            */      1.0
+      /* Array Size             */      MATRIX_DIM 1 5 1
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCaxvRoadSlopeDC4CharXAxis 
+      /* Long Identifier        */      ""
+      /* Type                   */      VAL_BLK
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCaxvRoadSlopeDC4CharXAxis@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single_m_s_2
+      /* Lower limit            */      -4.0
+      /* Upper limit            */      1.0
+      /* Array Size             */      MATRIX_DIM 1 5 1
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCaxvRoadSlopeDC4CharYAxis 
+      /* Long Identifier        */      ""
+      /* Type                   */      VAL_BLK
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCaxvRoadSlopeDC4CharYAxis@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      /* Array Size             */      MATRIX_DIM 1 5 1
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCcoefIFadeOut1Calc 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCcoefIFadeOut1Calc@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      1.0
+      /* Upper limit            */      10.0
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCcoefIFadeOut1Condition 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCcoefIFadeOut1Condition@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCcoefIFadeOut2Calc 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCcoefIFadeOut2Calc@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      1.0
+      /* Upper limit            */      10.0
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCcoefIFadeOut2Condition 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCcoefIFadeOut2Condition@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCcoefIFadeOut3Calc 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCcoefIFadeOut3Calc@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      1.0
+      /* Upper limit            */      10.0
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCcoefIFadeOut3Condition 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCcoefIFadeOut3Condition@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCcoefKiEnlargeADiffYAxis 
+      /* Long Identifier        */      ""
+      /* Type                   */      VAL_BLK
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCcoefKiEnlargeADiffYAxis@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Array Size             */      MATRIX_DIM 1 11 1
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCdaxTarEC2DCMax 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCdaxTarEC2DCMax@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCdriveOffAxUpLimXAxix 
+      /* Long Identifier        */      ""
+      /* Type                   */      VAL_BLK
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCdriveOffAxUpLimXAxix@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Array Size             */      MATRIX_DIM 1 5 1
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCdriveOffAxUpLimYAxix 
+      /* Long Identifier        */      ""
+      /* Type                   */      VAL_BLK
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCdriveOffAxUpLimYAxix@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Array Size             */      MATRIX_DIM 1 5 1
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCki 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCki@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCkp 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCkp@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCks 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCks@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCvelCharAxCtrlDevDeadZoneXAxis 
+      /* Long Identifier        */      ""
+      /* Type                   */      VAL_BLK
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCvelCharAxCtrlDevDeadZoneXAxis@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single_km_h
+      /* Lower limit            */      0.0
+      /* Upper limit            */      250.0
+      /* Array Size             */      MATRIX_DIM 1 5 1
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VLCvelThresUpdateTorq 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VLCvelThresUpdateTorq@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single_km_h
+      /* Lower limit            */      0.0
+      /* Upper limit            */      30.0
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_VxvRefThrd 
+      /* Long Identifier        */      "m/s"
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_VxvRefThrd@ */
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      P_LongCtrl_SlideFlagEnable 
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE
+      /* ECU Address            */      0x0 /* @MemoryAddress@P_LongCtrl_SlideFlagEnable@ */
+      /* Record Layout          */      Scalar_BOOLEAN 
+      /* Maximum Difference     */      0 
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_boolean
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end CHARACTERISTIC
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_ICEActWheelTrq
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT64_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_double
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -1.7E+308
+      /* Upper limit            */      1.7E+308
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_ICEActWheelTrq@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_VLCState
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT64_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_double
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -1.7E+308
+      /* Upper limit            */      1.7E+308
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_VLCState@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_tECDC
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT64_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_double
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -1.7E+308
+      /* Upper limit            */      1.7E+308
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_tECDC@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_SubModel_VERSION
+      /* Long identifier        */      ""
+      /* Data type              */      ULONG
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_uint32
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      4294967295
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_SubModel_VERSION@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_SubModel_Number
+      /* Long identifier        */      ""
+      /* Data type              */      ULONG
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_uint32
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      4294967295
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_SubModel_Number@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_vxvRefMs
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_vxvRefMs@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_axvRoadSlopeMs2
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_axvRoadSlopeMs2@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_accelHoldMin
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_accelHoldMin@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_jerkHold
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_jerkHold@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_accelSlidHold
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_accelSlidHold@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_jerkSlidHold
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_jerkSlidHold@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_OverrideToDC
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_OverrideToDC@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      Longctrl_NetEngTrq
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@Longctrl_NetEngTrq@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      Longctrl_NetEngTorqNorm
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@Longctrl_NetEngTorqNorm@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      Longctrl_EngSpd
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@Longctrl_EngSpd@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_Tr_Ratio
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_Tr_Ratio@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_Fz
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_Fz@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_ICEFzNm
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_ICEFzNm@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      Longctrl_VIE_axRefMs2
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@Longctrl_VIE_axRefMs2@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      Longctrl_ACC_axvCvAim
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@Longctrl_ACC_axvCvAim@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      Longctrl_ACC_AccelerateJerk
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@Longctrl_ACC_AccelerateJerk@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      Longctrl_ACC_DecelerateJerk
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@Longctrl_ACC_DecelerateJerk@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_axvDiff
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_axvDiff@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_PI_NetEngTorqInc
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_PI_NetEngTorqInc@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_axvTracActMean
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_axvTracActMean@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_axvModelDiff
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_axvModelDiff@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      Longctrl_VIE_AxRefDt
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@Longctrl_VIE_AxRefDt@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_axvModelResidual
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_axvModelResidual@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_axvClosedLoopControl
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_axvClosedLoopControl@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_FF_NetEngTorqMax
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single__
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_FF_NetEngTorqMax@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_FF_NetEngTorqInc
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_FF_NetEngTorqInc@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_UpdateLowerValue
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_UpdateLowerValue@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_UpdateUpperValue
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_UpdateUpperValue@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_ACC_EngTrqReq
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_ACC_EngTrqReq@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      Longctrl_EngTqMinAct
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@Longctrl_EngTqMinAct@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      Longctrl_ACC_axv_ComfortBandLowerValue
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@Longctrl_ACC_axv_ComfortBandLowerValue@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      Longctrl_ACC_axv_ComfortBandUpperValue
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@Longctrl_ACC_axv_ComfortBandUpperValue@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_PI_NetEngTorq
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_PI_NetEngTorq@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_FF_NetEngTorq
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_FF_NetEngTorq@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_axvTracMin
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_axvTracMin@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_axvModelRef
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_axvModelRef@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      Longctrl_VIE_alpSideSlipAngle
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@Longctrl_VIE_alpSideSlipAngle@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      Longctrl_EngTqMaxActSpd
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@Longctrl_EngTqMaxActSpd@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      Longctrl_tCycleVLC
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@Longctrl_tCycleVLC@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_tEC
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_tEC@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_ACC_Decel_ReqValue
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_single
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -3.4E+38
+      /* Upper limit            */      3.4E+38
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_ACC_Decel_ReqValue@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_Counter
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_Counter@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      Longctrl_ACCSts
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@Longctrl_ACCSts@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_RRWheelDriveDirection
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_RRWheelDriveDirection@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_RLWheelDriveDirection
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_RLWheelDriveDirection@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_FRWheelDriveDirection
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_FRWheelDriveDirection@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_FLWheelDriveDirection
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_FLWheelDriveDirection@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      Longctrl_CurrentGear
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@Longctrl_CurrentGear@ */
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      Longctrl_VehicleStandStill
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@Longctrl_VehicleStandStill@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_Sw2EC
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_Sw2EC@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_Sw2DC
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_Sw2DC@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_ForwardFlagVxv
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_ForwardFlagVxv@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_ForwardFlagTrq
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_ForwardFlagTrq@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_SlideFlag
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_SlideFlag@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_VLC_DriveOffConditonFulfilled
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_VLC_DriveOffConditonFulfilled@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      Longctrl_ACC_DrvOFF_Req
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@Longctrl_ACC_DrvOFF_Req@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      Longctrl_ShiftinProgress
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@Longctrl_ShiftinProgress@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      Longctrl_NoBrakeForce
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@Longctrl_NoBrakeForce@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_UpdateEnable_axvModeldiff
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_UpdateEnable_axvModeldiff@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      Longctrl_ACC_BrakePrefer
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@Longctrl_ACC_BrakePrefer@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      Longctrl_ACC_DecelToStopReq
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@Longctrl_ACC_DecelToStopReq@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_Sw2DC6
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_Sw2DC6@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_Sw2DC1
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_Sw2DC1@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_Sw2DC3
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_Sw2DC3@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_Sw2DC5
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_Sw2DC5@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_Sw2DC7
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_Sw2DC7@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_Sw2DC2
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_Sw2DC2@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_Sw2DC4
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_Sw2DC4@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_Sw2EC1
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_Sw2EC1@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_Sw2EC3
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_Sw2EC3@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_Sw2EC2
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_Sw2EC2@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_Sw2EC5
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_Sw2EC5@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_Sw2EC4
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_Sw2EC4@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_ECEnable
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_ECEnable@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      LongCtrl_DCEnable
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      PubIfControlLONC_MDL_CM_boolean
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      /* Address                */      ECU_ADDRESS  0x0 /* @MemoryAddress@LongCtrl_DCEnable@ */
+      /* Bit mask for boolean   */      BIT_MASK  0x01
+    /end MEASUREMENT
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfControlLONC_MDL_CM_single
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      ""
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfControlLONC_MDL_CM_single_m_s_2
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      "m/s^2"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfControlLONC_MDL_CM_single_m_s_3
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      "m/s^3"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfControlLONC_MDL_CM_single_km_h
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      "km/h"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfControlLONC_MDL_CM_single__
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      "%"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfControlLONC_MDL_CM_single_m_s
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      "m/s"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfControlLONC_MDL_CM_single_m
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      "m"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfControlLONC_MDL_CM_single_N
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      "N"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfControlLONC_MDL_CM_single_m_2
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      "m^2"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfControlLONC_MDL_CM_boolean
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%1.0"
+      /* Units                  */      ""
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfControlLONC_MDL_CM_double
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%15.10"
+      /* Units                  */      ""
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfControlLONC_MDL_CM_uint32
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%10.0"
+      /* Units                  */      ""
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      PubIfControlLONC_MDL_CM_uint8
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%3.0"
+      /* Units                  */      ""
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    
+    
+    
+    /begin GROUP 
+      /* Name                   */       PubIfControlLONC_MDL
+      /* Long identifier        */       "PubIfControlLONC_MDL"
+      /* Root                    */       ROOT
+      /begin SUB_GROUP
+        Root_Subsystem
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       Root_Subsystem
+      /* Long identifier        */       "PubIfControlLONC_MDL/Subsystem"
+      /begin SUB_GROUP
+        S1_VLC
+      /end SUB_GROUP
+      /begin REF_MEASUREMENT
+        LongCtrl_Counter
+        LongCtrl_SubModel_Number
+        LongCtrl_SubModel_VERSION
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S1_VLC
+      /* Long identifier        */       "PubIfControlLONC_MDL/Subsystem/VLC"
+      /begin SUB_GROUP
+        S3_Vlc
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S3_Vlc
+      /* Long identifier        */       "PubIfControlLONC_MDL/Subsystem/VLC/Vlc"
+      /begin SUB_GROUP
+        S6_DC
+        S6_EC
+        S6_FF_Control
+        S6_PI_Control
+        S6_SlidJudge
+        S6_SwitchToBrakeMode
+        S6_SwitchToDriveMode
+        S6_UpdateFlagCalc
+        S6_axvClosedLoopControlCalc
+        S6_axvModelResidualCalc
+        S6_axvTracActMean_calc
+        S6_axvTracMin_calc
+      /end SUB_GROUP
+      /begin REF_CHARACTERISTIC
+        P_Global_TireRadius_m
+        P_LongCtrl_VLCMaRatioCharMaYAxis
+        P_LongCtrl_VLCTrRatioCharMaXAxis
+        P_LongCtrl_VLCTrTatioMax
+        P_LongCtrl_VLCTrTatioMin
+        P_LongCtrl_VLCaXCDeadZoneProp_Y
+        P_LongCtrl_VLCaxCtrlDevDeadZoneChar_Y
+        P_LongCtrl_VLCaxCtrlDevEC2DCMax
+        P_LongCtrl_VLCaxCtrlDevFastQuitDCMode
+        P_LongCtrl_VLCaxCtrlDevThresAddEC2DCCharYAxis
+        P_LongCtrl_VLCaxCtrlDevTresAddDC2ECYAxis
+        P_LongCtrl_VLCcoefKiEnlargeADiffYAxis
+        P_LongCtrl_VLCdaxTarEC2DCMax
+        P_LongCtrl_VLCdriveOffAxUpLimXAxix
+        P_LongCtrl_VLCdriveOffAxUpLimYAxix
+        P_LongCtrl_VLCki
+        P_LongCtrl_VLCkp
+        P_LongCtrl_VLCks
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        LongCtrl_DCEnable
+        LongCtrl_ECEnable
+        LongCtrl_FF_NetEngTorq
+        LongCtrl_FLWheelDriveDirection
+        LongCtrl_FRWheelDriveDirection
+        LongCtrl_OverrideToDC
+        LongCtrl_PI_NetEngTorq
+        LongCtrl_RLWheelDriveDirection
+        LongCtrl_RRWheelDriveDirection
+        LongCtrl_Sw2DC
+        LongCtrl_Sw2EC
+        LongCtrl_Tr_Ratio
+        LongCtrl_VLCState
+        LongCtrl_VLC_DriveOffConditonFulfilled
+        LongCtrl_axvRoadSlopeMs2
+        LongCtrl_tEC
+        LongCtrl_tECDC
+        LongCtrl_vxvRefMs
+        Longctrl_ACCSts
+        Longctrl_ACC_AccelerateJerk
+        Longctrl_ACC_BrakePrefer
+        Longctrl_ACC_DecelToStopReq
+        Longctrl_ACC_DecelerateJerk
+        Longctrl_ACC_DrvOFF_Req
+        Longctrl_ACC_axvCvAim
+        Longctrl_ACC_axv_ComfortBandLowerValue
+        Longctrl_ACC_axv_ComfortBandUpperValue
+        Longctrl_CurrentGear
+        Longctrl_EngSpd
+        Longctrl_EngTqMaxActSpd
+        Longctrl_EngTqMinAct
+        Longctrl_NetEngTorqNorm
+        Longctrl_NetEngTrq
+        Longctrl_NoBrakeForce
+        Longctrl_ShiftinProgress
+        Longctrl_VIE_AxRefDt
+        Longctrl_VIE_alpSideSlipAngle
+        Longctrl_VIE_axRefMs2
+        Longctrl_VehicleStandStill
+        Longctrl_tCycleVLC
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S6_DC
+      /* Long identifier        */       "PubIfControlLONC_MDL/Subsystem/VLC/Vlc/DC"
+      /begin REF_CHARACTERISTIC
+        P_LongCtrl_VLCaccelMinHoldXAxis
+        P_LongCtrl_VLCaccelMinHoldYAxis
+        P_LongCtrl_VLCaccelMinSlidHoldXAxis
+        P_LongCtrl_VLCaccelMinSlidHoldYAxis
+        P_LongCtrl_VLCjerkHoldXAxis
+        P_LongCtrl_VLCjerkHoldYAxis
+        P_LongCtrl_VLCjerkSlidHoldXAxis
+        P_LongCtrl_VLCjerkSlidHoldYAxis
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        LongCtrl_ACC_Decel_ReqValue
+        LongCtrl_accelHoldMin
+        LongCtrl_accelSlidHold
+        LongCtrl_jerkHold
+        LongCtrl_jerkSlidHold
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S6_EC
+      /* Long identifier        */       "PubIfControlLONC_MDL/Subsystem/VLC/Vlc/EC"
+      /begin REF_CHARACTERISTIC
+        P_Global_TireRadius_m
+        P_Global_Weight_N
+        P_LongCtrl_VLCCounterDC2ECTorqDelay
+        P_LongCtrl_VLCCounterDrvOff2EC
+        P_LongCtrl_VLCLowerJerkCounterDrvOff2EC
+        P_LongCtrl_VLCUpperJerkCounterDrvOff2EC
+        P_LongCtrl_VLCcoefPIYAxis
+        P_LongCtrl_VLCvelCharCoefPIXAxis
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        LongCtrl_ACC_EngTrqReq
+        LongCtrl_UpdateLowerValue
+        LongCtrl_UpdateUpperValue
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S6_FF_Control
+      /* Long identifier        */       "PubIfControlLONC_MDL/Subsystem/VLC/Vlc/FF_Control"
+      /begin REF_CHARACTERISTIC
+        P_Global_TireRadius_m
+        P_Global_Weight_N
+        P_LongCtrl_VLCengInverseEfficientYAxis
+        P_LongCtrl_VLCtorqCharEngInverseEfficientXAxis
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        LongCtrl_FF_NetEngTorqInc
+        LongCtrl_FF_NetEngTorqMax
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S6_PI_Control
+      /* Long identifier        */       "PubIfControlLONC_MDL/Subsystem/VLC/Vlc/PI_Control"
+      /begin REF_CHARACTERISTIC
+        P_Global_TireRadius_m
+        P_LongCtrl_VLCAxTarDtThreEnableI
+        P_LongCtrl_VLCIACompensionNeg
+        P_LongCtrl_VLCIACompensionPos
+        P_LongCtrl_VLCaDiffCharCoefKiEnableXAxis
+        P_LongCtrl_VLCaDiffCharCoefKiXAxis
+        P_LongCtrl_VLCcoefIFadeOut1Calc
+        P_LongCtrl_VLCcoefIFadeOut1Condition
+        P_LongCtrl_VLCcoefIFadeOut2Calc
+        P_LongCtrl_VLCcoefIFadeOut2Condition
+        P_LongCtrl_VLCcoefIFadeOut3Calc
+        P_LongCtrl_VLCcoefIFadeOut3Condition
+        P_LongCtrl_VLCcoefKiDiffDtEnlargeYAxis
+        P_LongCtrl_VLCcoefKiEnableYAxis
+        P_LongCtrl_VLCdiffDtCharCoefKiEnlargeXAxis
+        P_LongCtrl_VLCvelCharAxCtrlDevDeadZoneXAxis
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        LongCtrl_PI_NetEngTorqInc
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S6_SlidJudge
+      /* Long identifier        */       "PubIfControlLONC_MDL/Subsystem/VLC/Vlc/SlidJudge"
+      /begin REF_CHARACTERISTIC
+        P_Global_TireRadius_m
+        P_LongCtrl_AxvRoadSlopeThrd
+        P_LongCtrl_SlideFlagEnable
+        P_LongCtrl_TotWheelTrqRatio
+        P_LongCtrl_VxvRefThrd
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        LongCtrl_ForwardFlagTrq
+        LongCtrl_ForwardFlagVxv
+        LongCtrl_ICEActWheelTrq
+        LongCtrl_ICEFzNm
+        LongCtrl_SlideFlag
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S6_SwitchToBrakeMode
+      /* Long identifier        */       "PubIfControlLONC_MDL/Subsystem/VLC/Vlc/SwitchToBrakeMode"
+      /begin REF_CHARACTERISTIC
+        P_LongCtrl_VLCAxvTracMinDC1FullFillXAxis
+        P_LongCtrl_VLCAxvTracMinDC1FullFillYAxis
+        P_LongCtrl_VLCCounterAxvTracMinTimeout
+        P_LongCtrl_VLCDtAxvRef2UpperBandDC5
+        P_LongCtrl_VLCTorqDiffThreAxvTracMinTimeout
+        P_LongCtrl_VLCVlcAccThresAxvTracMinTimeout
+        P_LongCtrl_VLCaxDtCharAxCtrlDevTresAddEC2DCXAxis
+        P_LongCtrl_VLCaxvRoadSlopeDC4CharXAxis
+        P_LongCtrl_VLCaxvRoadSlopeDC4CharYAxis
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        LongCtrl_Sw2DC1
+        LongCtrl_Sw2DC2
+        LongCtrl_Sw2DC3
+        LongCtrl_Sw2DC4
+        LongCtrl_Sw2DC5
+        LongCtrl_Sw2DC6
+        LongCtrl_Sw2DC7
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S6_SwitchToDriveMode
+      /* Long identifier        */       "PubIfControlLONC_MDL/Subsystem/VLC/Vlc/SwitchToDriveMode"
+      /begin REF_CHARACTERISTIC
+        P_LongCtrl_VLCaxDtCharAxCtrlDevTresAddDC2ECXAxis
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        LongCtrl_Sw2EC1
+        LongCtrl_Sw2EC2
+        LongCtrl_Sw2EC3
+        LongCtrl_Sw2EC4
+        LongCtrl_Sw2EC5
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S6_UpdateFlagCalc
+      /* Long identifier        */       "PubIfControlLONC_MDL/Subsystem/VLC/Vlc/UpdateFlagCalc"
+      /begin REF_CHARACTERISTIC
+        P_LongCtrl_VLCaDtThresUpdateTorq
+        P_LongCtrl_VLCvelThresUpdateTorq
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        LongCtrl_UpdateEnable_axvModeldiff
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S6_axvClosedLoopControlCalc
+      /* Long identifier        */       "PubIfControlLONC_MDL/Subsystem/VLC/Vlc/axvClosedLoopControlCalc"
+      /begin REF_MEASUREMENT
+        LongCtrl_axvClosedLoopControl
+        LongCtrl_axvDiff
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S6_axvModelResidualCalc
+      /* Long identifier        */       "PubIfControlLONC_MDL/Subsystem/VLC/Vlc/axvModelResidualCalc"
+      /begin REF_MEASUREMENT
+        LongCtrl_axvModelDiff
+        LongCtrl_axvModelRef
+        LongCtrl_axvModelResidual
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S6_axvTracActMean_calc
+      /* Long identifier        */       "PubIfControlLONC_MDL/Subsystem/VLC/Vlc/axvTracActMean_calc"
+      /begin REF_CHARACTERISTIC
+        P_Global_TireRadius_m
+        P_Global_Weight_N
+        P_LongCtrl_VLC_WindArea
+        P_LongCtrl_VLC_fRollCoef
+        P_LongCtrl_VLCcoefFXAxis
+        P_LongCtrl_VLCcoefFYAxis
+        P_LongCtrl_VLCengEfficientCharYAxis
+        P_LongCtrl_VLCtorqCharEngEfficientXAxis
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        LongCtrl_Fz
+        LongCtrl_axvTracActMean
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP 
+      /* Name                   */       S6_axvTracMin_calc
+      /* Long identifier        */       "PubIfControlLONC_MDL/Subsystem/VLC/Vlc/axvTracMin_calc"
+      /begin REF_CHARACTERISTIC
+        P_Global_TireRadius_m
+        P_Global_Weight_N
+        P_LongCtrl_VLC_WindArea
+        P_LongCtrl_VLC_fRollCoef
+        P_LongCtrl_VLCcoefFXAxis
+        P_LongCtrl_VLCcoefFYAxis
+        P_LongCtrl_VLCengEfficientCharYAxis
+        P_LongCtrl_VLCtorqCharEngEfficientXAxis
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        LongCtrl_axvTracMin
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    
+  /end MODULE
+  
+  
+/end PROJECT
+/* EOF PubIfControlLONC_MDL.a2l*/

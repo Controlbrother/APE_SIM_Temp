@@ -1,0 +1,84 @@
+    P_LCS_LCC_AngleSlope_ELK    
+        P_LCS_preDis_spd
+    P_LCS_LCC_MaxLatAcc_ELK    
+    P_LCS_LCC_AngleSlope_ESS    
+    P_LCS_LCC_MaxLatAcc_ESS    
+    P_LCS_LCC_AngleSlope_LCCancle    
+    P_LCS_LCC_MaxLatAcc_LCCancel    
+    P_LCS_LCC_AngleSlope_LCEco    
+    P_LCS_LCC_MaxLatAcc_LCEco    
+    P_LCS_LCC_AngleSlope_LCNomal    
+    P_LCS_LCC_MaxLatAcc_LCNomal    
+    P_LCS_LCC_AngleSlope_LCSport    
+    P_LCS_LCC_MaxLatAcc_LCSport    
+    P_LCS_LCC_AngleSlope_LCKIE    
+    P_LCS_LCC_MaxLatAcc_LCKIE    
+    P_LCS_LCC_AngleSlope_LKA    
+    P_LCS_LCC_MaxLatAcc_LKA    
+    P_LCS_LCC_AngleSlope_LCK    
+    P_LCS_LCC_MaxLatAcc_LCK    
+    P_LCS_StateActiv_AngleSlope    
+      P_LCS_StateActiveFlg_BP
+      P_LCS_StateActive_HoldTime_BP
+    P_LCS_LCC_PreView_Fac    
+      P_LCS_A0_Dis_BP
+    P_LCS_LCC_LCK_AyDtLimit_TBL    
+    P_LCS_LCC_LC_Normal_AyDtLimit_TBL    
+    P_LCS_LCC_LKA_AyDtLimit_TBL    
+    P_LCS_LCC_ELK_AyDtLimit_TBL    
+    P_LCS_LCC_ESS_AyDtLimit_TBL    
+    P_LCS_LCC_Eco_AyDtLimit_TBL    
+    P_LCS_LCC_Sport_AyDtLimit_TBL    
+    P_LCS_LCC_LC_AyDtLimit_TBL    
+    P_LCS_LCC_Min_Plan_Dis    
+        P_LCS_DeltaEps_SpdBp
+    P_LCS_LCC_PreViewT    
+    P_LCS_LCC_PreViewCurve_Fac    
+        P_LCS_A2_Curve_BP
+    P_LCS_LCC_PreCur_Min_Plan_Dis_Fac    
+    P_LCS_LCC_StateActiv_AyDtLimit    
+    P_LCS_A2S_FliterTime
+    
+    P_LCS_A2S_FliterTime
+    P_LCS_LCC_PreView_s
+    
+    P_LCS_LCC_PreView_s
+    P_LCS_LCC_StateActiveDelaytime
+    
+    P_LCS_LCC_StateActiveDelaytime
+    P_LCS_StateHold_time
+    
+    P_LCS_StateHold_time
+LCS_HoldTime
+LCS_LCC_PlanIdex
+LCS_LCC_NumTraj
+LCS_IN_desLaneA1
+LCS_IN_desLaneA2
+LCS_IN_desLaneA3
+LCS_LCC_Preview_Curve
+LCS_LCC_Preview_CurveFac
+LCS_LCC_PreviewFac
+LCS_LCC_FinalPreviewT
+LCS_LCC_AyDtLimit
+LCS_LCC_Max_Lateral_Acc
+LCS_StateActive_AngleSlope
+LCS_LCC_StateAngleSlope
+LCS_ReqEPSTrgAngle
+LCS_LCC_PlanX
+LCS_LCC_PlanY
+LCS_LCC_PlanTheta
+LCS_LCC_PreviewX
+LCS_LCC_PreviewY
+LCS_LCC_PreviewTheta
+LCS_LCC_ref_curve
+LCS_LCC_Later_error
+LCS_LCC_Later_error_rate
+LCS_LCC_heading_error
+LCS_LCC_heading_error_rate
+LCS_LCC_TarAngle_deg
+LCS_LCC_Feedforward
+LCS_LCC_Feedback
+LCS_LCC_Steer_Limit
+LCS_AngleSlope_Cnt
+LCS_LCType
+LCS_AngleSlope_Flg

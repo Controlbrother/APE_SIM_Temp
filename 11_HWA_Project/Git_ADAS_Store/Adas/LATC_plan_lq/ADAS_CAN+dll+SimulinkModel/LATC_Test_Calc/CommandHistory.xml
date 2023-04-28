@@ -1,0 +1,1330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<user-stream-data type="1" description="FlightRecorderData" time="309340314">
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="4"/>
+  <prop n="time" v="171993020"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="4"/>
+  <prop n="time" v="171993020"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="4"/>
+  <prop n="time" v="171993021"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="4"/>
+  <prop n="time" v="171993021"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="4"/>
+  <prop n="time" v="171993021"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="4"/>
+  <prop n="time" v="171993021"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="4"/>
+  <prop n="time" v="171993021"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="4"/>
+  <prop n="time" v="171993021"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="4"/>
+  <prop n="time" v="171993021"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="4"/>
+  <prop n="time" v="171993021"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="4"/>
+  <prop n="time" v="171993022"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="4"/>
+  <prop n="time" v="171993022"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="4"/>
+  <prop n="time" v="171993022"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="4"/>
+  <prop n="time" v="171993022"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="4"/>
+  <prop n="time" v="171993024"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="4"/>
+  <prop n="time" v="171993024"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="4"/>
+  <prop n="time" v="171993024"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="4"/>
+  <prop n="time" v="171993024"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="4"/>
+  <prop n="time" v="171993024"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="4"/>
+  <prop n="time" v="171993024"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="4"/>
+  <prop n="time" v="171993024"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="4"/>
+  <prop n="time" v="171993024"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="4"/>
+  <prop n="time" v="171993025"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="4"/>
+  <prop n="time" v="171993025"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="4"/>
+  <prop n="time" v="171993025"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="4"/>
+  <prop n="time" v="171993025"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="4"/>
+  <prop n="time" v="171993025"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="4"/>
+  <prop n="time" v="171993025"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="4"/>
+  <prop n="time" v="171993099"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="4"/>
+  <prop n="time" v="171993099"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="4"/>
+  <prop n="time" v="171993100"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993825"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="171993826"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294077"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294094"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294101"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294106"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294109"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294113"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294116"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294135"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294141"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294146"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294154"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294158"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294161"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294169"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294172"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294173"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294175"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294176"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294176"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294176"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294176"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294176"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294176"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294176"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294176"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294176"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294176"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294176"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294177"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294177"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294177"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294177"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294177"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294177"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294177"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294177"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294177"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294177"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294177"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294177"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="10"/>
+  <prop n="time" v="308294177"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308294931"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308294934"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308294935"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308294936"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308294937"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295158"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295161"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295168"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295169"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295171"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295175"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295177"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295178"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295181"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295181"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295183"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295186"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295191"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295194"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295197"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295199"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295203"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295203"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295205"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295228"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295229"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295231"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295233"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295235"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295236"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295237"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295239"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295240"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295241"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295241"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295245"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295245"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295246"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295246"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295271"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="18"/>
+  <prop n="time" v="308295272"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295278"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295289"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295291"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295292"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295293"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295294"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295294"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295295"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295296"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295296"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295297"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295298"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295299"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295300"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295309"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295312"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295313"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295314"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295314"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295315"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295315"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295319"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295320"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295320"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295325"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295328"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295328"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295328"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295329"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295330"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295330"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295331"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295438"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295439"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295441"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295444"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295447"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295511"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295544"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295544"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="7"/>
+  <prop n="time" v="308295560"/>
+ </item>
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="32787"/>
+  <prop n="time" v="308295560"/>
+ </item>
+ <item>
+  Vector CANape x64|确定
+  <prop n="command type" v="control"/>
+  <prop n="control identifier" v="2"/>
+  <prop n="control identifier string" v="IDCANCEL"/>
+  <prop n="notification code" v="0"/>
+  <prop n="handle" v="986858"/>
+  <prop n="button" v="Vector CANape x64|确定"/>
+  <prop n="time" v="308323125"/>
+ </item>
+ <item>
+  Vector CANape x64|确定
+  <prop n="command type" v="control"/>
+  <prop n="control identifier" v="2"/>
+  <prop n="control identifier string" v="IDCANCEL"/>
+  <prop n="notification code" v="0"/>
+  <prop n="handle" v="1052394"/>
+  <prop n="button" v="Vector CANape x64|确定"/>
+  <prop n="time" v="308324918"/>
+ </item>
+ <item>
+  Vector CANape x64|确定
+  <prop n="command type" v="control"/>
+  <prop n="control identifier" v="2"/>
+  <prop n="control identifier string" v="IDCANCEL"/>
+  <prop n="notification code" v="0"/>
+  <prop n="handle" v="1838058"/>
+  <prop n="button" v="Vector CANape x64|确定"/>
+  <prop n="time" v="308331264"/>
+ </item>
+ <item>
+  CM_FIT
+  <prop n="command type" v="accelerator"/>
+  <prop n="accelerator identifier" v="31596"/>
+  <prop n="accelerator identifier string" v="CM_FIT"/>
+  <prop n="time" v="308480785"/>
+ </item>
+ <item>
+  CM_FIT_ABOVE
+  <prop n="command type" v="accelerator"/>
+  <prop n="accelerator identifier" v="296"/>
+  <prop n="accelerator identifier string" v="CM_FIT_ABOVE"/>
+  <prop n="time" v="308480956"/>
+ </item>
+ <item>
+  CM_COMMON_AXIS_SET_0
+  <prop n="command type" v="menu"/>
+  <prop n="menu identifier" v="1244"/>
+  <prop n="menu identifier string" v="CM_COMMON_AXIS_SET_0"/>
+  <prop n="time" v="308487584"/>
+ </item>
+ <item>
+  CM_FIT
+  <prop n="command type" v="accelerator"/>
+  <prop n="accelerator identifier" v="31596"/>
+  <prop n="accelerator identifier string" v="CM_FIT"/>
+  <prop n="time" v="308490166"/>
+ </item>
+ <item>
+  CM_FIT_ABOVE
+  <prop n="command type" v="accelerator"/>
+  <prop n="accelerator identifier" v="296"/>
+  <prop n="accelerator identifier string" v="CM_FIT_ABOVE"/>
+  <prop n="time" v="308490310"/>
+ </item>
+ <item>
+  CM_MEASURE_DIFF
+  <prop n="command type" v="menu"/>
+  <prop n="menu identifier" v="129"/>
+  <prop n="menu identifier string" v="CM_MEASURE_DIFF"/>
+  <prop n="time" v="308518107"/>
+ </item>
+ <item>
+  CM_MEASURE_DIFF
+  <prop n="command type" v="menu"/>
+  <prop n="menu identifier" v="129"/>
+  <prop n="menu identifier string" v="CM_MEASURE_DIFF"/>
+  <prop n="time" v="308518320"/>
+ </item>
+ <item>
+  CM_MEASURE_DIFF
+  <prop n="command type" v="menu"/>
+  <prop n="menu identifier" v="129"/>
+  <prop n="menu identifier string" v="CM_MEASURE_DIFF"/>
+  <prop n="time" v="308518957"/>
+ </item>
+ <item>
+  CM_MEASURE_POINT
+  <prop n="command type" v="menu"/>
+  <prop n="menu identifier" v="128"/>
+  <prop n="menu identifier string" v="CM_MEASURE_POINT"/>
+  <prop n="time" v="308536328"/>
+ </item>
+ <item>
+  CM_FIT
+  <prop n="command type" v="accelerator"/>
+  <prop n="accelerator identifier" v="31596"/>
+  <prop n="accelerator identifier string" v="CM_FIT"/>
+  <prop n="time" v="308536957"/>
+ </item>
+ <item>
+  CM_FIT_ABOVE
+  <prop n="command type" v="accelerator"/>
+  <prop n="accelerator identifier" v="296"/>
+  <prop n="accelerator identifier string" v="CM_FIT_ABOVE"/>
+  <prop n="time" v="308537076"/>
+ </item>
+ <item>
+  CM_FIT
+  <prop n="command type" v="accelerator"/>
+  <prop n="accelerator identifier" v="31596"/>
+  <prop n="accelerator identifier string" v="CM_FIT"/>
+  <prop n="time" v="308593195"/>
+ </item>
+ <item>
+  CM_FIT_ABOVE
+  <prop n="command type" v="accelerator"/>
+  <prop n="accelerator identifier" v="296"/>
+  <prop n="accelerator identifier string" v="CM_FIT_ABOVE"/>
+  <prop n="time" v="308593298"/>
+ </item>
+ <item>
+  CM_SYMB_EXPL_OFFLINE_MDF_FILE
+  <prop n="command type" v="menu"/>
+  <prop n="menu identifier" v="31631"/>
+  <prop n="menu identifier string" v="CM_SYMB_EXPL_OFFLINE_MDF_FILE"/>
+  <prop n="time" v="309310814"/>
+ </item>
+ <item>
+  CM_SYMB_EXPL_OFFLINE_MDF_FILE
+  <prop n="command type" v="menu"/>
+  <prop n="menu identifier" v="31631"/>
+  <prop n="menu identifier string" v="CM_SYMB_EXPL_OFFLINE_MDF_FILE"/>
+  <prop n="time" v="309321853"/>
+ </item>
+ <item>
+  CM_COPY_CLIPBOARD
+  <prop n="command type" v="accelerator"/>
+  <prop n="accelerator identifier" v="106"/>
+  <prop n="accelerator identifier string" v="CM_COPY_CLIPBOARD"/>
+  <prop n="time" v="309339947"/>
+ </item>
+</user-stream-data>

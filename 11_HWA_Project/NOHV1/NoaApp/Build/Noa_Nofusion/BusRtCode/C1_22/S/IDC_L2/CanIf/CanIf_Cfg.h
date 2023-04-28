@@ -1,0 +1,128 @@
+/** <!------------------------------------------------------------------------->
+*
+*  @file CanIf_Cfg.h
+*
+*  @creationDate 09 March 2022 12:20:12
+*
+*  @brief Generated CanIf configuration header file.
+*
+*  @author
+*
+*  @description
+*
+*  @copyright
+*    Copyright 2022, dSPACE GmbH. All rights reserved.
+*
+*  @version
+*
+*   <hr><br>
+*<!-------------------------------------------------------------------------->*/
+
+/* File ID: 3514b0e6-4660-44e4-a1b0-1dc42ef5a2aa */
+#pragma once
+
+/* -- Include directives -- */
+#include "Config.h"
+#include "BusConfiguration.h"
+#include "StateManager_generated.h"
+#include <Std_Types.h>
+
+/* -- Defines and directives in global scope. After include directives. -- */
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_ACC_FD1_FrameTrig 0
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_IFC_FD5_FrameTrig 1
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_IFC_FD6_FrameTrig 2
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_IFC_FD2_FrameTrig 3
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_IFC_FD4_FrameTrig 4
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_ACC_FD2_FrameTrig 5
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_ACC_FD3_FrameTrig 6
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_ACC_FD4_FrameTrig 7
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_IFC_FD3_FrameTrig 8
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_ACC_FD5_FrameTrig 9
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_HUT6_FrameTrig 10
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_HCU_FD1_FrameTrig 11
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_ECM_FD1_FrameTrig 12
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_DCT_FD1_FrameTrig 13
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_CSA2_FrameTrig 14
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_HCU_HP8_FrameTrig 15
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_ECM_FD2_FrameTrig 16
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_ECM1_FrameTrig 17
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_Ibooster_FD2_FrameTrig 18
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_HCU_FD3_FrameTrig 19
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_ESP_FD2_FrameTrig 20
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_ESP_FD3_FrameTrig 21
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_EPS_FD1_FrameTrig 22
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_HAP_FD1_FrameTrig 23
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_CR_FD1_FrameTrig 24
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_CSA1_FrameTrig 25
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_RSDS_FD1_FrameTrig 26
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_AEB_FD1_FrameTrig 27
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_F_PBox1_FrameTrig 28
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_R_PBox1_FrameTrig 29
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_HUT33_FrameTrig 30
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_HUT15_FrameTrig 31
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_DCT5_FrameTrig 32
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_AEB_FD2_FrameTrig 33
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_CSA4_FrameTrig 34
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_DCT_FD4_FrameTrig 35
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_ABM2_FrameTrig 36
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_DMS_FD1_FrameTrig 37
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_BLE1_FrameTrig 38
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_HUT32_FrameTrig 39
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_Trailer1_FrameTrig 40
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_HAP_FD2_FrameTrig 41
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_IP2_FrameTrig 42
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_HAP_FD4_FrameTrig 43
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_HC1_FrameTrig 44
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_HUT_FD2_FrameTrig 45
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_HAP_FD6_FrameTrig 46
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_HAP_FD5_FrameTrig 47
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_PEPS2_FrameTrig 48
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_HAP_FD3_FrameTrig 49
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_BCM8_FrameTrig 50
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_EEM1_FrameTrig 51
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_HUT_FD1_FrameTrig 52
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_DDCM1_FrameTrig 53
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_PDCM1_FrameTrig 54
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_HUT23_FrameTrig 55
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_HUT22_FrameTrig 56
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_HUT21_FrameTrig 57
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_HUT20_FrameTrig 58
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_BCM10_FrameTrig 59
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_HUT_FD3_FrameTrig 60
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_DVR_FD1_FrameTrig 61
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_HCU_PT4_FrameTrig 62
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_ECM_FD3_FrameTrig 63
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_RSDS_FD2_FrameTrig 64
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_BCM1_FrameTrig 65
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_TPMS1_FrameTrig 66
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_BCM3_FrameTrig 67
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_ABM1_FrameTrig 68
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_HUT34_FrameTrig 69
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_AC2_FrameTrig 70
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_T_Box_FD3_FrameTrig 71
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_HUT19_FrameTrig 72
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_GW_NM_FrameTrig 73
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_HC_NM_FrameTrig 74
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_RRR_NM_FrameTrig 75
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_SRR_L_NM_FrameTrig 76
+#define CanIf_V71minus001minus021MM01_C_Matrix_for__ADASminusCANFD_V2_2_SRR_R_NM_FrameTrig 77
+
+#ifndef PDUR_RX_PDUID_NONE
+#define PDUR_RX_PDUID_NONE ((PduIdType) -1)
+#endif
+
+/* Definition of all supported operation modes. */
+#define CANIF_COM_SUPPORT          STD_ON
+#define CANIF_CDD_SUPPORT          STD_OFF
+#define CANIF_CANTSYN_SUPPORT      STD_OFF
+#define CANIF_J1939TP_SUPPORT      STD_OFF
+#define CANIF_RX_STATUS_SIM_SUPPORT          STD_OFF
+
+/* -- Declarations of exported functions. -- */
+EXTERN_C_DECL void CanIf_InitDefaultConfig(void);
+EXTERN_C_DECL void CanIf_VariableInitialize(void);
+EXTERN_C_DECL void CanIf_OnStart(void);
+EXTERN_C_DECL void CanIf_OnStop(void);
+
+/* [EOF] */
+
