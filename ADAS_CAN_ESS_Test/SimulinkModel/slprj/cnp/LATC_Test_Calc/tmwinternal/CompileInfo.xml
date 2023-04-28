@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/ci/19700101 http://schema.mathworks.com/mf0/sl_modelref_info/R2021b http://schema.mathworks.com/mf0/slexec_mm_sto/R2021b_202103041117">
+  <ModelRefInfoRepo.ModelRefInfoRoot type="ModelRefInfoRepo.ModelRefInfoRoot" uuid="185a06c9-1ef1-48a0-bbe6-223c3e987023">
+    <childModelRefInfo type="ModelRefInfoRepo.ChildModelRefInfo" uuid="20506abe-264a-4527-8dd3-e3f39f73dfd2">
+      <modelName>LATC_Test_Calc</modelName>
+      <modelPath>LATC_Test_Calc</modelPath>
+    </childModelRefInfo>
+    <dataDictionary>SubMdlDD_LATC.sldd</dataDictionary>
+    <dataDictionarySet>SubMdlDD_LATC.sldd</dataDictionarySet>
+    <dataDictionarySetForDataTypeCheck>SubMdlDD_LATC.sldd</dataDictionarySetForDataTypeCheck>
+    <dataTransferInfos>AAFJTQAAAAAOAAAAOAAAAAYAAAAIAAAAAgAAAAAAAAAFAAAACAAAAAAAAAABAAAAAQAAAAAAAAAFAAQAAQAAAAEAAAAAAAAA</dataTransferInfos>
+    <defaultsCMapping>{&quot;Inports&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;,&quot;Outports&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;,&quot;ParameterArguments&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;,&quot;LocalParameters&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;,&quot;GlobalParameters&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;,&quot;InternalData&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;,&quot;SharedLocalDataStores&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;,&quot;GlobalDataStores&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;,&quot;Constants&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;,&quot;DataTransfers&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;,&quot;ModelData&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;,&quot;InitializeTerminate&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;,&quot;Execution&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;,&quot;SharedUtility&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;}</defaultsCMapping>
+    <fundamentalSampleTimePeriod>.01</fundamentalSampleTimePeriod>
+    <globalVariables>#LCS_A2_LatAcc#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_A2_LatAccFac#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_AngleSlope_Cnt#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_AngleSlope_Flg#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_CurSteerAngle_deg#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_DeltaAngle#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_DisplaySpd_kph#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_ESS_TarAngle2#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_EqA0#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_HoldTime#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_IN_CurSteerAngle_deg#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_IN_SteerAngleSpd_degs#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_IN_TarDangerLevel#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_IN_TarDangerlLevel#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_IN_desLaneA0#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_IN_desLaneA1#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_IN_desLaneA2#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_IN_desLaneA3#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_IN_desLaneValid#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_IsOverRide#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_LCKPredis#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_LCKPredisFac#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_LCK_CurveFac#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_LCType#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_LC_AESPredis#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_LC_AESPredisFac#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_LC_Complete_PreDisFac#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_LC_ELKPredis#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_LC_ELKPredisFac#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_LC_ESSPredis#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_LC_ESSPredisFac#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_LC_EcoPredis#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_LC_EcoPredisFac#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_LC_LCPredis#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_LC_LCPredisFac#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_LC_NomalPredis#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_LC_NomalPredisFac#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_LC_SportPredis#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_LC_SportPredisFac#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_OUT_EpsTrqReqValue#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_OUT_EpsTrqReqValueVld#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_OUT_ReqEPSTrgAngle#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_Predis_BaseDis#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_Predis_Curve#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_Predis_CurveFac#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_Q#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_ReqEPSTrgAngle#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_StateActive_AngleSlope#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_State_AngleSlope#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_TarSteerAngle#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_TarSteerAngleCalc_Num#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_TarSteerAngleEnd#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_TarSteerAngleSlope#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_TarSteerAngle_Filter#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#LCS_finalPredis#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_Global_CharSpd_ms#PubParsGlobal.sldd#</globalVariables>
+    <globalVariables>#P_Global_SteeringAngleRatio#PubParsGlobal.sldd#</globalVariables>
+    <globalVariables>#P_Global_WheelBase_m#PubParsGlobal.sldd#</globalVariables>
+    <globalVariables>#P_LCS_A0_Dis_BP#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_A2S_FliterTime#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_A2_Curve_BP#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_A2_LatAcc_BP#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_A2_Pretime#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_AngleFilterTime#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_AngleSlope_AES_Active#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_AngleSlope_ELK#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_AngleSlope_ESS#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_AngleSlope_ESS_Add#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_AngleSlope_LCK#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_AngleSlope_LCKIE#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_AngleSlope_LCK_Curve_Fac#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_AngleSlope_LC_Cancel#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_AngleSlope_LC_Eco#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_AngleSlope_LC_Nomal#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_AngleSlope_LC_Sport#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_AngleSlope_LKA#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_AngleSlope_Spd_BP#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_DeltaEps_SpdBp#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_DeltaEps_TimeVal#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_DetNoOverRide_DrvTrq_TH#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_DetOverRide_DrvTrq_TH#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_ESSAngSlope_SW#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_ESSAngleSW#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_ESSAngleSW2#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_ESS_AngleSlope_Limit#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_ESS_preDis_Nomal#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_LCK_preDis_Nomal#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_LC_Complete_PreDisFac#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_LatAcc2CurveSW#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_NoOverRideTime_TH_s#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_OverRideDetect_enable#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_OverRideTime_TH_s#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_StateActiv_AngleSlope#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_StateActiveFlg_BP#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_StateActive_HoldTime_BP#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_StateCompleteFlg_BP#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_StateComplete_AngleSlope#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_StateHold_time#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_preDis_AES_Fac#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_preDis_ELK_Fac#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_preDis_ESS_Fac#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_preDis_LCK_A2Curve_Fac#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_preDis_LCK_A2Curve_Fac2#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_preDis_LCK_Fac#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_preDis_LC_Eco_Fac#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_preDis_LC_Fac#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_preDis_LC_Nomal_Fac#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_preDis_LC_Sport_Fac#SubMdlDD_LATC.sldd#</globalVariables>
+    <globalVariables>#P_LCS_preDis_spd#SubMdlDD_LATC.sldd#</globalVariables>
+    <hasBlockWithPeriodicDiscreteSampleTime>true</hasBlockWithPeriodicDiscreteSampleTime>
+    <hasBwsAccessed>true</hasBwsAccessed>
+    <hasBwsAccessedByAnyModel>true</hasBwsAccessedByAnyModel>
+    <hasNonVirtualConstantTs>true</hasNonVirtualConstantTs>
+    <hasStatesModifiedInOutputUpdate>true</hasStatesModifiedInOutputUpdate>
+    <isBdInSimModeForSimCodegenVariants>false</isBdInSimModeForSimCodegenVariants>
+    <isInlineParamsOn>true</isInlineParamsOn>
+    <loggingSaveFormat>2</loggingSaveFormat>
+    <maxFreqHz>-1.0</maxFreqHz>
+    <numDStateRecs>8</numDStateRecs>
+    <numDataInputPorts>0</numDataInputPorts>
+    <numLoggableDStateRecs>8</numLoggableDStateRecs>
+    <numLoggableJacobianDStates>4</numLoggableJacobianDStates>
+    <runtimeNonFcnCallRateInfos type="ModelRefInfoRepo.RateInfo">
+      <compiled>true</compiled>
+      <nonFcnCallPartitionName>D1</nonFcnCallPartitionName>
+      <period>.01</period>
+      <priority>40</priority>
+      <rateIdx>0</rateIdx>
+    </runtimeNonFcnCallRateInfos>
+    <sampleTimeInheritanceRule>2</sampleTimeInheritanceRule>
+    <solverStatusFlags>323</solverStatusFlags>
+    <timingAndTaskingRegistry>&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;slexec_sto version=&quot;1.1&quot; packageUris=&quot;http://schema.mathworks.com/mf0/slexec_mm_sto/R2021b_202103041117&quot;&gt;
+  &lt;sto.Registry type=&quot;sto.Registry&quot; uuid=&quot;96532e71-c2c4-430c-820b-7943ef465ca1&quot;&gt;
+    &lt;clocks type=&quot;sto.Timer&quot; uuid=&quot;487c472c-5df6-4d2d-8ccd-5c6e034b39e3&quot;&gt;
+      &lt;computedFundamentalDiscretePeriod&gt;.01&lt;/computedFundamentalDiscretePeriod&gt;
+      &lt;resolution&gt;.01&lt;/resolution&gt;
+      &lt;clockTickConstraint&gt;PeriodicWithFixedResolution&lt;/clockTickConstraint&gt;
+      &lt;timeAdvanceMode&gt;FixedStep&lt;/timeAdvanceMode&gt;
+      &lt;clockDomain type=&quot;sto.ClockDomain&quot; uuid=&quot;9a3dd022-77d9-4de0-a98d-02f8fbb32eff&quot;&gt;
+        &lt;baseTaskID&gt;_task0&lt;/baseTaskID&gt;
+        &lt;rates type=&quot;sto.Rate&quot; uuid=&quot;4f521374-57da-40b6-a688-a59f905f6175&quot;/&gt;
+        &lt;rootTaskHierarchyElements type=&quot;sto.Task&quot; uuid=&quot;7cebee56-158c-4cdd-bd07-2704077c328e&quot;&gt;
+          &lt;isExecutable&gt;true&lt;/isExecutable&gt;
+          &lt;orderIndex&gt;1&lt;/orderIndex&gt;
+          &lt;rates type=&quot;sto.Rate&quot; uuid=&quot;4f521374-57da-40b6-a688-a59f905f6175&quot;&gt;
+            &lt;annotation&gt;D1&lt;/annotation&gt;
+            &lt;colorIndex&gt;2&lt;/colorIndex&gt;
+            &lt;description&gt;离散 1&lt;/description&gt;
+            &lt;eventSourceType&gt;UNSPECIFIED_EVENT_SOURCE&lt;/eventSourceType&gt;
+            &lt;registry type=&quot;sto.Registry&quot; uuid=&quot;96532e71-c2c4-430c-820b-7943ef465ca1&quot;/&gt;
+            &lt;taskId&gt;_task0&lt;/taskId&gt;
+            &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;b704d7ac-bd84-4378-8a02-4db2391e0060&quot;&gt;
+              &lt;period&gt;.01&lt;/period&gt;
+              &lt;rateType&gt;ClassicPeriodicDiscrete&lt;/rateType&gt;
+            &lt;/rateSpec&gt;
+          &lt;/rates&gt;
+          &lt;elementType&gt;Task&lt;/elementType&gt;
+          &lt;identifier&gt;_task0&lt;/identifier&gt;
+          &lt;priority&gt;40&lt;/priority&gt;
+        &lt;/rootTaskHierarchyElements&gt;
+      &lt;/clockDomain&gt;
+    &lt;/clocks&gt;
+    &lt;clocks type=&quot;sto.Event&quot; uuid=&quot;150931fb-8f71-4b39-9442-b507ae47da4d&quot;&gt;
+      &lt;clientId&gt;NonTunableParameterChangeEvent&lt;/clientId&gt;
+      &lt;eventType&gt;UNSPECIFIED_EVENT_SOURCE&lt;/eventType&gt;
+      &lt;cNum&gt;2&lt;/cNum&gt;
+      &lt;clockType&gt;Event&lt;/clockType&gt;
+      &lt;identifier&gt;NonTunableParameterChangeEvent&lt;/identifier&gt;
+      &lt;specifiedTaskingMode&gt;ExplicitTasking&lt;/specifiedTaskingMode&gt;
+      &lt;timeAdvanceMode&gt;None&lt;/timeAdvanceMode&gt;
+      &lt;clockDomain type=&quot;sto.ClockDomain&quot; uuid=&quot;f8aae36c-fff2-44be-80c7-3bc0d7fd387e&quot;/&gt;
+    &lt;/clocks&gt;
+    &lt;clocks type=&quot;sto.Event&quot; uuid=&quot;bdc35216-a299-4849-89f3-2a88510c0ee4&quot;&gt;
+      &lt;clientId&gt;ParameterChangeEvent&lt;/clientId&gt;
+      &lt;eventType&gt;PARAMETER_CHANGE_EVENT&lt;/eventType&gt;
+      &lt;cNum&gt;1&lt;/cNum&gt;
+      &lt;clockType&gt;Event&lt;/clockType&gt;
+      &lt;identifier&gt;ParameterChangeEvent&lt;/identifier&gt;
+      &lt;specifiedTaskingMode&gt;ExplicitTasking&lt;/specifiedTaskingMode&gt;
+      &lt;timeAdvanceMode&gt;None&lt;/timeAdvanceMode&gt;
+      &lt;clockDomain type=&quot;sto.ClockDomain&quot; uuid=&quot;15fc230b-51f8-4f8c-b408-659cd2c682f8&quot;&gt;
+        &lt;rates type=&quot;sto.Rate&quot; uuid=&quot;1ee65b1b-a683-4c2c-8671-6b4b84e526ea&quot;/&gt;
+        &lt;rootTaskHierarchyElements type=&quot;sto.Task&quot; uuid=&quot;2efaa149-dffa-4c2d-a10a-d082030c782a&quot;&gt;
+          &lt;isExplicit&gt;true&lt;/isExplicit&gt;
+          &lt;rates type=&quot;sto.Rate&quot; uuid=&quot;1ee65b1b-a683-4c2c-8671-6b4b84e526ea&quot;&gt;
+            &lt;eventSourceType&gt;PARAMETER_CHANGE_EVENT&lt;/eventSourceType&gt;
+            &lt;rateIDX&gt;-1&lt;/rateIDX&gt;
+            &lt;registry type=&quot;sto.Registry&quot; uuid=&quot;96532e71-c2c4-430c-820b-7943ef465ca1&quot;/&gt;
+            &lt;stringID&gt;ParameterChangeEvent&lt;/stringID&gt;
+            &lt;taskId&gt;ModelWideParameterChangeEvent&lt;/taskId&gt;
+            &lt;useForExecution&gt;NotForExecution&lt;/useForExecution&gt;
+            &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;f62d637e-cde5-4a42-875e-265e2cdeefa6&quot;&gt;
+              &lt;period&gt;Inf&lt;/period&gt;
+              &lt;rateType&gt;ModelWideParameterChangeEvent&lt;/rateType&gt;
+            &lt;/rateSpec&gt;
+          &lt;/rates&gt;
+          &lt;elementType&gt;Task&lt;/elementType&gt;
+          &lt;identifier&gt;ModelWideParameterChangeEvent&lt;/identifier&gt;
+          &lt;priority&gt;-1&lt;/priority&gt;
+          &lt;schedulingClockID&gt;ParameterChangeEvent&lt;/schedulingClockID&gt;
+        &lt;/rootTaskHierarchyElements&gt;
+      &lt;/clockDomain&gt;
+    &lt;/clocks&gt;
+    &lt;executionSpec&gt;Undetermined&lt;/executionSpec&gt;
+    &lt;taskDependencyGraph type=&quot;sto.SerializedTaskConnectionList&quot; uuid=&quot;bfdcca59-341f-48f2-b13c-3d9355bfb096&quot;&gt;
+      &lt;taskIdentifier&gt;_task0&lt;/taskIdentifier&gt;
+    &lt;/taskDependencyGraph&gt;
+    &lt;taskDependencyGraph type=&quot;sto.SerializedTaskConnectionList&quot; uuid=&quot;8acf0009-32c7-41d2-8fd8-b78924e5f7ef&quot;&gt;
+      &lt;clockIdentifier&gt;ParameterChangeEvent&lt;/clockIdentifier&gt;
+      &lt;taskIdentifier&gt;ModelWideParameterChangeEvent&lt;/taskIdentifier&gt;
+    &lt;/taskDependencyGraph&gt;
+    &lt;taskPriorityDirection&gt;HighNumberLast&lt;/taskPriorityDirection&gt;
+    &lt;tasks type=&quot;sto.Task&quot; uuid=&quot;7cebee56-158c-4cdd-bd07-2704077c328e&quot;/&gt;
+    &lt;tasks type=&quot;sto.Task&quot; uuid=&quot;2efaa149-dffa-4c2d-a10a-d082030c782a&quot;/&gt;
+    &lt;timeAdvanceMode&gt;FixedStep&lt;/timeAdvanceMode&gt;
+  &lt;/sto.Registry&gt;
+&lt;/slexec_sto&gt;</timingAndTaskingRegistry>
+    <FMUBlockMap type="ModelRefInfoRepo.FMUBlockInfo" uuid="6827542e-6494-4bca-a9cb-62d721940374"/>
+    <codeGenInfo type="ModelRefInfoRepo.CodeGenInformation" uuid="54a5eae3-5b71-4bbe-83d6-ddcd932fe99b"/>
+    <compiledVariantInfos type="ModelRefInfoRepo.CompiledVariantInfoMap" uuid="0dc89029-3dbe-4ced-8bb7-8fe8543e1401"/>
+    <configSettingsForConsistencyChecks type="ModelRefInfoRepo.ConfigSettingsForConsistencyChecks" uuid="126cef85-b03d-4ca6-b468-734932891d1d">
+      <consistentOutportInitialization>true</consistentOutportInitialization>
+      <fixedStepSize>.01</fixedStepSize>
+      <frameDiagnosticSetting>2</frameDiagnosticSetting>
+      <hasHybridSampleTime>true</hasHybridSampleTime>
+      <signalLoggingSaveFormat>2</signalLoggingSaveFormat>
+      <simSIMDOptimization>1</simSIMDOptimization>
+      <solverName>FixedStepDiscrete</solverName>
+      <solverType>SOLVER_TYPE_FIXEDSTEP</solverType>
+      <hardwareSettings type="ModelRefInfoRepo.HardwareSettings" uuid="74012512-1667-47c8-90b2-9d1d9324a17f">
+        <prodBitPerChar>8</prodBitPerChar>
+        <prodBitPerDouble>64</prodBitPerDouble>
+        <prodBitPerFloat>32</prodBitPerFloat>
+        <prodBitPerInt>32</prodBitPerInt>
+        <prodBitPerLong>32</prodBitPerLong>
+        <prodBitPerLongLong>64</prodBitPerLongLong>
+        <prodBitPerPointer>64</prodBitPerPointer>
+        <prodBitPerPtrDiffT>64</prodBitPerPtrDiffT>
+        <prodBitPerShort>16</prodBitPerShort>
+        <prodBitPerSizeT>64</prodBitPerSizeT>
+        <prodEndianess>1</prodEndianess>
+        <prodShiftRight>true</prodShiftRight>
+        <prodWordSize>64</prodWordSize>
+      </hardwareSettings>
+    </configSettingsForConsistencyChecks>
+    <controllableInputRatesMap type="ModelRefInfoRepo.VarTsUIDMap" uuid="9ac40326-4e4d-4b7e-922e-62486d720901"/>
+    <controllableOutputRatesMap type="ModelRefInfoRepo.VarTsUIDMap" uuid="54a0a4be-4707-4851-941b-b8e51e571506"/>
+    <dataPortGroup type="ModelRefInfoRepo.DataPortGroup" uuid="8c310c5c-7201-4b9f-925a-ac53b5918288"/>
+    <expFcnUnconnectedDataPortGroup type="ModelRefInfoRepo.DataPortGroup" uuid="26dcf77b-1953-4aa4-bf1c-3c417b62dbea"/>
+    <interfaceParameterInfo type="ModelRefInfoRepo.InterfaceParameterInfo" uuid="e6949637-0fc8-4f0f-ba2e-30ff4e426199">
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="d4db648b-e90f-4f17-bed2-8edcb46409b2">
+        <dimensions>1</dimensions>
+        <dimensions>1</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_NoOverRideTime_TH_s</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="a0770deb-d3a2-4fb6-89a5-b6b11ce72d45">
+        <dimensions>1</dimensions>
+        <dimensions>1</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_OverRideTime_TH_s</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="0c2912ce-2c9f-47f9-90d9-be609b5391ef">
+        <datatypeID>1</datatypeID>
+        <dimensions>1</dimensions>
+        <dimensions>1</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_DetNoOverRide_DrvTrq_TH</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="0f9b2843-e827-4379-aeac-dea11a201853">
+        <datatypeID>1</datatypeID>
+        <dimensions>1</dimensions>
+        <dimensions>1</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_DetOverRide_DrvTrq_TH</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="5e0cfec9-c156-4097-b28b-81fc92d385b0">
+        <dimensions>1</dimensions>
+        <dimensions>1</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_ESSAngSlope_SW</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="eec26665-7e51-427c-9f1e-071954bfd72d">
+        <dimensions>1</dimensions>
+        <dimensions>1</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_ESSAngleSW2</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="3c5ad182-c67d-4909-85c7-a36dd73be49e">
+        <dimensions>1</dimensions>
+        <dimensions>15</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_StateActive_HoldTime_BP</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="073660ff-75a5-4eb4-82ac-fb4808b79bec">
+        <datatypeID>1</datatypeID>
+        <dimensions>1</dimensions>
+        <dimensions>19</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_A0_Dis_BP</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="35068ee8-2706-4629-b95f-0994af838947">
+        <datatypeID>1</datatypeID>
+        <dimensions>1</dimensions>
+        <dimensions>1</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_A2S_FliterTime</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="de9b47c4-538f-4e69-bc41-a0a305634e44">
+        <datatypeID>1</datatypeID>
+        <dimensions>1</dimensions>
+        <dimensions>10</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_A2_Curve_BP</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="b83d2798-599c-4a89-9f3b-62ddda6458d0">
+        <datatypeID>1</datatypeID>
+        <dimensions>1</dimensions>
+        <dimensions>5</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_A2_LatAcc_BP</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="b96f60df-0c5f-4da7-80fd-d67d9f6be73e">
+        <datatypeID>1</datatypeID>
+        <dimensions>1</dimensions>
+        <dimensions>1</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_A2_Pretime</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="26e36bfd-ad7b-4b55-980c-29e62c41a357">
+        <datatypeID>1</datatypeID>
+        <dimensions>1</dimensions>
+        <dimensions>1</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_AngleFilterTime</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="83603dba-2f54-43d5-9ea2-e255fbc1de10">
+        <datatypeID>1</datatypeID>
+        <dimensions>19</dimensions>
+        <dimensions>12</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_AngleSlope_AES_Active</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="2b53ff50-5985-4097-aa62-ec1ab377cb45">
+        <datatypeID>1</datatypeID>
+        <dimensions>19</dimensions>
+        <dimensions>12</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_AngleSlope_ELK</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="f2b125ef-0704-4d48-9dd2-4e9dbe7bf153">
+        <datatypeID>1</datatypeID>
+        <dimensions>19</dimensions>
+        <dimensions>12</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_AngleSlope_ESS</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="e823562d-5eff-48ae-8a05-1e4348b38372">
+        <datatypeID>1</datatypeID>
+        <dimensions>19</dimensions>
+        <dimensions>12</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_AngleSlope_ESS_Add</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="dee3c424-ea16-45dd-a707-19f258ebdf2d">
+        <datatypeID>1</datatypeID>
+        <dimensions>19</dimensions>
+        <dimensions>12</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_AngleSlope_LCK</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="ba5669aa-24d5-4b8c-a253-35b4fda12f23">
+        <datatypeID>1</datatypeID>
+        <dimensions>19</dimensions>
+        <dimensions>12</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_AngleSlope_LCKIE</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="bd19b036-97d1-4ce2-9a12-b63dfe29b06d">
+        <datatypeID>1</datatypeID>
+        <dimensions>1</dimensions>
+        <dimensions>10</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_AngleSlope_LCK_Curve_Fac</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="12adf509-f318-425b-85ff-4cbafd080079">
+        <datatypeID>1</datatypeID>
+        <dimensions>19</dimensions>
+        <dimensions>12</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_AngleSlope_LC_Cancel</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="0f610fe3-c515-4ca3-b5d3-7abf0ea21955">
+        <datatypeID>1</datatypeID>
+        <dimensions>19</dimensions>
+        <dimensions>12</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_AngleSlope_LC_Eco</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="de513009-3a4b-43ad-80c7-784191f1c2ed">
+        <datatypeID>1</datatypeID>
+        <dimensions>19</dimensions>
+        <dimensions>12</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_AngleSlope_LC_Nomal</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="731cae8d-8a93-49df-bc25-9e0ade81d093">
+        <datatypeID>1</datatypeID>
+        <dimensions>19</dimensions>
+        <dimensions>12</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_AngleSlope_LC_Sport</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="336b8ca4-434b-48e3-b16d-44ffcd868c64">
+        <datatypeID>1</datatypeID>
+        <dimensions>19</dimensions>
+        <dimensions>12</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_AngleSlope_LKA</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="2c678b5b-849f-44a4-9980-edfa3ee577cd">
+        <datatypeID>1</datatypeID>
+        <dimensions>1</dimensions>
+        <dimensions>12</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_AngleSlope_Spd_BP</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="1f2e7dee-4037-46c2-9fa3-f56421cba328">
+        <datatypeID>1</datatypeID>
+        <dimensions>1</dimensions>
+        <dimensions>16</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_DeltaEps_SpdBp</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="0d518918-2470-478f-9453-8f2f8f75bf5a">
+        <datatypeID>1</datatypeID>
+        <dimensions>1</dimensions>
+        <dimensions>16</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_DeltaEps_TimeVal</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="f17cc53e-7bcf-4834-9d11-ca5c15a84cf9">
+        <datatypeID>1</datatypeID>
+        <dimensions>1</dimensions>
+        <dimensions>1</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_ESS_AngleSlope_Limit</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="fd9173e2-0f77-446d-aabb-5709840512d6">
+        <datatypeID>1</datatypeID>
+        <dimensions>1</dimensions>
+        <dimensions>16</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_ESS_preDis_Nomal</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="0b3f2c7f-716e-4af7-bbbd-56c2bd4abf85">
+        <datatypeID>1</datatypeID>
+        <dimensions>1</dimensions>
+        <dimensions>16</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_LCK_preDis_Nomal</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="e8e152d7-f2a3-4a2e-ab9b-bc39a1e312f7">
+        <datatypeID>1</datatypeID>
+        <dimensions>4</dimensions>
+        <dimensions>15</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_LC_Complete_PreDisFac</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="70f6c41f-73a7-4dba-8a4b-92a0793e6083">
+        <datatypeID>1</datatypeID>
+        <dimensions>6</dimensions>
+        <dimensions>15</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_StateActiv_AngleSlope</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="a8eaacd5-beb7-4a10-b655-bf7bfe078b20">
+        <datatypeID>1</datatypeID>
+        <dimensions>4</dimensions>
+        <dimensions>15</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_StateComplete_AngleSlope</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="69b4dd09-9fba-499e-9f04-3c7c13617540">
+        <datatypeID>1</datatypeID>
+        <dimensions>19</dimensions>
+        <dimensions>16</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_preDis_AES_Fac</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="ae314c27-72dd-41da-9752-97780ea76d30">
+        <datatypeID>1</datatypeID>
+        <dimensions>19</dimensions>
+        <dimensions>16</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_preDis_ELK_Fac</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="995fd494-7b7e-4068-87aa-44daaff98e7b">
+        <datatypeID>1</datatypeID>
+        <dimensions>19</dimensions>
+        <dimensions>16</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_preDis_ESS_Fac</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="c189ec1b-d4af-4731-979b-c934ef28156a">
+        <datatypeID>1</datatypeID>
+        <dimensions>1</dimensions>
+        <dimensions>5</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_preDis_LCK_A2Curve_Fac</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="b90a99b7-80f3-4fb4-92d0-4070152a6b55">
+        <datatypeID>1</datatypeID>
+        <dimensions>1</dimensions>
+        <dimensions>10</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_preDis_LCK_A2Curve_Fac2</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="8e56f24e-1f67-449a-a8a4-eccb4d647e97">
+        <datatypeID>1</datatypeID>
+        <dimensions>19</dimensions>
+        <dimensions>16</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_preDis_LCK_Fac</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="ed0293da-17e1-4df4-aeed-e36d799391e3">
+        <datatypeID>1</datatypeID>
+        <dimensions>19</dimensions>
+        <dimensions>16</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_preDis_LC_Eco_Fac</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="1a695c03-1200-49e5-ba7a-e0d4575928ae">
+        <datatypeID>1</datatypeID>
+        <dimensions>19</dimensions>
+        <dimensions>16</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_preDis_LC_Nomal_Fac</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="3d85bc2f-94b0-4e79-8a1a-33d2327c2c64">
+        <datatypeID>1</datatypeID>
+        <dimensions>19</dimensions>
+        <dimensions>16</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_preDis_LC_Sport_Fac</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="5f0c4c26-fea2-488e-be95-81d17158e261">
+        <datatypeID>1</datatypeID>
+        <dimensions>1</dimensions>
+        <dimensions>16</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_preDis_spd</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="55d283ee-abd6-43fa-97c6-b6803b491201">
+        <datatypeID>5</datatypeID>
+        <dimensions>1</dimensions>
+        <dimensions>1</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_StateHold_time</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="2a7338d4-f7d6-46e8-b8e2-3a537ee6890d">
+        <datatypeID>8</datatypeID>
+        <dimensions>1</dimensions>
+        <dimensions>1</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_ESSAngleSW</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="98c1e20c-8d4a-48a2-bbdb-43ce24b38995">
+        <datatypeID>3</datatypeID>
+        <dimensions>1</dimensions>
+        <dimensions>1</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_LatAcc2CurveSW</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="fee55245-6335-4f5e-831e-710e52282694">
+        <datatypeID>3</datatypeID>
+        <dimensions>1</dimensions>
+        <dimensions>6</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_StateActiveFlg_BP</parameterName>
+      </globalVariables>
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="5c160eb4-a284-48a0-b0a9-7d9e1962a25a">
+        <datatypeID>3</datatypeID>
+        <dimensions>1</dimensions>
+        <dimensions>4</dimensions>
+        <isUsed>true</isUsed>
+        <numDimensions>2</numDimensions>
+        <parameterName>P_LCS_StateCompleteFlg_BP</parameterName>
+      </globalVariables>
+    </interfaceParameterInfo>
+    <messageInfo type="ModelRefInfoRepo.MessageInformation" uuid="b882204e-4ffe-4ce2-bc83-61bc11d168c7"/>
+    <methodInfo type="ModelRefInfoRepo.MethodExistenceInfo" uuid="c69a6fde-7743-4998-b810-6d500b2b0a4b">
+      <hasSystemInitializeMethod>true</hasSystemInitializeMethod>
+      <hasSystemResetMethod>true</hasSystemResetMethod>
+      <hasTerminateMethod>true</hasTerminateMethod>
+      <hasUpdateMethod>true</hasUpdateMethod>
+    </methodInfo>
+    <periodicEventPortUnsupportedBlockInfo type="ModelRefInfoRepo.PeriodicEventPortUnsupportedBlockInfo" uuid="661f9f6d-2890-4461-a0aa-48898ed638d6"/>
+    <portGroupsRequireSameRate type="ModelRefInfoRepo.PortGroupsRequireSameRate" uuid="3b4b0685-ee00-47d1-976d-74ce349fb1e1">
+      <DSMPortGroups type="ModelRefInfoRepo.NameToPortGroupIdxVectMap" uuid="a30450e5-abd2-4ab0-94c5-87ac9dae4e00"/>
+      <GlobalDSMPortGroups type="ModelRefInfoRepo.NameToPortGroupIdxVectMap" uuid="f14a5069-8d87-4055-863a-4cc518f8b3f5"/>
+      <mergedPortGroups type="ModelRefInfoRepo.NameToPortGroupIdxVectMap" uuid="b09fd4b9-5258-4909-89f8-845c7ee27762"/>
+    </portGroupsRequireSameRate>
+    <rateBasedMdlGlobalDSMRateSpec type="ModelRefInfoRepo.GlobalDSMRateSpecMap" uuid="7b3d3454-f022-45a0-ad5a-7d1f17cf1928"/>
+    <rateSpecOfGlobalDSMAccessedByDescExpFcnMdlMap type="ModelRefInfoRepo.GlobalDSMRateSpecMap" uuid="d949e0b7-02ea-45fd-b763-f850e74331c0"/>
+    <rootBlockDiagramInterface type="ci.Model" uuid="d911e12c-95be-4aef-9864-e732bf70e3dd">
+      <p_RootComponentInterface type="ci.ComponentInterface" uuid="94ad5bd0-1009-4a9e-8185-c234b4623e38">
+        <p_Name>LATC_Test_Calc</p_Name>
+        <p_Type>ROOT</p_Type>
+      </p_RootComponentInterface>
+    </rootBlockDiagramInterface>
+    <simulinkFunctions type="ModelRefInfoRepo.SimulinkFunctions" uuid="dfcac61b-1e56-417c-9431-3340fd9dd13a">
+      <compSimulinkFunctionCatalog></compSimulinkFunctionCatalog>
+    </simulinkFunctions>
+    <stateWriterToOwnerMap type="ModelRefInfoRepo.StateWriterInfo" uuid="4d3f14f9-9a78-49e0-9197-46d2cf942196"/>
+    <stoClientDataRegistry type="sto.ClientDataRegistry" uuid="eba8d100-bac5-4b83-b0b2-12afe820440a">
+      <dataSets type="sto.ClientClockNamedDataSet" uuid="5af59a13-1359-42b4-a6b2-5475991ee0c8">
+        <tag>sltpEvents</tag>
+      </dataSets>
+      <dataSets type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="f9a63ebf-accf-4a1e-a872-5bb0936467a6">
+        <tag>sltpTaskGroups</tag>
+      </dataSets>
+      <dataSets type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="3da4b01c-5e32-44d8-a595-6c3f33368f42">
+        <dSet type="ModelRefInfoRepo.SltpTaskData" uuid="47242c33-14a7-46c1-9ec3-3920b4d47afe"/>
+        <tSet type="ModelRefInfoRepo.SltpTaskData" uuid="47242c33-14a7-46c1-9ec3-3920b4d47afe">
+          <dataName>D1</dataName>
+          <linkedSet type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="3da4b01c-5e32-44d8-a595-6c3f33368f42"/>
+          <id type="sto.TaskHierarchyElementId">
+            <id>_task0</id>
+          </id>
+        </tSet>
+        <tag>sltpTasks</tag>
+      </dataSets>
+    </stoClientDataRegistry>
+    <varTsUIDMap type="ModelRefInfoRepo.VarTsUIDMap" uuid="8d87cc31-e569-4049-a67c-1f900d1653d4"/>
+  </ModelRefInfoRepo.ModelRefInfoRoot>
+</MF0>

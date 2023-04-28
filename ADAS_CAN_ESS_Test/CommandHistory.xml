@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<user-stream-data type="1" description="FlightRecorderData" time="7591523">
+ <item>
+  WM_POWERBROADCAST
+  <prop n="wParam" v="32787"/>
+  <prop n="time" v="7243606"/>
+ </item>
+ <item>
+  WM_CLOSE
+  <prop n="window" v="WM_CLOSE"/>
+  <prop n="time" v="7246132"/>
+ </item>
+ <item>
+  Adjustment of Devic|&amp;No
+  <prop n="command type" v="control"/>
+  <prop n="control identifier" v="7"/>
+  <prop n="control identifier string" v="IDNO"/>
+  <prop n="notification code" v="0"/>
+  <prop n="handle" v="68440"/>
+  <prop n="button" v="Adjustment of Devic|&amp;No"/>
+  <prop n="time" v="7252014"/>
+ </item>
+ <item>
+  Vector CANape x64|确定
+  <prop n="command type" v="control"/>
+  <prop n="control identifier" v="2"/>
+  <prop n="control identifier string" v="IDCANCEL"/>
+  <prop n="notification code" v="0"/>
+  <prop n="handle" v="133984"/>
+  <prop n="button" v="Vector CANape x64|确定"/>
+  <prop n="time" v="7253762"/>
+ </item>
+ <item>
+  System Info|OK
+  <prop n="command type" v="control"/>
+  <prop n="control identifier" v="1"/>
+  <prop n="control identifier string" v="IDOK"/>
+  <prop n="notification code" v="0"/>
+  <prop n="handle" v="68546"/>
+  <prop n="button" v="System Info|OK"/>
+  <prop n="time" v="7261141"/>
+ </item>
+ <item>
+  CM_MODULELIST
+  <prop n="command type" v="menu"/>
+  <prop n="menu identifier" v="1232"/>
+  <prop n="menu identifier string" v="CM_MODULELIST"/>
+  <prop n="time" v="7274298"/>
+ </item>
+ <item>
+  CanDriverNotify
+  <prop n="wParam" v="0"/>
+  <prop n="lParam" v="0"/>
+  <prop n="time" v="7362714"/>
+ </item>
+ <item>
+  CanDriverNotify
+  <prop n="wParam" v="0"/>
+  <prop n="lParam" v="0"/>
+  <prop n="time" v="7362714"/>
+ </item>
+ <item>
+  CanDriverNotify
+  <prop n="wParam" v="0"/>
+  <prop n="lParam" v="0"/>
+  <prop n="time" v="7362714"/>
+ </item>
+ <item>
+  WM_CLOSE
+  <prop n="window" v="WM_CLOSE"/>
+  <prop n="time" v="7419195"/>
+ </item>
+ <item>
+  CM_MODULELIST
+  <prop n="command type" v="menu"/>
+  <prop n="menu identifier" v="1232"/>
+  <prop n="menu identifier string" v="CM_MODULELIST"/>
+  <prop n="time" v="7431001"/>
+ </item>
+ <item>
+  WM_CLOSE
+  <prop n="window" v="WM_CLOSE"/>
+  <prop n="time" v="7583717"/>
+ </item>
+ <item>
+  Vector CANape x64|确定
+  <prop n="command type" v="control"/>
+  <prop n="control identifier" v="2"/>
+  <prop n="control identifier string" v="IDCANCEL"/>
+  <prop n="notification code" v="0"/>
+  <prop n="handle" v="331078"/>
+  <prop n="button" v="Vector CANape x64|确定"/>
+  <prop n="time" v="7585987"/>
+ </item>
+ <item>
+  CanDriverNotify
+  <prop n="wParam" v="204"/>
+  <prop n="lParam" v="2147483649"/>
+  <prop n="time" v="7591198"/>
+ </item>
+</user-stream-data>
