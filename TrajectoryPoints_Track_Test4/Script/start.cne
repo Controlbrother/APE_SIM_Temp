@@ -1,0 +1,14 @@
+[FUNCTION_1]
+NAME=start
+COMMENT=
+COUNT=6
+1=function start ()
+2={
+3=  // Add your code here
+4=  CallScript("Script_1.cns");
+5=  return ;
+6=}
+
+[FUNCTIONS]
+COUNT=1
+

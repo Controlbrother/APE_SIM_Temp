@@ -1,0 +1,7 @@
+[SUPPORTASSISTANT]
+APPNAME=CANape
+APPVERSION=Version 18.0.22.636
+APPDATE=04.06.2020
+APPLOCALE=1
+PROJECTFILES=E:\CANape_Project\APE_Temple\ADAS_CAN+A2L\A2L\Noa_Nofusion.a2l;E:\CANape_Project\APE_Temple\ADAS_CAN+A2L\CANape.INI;E:\CANape_Project\APE_Temple\ADAS_CAN+A2L\CANape_Environment.HEX;E:\CANape_Project\APE_Temple\ADAS_CAN+A2L\Data_Recorder\Recorder_2021-05-24_15-13-34.mf4;E:\CANape_Project\APE_Temple\ADAS_CAN+A2L\DBC\ADAS_PubCAN\V71P-006-007DB01  CAN DataBase for PT-CANFD-V2.2.1.dbc;E:\CANape_Project\APE_Temple\ADAS_CAN+A2L\Environment;E:\CANape_Project\APE_Temple\ADAS_CAN+A2L\Environment.json;E:\CANape_Project\APE_Temple\ADAS_CAN+A2L\LATC_Test_Calc.cna
+DUMPFILES=E:\CANape_Project\APE_Temple\ADAS_CAN+A2L\CommandHistory.xml;E:\CANape_Project\APE_Temple\ADAS_CAN+A2L\CANapeFaultSmall.dmp;E:\CANape_Project\APE_Temple\ADAS_CAN+A2L\CANapeFault.dmp;E:\CANape_Project\APE_Temple\ADAS_CAN+A2L\CANapeFault.log;E:\CANape_Project\APE_Temple\ADAS_CAN+A2L\FaultHistory.log

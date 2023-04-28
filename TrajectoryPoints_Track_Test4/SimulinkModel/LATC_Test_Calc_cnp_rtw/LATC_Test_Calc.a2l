@@ -1,0 +1,1333 @@
+﻿//*****************************************************************************
+// * Vector CANape/vSignalyzer Target
+// ******************************************************************************
+// *
+// * Code generation for model "LATC_Test_Calc".
+// *
+// * ASAP2 file name:             LATC_Test_Calc.a2l
+// *
+// * Model version:               3.98
+// * Simulink Coder version:      9.6 (R2021b) 14-May-2021
+// * C source code generated on:  Tue Mar  1 14:24:04 2022
+// * 
+// * Target selection:            cnp.tlc
+// * Target version:              14.0.2 
+// *
+// *****************************************************************************
+
+ASAP2_VERSION 1 51
+/begin PROJECT ProjectName "Project Comment Goes Here"
+
+  /begin HEADER "Header Comments go here"
+  /end HEADER
+
+  /begin MODULE ModuleName "Module Comment Goes Here"
+
+    /begin A2ML
+
+        struct Protocol_Layer {
+          uint;  /* XCP protocol layer version, current 0x100 */
+          uint;  /* T1 [ms] */
+          uint;  /* T2 [ms] */
+          uint;  /* T3 [ms] */
+          uint;  /* T4 [ms] */
+          uint;  /* T5 [ms] */
+          uint;  /* T6 [ms] */
+          uint;  /* T7 [ms] */
+          uchar;  /* MAX_CTO */
+          uint;  /* MAX_DTO */
+          enum {
+            "BYTE_ORDER_MSB_LAST" = 0,
+            "BYTE_ORDER_MSB_FIRST" = 1
+          };
+          enum {
+            "ADDRESS_GRANULARITY_BYTE" = 1,
+            "ADDRESS_GRANULARITY_WORD" = 2,
+            "ADDRESS_GRANULARITY_DWORD" = 4
+          };
+          taggedstruct {
+            ("OPTIONAL_CMD" enum {
+              "GET_COMM_MODE_INFO" = 251,
+              "GET_ID" = 250,
+              "SET_REQUEST" = 249,
+              "GET_SEED" = 248,
+              "UNLOCK" = 247,
+              "SET_MTA" = 246,
+              "UPLOAD" = 245,
+              "SHORT_UPLOAD" = 244,
+              "BUILD_CHECKSUM" = 243,
+              "TRANSPORT_LAYER_CMD" = 242,
+              "USER_CMD" = 241,
+              "DOWNLOAD" = 240,
+              "DOWNLOAD_NEXT" = 239,
+              "DOWNLOAD_MAX" = 238,
+              "SHORT_DOWNLOAD" = 237,
+              "MODIFY_BITS" = 236,
+              "SET_CAL_PAGE" = 235,
+              "GET_CAL_PAGE" = 234,
+              "GET_PAG_PROCESSOR_INFO" = 233,
+              "GET_SEGMENT_INFO" = 232,
+              "GET_PAGE_INFO" = 231,
+              "SET_SEGMENT_MODE" = 230,
+              "GET_SEGMENT_MODE" = 229,
+              "COPY_CAL_PAGE" = 228,
+              "CLEAR_DAQ_LIST" = 227,
+              "SET_DAQ_PTR" = 226,
+              "WRITE_DAQ" = 225,
+              "SET_DAQ_LIST_MODE" = 224,
+              "GET_DAQ_LIST_MODE" = 223,
+              "START_STOP_DAQ_LIST" = 222,
+              "START_STOP_SYNCH" = 221,
+              "GET_DAQ_CLOCK" = 220,
+              "READ_DAQ" = 219,
+              "GET_DAQ_PROCESSOR_INFO" = 218,
+              "GET_DAQ_RESOLUTION_INFO" = 217,
+              "GET_DAQ_LIST_INFO" = 216,
+              "GET_DAQ_EVENT_INFO" = 215,
+              "FREE_DAQ" = 214,
+              "ALLOC_DAQ" = 213,
+              "ALLOC_ODT" = 212,
+              "ALLOC_ODT_ENTRY" = 211,
+              "PROGRAM_START" = 210,
+              "PROGRAM_CLEAR" = 209,
+              "PROGRAM" = 208,
+              "PROGRAM_RESET" = 207,
+              "GET_PGM_PROCESSOR_INFO" = 206,
+              "GET_SECTOR_INFO" = 205,
+              "PROGRAM_PREPARE" = 204,
+              "PROGRAM_FORMAT" = 203,
+              "PROGRAM_NEXT" = 202,
+              "PROGRAM_MAX" = 201,
+              "PROGRAM_VERIFY" = 200
+            })*;
+            "COMMUNICATION_MODE_SUPPORTED" taggedunion {
+              "BLOCK" taggedstruct {
+                "SLAVE" ;
+                "MASTER" struct {
+                  uchar;  /* MAX_BS */
+                  uchar;  /* MIN_ST */
+                };
+              };
+              "INTERLEAVED" uchar;  /* QUEUE_SIZE */
+            };
+            "SEED_AND_KEY_EXTERNAL_FUNCTION" char[256];  /* Name of the Seed&Key function */
+          };
+        };
+
+        struct Daq {
+          enum {
+            "STATIC" = 0,
+            "DYNAMIC" = 1
+          };
+          uint;  /* MAX_DAQ */
+          uint;  /* MAX_EVENT_CHANNEL */
+          uchar;  /* MIN_DAQ */
+          enum {
+            "OPTIMISATION_TYPE_DEFAULT" = 0,
+            "OPTIMISATION_TYPE_ODT_TYPE_16" = 1,
+            "OPTIMISATION_TYPE_ODT_TYPE_32" = 2,
+            "OPTIMISATION_TYPE_ODT_TYPE_64" = 3,
+            "OPTIMISATION_TYPE_ODT_TYPE_ALIGNMENT" = 4,
+            "OPTIMISATION_TYPE_MAX_ENTRY_SIZE" = 5
+          };
+          enum {
+            "ADDRESS_EXTENSION_FREE" = 0,
+            "ADDRESS_EXTENSION_ODT" = 1,
+            "ADDRESS_EXTENSION_DAQ" = 3
+          };
+          enum {
+            "IDENTIFICATION_FIELD_TYPE_ABSOLUTE" = 0,
+            "IDENTIFICATION_FIELD_TYPE_RELATIVE_BYTE" = 1,
+            "IDENTIFICATION_FIELD_TYPE_RELATIVE_WORD" = 2,
+            "IDENTIFICATION_FIELD_TYPE_RELATIVE_WORD_ALIGNED" = 3
+          };
+          enum {
+            "GRANULARITY_ODT_ENTRY_SIZE_DAQ_BYTE" = 1,
+            "GRANULARITY_ODT_ENTRY_SIZE_DAQ_WORD" = 2,
+            "GRANULARITY_ODT_ENTRY_SIZE_DAQ_DWORD" = 4,
+            "GRANULARITY_ODT_ENTRY_SIZE_DAQ_DLONG" = 8
+          };
+          uchar;  /* MAX_ODT_ENTRY_SIZE_DAQ */
+          enum {
+            "NO_OVERLOAD_INDICATION" = 0,
+            "OVERLOAD_INDICATION_PID" = 1,
+            "OVERLOAD_INDICATION_EVENT" = 2
+          };
+          taggedstruct {
+            "PRESCALER_SUPPORTED" ;
+            "RESUME_SUPPORTED" ;
+            block "STIM" struct {
+              enum {
+                "GRANULARITY_ODT_ENTRY_SIZE_STIM_BYTE" = 1,
+                "GRANULARITY_ODT_ENTRY_SIZE_STIM_WORD" = 2,
+                "GRANULARITY_ODT_ENTRY_SIZE_STIM_DWORD" = 4,
+                "GRANULARITY_ODT_ENTRY_SIZE_STIM_DLONG" = 8
+              };
+              uchar;  /* MAX_ODT_ENTRY_SIZE_STIM */
+              taggedstruct {
+                "BIT_STIM_SUPPORTED" ;
+              };
+            };
+            block "TIMESTAMP_SUPPORTED" struct {
+              uint;  /* TIMESTAMP_TICKS */
+              enum {
+                "NO_TIME_STAMP" = 0,
+                "SIZE_BYTE" = 1,
+                "SIZE_WORD" = 2,
+                "SIZE_DWORD" = 4
+              };
+              enum {
+                "UNIT_1NS" = 0,
+                "UNIT_10NS" = 1,
+                "UNIT_100NS" = 2,
+                "UNIT_1US" = 3,
+                "UNIT_10US" = 4,
+                "UNIT_100US" = 5,
+                "UNIT_1MS" = 6,
+                "UNIT_10MS" = 7,
+                "UNIT_100MS" = 8,
+                "UNIT_1S" = 9
+              };
+              taggedstruct {
+                "TIMESTAMP_FIXED" ;
+              };
+            };
+            "PID_OFF_SUPPORTED" ;
+            (block "DAQ_LIST" struct {
+              uint;  /* DAQ_LIST_NUMBER */
+              taggedstruct {
+                "DAQ_LIST_TYPE" enum {
+                  "DAQ" = 1,
+                  "STIM" = 2,
+                  "DAQ_STIM" = 3
+                };
+                "MAX_ODT" uchar;
+                "MAX_ODT_ENTRIES" uchar;
+                "FIRST_PID" uchar;
+                "EVENT_FIXED" uint;
+                block "PREDEFINED" taggedstruct {
+                  (block "ODT" struct {
+                    uchar;  /* ODT number */
+                    taggedstruct {
+                      ("ODT_ENTRY" struct {
+                        uchar;  /* ODT_ENTRY number */
+                        ulong;  /* address of element */
+                        uchar;  /* address extension of element */
+                        uchar;  /* size of element [AG] */
+                        uchar;  /* BIT_OFFSET */
+                      })*;
+                    };
+                  })*;
+                };
+              };
+            })*;
+            (block "EVENT" struct {
+              char[101];  /* EVENT_CHANNEL_NAME       */
+              char[9];  /* EVENT_CHANNEL_SHORT_NAME */
+              uint;  /* EVENT_CHANNEL_NUMBER     */
+              enum {
+                "DAQ" = 1,
+                "STIM" = 2,
+                "DAQ_STIM" = 3
+              };
+              uchar;  /* MAX_DAQ_LIST */
+              uchar;  /* TIME_CYCLE   */
+              uchar;  /* TIME_UNIT    */
+              uchar;  /* PRIORITY     */
+            })*;
+          };
+        };
+
+        taggedunion Daq_Event {
+          "FIXED_EVENT_LIST" taggedstruct {
+            ("EVENT" uint)*;
+          };
+          "VARIABLE" taggedstruct {
+            block "AVAILABLE_EVENT_LIST" taggedstruct {
+              ("EVENT" uint)*;
+            };
+            block "DEFAULT_EVENT_LIST" taggedstruct {
+              ("EVENT" uint)*;
+            };
+          };
+        };
+
+        struct Pag {
+          uchar;  /* MAX_SEGMENTS */
+          taggedstruct {
+            "FREEZE_SUPPORTED" ;
+          };
+        };
+
+        struct Pgm {
+          enum {
+            "PGM_MODE_ABSOLUTE" = 1,
+            "PGM_MODE_FUNCTIONAL" = 2,
+            "PGM_MODE_ABSOLUTE_AND_FUNCTIONAL" = 3
+          };
+          uchar;  /* MAX_SECTORS */
+          uchar;  /* MAX_CTO_PGM */
+          taggedstruct {
+            (block "SECTOR" struct {
+              char[101];  /* SECTOR_NAME */
+              uchar;  /* SECTOR_NUMBER */
+              ulong;  /* Address */
+              ulong;  /* Length  */
+              uchar;  /* CLEAR_SEQUENCE_NUMBER */
+              uchar;  /* PROGRAM_SEQUENCE_NUMBER */
+              uchar;  /* PROGRAM_METHOD */
+            })*;
+            "COMMUNICATION_MODE_SUPPORTED" taggedunion {
+              "BLOCK" taggedstruct {
+                "SLAVE" ;
+                "MASTER" struct {
+                  uchar;  /* MAX_BS_PGM */
+                  uchar;  /* MIN_ST_PGM */
+                };
+              };
+              "INTERLEAVED" uchar;  /* QUEUE_SIZE_PGM */
+            };
+          };
+        };
+
+        struct Segment {
+          uchar;  /* SEGMENT_NUMBER */
+          uchar;  /* number of pages */
+          uchar;  /* ADDRESS_EXTENSION */
+          uchar;  /* COMPRESSION_METHOD */
+          uchar;  /* ENCRYPTION_METHOD */
+          taggedstruct {
+            block "CHECKSUM" struct {
+              enum {
+                "XCP_ADD_11" = 1,
+                "XCP_ADD_12" = 2,
+                "XCP_ADD_14" = 3,
+                "XCP_ADD_22" = 4,
+                "XCP_ADD_24" = 5,
+                "XCP_ADD_44" = 6,
+                "XCP_CRC_16" = 7,
+                "XCP_CRC_16_CITT" = 8,
+                "XCP_CRC_32" = 9,
+                "XCP_USER_DEFINED" = 255
+              };
+              taggedstruct {
+                "MAX_BLOCK_SIZE" ulong;
+                "EXTERNAL_FUNCTION" char[256];  /* Name of the Checksum.DLL */
+              };
+            };
+            (block "PAGE" struct {
+              uchar;  /* PAGE_NUMBER */
+              enum {
+                "ECU_ACCESS_NOT_ALLOWED" = 0,
+                "ECU_ACCESS_ALLOWED_WITHOUT_XCP_ONLY" = 1,
+                "ECU_ACCESS_ALLOWED_WITH_XCP_ONLY" = 2,
+                "ECU_ACCESS_ALLOWED_DONT_CARE" = 3
+              };
+              enum {
+                "XCP_READ_ACCESS_NOT_ALLOWED" = 0,
+                "XCP_READ_ACCESS_ALLOWED_WITHOUT_ECU_ONLY" = 1,
+                "XCP_READ_ACCESS_ALLOWED_WITH_ECU_ONLY" = 2,
+                "XCP_READ_ACCESS_ALLOWED_DONT_CARE" = 3
+              };
+              enum {
+                "XCP_WRITE_ACCESS_NOT_ALLOWED" = 0,
+                "XCP_WRITE_ACCESS_ALLOWED_WITHOUT_ECU_ONLY" = 1,
+                "XCP_WRITE_ACCESS_ALLOWED_WITH_ECU_ONLY" = 2,
+                "XCP_WRITE_ACCESS_ALLOWED_DONT_CARE" = 3
+              };
+              taggedstruct {
+                "INIT_SEGMENT" uchar;  /* references segment that initialises this page */
+              };
+            })*;
+            (block "ADDRESS_MAPPING" struct {
+              ulong;  /* source address */
+              ulong;  /* destination address */
+              ulong;  /* length */
+            })*;
+            "PGM_VERIFY" ulong;  /* verification value for PGM */
+          };
+        };
+
+        taggedstruct Common_Parameters {
+          block "PROTOCOL_LAYER" struct Protocol_Layer;
+          block "SEGMENT" struct Segment;
+          block "DAQ" struct Daq;
+          block "PAG" struct Pag;
+          block "PGM" struct Pgm;
+          block "DAQ_EVENT" taggedunion Daq_Event;
+        };
+
+        struct CAN_Parameters {
+          uint;  /* XCP on CAN version, currentl 0x0100 */
+          taggedstruct {
+            "CAN_ID_BROADCAST" ulong;  /* Auto-detection CAN-ID */
+            "CAN_ID_MASTER" ulong;  /* CMD/STIM CAN-ID */
+            "CAN_ID_SLAVE" ulong;  /* RES/ERR/EV/SERV/DAQ CAN-ID */
+            "BAUDRATE" ulong;  /* Baudrate in Hz */
+            "SAMPLE_POINT" uchar;  /* Sample point in % of bit time */
+            "SAMPLE_RATE" enum {
+              "SINGLE" = 1,
+              "TRIPLE" = 3
+            };
+            "BTL_CYCLES" uchar;  /* slots per bit time */
+            "SJW" uchar;
+            "SYNC_EDGE" enum {
+              "SINGLE" = 1,
+              "DUAL" = 2
+            };
+            "MAX_DLC_REQUIRED" ;  /* master to slave frames */
+            (block "DAQ_LIST_CAN_ID" struct {
+              uint;  /* reference to DAQ_LIST_NUMBER */
+              taggedstruct {
+                "VARIABLE" ;
+                "FIXED" ulong;  /* this DAQ_LIST always on this CAN_ID */
+              };
+            })*;
+          };
+        };
+
+        struct SxI_Parameters {
+          uint;  /* XCP on SxI version, currently 0x0100 */
+          ulong;  /* BAUDRATE [Hz] */
+          taggedstruct {
+            "ASYNCH_FULL_DUPLEX_MODE" struct {
+              enum {
+                "PARITY_NONE" = 0,
+                "PARITY_ODD" = 1,
+                "PARITY_EVEN" = 2
+              };
+              enum {
+                "ONE_STOP_BIT" = 1,
+                "TWO_STOP_BITS" = 2
+              };
+            };
+            "SYNCH_FULL_DUPLEX_MODE_BYTE" ;
+            "SYNCH_FULL_DUPLEX_MODE_WORD" ;
+            "SYNCH_FULL_DUPLEX_MODE_DWORD" ;
+            "SYNCH_MASTER_SLAVE_MODE_BYTE" ;
+            "SYNCH_MASTER_SLAVE_MODE_WORD" ;
+            "SYNCH_MASTER_SLAVE_MODE_DWORD" ;
+          };
+          enum {
+            "HEADER_LEN_BYTE" = 0,
+            "HEADER_LEN_CTR_BYTE" = 1,
+            "HEADER_LEN_WORD" = 2,
+            "HEADER_LEN_CTR_WORD" = 3
+          };
+          enum {
+            "NO_CHECKSUM" = 0,
+            "CHECKSUM_BYTE" = 1,
+            "CHECKSUM_WORD" = 2
+          };
+        };
+
+        struct TCP_IP_Parameters {
+          uint;  /* XCP on TCP_IP version, currently 0x0100 */
+          uint;  /* PORT */
+          taggedunion {
+            "HOST_NAME" char[256];
+            "ADDRESS" char[15];
+          };
+        };
+
+        struct UDP_Parameters {
+          uint;  /* XCP on UDP version, currently 0x0100 */
+          uint;  /* PORT */
+          taggedunion {
+            "HOST_NAME" char[256];
+            "ADDRESS" char[15];
+          };
+        };
+
+        struct ep_parameters {
+          uchar;  /* ENDPOINT_NUMBER, not endpoint address */
+          enum {
+            "BULK_TRANSFER" = 2,
+            "INTERRUPT_TRANSFER" = 3
+          };
+          uint;  /* wMaxPacketSize: Maximum packet  
+ size of endpoint in bytes       */
+          uchar;  /* bInterval: polling of endpoint  */
+          enum {
+            "MESSAGE_PACKING_SINGLE" = 0,
+            "MESSAGE_PACKING_MULTIPLE" = 1,
+            "MESSAGE_PACKING_STREAMING" = 2
+          };
+          enum {
+            "ALIGNMENT_8_BIT" = 0,
+            "ALIGNMENT_16_BIT" = 1,
+            "ALIGNMENT_32_BIT" = 2,
+            "ALIGNMENT_64_BIT" = 3
+          };
+          taggedstruct {
+            "RECOMMENDED_HOST_BUFSIZE" uint;  /* Recommended size for the host 
+ buffer size. The size is defined
+ as multiple of wMaxPacketSize.  */
+          };
+        };  /* end of ep_parameters */
+
+        struct USB_Parameters {
+          uint;  /* XCP on USB version  
+ e.g. "1.0" = 0x0100 */
+          uint;  /* Vendor ID                       */
+          uint;  /* Product ID                      */
+          uchar;  /* Number of interface             */
+          enum {
+            "HEADER_LEN_BYTE" = 0,
+            "HEADER_LEN_CTR_BYTE" = 1,
+            "HEADER_LEN_FILL_BYTE" = 2,
+            "HEADER_LEN_WORD" = 3,
+            "HEADER_LEN_CTR_WORD" = 4,
+            "HEADER_LEN_FILL_WORD" = 5
+          };
+          taggedunion {
+            block "OUT_EP_CMD_STIM" struct ep_parameters;
+          };
+          taggedunion {
+            block "IN_EP_RESERR_DAQ_EVSERV" struct ep_parameters;
+          };
+          taggedstruct {
+            "ALTERNATE_SETTING_NO" uchar;  /* Number of alternate setting   */
+            "INTERFACE_STRING_DESCRIPTOR" char[101];
+            (block "OUT_EP_ONLY_STIM" struct ep_parameters)*;
+            (block "IN_EP_ONLY_DAQ" struct ep_parameters)*;
+            block "IN_EP_ONLY_EVSERV" struct ep_parameters;
+            (block "DAQ_LIST_USB_ENDPOINT" struct {
+              uint;  /* reference to DAQ_LIST_NUMBER          */
+              taggedstruct {
+                "FIXED_IN" uchar;  /* this DAQ list always                
+ ENDPOINT_NUMBER, not endpoint address */
+                "FIXED_OUT" uchar;  /* this STIM list always               
+ ENDPOINT_NUMBER, not endpoint address */
+              };
+            })*;  /* end of DAQ_LIST_USB_ENDPOINT */
+          };  /* end of optional */
+        };
+
+        struct SIMULINK_Parameters {
+          taggedstruct {
+            "MODEL_NAME" char[64];
+          };
+        };
+      block "IF_DATA" taggedunion if_data {
+        "CANAPE_EXT" struct {
+          int;  /* version number */
+          taggedstruct {
+            "LINK_MAP" struct {
+              char[256];  /* segment name */
+              long;  /* base address of the segment */
+              uint;  /* address extension of the segment */
+              uint;  /* flag: address is relative to DS */
+              long;  /* offset of the segment address */
+              uint;  /* datatypValid */
+              uint;  /* enum datatyp */
+              uint;  /* bit offset of the segment */
+            };
+            "DISPLAY" struct {
+              long;  /* display color */
+              double;  /* minimal display value (phys)*/
+              double;  /* maximal display value (phys)*/
+            };
+            "VIRTUAL_CONVERSION" struct {
+              char[256];  /* name of the conversion formula */
+            };
+          };
+        };
+        "XCP" struct {
+          taggedstruct Common_Parameters;  /* default parameters */
+          taggedstruct {
+            block "XCP_ON_CAN" struct {
+              struct CAN_Parameters;  /* specific for CAN */
+              taggedstruct Common_Parameters;  /* overruling of default */
+            };
+            block "XCP_ON_SxI" struct {
+              struct SxI_Parameters;  /* specific for SxI */
+              taggedstruct Common_Parameters;  /* overruling of default */
+            };
+            block "XCP_ON_TCP_IP" struct {
+              struct TCP_IP_Parameters;  /* specific for TCP_IP */
+              taggedstruct Common_Parameters;  /* overruling of default */
+            };
+            block "XCP_ON_UDP_IP" struct {
+              struct UDP_Parameters;  /* specific for UDP */
+              taggedstruct Common_Parameters;  /* overruling of default */
+            };
+            block "XCP_ON_USB" struct {
+              struct USB_Parameters;  /* specific for USB      */
+              taggedstruct Common_Parameters;  /* overruling of default */
+            };
+            block "XCP_ON_SIMULINK" struct {
+              struct SIMULINK_Parameters;
+              taggedstruct Common_Parameters;  /* overruling of default */
+            };
+          };
+        };
+        "CNP_CREATE_INI" taggedstruct {
+          block "TP_BLOB" struct {
+            uint;  /* version */
+            taggedstruct {
+              ("PARAMETER" struct {
+                char[256];  /* file name */
+                char[50];  /* Section - $CNP_DVC_SCTN$ defines the Device-Section entry */
+                char[50];  /* parameter name */
+                char[256];  /* parameter value */
+              })*;
+            };
+          };
+        };
+      };
+    /end A2ML
+
+    /begin MOD_PAR "MOD PAR Comment Goes Here"
+    /end MOD_PAR
+
+    /begin MOD_COMMON "Mod Common Comment Here"
+      BYTE_ORDER MSB_LAST
+      ALIGNMENT_BYTE 1
+      ALIGNMENT_WORD 2
+      ALIGNMENT_LONG 4
+      ALIGNMENT_FLOAT32_IEEE 4
+      ALIGNMENT_FLOAT64_IEEE 8
+    /end MOD_COMMON
+
+    /begin IF_DATA XCP
+      /begin PROTOCOL_LAYER
+        0x0100
+        0x03E8
+        0x2710
+        0x00
+        0x00
+        0x00
+        0x00
+        0x00
+        0xFF
+        0xFF
+        BYTE_ORDER_MSB_LAST
+        ADDRESS_GRANULARITY_BYTE
+        COMMUNICATION_MODE_SUPPORTED BLOCK
+          MASTER
+            0x2B
+            0x00
+        SEED_AND_KEY_EXTERNAL_FUNCTION "SeedNKeyXcp.dll"
+      /end PROTOCOL_LAYER
+      /begin DAQ
+        DYNAMIC
+        0x00
+        0x06
+        0x00
+        OPTIMISATION_TYPE_DEFAULT
+        ADDRESS_EXTENSION_FREE
+        IDENTIFICATION_FIELD_TYPE_RELATIVE_BYTE
+        GRANULARITY_ODT_ENTRY_SIZE_DAQ_BYTE
+        0x06
+        OVERLOAD_INDICATION_PID
+        PRESCALER_SUPPORTED
+        /begin TIMESTAMP_SUPPORTED
+          0x01
+          SIZE_DWORD
+          UNIT_100US
+        /end TIMESTAMP_SUPPORTED
+        /begin EVENT
+          "on LATC_Test_Calc calculated"
+          ""
+          0x00
+          DAQ
+          0xFF
+          0x00
+          0x06
+          0x00
+        /end EVENT
+      /end DAQ
+      /begin XCP_ON_SIMULINK
+        MODEL_NAME "LATC_Test_Calc"
+      /end XCP_ON_SIMULINK
+    /end IF_DATA
+
+    /begin CHARACTERISTIC P_Global_SteerAngleOffsetFilterTime ""
+      VALUE 0x118000 Scalar_FLOAT64_IEEE 0 LATC_Test_Calc_CM_double -1.7976931348623157E+308 1.7976931348623157E+308
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "P_Global_SteerAngleOffsetFilterTime" 0x118000 0 0 0 0 0x87 0
+      /end IF_DATA
+    /end CHARACTERISTIC
+
+    /begin MEASUREMENT RTTarget.ModelExecutionCounter "Internal CANape RT-Target DLL counter"
+      ULONG NO_COMPU_METHOD 0 0 0 4294967295
+      DISPLAY_IDENTIFIER RTTarget.ModelExecutionCounter
+      ECU_ADDRESS 0x18A770
+      FORMAT "%.1"
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x00
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "_gRTTarget_ModelExecutionCounter" 0x18A770 0 0 0 0 0x0 0
+        DISPLAY 0xFAC864 0 4294967295
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin MEASUREMENT RTTarget.ModelStepTime "Internal CANape RT-Target DLL model step execution time"
+      ULONG RTTarget.ModelStepTime.CONVERSION.MICROSECOND_UNIT 0 0 0 4294967295
+      DISPLAY_IDENTIFIER RTTarget.ModelStepTime
+      ECU_ADDRESS 0x1370D8
+      FORMAT "%.1"
+      /begin IF_DATA XCP
+        /begin DAQ_EVENT FIXED_EVENT_LIST
+          EVENT 0x00
+        /end DAQ_EVENT
+      /end IF_DATA
+      /begin IF_DATA CANAPE_EXT
+        100
+        LINK_MAP "_gRTTarget_ModelStepExecutionTime" 0x1370D8 0 0 0 0 0x0 0
+        DISPLAY 0x96FA32 0 4294967295
+      /end IF_DATA
+    /end MEASUREMENT
+
+    /begin COMPU_METHOD LATC_Test_Calc_CM_double "Q = V"
+      RAT_FUNC "%15.10" ""
+      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+
+    /begin COMPU_METHOD RTTarget.ModelStepTime.CONVERSION.MICROSECOND_UNIT "Microsecond unit for model step execution time"
+      RAT_FUNC "%.1" "祍"
+      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+
+    /begin RECORD_LAYOUT Lookup1D_BOOLEAN
+      FNC_VALUES 1 UBYTE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_BYTE
+      FNC_VALUES 1 SBYTE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_FLOAT32_IEEE
+      FNC_VALUES 1 FLOAT32_IEEE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_FLOAT64_IEEE
+      FNC_VALUES 1 FLOAT64_IEEE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_SLONG
+      FNC_VALUES 1 SLONG COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_UBYTE
+      FNC_VALUES 1 UBYTE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_ULONG
+      FNC_VALUES 1 ULONG COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_UWORD
+      FNC_VALUES 1 UWORD COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_WORD
+      FNC_VALUES 1 SWORD COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_X_BOOLEAN
+      AXIS_PTS_X 1 UBYTE INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_X_BYTE
+      AXIS_PTS_X 1 SBYTE INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_X_FLOAT32_IEEE
+      AXIS_PTS_X 1 FLOAT32_IEEE INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_X_FLOAT64_IEEE
+      AXIS_PTS_X 1 FLOAT64_IEEE INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_X_LONG
+      AXIS_PTS_X 1 SLONG INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_X_UBYTE
+      AXIS_PTS_X 1 UBYTE INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_X_ULONG
+      AXIS_PTS_X 1 ULONG INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_X_UWORD
+      AXIS_PTS_X 1 UWORD INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup1D_X_WORD
+      AXIS_PTS_X 1 SWORD INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_BOOLEAN
+      FNC_VALUES 1 UBYTE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_BYTE
+      FNC_VALUES 1 SBYTE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_FLOAT32_IEEE
+      FNC_VALUES 1 FLOAT32_IEEE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_FLOAT64_IEEE
+      FNC_VALUES 1 FLOAT64_IEEE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_LONG
+      FNC_VALUES 1 SLONG COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_UBYTE
+      FNC_VALUES 1 UBYTE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_ULONG
+      FNC_VALUES 1 ULONG COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_UWORD
+      FNC_VALUES 1 UWORD COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_WORD
+      FNC_VALUES 1 SWORD COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_X_BOOLEAN
+      AXIS_PTS_X 1 UBYTE INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_X_BYTE
+      AXIS_PTS_X 1 SBYTE INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_X_FLOAT32_IEEE
+      AXIS_PTS_X 1 FLOAT32_IEEE INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_X_FLOAT64_IEEE
+      AXIS_PTS_X 1 FLOAT64_IEEE INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_X_LONG
+      AXIS_PTS_X 1 SLONG INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_X_UBYTE
+      AXIS_PTS_X 1 UBYTE INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_X_ULONG
+      AXIS_PTS_X 1 ULONG INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_X_UWORD
+      AXIS_PTS_X 1 UWORD INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Lookup2D_X_WORD
+      AXIS_PTS_X 1 SWORD INDEX_INCR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Scalar_BOOLEAN
+      FNC_VALUES 1 UBYTE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Scalar_BYTE
+      FNC_VALUES 1 SBYTE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Scalar_FLOAT32_IEEE
+      FNC_VALUES 1 FLOAT32_IEEE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Scalar_FLOAT64_IEEE
+      FNC_VALUES 1 FLOAT64_IEEE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Scalar_LONG
+      FNC_VALUES 1 SLONG COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Scalar_SWORD
+      FNC_VALUES 1 SWORD COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Scalar_UBYTE
+      FNC_VALUES 1 UBYTE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Scalar_ULONG
+      FNC_VALUES 1 ULONG COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT Scalar_UWORD
+      FNC_VALUES 1 UWORD COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin GROUP LATC_Test_Calc "LATC_Test_Calc"
+      ROOT
+      /begin SUB_GROUP
+        Root_LFunc
+      /end SUB_GROUP
+    /end GROUP
+
+    /begin GROUP Root_LFunc "LATC_Test_Calc/LFunc"
+      /begin SUB_GROUP
+        S2_EVI
+      /end SUB_GROUP
+    /end GROUP
+
+    /begin GROUP S2_EVI "LATC_Test_Calc/LFunc/EVI"
+      /begin SUB_GROUP
+        S50_VehicleStsCalc1
+      /end SUB_GROUP
+    /end GROUP
+
+    /begin GROUP S50_VehicleStsCalc1 "LATC_Test_Calc/LFunc/EVI/VehicleStsCalc1"
+      /begin SUB_GROUP
+        S58_VxvRef_Calc
+      /end SUB_GROUP
+    /end GROUP
+
+    /begin GROUP S58_VxvRef_Calc "LATC_Test_Calc/LFunc/EVI/VehicleStsCalc1/VxvRef_Calc"
+      /begin SUB_GROUP
+        S63_VxvRef_Calc
+      /end SUB_GROUP
+    /end GROUP
+
+    /begin GROUP S63_VxvRef_Calc "LATC_Test_Calc/LFunc/EVI/VehicleStsCalc1/VxvRef_Calc/VxvRef_Calc"
+      /begin SUB_GROUP
+        S74_Enabled_Subsystem
+      /end SUB_GROUP
+    /end GROUP
+
+    /begin GROUP S74_Enabled_Subsystem "LATC_Test_Calc/LFunc/EVI/VehicleStsCalc1/VxvRef_Calc/VxvRef_Calc/Enabled Subsystem"
+      /begin REF_CHARACTERISTIC
+        P_Global_SteerAngleOffsetFilterTime
+      /end REF_CHARACTERISTIC
+    /end GROUP
+
+    /begin GROUP _RTTarget_internals "CANape RT-Target DLL internal diagnostic objects"
+      ROOT
+      /begin REF_MEASUREMENT
+        RTTarget.ModelExecutionCounter RTTarget.ModelStepTime
+      /end REF_MEASUREMENT
+    /end GROUP
+
+    /begin GROUP _[Parameters] "All Parameters"
+      /begin REF_CHARACTERISTIC
+        P_Global_SteerAngleOffsetFilterTime
+      /end REF_CHARACTERISTIC
+    /end GROUP
+
+    /begin FUNCTION InputSignal1 ""
+      /begin SUB_FUNCTION
+        InputSignal1.CANapeIO_Veh_icleRX_AD2
+      /end SUB_FUNCTION
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2 ""
+      /begin SUB_FUNCTION
+        InputSignal1.CANapeIO_Veh_icleRX_AD2.ABSActive InputSignal1.CANapeIO_Veh_icleRX_AD2.ABSFailSts InputSignal1.CANapeIO_Veh_icleRX_AD2.BTCActive InputSignal1.CANapeIO_Veh_icleRX_AD2.EBDFailSts InputSignal1.CANapeIO_Veh_icleRX_AD2.EPS_DrvInputTrqValue InputSignal1.CANapeIO_Veh_icleRX_AD2.EPS_FailSts InputSignal1.CANapeIO_Veh_icleRX_AD2.EPS_LKATorqOvrlDlvd
+        InputSignal1.CANapeIO_Veh_icleRX_AD2.EPS_LKATorqOvrlDlvdValid InputSignal1.CANapeIO_Veh_icleRX_AD2.EPS_LKATrqOvlDlvdSts InputSignal1.CANapeIO_Veh_icleRX_AD2.EPS_LKATrqOvlDlvdSts1 InputSignal1.CANapeIO_Veh_icleRX_AD2.EPS_LKATrqOvlDlvdSts3 InputSignal1.CANapeIO_Veh_icleRX_AD2.EPS_LKATrqOvlDlvdSts4 InputSignal1.CANapeIO_Veh_icleRX_AD2.EPS_LKATrqOvlDlvdSts5 InputSignal1.CANapeIO_Veh_icleRX_AD2.EPS_SteerMod InputSignal1.CANapeIO_Veh_icleRX_AD2.ESPFailSts
+        InputSignal1.CANapeIO_Veh_icleRX_AD2.ESP_MasterCylindBrakePress InputSignal1.CANapeIO_Veh_icleRX_AD2.ESP_MasterCylindBrakePressValid InputSignal1.CANapeIO_Veh_icleRX_AD2.FLWheelDriveDirection InputSignal1.CANapeIO_Veh_icleRX_AD2.FLWheelSpd InputSignal1.CANapeIO_Veh_icleRX_AD2.FLWheelSpdValid InputSignal1.CANapeIO_Veh_icleRX_AD2.FRWheelDriveDirection InputSignal1.CANapeIO_Veh_icleRX_AD2.FRWheelSpd InputSignal1.CANapeIO_Veh_icleRX_AD2.FRWheelSpdValid
+        InputSignal1.CANapeIO_Veh_icleRX_AD2.LateralAcce InputSignal1.CANapeIO_Veh_icleRX_AD2.LateralAcceValid InputSignal1.CANapeIO_Veh_icleRX_AD2.LongitudeAcc InputSignal1.CANapeIO_Veh_icleRX_AD2.LongitudeAccValid InputSignal1.CANapeIO_Veh_icleRX_AD2.MSRActive InputSignal1.CANapeIO_Veh_icleRX_AD2.NoBrakeForce InputSignal1.CANapeIO_Veh_icleRX_AD2.PTCActive InputSignal1.CANapeIO_Veh_icleRX_AD2.RLWheelDriveDirection
+        InputSignal1.CANapeIO_Veh_icleRX_AD2.RLWheelSpd InputSignal1.CANapeIO_Veh_icleRX_AD2.RLWheelSpdValid InputSignal1.CANapeIO_Veh_icleRX_AD2.RRWheelDriveDirection InputSignal1.CANapeIO_Veh_icleRX_AD2.RRWheelSpd InputSignal1.CANapeIO_Veh_icleRX_AD2.RRWheelSpdValid InputSignal1.CANapeIO_Veh_icleRX_AD2.SteerWheelAngle InputSignal1.CANapeIO_Veh_icleRX_AD2.SteerWheelAngleSign InputSignal1.CANapeIO_Veh_icleRX_AD2.SteerWheelSpd
+        InputSignal1.CANapeIO_Veh_icleRX_AD2.SteerWheelSpdSign InputSignal1.CANapeIO_Veh_icleRX_AD2.VDCActive InputSignal1.CANapeIO_Veh_icleRX_AD2.VehDynYawRate InputSignal1.CANapeIO_Veh_icleRX_AD2.VehDynYawRateValid InputSignal1.CANapeIO_Veh_icleRX_AD2.VehicleSpd InputSignal1.CANapeIO_Veh_icleRX_AD2.VehicleSpdValid InputSignal1.CANapeIO_Veh_icleRX_AD2.VehicleStandstill
+      /end SUB_FUNCTION
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.ABSActive ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.ABSFailSts ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.BTCActive ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.EBDFailSts ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.EPS_DrvInputTrqValue ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.EPS_FailSts ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.EPS_LKATorqOvrlDlvd ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.EPS_LKATorqOvrlDlvdValid ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.EPS_LKATrqOvlDlvdSts ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.EPS_LKATrqOvlDlvdSts1 ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.EPS_LKATrqOvlDlvdSts3 ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.EPS_LKATrqOvlDlvdSts4 ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.EPS_LKATrqOvlDlvdSts5 ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.EPS_SteerMod ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.ESPFailSts ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.ESP_MasterCylindBrakePress ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.ESP_MasterCylindBrakePressValid ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.FLWheelDriveDirection ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.FLWheelSpd ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.FLWheelSpdValid ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.FRWheelDriveDirection ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.FRWheelSpd ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.FRWheelSpdValid ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.LateralAcce ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.LateralAcceValid ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.LongitudeAcc ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.LongitudeAccValid ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.MSRActive ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.NoBrakeForce ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.PTCActive ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.RLWheelDriveDirection ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.RLWheelSpd ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.RLWheelSpdValid ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.RRWheelDriveDirection ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.RRWheelSpd ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.RRWheelSpdValid ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.SteerWheelAngle ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.SteerWheelAngleSign ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.SteerWheelSpd ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.SteerWheelSpdSign ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.VDCActive ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.VehDynYawRate ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.VehDynYawRateValid ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.VehicleSpd ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.VehicleSpdValid ""
+    /end FUNCTION
+
+    /begin FUNCTION InputSignal1.CANapeIO_Veh_icleRX_AD2.VehicleStandstill ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc ""
+      /begin SUB_FUNCTION
+        LFunc.EVI LFunc.Trigger_Init LFunc.Trigger_Init1 LFunc.Trigger_Init2 LFunc.Trigger_Init3 LFunc.Trigger_Init4 LFunc.Trigger_Init5
+        LFunc.U_Road_Create
+      /end SUB_FUNCTION
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI ""
+      /begin SUB_FUNCTION
+        LFunc.EVI.VehicleStsCalc1
+      /end SUB_FUNCTION
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1 ""
+      /begin SUB_FUNCTION
+        LFunc.EVI.VehicleStsCalc1.AxRef LFunc.EVI.VehicleStsCalc1.Compare_To_Constant1 LFunc.EVI.VehicleStsCalc1.FloatMeanValue LFunc.EVI.VehicleStsCalc1.Gain1 LFunc.EVI.VehicleStsCalc1.Memory2 LFunc.EVI.VehicleStsCalc1.Memory4 LFunc.EVI.VehicleStsCalc1.PsiDtStandstillCalc
+        LFunc.EVI.VehicleStsCalc1.Sum3 LFunc.EVI.VehicleStsCalc1.VxvRef_Calc LFunc.EVI.VehicleStsCalc1.W LFunc.EVI.VehicleStsCalc1.alpSumSlideCurveness
+      /end SUB_FUNCTION
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.AxRef ""
+      /begin SUB_FUNCTION
+        LFunc.EVI.VehicleStsCalc1.AxRef.LP_filter LFunc.EVI.VehicleStsCalc1.AxRef.axvRoadSlope_calc
+      /end SUB_FUNCTION
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.AxRef.LP_filter ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.AxRef.axvRoadSlope_calc ""
+      /begin SUB_FUNCTION
+        LFunc.EVI.VehicleStsCalc1.AxRef.axvRoadSlope_calc.Gain16 LFunc.EVI.VehicleStsCalc1.AxRef.axvRoadSlope_calc.LP_filter LFunc.EVI.VehicleStsCalc1.AxRef.axvRoadSlope_calc.Sum1 LFunc.EVI.VehicleStsCalc1.AxRef.axvRoadSlope_calc.Sum7 LFunc.EVI.VehicleStsCalc1.AxRef.axvRoadSlope_calc.t_FiltaxvRoadSlope
+      /end SUB_FUNCTION
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.AxRef.axvRoadSlope_calc.Gain16 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.AxRef.axvRoadSlope_calc.LP_filter ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.AxRef.axvRoadSlope_calc.Sum1 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.AxRef.axvRoadSlope_calc.Sum7 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.AxRef.axvRoadSlope_calc.t_FiltaxvRoadSlope ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.Compare_To_Constant1 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.FloatMeanValue ""
+      /begin SUB_FUNCTION
+        LFunc.EVI.VehicleStsCalc1.FloatMeanValue.Gain
+      /end SUB_FUNCTION
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.FloatMeanValue.Gain ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.Gain1 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.Memory2 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.Memory4 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.PsiDtStandstillCalc ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.Sum3 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.VxvRef_Calc ""
+      /begin SUB_FUNCTION
+        LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection1 LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection2 LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection3 LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.Product6 LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.VxvRef_Calc LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.t_tauAxvRef
+      /end SUB_FUNCTION
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection ""
+      /begin SUB_FUNCTION
+        LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection.Switch_Case_Action_Subsystem LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection.Switch_Case_Action_Subsystem1 LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection.Switch_Case_Action_Subsystem2 LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection.Switch_Case_Action_Subsystem3
+      /end SUB_FUNCTION
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection.Switch_Case_Action_Subsystem ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection.Switch_Case_Action_Subsystem1 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection.Switch_Case_Action_Subsystem2 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection.Switch_Case_Action_Subsystem3 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection1 ""
+      /begin SUB_FUNCTION
+        LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection1.Switch_Case_Action_Subsystem LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection1.Switch_Case_Action_Subsystem1 LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection1.Switch_Case_Action_Subsystem2 LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection1.Switch_Case_Action_Subsystem3
+      /end SUB_FUNCTION
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection1.Switch_Case_Action_Subsystem ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection1.Switch_Case_Action_Subsystem1 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection1.Switch_Case_Action_Subsystem2 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection1.Switch_Case_Action_Subsystem3 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection2 ""
+      /begin SUB_FUNCTION
+        LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection2.Switch_Case_Action_Subsystem LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection2.Switch_Case_Action_Subsystem1 LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection2.Switch_Case_Action_Subsystem2 LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection2.Switch_Case_Action_Subsystem3
+      /end SUB_FUNCTION
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection2.Switch_Case_Action_Subsystem ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection2.Switch_Case_Action_Subsystem1 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection2.Switch_Case_Action_Subsystem2 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection2.Switch_Case_Action_Subsystem3 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection3 ""
+      /begin SUB_FUNCTION
+        LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection3.Switch_Case_Action_Subsystem LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection3.Switch_Case_Action_Subsystem1 LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection3.Switch_Case_Action_Subsystem2 LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection3.Switch_Case_Action_Subsystem3
+      /end SUB_FUNCTION
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection3.Switch_Case_Action_Subsystem ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection3.Switch_Case_Action_Subsystem1 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection3.Switch_Case_Action_Subsystem2 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.DriveDirection3.Switch_Case_Action_Subsystem3 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.Product6 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.VxvRef_Calc ""
+      /begin SUB_FUNCTION
+        LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.VxvRef_Calc.Compare_To_Constant1 LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.VxvRef_Calc.Compare_To_Constant2 LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.VxvRef_Calc.Compare_To_Constant3 LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.VxvRef_Calc.Compare_To_Constant5 LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.VxvRef_Calc.Compare_To_Constant6 LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.VxvRef_Calc.Enabled_Subsystem
+      /end SUB_FUNCTION
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.VxvRef_Calc.Compare_To_Constant1 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.VxvRef_Calc.Compare_To_Constant2 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.VxvRef_Calc.Compare_To_Constant3 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.VxvRef_Calc.Compare_To_Constant5 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.VxvRef_Calc.Compare_To_Constant6 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.VxvRef_Calc.Enabled_Subsystem ""
+      /begin SUB_FUNCTION
+        LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.VxvRef_Calc.Enabled_Subsystem.FilterTime1
+      /end SUB_FUNCTION
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.VxvRef_Calc.Enabled_Subsystem.FilterTime1 ""
+      /begin DEF_CHARACTERISTIC
+        P_Global_SteerAngleOffsetFilterTime
+      /end DEF_CHARACTERISTIC
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.VxvRef_Calc.t_tauAxvRef ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.W ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.EVI.VehicleStsCalc1.alpSumSlideCurveness ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.Trigger_Init ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.Trigger_Init1 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.Trigger_Init2 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.Trigger_Init3 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.Trigger_Init4 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.Trigger_Init5 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.U_Road_Create ""
+      /begin SUB_FUNCTION
+        LFunc.U_Road_Create.Output6 LFunc.U_Road_Create.Output7 LFunc.U_Road_Create.RoadCreate1 LFunc.U_Road_Create.Trigger_Init1 LFunc.U_Road_Create.Trigger_Init2 LFunc.U_Road_Create.Trigger_Init3
+      /end SUB_FUNCTION
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.U_Road_Create.Output6 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.U_Road_Create.Output7 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.U_Road_Create.RoadCreate1 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.U_Road_Create.Trigger_Init1 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.U_Road_Create.Trigger_Init2 ""
+    /end FUNCTION
+
+    /begin FUNCTION LFunc.U_Road_Create.Trigger_Init3 ""
+    /end FUNCTION
+
+  /end MODULE
+
+/end PROJECT

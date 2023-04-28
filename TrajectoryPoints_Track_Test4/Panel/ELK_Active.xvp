@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=11.0.42.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=11.0.42.7, Culture=neutral, PublicKeyToken=null" Name="Panel" Children="Controls" ControlName="ELK_Active">
+    <Object Type="Vector.CANalyzer.Panels.Design.VectorTabControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.42.0, Culture=neutral, PublicKeyToken=null" Name="VectorTabControl1" Children="Controls" ControlName="Tab Control">
+      <Object Type="Vector.CANalyzer.Panels.Design.VectorTabPage, Vector.CANalyzer.Panels.CommonControls, Version=11.0.42.0, Culture=neutral, PublicKeyToken=null" Name="VectorTabPage1" ControlName="Tab Control">
+        <Property Name="Name">VectorTabPage1</Property>
+        <Property Name="Size">194, 75</Property>
+        <Property Name="Location">3, 22</Property>
+        <Property Name="Text">VectorTabPage1</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.VectorTabPage, Vector.CANalyzer.Panels.CommonControls, Version=11.0.42.0, Culture=neutral, PublicKeyToken=null" Name="VectorTabPage2" ControlName="Tab Control">
+        <Property Name="Name">VectorTabPage2</Property>
+        <Property Name="Size">194, 75</Property>
+        <Property Name="Location">3, 22</Property>
+        <Property Name="Text">VectorTabPage2</Property>
+      </Object>
+      <Property Name="Name">VectorTabControl1</Property>
+      <Property Name="Size">200, 100</Property>
+      <Property Name="Location">23, 103</Property>
+      <Property Name="SymbolConfiguration">
+      </Property>
+      <Property Name="TabIndex">2</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.42.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControl2" ControlName="Right_SW">
+      <Property Name="Name">SwitchControl2</Property>
+      <Property Name="Size">36, 55</Property>
+      <Property Name="Location">108, 30</Property>
+      <Property Name="StateCnt">2</Property>
+      <Property Name="Activation">Left</Property>
+      <Property Name="SwitchValues">1;2;0;1</Property>
+      <Property Name="SwitchValuesRx">1;2;0;1</Property>
+      <Property Name="SymbolConfiguration">5;32;;;;Right_Active;2;;;-1;;;</Property>
+      <Property Name="TabIndex">1</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.42.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControl1" ControlName="Left_SW">
+      <Property Name="Name">SwitchControl1</Property>
+      <Property Name="Size">36, 55</Property>
+      <Property Name="Location">35, 30</Property>
+      <Property Name="StateCnt">2</Property>
+      <Property Name="Activation">Left</Property>
+      <Property Name="SwitchValues">1;2;0;1</Property>
+      <Property Name="SwitchValuesRx">1;2;0;1</Property>
+      <Property Name="SymbolConfiguration">5;32;;;;Left_Active;2;;;-1;;;</Property>
+      <Property Name="TabIndex">0</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">288, 242</Property>
+    <Property Name="BackColor">White</Property>
+  </Object>
+</Panel>
